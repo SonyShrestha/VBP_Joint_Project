@@ -1,0 +1,4502 @@
+[
+  {
+    "ID": "7228346086921746370",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9520875287453482886",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3506957932488388196",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17607741026596161923",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15480024317581901521",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Best place for vegan groceries.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17894185933951381923",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8531923814224359960",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7797044367384670715",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17710289591613005201",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11417235142836317297",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2636273604269664984",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1526000477628365546",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5501663534633008145",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17979088000277026984",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2596841540051905282",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6448851750195540103",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11874681038182160016",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5318498284040923553",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7832041984681819494",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17497395594183310907",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5170847044353075039",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2666960044012847079",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10351856996812207766",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17444885372990948232",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10752374911492011871",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5665960928730956290",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1999079515444966940",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7786962959632428106",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9464323420972975128",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3790471610745319456",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13271221797765852096",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2829374080543359183",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13535827249545508750",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15531049371972061149",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11285548131145868726",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11836771927585838083",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7012513271213487605",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14236349562436783149",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16814416789830566615",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16224309115830017909",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2868089389900217119",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12762071726128476347",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8974509719033283568",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5770921969748107938",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3867720431879032090",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13112118684841229204",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13273590621552066045",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2154764986553597491",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4665442965154283538",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10939827440380466163",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17300494172645615311",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9637779188537143213",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "255481205452260442",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1420830307490625110",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5780457947698998416",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14408622075731069395",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "41679430037873292",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1420135487449788764",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8988024784091889787",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9958227928554272757",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10225649366120590495",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8730145295537892865",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4449273713536155433",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14237217163934543577",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2768953872973775453",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11968998448068234082",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13857210991450069519",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15079043100944832303",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13295439862995579542",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16016884377609691775",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18433735707506474614",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17281616047754925870",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11169530767234205828",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1577785459782357401",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16105109143684159993",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6751405458166721976",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15897597305198931454",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5687080195795559262",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12989126712377261104",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5693542588207622297",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6359968920904950185",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15482224579772655124",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11200153956749340971",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10921452764902069426",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2561168317989267011",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5265868649285425403",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8103010290686574500",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1257161998713894209",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16678024211826378620",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2219413983809256119",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7443475050057249889",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9720558998952015691",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5299376467667665671",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4263766556800398823",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4297400634504588248",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10959292350775810264",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3377822409945882011",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12802163544304872022",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5289532931746658282",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10659577435852194395",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18335858296667231534",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18171189805154527880",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2059378452235268952",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5143395363980508299",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16766726382274963078",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "The cheese variety is incredible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "333505803348663002",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "164370566452290221",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17803711199688155766",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2325029174890862591",
+    "Business_name": "City Market",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10199506570219272248",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3650569523583279867",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13893749731132637362",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11966107648424942424",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7875018201928501276",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836735,
+    "rating": 3,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1997255112018250038",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8439352256351781291",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8401194535541005751",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13164997264316943449",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4873071019616854809",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13754095419280666369",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13146128034864862607",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14743242617374394747",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836735,
+    "rating": 1,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14154682725329281650",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836735,
+    "rating": 2,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3213466665155174445",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836735,
+    "rating": 5,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8526860718794212667",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "942873848540546424",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15672283497558751504",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6945715404933925784",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "679044775031507904",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The floral department is always a delight.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16170660537714399154",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Best place for vegan groceries.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2689221501761869775",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9184414877786641855",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6457773867935232989",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15025975367127003066",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2425627977303964947",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5833288249477935316",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13397993088632298638",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15743309087705028258",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14909208289114491892",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15884145041067409831",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5136950326318361189",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8302963999107891808",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "310194072633714962",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13924138875832023613",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8288633528846687485",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13180715173146208063",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17438519079630829273",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14155165105287922585",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15824735697437061833",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18156609385586065803",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15400436736467278714",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5218312143603785250",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7667747820248064832",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7349803765562404203",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4380383653883063197",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2088779988738561556",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12426013796312767705",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4191654836425883652",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2355793067270447387",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7309636289081845604",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17343564944144848240",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4120853789186561370",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16493092942319828772",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3596404383296277220",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Found everything I needed and more!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16531258567867328575",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10485812094145044720",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3172718972937070772",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14392388351264163981",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17864645887139335359",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10709351473758613224",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6302085636886099699",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "261278795673933767",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7993460995070514636",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7069023571140596072",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8611188356662409520",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7756209603318120223",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5412584658606229603",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17107328209824200517",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5590350857545233958",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9364799948760095262",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13208098647706757535",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "732273816903427215",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15653984342443059400",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Love their gluten-free options!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15397229092369691808",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "766962115601249164",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7146201758696892788",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "115618594197761892",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17428416096418666429",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16564051247953486395",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12344956799333744705",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Love their gluten-free options!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "291119736766795986",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17749610655651554527",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8807940712786781722",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9050067437173073333",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13340100086629799684",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14382022524079872120",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3413934283905772790",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1644195399161122206",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6185670847134282533",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "197377547125165697",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10317940395373559937",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10512991985992607710",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14780993694044458207",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18027883645552099834",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1494432424523823347",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2276136387154113353",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13496852652050188950",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17652949262490354600",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18306530909768422814",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1765332475457892647",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Love their gluten-free options!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16927336287385003215",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5560867189358481987",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15836074837775444548",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13831384184360634032",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15038083097594312089",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7532166262395537361",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1047161621507761883",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14015376968298896346",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6957404940151477864",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15432911716272907470",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5806887742117062587",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13571193313678528616",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6493896006720148261",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1112207375354190779",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10894588383193385375",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4303538762420766420",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5392083207311021673",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17224680477910734137",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17512536297056097527",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7696208135776315608",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16503565002277918523",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The aisles are always clutter-free.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10075662173629530109",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17862476550370470356",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15085528689016801647",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4668733350574652722",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The aisles are always clutter-free.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8475502189477706836",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14033528368236972500",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1998515961902929834",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6544112705074872343",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15721396981768173188",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8047157031097129621",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16393743472017446253",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11702514384694435566",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18413112614189616250",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2200318296306596524",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14919708729982914089",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17376074889884085017",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8711822758927612838",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15503227861311962165",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3755405061708150470",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17729420943805635625",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6797582908345186514",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13965738159359133990",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10956443960809892564",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14238377684194865029",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9260637528378037669",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8296681554014734442",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9171507282193545634",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17527710004989196247",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16131883369105060782",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4928671409402872831",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8166455028221192031",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4338666927125222673",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15275261349932579284",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8001976982395163871",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5885070438176554478",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17980180260744228390",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6094330772199801741",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The cheese variety is incredible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14038495122250310928",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8508131938788553240",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "79364135278848724",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1734162711099989775",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11962783298063070555",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2851096338692423533",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3253695683868593375",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13978275395020440284",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12391542701137004855",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5330171899429168989",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17411433727572107629",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Prices are a bit steep for everyday items.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11430561177276943265",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10929817353987061916",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5325711636477157253",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1813109036991806858",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Prices are a bit steep for everyday items.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12003590130984172150",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Prices are a bit steep for everyday items.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12371317872440476460",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2132876327749463049",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6196964148228152538",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "498749763389060832",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15860432039550265152",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4942381576520290622",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7295304618348498814",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2537267391122700608",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Found everything I needed and more!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4342719009919051003",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3348996640689375967",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9734802461300145750",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2429432731528573078",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14699975231450398928",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3233853619626861480",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8186243672824370499",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6563826492699898584",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10202571503797015593",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5200827538719460757",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12353808147121147486",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14099481121769986215",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2822555619839336103",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3657108434945134156",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6296486217631740775",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9271119690297054284",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3554526577331139182",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9486296187371520498",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3974242889467775064",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10041599796655479138",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6671400530016457361",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6488172062145919272",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15385382259311978090",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8690766045780407421",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6604442204243720359",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12551373884435482190",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14676375319809271408",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12907359375783804120",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15564610299277044534",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15883514044205638373",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13653350172847325639",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2756177904603951578",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6412238261017611184",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8902117667125316538",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9548804140958594560",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13538403158782904277",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1749947942330610989",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8106197903550957921",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7061865202639768511",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6722209138912630502",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Prices are a bit steep for everyday items.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15924452305444693413",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2262150916963090401",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9818975187810299074",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9197163101008115292",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18418351522760874387",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The loyalty app is super convenient.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12097382804661691812",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14186424812613621014",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1148451707259855034",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17037837662119879976",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8922183192924518093",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13187140199658937077",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2051007538799888300",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10903984206039682982",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10566946883497782799",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14330475588134531278",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8932460463424128510",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6667242274827312487",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13667040654220860307",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8398580140053815332",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12865165229528416528",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10017151482379279763",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12836679339989485366",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17645512818701857651",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8355240406577676193",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9630503278800934608",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14609886729536304390",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16158139793059158905",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16600964960903301578",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18034129466431299790",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7030205482111229032",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1963103298290085577",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "744620223427368031",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12740098136597359392",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18056922461710224251",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 3,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12544118697303971908",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4131469395013354832",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5481906084961913536",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11187322814614714046",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15998930445231995741",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3731411695173240789",
+    "Business_name": "City Market",
+    "time": 1711485836736,
+    "rating": 2,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "887328790461127195",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 4,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9117894422607338646",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836736,
+    "rating": 5,
+    "text": "Love their gluten-free options!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11171487930742342228",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836736,
+    "rating": 1,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4286829135608633691",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14342483501600831945",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10265237477969911500",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3280875780364265886",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6780769341714456081",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "323214780557883412",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17444662571211615703",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14903107006038076",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9403467243122330513",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7361312358722617561",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16228169652850596951",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12341842029897488397",
+    "Business_name": "City Market",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4955588688544941498",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15795456025745773867",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The aisles are always clutter-free.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18446088899498354208",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2603620392074336617",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14223700190078499661",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1507848803723044602",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8464587613563990443",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6558958295606295896",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2763253894290739793",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10178025443700647816",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4778700904823685662",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15252350239657303649",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Prices are a bit steep for everyday items.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5890763888452571296",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12022863816726511411",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17978118764755778623",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6306701351975972482",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5324972680139474653",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3686436101990918376",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "521050963601170536",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17141482635663198229",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3953863977807057680",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9751339840102675894",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "577328939974591242",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3728269787862650059",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10430605418250268569",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17054031202357855670",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "6101049525218868831",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4575571421184780585",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12106417270039979880",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10677187705929622802",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5724847287100263832",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18347795143418685075",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10371422977075081770",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8484217061604334406",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15580174594366983223",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7187809614104754805",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5220060448696261833",
+    "Business_name": "City Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "739269459290331537",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17930169861753159356",
+    "Business_name": "City Market",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11044147016529325884",
+    "Business_name": "City Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16321980778986448605",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17829999958426170950",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5720865097835300522",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3530844651225085439",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16763944743409322740",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8030599584163071595",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11951426078991319874",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8175302707949428223",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4821357710811918115",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14333214251942062874",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14848386650283039823",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15158558354708017972",
+    "Business_name": "City Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12190777216075066046",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4708689472821479627",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4516200544987599629",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15063938588303444060",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5184806387503647923",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8566971080774974944",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "16507229128030530145",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "422937940238189740",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8224498153888828564",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15601945733086125336",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4617453111481275987",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "2970160717653233768",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17642769578752871080",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8811213239766351376",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7832580089862206423",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14769273535126444659",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "768556494035235559",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10213098061973532576",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18192398043984106300",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "434251219735469709",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "7870877534390716471",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15767575894164061632",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4492861848844838329",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9794658110583608414",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "13108830435983076528",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15698836551128421423",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12149380295129061971",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8951625309221622834",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5552684571009447205",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17173123766940804322",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3083719357182291444",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14771878580457196747",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1443045073910788917",
+    "Business_name": "Harvest Moon Grocers",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5853737022748947147",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9632365507047974497",
+    "Business_name": "EcoFood Supermarket",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10105153193668415351",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "8541418822644854482",
+    "Business_name": "Purely Organic Produce",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9328614272629172217",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17985689589024415616",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10641770868142615604",
+    "Business_name": "City Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10632106726906203281",
+    "Business_name": "Field to Fork Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10548982875017750810",
+    "Business_name": "Urban Fresh Foods",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Love their gluten-free options!",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "4014356311368311291",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "14321560166616532525",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17004167742231778182",
+    "Business_name": "The Local Grocer",
+    "time": 1711485836737,
+    "rating": 4,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "5902981120281942722",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15140082045928354502",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9388253025219304272",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "1983661749949850273",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "11812727201044006379",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "9857951244654959976",
+    "Business_name": "Daily Harvest Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Prices are a bit steep for everyday items.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18247484278180583049",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "18206835375650770179",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12347894512717103756",
+    "Business_name": "Fresh & Green Groceries",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "10970940524316877100",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "3555445845474541692",
+    "Business_name": "Sunshine Grocery",
+    "time": 1711485836737,
+    "rating": 3,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12777308620004547200",
+    "Business_name": "The Grocery Basket",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "12787255002772825064",
+    "Business_name": "Organic Essentials",
+    "time": 1711485836737,
+    "rating": 2,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15999377616345665531",
+    "Business_name": "Nature\"s Pantry",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "17617730839087200598",
+    "Business_name": "Neighborhood Fresh Market",
+    "time": 1711485836737,
+    "rating": 1,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2023-03-26"
+  },
+  {
+    "ID": "15740728225818196170",
+    "Business_name": "Season\"s Best Market",
+    "time": 1711485836737,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2023-03-26"
+  }
+]
