@@ -1,0 +1,114 @@
+[
+  {
+    "store_name": "MERCADONA. S.A",
+    "store_address": "1 LLET FRESCA SENCERA 1.05",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "PA BLANC FAMILIAR",
+        "unit_price": 1.25,
+        "total_price": 1.25
+      },
+      {
+        "quantity": 1,
+        "description": "LLET FRESCA SENCERA",
+        "unit_price": 1.05,
+        "total_price": 1.05
+      },
+      {
+        "quantity": 1,
+        "description": "TOTAL",
+        "unit_price": 4.01,
+        "total_price": 0.11
+      }
+    ],
+    "image_path": "marcadon4.jpeg"
+  },
+  {
+    "store_name": "RE . MERCADONA > S.4. . we om",
+    "store_address": "| LLEF FRESCA SEMT 1.04",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "LLEF FRESCA SEMT",
+        "unit_price": 1.04,
+        "total_price": 1.04
+      },
+      {
+        "quantity": 1,
+        "description": "ELIMONADA LIGHT",
+        "unit_price": 1.5,
+        "total_price": 1.5
+      },
+      {
+        "quantity": 1,
+        "description": "PLATAL",
+        "unit_price": 1.92,
+        "total_price": 1.92
+      },
+      {
+        "quantity": 1,
+        "description": "TARGETA BANCARTA",
+        "unit_price": 6.46,
+        "total_price": 6.46
+      },
+      {
+        "quantity": 1,
+        "description": "GN",
+        "unit_price": 4.66,
+        "total_price": 0.0
+      },
+      {
+        "quantity": 1,
+        "description": "TOTAL",
+        "unit_price": 6.1,
+        "total_price": 6.1
+      }
+    ],
+    "image_path": "marcadona3.jpeg"
+  },
+  {
+    "store_name": "MERCADONA. S.A",
+    "store_address": "1 LLET FRESCA SENCERA 1.0 — ae",
+    "items": [
+      {
+        "quantity": 2,
+        "description": "ARROS LLARG",
+        "unit_price": 1.3,
+        "total_price": 1.3
+      },
+      {
+        "quantity": 2,
+        "description": "KG",
+        "unit_price": 3.75,
+        "total_price": 3.75
+      }
+    ],
+    "image_path": "marcadona2.jpeg"
+  },
+  {
+    "store_name": "CTRA. DE COLLBLANC 90 7",
+    "store_address": "CTRA. DE COLLBLANC 90 7",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "GUST",
+        "unit_price": 1.95,
+        "total_price": 1.95
+      },
+      {
+        "quantity": 1,
+        "description": "LLET FRESCA SENCERA",
+        "unit_price": 1.05,
+        "total_price": 1.05
+      },
+      {
+        "quantity": 100,
+        "description": "% CACAUET",
+        "unit_price": 2.95,
+        "total_price": 2.95
+      }
+    ],
+    "image_path": "marcadona.jpeg"
+  }
+]
