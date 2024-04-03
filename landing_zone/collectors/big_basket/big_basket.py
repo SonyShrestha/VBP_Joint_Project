@@ -21,13 +21,14 @@ config.read(config_file_path)
 
 
 
-def download_kaggle_dataset(dataset_path):
+def download_kaggle_dataset(dataset_path,raw_data_dir):
     logger.info('-----------------------------------------------------')
     logger.info("Downloading kaggle dataset for Big Basket products")
-    kaggle.api.dataset_download_files(dataset=dataset_path, path='./', unzip=True)
+    kaggle.api.dataset_download_files(dataset=dataset_path, path=raw_data_dir, unzip=True)
 
 
 
 if __name__ == "__main__":
     dataset_path = config["BIG_BASKET"]["dataset_path"]
-    download_kaggle_dataset(dataset_path)
+    raw_data_dir = config["COMMON"]["raw_data_dir"]
+    download_kaggle_dataset(dataset_path,raw_data_dir)

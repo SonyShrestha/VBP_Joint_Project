@@ -67,7 +67,7 @@ def extract_subcategory_link(driver, category_links):
 # Scrap Eat by Date Data
 def scrap_eat_by_date(driver,url):
     data_list=[]
-    category_links = extract_category_link(driver,url)
+    category_links = ['https://eatbydate.com/drinks/']
     for category_link in category_links:
         
         category_match = re.compile(r"{}(.*?)/".format(url)).search(category_link)
@@ -162,9 +162,9 @@ def scrap_eat_by_date(driver,url):
 
 
 
-# Example usage:
 if __name__ == "__main__":
     url = config["EAT_BY_DATE"]["url"]
+    raw_data_dir = config["COMMON"]["raw_data_dir"]
     chrome_driver = config["COMMON"]["chrome_driver"]
 
     contact_url = "https://eatbydate.com/contact//"
@@ -172,6 +172,6 @@ if __name__ == "__main__":
     # Start Chromium Driver
     driver = webdriver.Chrome(chrome_driver)
     eat_by_date_json = scrap_eat_by_date(driver,url)
-    with open('eat_by_date.json', 'w') as json_file:
+    with open(os.path.join(raw_data_dir,'eat_by_date.json'), 'w') as json_file:
         json.dump(eat_by_date_json, json_file, indent=4)
     driver.quit()
