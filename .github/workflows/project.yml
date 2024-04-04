@@ -27,22 +27,22 @@ jobs:
           pip install -r requirements.txt
 
       # Scrapy spiders
-      # - name: execute mealdb Scrapy spider 
-      #   run: scrapy crawl mealdb -O mealdb.json
-      #   working-directory: ./landing_zone/collectors/Mealdb/mealscraper
+      - name: execute mealdb Scrapy spider 
+        run: scrapy crawl mealdb -O mealdb.json
+        working-directory: ./landing_zone/collectors/Mealdb/mealscraper
 
-      # - name: execute approvedfood Scrapy spider 
-      #   run: scrapy crawl approvedfood_groceries -O Approvedfood.json
-      #   working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
+      - name: execute approvedfood Scrapy spider 
+        run: scrapy crawl approvedfood_groceries -O Approvedfood.json
+        working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
 
       # Python scripts
       # - name: execute eat_by_date.py script 
       #   run: python eat_by_date.py
       #   working-directory: ./landing_zone/collectors/eat_by_date
 
-      - name: execute flipkart.py script 
-        run: python scrap_flipkart.py
-        working-directory: ./landing_zone/collectors/Flipkart
+      # - name: execute flipkart.py script 
+      #   run: python scrap_flipkart.py
+      #   working-directory: ./landing_zone/collectors/Flipkart
 
       - name: Configure Git
         run: |
