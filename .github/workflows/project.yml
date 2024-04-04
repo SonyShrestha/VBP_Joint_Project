@@ -1,12 +1,10 @@
 name: project.py
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 5' 
+    - cron: '0 0 * * 5' # At 00:00 on Friday
   push:
     branches:
-      - master
       - main
 
 jobs:
@@ -29,11 +27,11 @@ jobs:
       # Scrapy spiders
       - name: execute mealdb Scrapy spider 
         run: scrapy crawl mealdb -O mealdb.json
-        working-directory: ./landing_zone/collectors/Mealdb/mealscraper
+        working-directory: ./landing_zone/collectors/Mealdb
 
       - name: execute approvedfood Scrapy spider 
         run: scrapy crawl approvedfood_groceries -O Approvedfood.json
-        working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
+        working-directory: ./landing_zone/collectors/ApprovedFoodUK
 
       # Python scripts
       # - name: execute eat_by_date.py script 
@@ -42,8 +40,18 @@ jobs:
 
       # - name: execute flipkart.py script 
       #   run: python scrap_flipkart.py
-      #   working-directory: ./landing_zone/collectors/Flipkart
-
+      #   working-directory: ./Flipkart
+      
+      # - name: Notify Slack
+      #   uses: 8398a7/action-slack@v3
+      #   with:
+      #     status: ${{ job.status }}
+      #     fields: workflow,job,commit,repo,ref,author,took 
+      #     text: 'Job done. Workflow: ${{ github.workflow }}. Status: ${{ job.status }}.'
+      #     webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+      #   if: always() 
+      
+      
       - name: Configure Git
         run: |
           git config --local user.email "action@github.com"
@@ -51,15 +59,14 @@ jobs:
 
       - name: Commit and Push Changes to the Triggered Branch
         run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git add .
-          GIT_DIFF=$(git diff --staged --quiet || echo 'changes')
-          if [ "$GIT_DIFF" ]; then
-            git commit -m "Update JSON outputs"
-            # Extract branch name from GITHUB_REF
-            BRANCH_NAME=${GITHUB_REF#refs/heads/}
-            echo "Pushing to branch: $BRANCH_NAME"
-            git push origin "${BRANCH_NAME}"
-          else
+          if git diff --quiet --staged; then
             echo "No changes to commit."
+          else
+            git commit -m "Update JSON outputs"
+            git push origin HEAD
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
