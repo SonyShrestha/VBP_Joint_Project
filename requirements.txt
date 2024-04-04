@@ -5,4 +5,4 @@ requests
 pandas
 scrapy
 selenium 
-
+webdriver-manager
