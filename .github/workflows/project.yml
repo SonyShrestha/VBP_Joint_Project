@@ -168,7 +168,7 @@ jobs:
         with:
           text: |
             All jobs completed!
-            - *Mealdb Script Status*: ${{ needs.run_script_a.outputs.status }}
-            - *ApprovedFood Script Status*: ${{ needs.run_script_b.outputs.status }}
+            - *Mealdb Script Status*: ${{ needs.run_Mealdb.outputs.status }}
+            - *ApprovedFood Script Status*: ${{ needs.run_ApprovedFood.outputs.status }}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
