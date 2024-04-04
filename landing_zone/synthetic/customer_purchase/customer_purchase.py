@@ -25,9 +25,9 @@ config = configparser.ConfigParser()
 config.read(config_file_path)
 
 
-def generate_customer_purchase(num_customers, num_purchases):
+def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
     # Read products file from Big Basket Dataset
-    product_df = pd.read_csv(os.path.join(config_dir,'landing_zone/collectors/big_basket/BigBasket Products.csv'))
+    product_df = pd.read_csv(os.path.join(config_dir,os.path.join(raw_data_dir,'BigBasket Products.csv')))
 
     # Initialize Faker
     fake = Faker()
@@ -36,7 +36,7 @@ def generate_customer_purchase(num_customers, num_purchases):
     customer_ids = range(1, num_customers + 1)
     customer_names = [fake.name() for _ in range(num_customers)]
     customer_df = pd.DataFrame({'customer_id': customer_ids, 'customer_name': customer_names})
-    customer_df.to_csv("customers.csv", index=False)
+    customer_df.to_csv(os.path.join(raw_data_dir,"customers.csv"), index=False)
 
     # Generate synthetic purchase data
     purchase_data = []
@@ -65,13 +65,14 @@ def generate_customer_purchase(num_customers, num_purchases):
 
     # Create DataFrame for purchase data
     purchase_df = pd.DataFrame(purchase_data)
-    purchase_df.to_csv("customer_purchase.csv", index=False)
+    purchase_df.to_csv(os.path.join(raw_data_dir,"customer_purchase.csv"), index=False)
 
 
 
 if __name__ == "__main__":
     num_of_customers = int(config["CUSTOMER_PURCHASE"]["num_of_customers"])
     num_of_purchases = int(config["CUSTOMER_PURCHASE"]["num_of_purchases"])
+    raw_data_dir = config["COMMON"]["raw_data_dir"]
     logger.info('-----------------------------------------------------')
     logger.info("Generating fake dataset for customers and customer purchases")
-    generate_customer_purchase(num_of_customers, num_of_purchases)
+    generate_customer_purchase(num_of_customers, num_of_purchases, raw_data_dir)

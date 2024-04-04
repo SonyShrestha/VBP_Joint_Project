@@ -67,7 +67,7 @@ def extract_subcategory_link(driver, category_links):
 # Scrap Eat by Date Data
 def scrap_eat_by_date(driver,url):
     data_list=[]
-    category_links = ['https://eatbydate.com/drinks/']
+    category_links = extract_category_link(driver,url)
     for category_link in category_links:
         
         category_match = re.compile(r"{}(.*?)/".format(url)).search(category_link)
