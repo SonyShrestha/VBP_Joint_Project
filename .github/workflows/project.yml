@@ -159,18 +159,37 @@ jobs:
           echo "Job completed with status success."
           echo "::set-output name=status::success"
 
+  # notify_slack:
+  #   needs: [run_Mealdb, run_ApprovedFood]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Send aggregated message to Slack
+  #       uses: 8398a7/action-slack@v3
+  #       with:
+  #         text: |
+  #           All jobs completed!
+  #           - *Mealdb Script Status*: ${{ needs.run_Mealdb.outputs.status }}
+  #           - *ApprovedFood Script Status*: ${{ needs.run_ApprovedFood.outputs.status }}
+  #           author_name: 8398a7@action-slack
+  #       env:
+  #         SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+
   notify_slack:
-    needs: [run_Mealdb, run_ApprovedFood]
+    needs: [run_Mealdb, run_ApprovedFood] # Ensure these jobs are defined elsewhere in your workflow
     runs-on: ubuntu-latest
     steps:
-      - name: Send aggregated message to Slack
+      - name: Notify Slack 
         uses: 8398a7/action-slack@v3
         with:
-          text: |
-            All jobs completed!
-            - *Mealdb Script Status*: ${{ needs.run_Mealdb.outputs.status }}
-            - *ApprovedFood Script Status*: ${{ needs.run_ApprovedFood.outputs.status }}
-            author_name: 8398a7@action-slack
+          status: custom
+          custom_payload: |
+            {
+              attachments: [{
+                color: '${{ needs.run_Mealdb.outputs.status }}' === 'success' && '${{ needs.run_ApprovedFood.outputs.status }}' === 'success' ? 'good' : 'danger',
+                text: `Workflow: ${{ github.workflow }}\nJob: Detailed Status Update\n- Mealdb Script Status: ${{ needs.run_Mealdb.outputs.status }}\n- ApprovedFood Script Status: ${{ needs.run_ApprovedFood.outputs.status }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}`
+              }]
+            }
         env:
           SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        if: always()
