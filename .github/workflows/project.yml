@@ -42,24 +42,24 @@ jobs:
       #   run: python scrap_flipkart.py
       #   working-directory: ./Flipkart
       
-      # - name: Notify Slack
-      #   uses: 8398a7/action-slack@v3
-      #   with:
-      #     status: ${{ job.status }}
-      #     fields: workflow,job,commit,repo,ref,author,took 
-      #     text: 'Job done. Workflow: ${{ github.workflow }}. Status: ${{ job.status }}.'
-      #     webhook_url: ${{ secrets.SLACK_WEBHOOK }}
-      #   if: always() 
+      - name: Notify Slack
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: workflow,job,commit,repo,ref,author,took 
+          text: 'Job done. Workflow: ${{ github.workflow }}. Status: ${{ job.status }}.'
+          webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+        if: always() 
       
       
       - name: Configure Git
         run: |
-          git config --local user.email "action@github.com"
+          git config --local user.email "61274755+Pce-iyos@users.noreply.github.com"
           git config --local user.name "GitHub Action"
 
       - name: Commit and Push Changes to the Triggered Branch
         run: |
-          git config --global user.email "action@github.com"
+          git config --global user.email "61274755+Pce-iyos@users.noreply.github.com"
           git config --global user.name "GitHub Action"
           git add .
           if git diff --quiet --staged; then
