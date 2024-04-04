@@ -42,7 +42,7 @@ jobs:
 
       - name: execute flipkart.py script 
         run: python scrap_flipkart.py
-        working-directory: /SonyShrestha/VBP_Joint_Project/tree/master/Flipkart
+        working-directory: ./SonyShrestha/VBP_Joint_Project/tree/master/Flipkart
 
       - name: Configure Git
         run: |
