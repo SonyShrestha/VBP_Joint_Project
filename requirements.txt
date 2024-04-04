@@ -3,3 +3,6 @@ faker
 bs4
 requests
 pandas
+scrapy
+selenium 
+
