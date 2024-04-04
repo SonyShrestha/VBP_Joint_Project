@@ -36,9 +36,9 @@ jobs:
       #   working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
 
       # Python scripts
-      - name: execute eat_by_date.py script 
-        run: python eat_by_date.py
-        working-directory: ./landing_zone/collectors/eat_by_date
+      # - name: execute eat_by_date.py script 
+      #   run: python eat_by_date.py
+      #   working-directory: ./landing_zone/collectors/eat_by_date
 
       - name: execute flipkart.py script 
         run: python scrap_flipkart.py
