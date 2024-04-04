@@ -1,0 +1,132 @@
+[
+  {
+    "store_name": "TELEFON: 936844709",
+    "store_address": "] CTRA. DE COLLBLANC 90",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "PA BLANC FAMILIAR",
+        "unit_price": 1.25,
+        "total_price": 1.25
+      },
+      {
+        "quantity": 1,
+        "description": "LLET FRESCA SENCERA",
+        "unit_price": 1.08,
+        "total_price": 1.08
+      },
+      {
+        "quantity": 1,
+        "description": "BANANA",
+        "unit_price": 1.25,
+        "total_price": 1.25
+      },
+      {
+        "quantity": 11,
+        "description": "TOTAL",
+        "unit_price": 4.01,
+        "total_price": 0.11
+      }
+    ],
+    "image_path": "images/marca1.jpeg"
+  },
+  {
+    "store_name": "MERCADONA. S.A.-",
+    "store_address": "CTRA. DE COLLBLANC 90",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "GUST",
+        "unit_price": 1.95,
+        "total_price": 1.95
+      },
+      {
+        "quantity": 1,
+        "description": "LLET FRESCA SENCERA",
+        "unit_price": 1.05,
+        "total_price": 1.05
+      },
+      {
+        "quantity": 5,
+        "description": "%\nTARGETS BANC",
+        "unit_price": 5.05,
+        "total_price": 5.05
+      }
+    ],
+    "image_path": "images/marca4.jpeg"
+  },
+  {
+    "store_name": "MERCADONA. S.A‘",
+    "store_address": "7 CTRA. DE COLLBLANC 90",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "XOCO LLET AMET SENC",
+        "unit_price": 1.45,
+        "total_price": 1.45
+      },
+      {
+        "quantity": 1,
+        "description": "GUST",
+        "unit_price": 1.95,
+        "total_price": 1.95
+      },
+      {
+        "quantity": 2,
+        "description": "ARROS LLARG",
+        "unit_price": 1.3,
+        "total_price": 2.6
+      },
+      {
+        "quantity": 1,
+        "description": "CEBA FIGUERES",
+        "unit_price": 1.79,
+        "total_price": 1.79
+      },
+      {
+        "quantity": 1,
+        "description": "LLET FRESCA SENCERA",
+        "unit_price": 1.05,
+        "total_price": 1.05
+      },
+      {
+        "quantity": 1,
+        "description": "TOTAL",
+        "unit_price": 11.22,
+        "total_price": 0.31
+      }
+    ],
+    "image_path": "images/marca3.jpeg"
+  },
+  {
+    "store_name": "MERCADONA. S-A-",
+    "store_address": "| CTRA. DE COLLBLANC 90",
+    "items": [
+      {
+        "quantity": 1,
+        "description": "PA BLANC FAMILIAR",
+        "unit_price": 1.25,
+        "total_price": 1.25
+      },
+      {
+        "quantity": 1,
+        "description": "LLET FRESCA SENCERA",
+        "unit_price": 1.05,
+        "total_price": 1.05
+      },
+      {
+        "quantity": 1,
+        "description": "BANANA",
+        "unit_price": 1.09,
+        "total_price": 1.09
+      },
+      {
+        "quantity": 63,
+        "description": "TOTAL",
+        "unit_price": 8.88,
+        "total_price": 0.63
+      }
+    ],
+    "image_path": "images/marca2.jpeg"
+  }
+]
