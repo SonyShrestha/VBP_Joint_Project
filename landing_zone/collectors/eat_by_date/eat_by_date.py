@@ -6,6 +6,15 @@ import json
 import os
 import logging
 import configparser
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup as bs
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 
 # Configure logging
@@ -169,9 +178,29 @@ if __name__ == "__main__":
 
     contact_url = "https://eatbydate.com/contact//"
 
-    # Start Chromium Driver
-    driver = webdriver.Chrome(chrome_driver)
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_driver_path = ChromeDriverManager().install()
+    service = Service(chrome_driver_path)
+    driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
     eat_by_date_json = scrap_eat_by_date(driver,url)
+
     with open(os.path.join(raw_data_dir,'eat_by_date.json'), 'w') as json_file:
         json.dump(eat_by_date_json, json_file, indent=4)
     driver.quit()
+
+    # url = config["EAT_BY_DATE"]["url"]
+    # raw_data_dir = config["COMMON"]["raw_data_dir"]
+    # chrome_driver = config["COMMON"]["chrome_driver"]
+
+    # contact_url = "https://eatbydate.com/contact//"
+
+    # # Start Chromium Driver
+    # driver = webdriver.Chrome(chrome_driver)
+    # eat_by_date_json = scrap_eat_by_date(driver,url)
+    # with open(os.path.join(raw_data_dir,'eat_by_date.json'), 'w') as json_file:
+    #     json.dump(eat_by_date_json, json_file, indent=4)
+    # driver.quit()
