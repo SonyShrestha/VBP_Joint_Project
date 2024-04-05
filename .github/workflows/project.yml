@@ -40,7 +40,7 @@ jobs:
 
       - name: execute flipkart.py script 
         run: python scrap_flipkart.py
-        working-directory: ./Flipkart
+        working-directory: ./landing_zone/collectors/Flipkart
       
       # - name: Notify Slack
       #   uses: 8398a7/action-slack@v3
