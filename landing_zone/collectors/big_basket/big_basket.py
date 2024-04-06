@@ -25,6 +25,7 @@ def download_kaggle_dataset(dataset_path,raw_data_dir):
     logger.info('-----------------------------------------------------')
     logger.info("Downloading kaggle dataset for Big Basket products")
     kaggle.api.dataset_download_files(dataset=dataset_path, path=raw_data_dir, unzip=True)
+    os.rename(os.path.join(raw_data_dir, 'BigBasket Products.csv'), os.path.join(raw_data_dir, 'bigbasket_products.csv'))
 
 
 

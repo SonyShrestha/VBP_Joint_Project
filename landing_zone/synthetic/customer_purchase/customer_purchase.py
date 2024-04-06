@@ -25,7 +25,7 @@ config.read(config_file_path)
 
 def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
     # Read products file from Big Basket Dataset
-    product_df = pd.read_csv(os.path.join(config_dir,os.path.join(raw_data_dir,'BigBasket Products.csv')))
+    product_df = pd.read_csv(os.path.join(config_dir,os.path.join(raw_data_dir,'bigbasket_products.csv')))
 
     # Initialize Faker
     fake = Faker()
