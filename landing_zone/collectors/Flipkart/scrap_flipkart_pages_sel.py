@@ -273,10 +273,11 @@ def get_product_details(link_list, driver, json_folder_path):
                 each_product_dict['specifications']= specs_list
                 
                 # defining the json path to save the dict into the json on the go and append the results as we get a new one
-                json_file_path= os.path.join(json_folder_path, "Flipkart_all_products.json")
+                json_file_path= os.path.join(json_folder_path, "flipkart_products.json")
 
                 # appending the dict content to json file
                 append_to_json(each_product_dict, json_file_path)
+
 
                 # list containing details of all the products in the form of a list of dictionaries
                 each_url_product_list.append(each_product_dict)
