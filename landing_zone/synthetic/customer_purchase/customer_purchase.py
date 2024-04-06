@@ -2,9 +2,7 @@ from faker import Faker
 import pandas as pd
 import numpy as np
 import os
-from zipfile import ZipFile
 import os
-import requests
 import logging
 import configparser
 
@@ -73,6 +71,7 @@ if __name__ == "__main__":
     num_of_customers = int(config["CUSTOMER_PURCHASE"]["num_of_customers"])
     num_of_purchases = int(config["CUSTOMER_PURCHASE"]["num_of_purchases"])
     raw_data_dir = config["COMMON"]["raw_data_dir"]
+    
     logger.info('-----------------------------------------------------')
     logger.info("Generating fake dataset for customers and customer purchases")
     generate_customer_purchase(num_of_customers, num_of_purchases, raw_data_dir)
