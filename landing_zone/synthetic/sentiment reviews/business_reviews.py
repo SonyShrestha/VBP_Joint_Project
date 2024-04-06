@@ -7,6 +7,7 @@ from faker import Faker
 import os
 import configparser
 import logging
+import pandas as pd
 
 fake = Faker()
 
@@ -24,6 +25,7 @@ config_file_path = os.path.join(config_dir, "config.ini")
 
 config = configparser.ConfigParser()
 config.read(config_file_path)
+
 
 
 positive_sentiments = [
@@ -122,10 +124,10 @@ negative_sentiments = [
     "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items"]
 
 
-def generate_review(user_id, business_name, rating, text, verified=True):
+def generate_review(business_id, business_name, rating, text, verified=True):
     review = {
-        'user_id': user_id,
-        'Business_name': business_name,
+        'business_id': business_id,
+        'business_name': business_name,
         'time': int(time.time() * 1000),
         'rating': rating,
         'text': text,
@@ -134,54 +136,17 @@ def generate_review(user_id, business_name, rating, text, verified=True):
     }
     return review
 
+
+
 def random_user_id():
-    """Generate a pseudo-random user ID."""
-    return str(getrandbits(64))
+    supermarket_df = pd.read_csv(os.path.join(raw_data_dir,'establishments_catalonia.csv'),usecols=['Id','Commercial_name'])
+    random_row_index = supermarket_df.sample(n=1).index[0]
+
+    # Select the random row using iloc
+    random_row = supermarket_df.iloc[random_row_index]
+    return str(random_row["Id"]), str(random_row["Commercial_name"])
 
 
-def random_business_name():
-    """Return a random business name from a large list."""
-    businesses = ["Fresh & Green Groceries",
-    "Daily Harvest Market",
-    "Organic Essentials",
-    "Sunshine Grocery",
-    "City Market",
-    "The Grocery Basket",
-    "Urban Fresh Foods",
-    "Nature's Pantry",
-    "Field to Fork Market",
-    "Harvest Moon Grocers",
-    "Purely Organic Produce",
-    "The Local Grocer",
-    "Season's Best Market",
-    "EcoFood Supermarket",
-    "Neighborhood Fresh Market",
-    "GreenLeaf Market",
-    "Farm Fresh Fare",
-    "Local Bounty Grocers",
-    "Earth's Basket",
-    "Prime Produce Market",
-    "Sustainable Harvests",
-    "The Green Grocer",
-    "Fresh Finds Market",
-    "Organic Oasis",
-    "Urban Harvest",
-    "Garden Gourmet Market",
-    "Fresh Field Markets",
-    "The Organic Emporium",
-    "Farm to Table Grocers",
-    "GreenSprout Groceries",
-    "Pure Harvest Market",
-    "EcoChoice Grocers",
-    "Vitality Grocers",
-    "The Farmers' Market",
-    "Fresh Fork Groceries",
-    "Harvest Health Market",
-    "Nature's Best Grocers",
-    "The Eco Market",
-    "Fresh Perspectives",
-    "The Seasonal Grocer"]
-    return choice(businesses)
 
 def random_text(rating):
     """Return a review text based on rating."""
@@ -193,8 +158,7 @@ def random_text(rating):
 def generate_reviews(n):
     reviews = []
     for _ in range(n):
-        user_id = random_user_id()
-        business_name = random_business_name()  # Assuming businesses are neutral
+        user_id, business_name = random_user_id()
         rating = randint(1, 5)  # Decide the rating first
         text = random_text(rating)  # Then choose text based on rating
         verified = choice([True, False])  # Randomly choose verified status
@@ -209,12 +173,14 @@ def save_to_json(reviews, filename):
 
 def save_to_csv(reviews, filename):
     filename = os.path.join(raw_data_dir,'business_reviews.csv')
-    fieldnames = ['user_id', 'Business_name', 'time', 'rating', 'text', 'verified', 'date']
+    fieldnames = ['business_id', 'business_name', 'time', 'rating', 'text', 'verified', 'date']
     with open(filename, mode="w", newline='', encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for review in reviews:
             writer.writerow(review)
+
+
 
 if __name__ == "__main__":
     raw_data_dir = config["COMMON"]["raw_data_dir"]
@@ -226,6 +192,6 @@ if __name__ == "__main__":
     reviews = generate_reviews(num_of_reviews)
     save_to_json(reviews, raw_data_dir)
     save_to_csv(reviews, raw_data_dir)
-    print("Generated and saved reviews completely.")
+    logger.info("Generated and saved reviews completely")
 
     

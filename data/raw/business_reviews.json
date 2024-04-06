@@ -1,0 +1,4502 @@
+[
+  {
+    "business_id": "cens-0826280001-1168",
+    "business_name": "LAZARO MOYA",
+    "time": 1712409006572,
+    "rating": 4,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823780001-36",
+    "business_name": "Taller Ramon Plana",
+    "time": 1712409006673,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0829430008-106",
+    "business_name": "ESCOLA WALDORF",
+    "time": 1712409006779,
+    "rating": 2,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-611",
+    "business_name": "ARIMA CENTRE DE TERAPIES",
+    "time": 1712409006878,
+    "rating": 4,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2354",
+    "business_name": "LAUREN'S",
+    "time": 1712409006975,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0801800000-207",
+    "business_name": "nan",
+    "time": 1712409007070,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-1305",
+    "business_name": "nan",
+    "time": 1712409007169,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823970005-45",
+    "business_name": "HABITATGE US TUR\u00cdSTIC",
+    "time": 1712409007269,
+    "rating": 3,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812650006-778",
+    "business_name": "HABITATGE D'\u00daS TUR\u00cdSTIC",
+    "time": 1712409007368,
+    "rating": 3,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-765",
+    "business_name": "JUTJAT DE PAU",
+    "time": 1712409007468,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-450",
+    "business_name": "VETLAND CARDEDEU CL\u00cdNICAS VETERINARIAS",
+    "time": 1712409007568,
+    "rating": 5,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823460009-32",
+    "business_name": "LOCAL SOCIAL CAN RAM",
+    "time": 1712409007668,
+    "rating": 5,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816660009-31",
+    "business_name": "CADITEX I CIA",
+    "time": 1712409007767,
+    "rating": 2,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820930008-58",
+    "business_name": "nan",
+    "time": 1712409007866,
+    "rating": 5,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818100000-375",
+    "business_name": "PUJADAS AUTOMOCI\u00d3",
+    "time": 1712409007965,
+    "rating": 4,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828240003-374",
+    "business_name": "nan",
+    "time": 1712409008061,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-197",
+    "business_name": "nan",
+    "time": 1712409008160,
+    "rating": 5,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-694",
+    "business_name": "CONSTRUCCIONS VALL",
+    "time": 1712409008260,
+    "rating": 5,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803860009-115",
+    "business_name": "ADI - LOG\u00cdSTIC",
+    "time": 1712409008358,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-538",
+    "business_name": "nan",
+    "time": 1712409008456,
+    "rating": 5,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821070005-126",
+    "business_name": "nan",
+    "time": 1712409008556,
+    "rating": 5,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-1148",
+    "business_name": "ITS FAIRS",
+    "time": 1712409008656,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2125",
+    "business_name": "LAVADEROS EUROPA",
+    "time": 1712409008757,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828960009-53",
+    "business_name": "RESIDENCIA VIRGEN DE MONTSERRAT",
+    "time": 1712409008870,
+    "rating": 2,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-1028",
+    "business_name": "MAS PRATGIBERT",
+    "time": 1712409008969,
+    "rating": 5,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-143",
+    "business_name": "nan",
+    "time": 1712409009076,
+    "rating": 1,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-876",
+    "business_name": "nan",
+    "time": 1712409009175,
+    "rating": 5,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-442",
+    "business_name": "SAHER MAQUINARIA AGR\u00cdCOLA",
+    "time": 1712409009271,
+    "rating": 3,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-1180",
+    "business_name": "EL PAGES",
+    "time": 1712409009370,
+    "rating": 5,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-1160",
+    "business_name": "PERE ZAMORA CONSTRUCCIONS",
+    "time": 1712409009467,
+    "rating": 1,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-340",
+    "business_name": "MOBLES OFICINA OCASIO BCN OFISERVEIS",
+    "time": 1712409009563,
+    "rating": 4,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0807520002-186",
+    "business_name": "GRANJA SANT LLOP",
+    "time": 1712409009662,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812650006-262",
+    "business_name": "FRUITES I VERDURES SA2PE",
+    "time": 1712409009762,
+    "rating": 3,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-436",
+    "business_name": "nan",
+    "time": 1712409009861,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804970005-87",
+    "business_name": "CAL BERNAD\u00c0S II",
+    "time": 1712409009957,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-107",
+    "business_name": "VODAFONE",
+    "time": 1712409010055,
+    "rating": 2,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2381",
+    "business_name": "PETRONIEVES",
+    "time": 1712409010151,
+    "rating": 5,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806150006-70",
+    "business_name": "GRANJA CLAVERIA",
+    "time": 1712409010249,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822480001-2",
+    "business_name": "Can Borla",
+    "time": 1712409010345,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-390",
+    "business_name": "nan",
+    "time": 1712409010442,
+    "rating": 2,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-330",
+    "business_name": "COMERCIAL QUIMICA MASSO",
+    "time": 1712409010540,
+    "rating": 5,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2046",
+    "business_name": "LA FRUITERIA",
+    "time": 1712409010638,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814830008-52",
+    "business_name": "Habitatge \u00fas tur\u00edstic",
+    "time": 1712409010739,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-1992",
+    "business_name": "AL-GAR",
+    "time": 1712409010838,
+    "rating": 4,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-133",
+    "business_name": "BOMBAS HASA",
+    "time": 1712409010934,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-1454",
+    "business_name": "TORELL\u00d3 SUPERMERCAT 2",
+    "time": 1712409011030,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0829430008-374",
+    "business_name": "nan",
+    "time": 1712409011127,
+    "rating": 5,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-574",
+    "business_name": "CRIT INTERIM ETT",
+    "time": 1712409011226,
+    "rating": 5,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822510007-27",
+    "business_name": "LA ROVIRA",
+    "time": 1712409011321,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810810007-48",
+    "business_name": "SALLETTALEN Y BRIAND",
+    "time": 1712409011419,
+    "rating": 3,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-439",
+    "business_name": "CAN PUIG DE LA VALL",
+    "time": 1712409011517,
+    "rating": 3,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806920002-209",
+    "business_name": "nan",
+    "time": 1712409011614,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814190004-460",
+    "business_name": "FORMATGERIA CAL MUSIC",
+    "time": 1712409011709,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-1066",
+    "business_name": "nan",
+    "time": 1712409011810,
+    "rating": 5,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814190004-563",
+    "business_name": "AJUNTAMENT DE NAV\u00c0S",
+    "time": 1712409011907,
+    "rating": 5,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-664",
+    "business_name": "nan",
+    "time": 1712409012004,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-173",
+    "business_name": "FUGRUP",
+    "time": 1712409012100,
+    "rating": 1,
+    "text": "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827470005-1118",
+    "business_name": "CMC S\u00daRIA",
+    "time": 1712409012199,
+    "rating": 1,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-29",
+    "business_name": "nan",
+    "time": 1712409012296,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818310007-929",
+    "business_name": "OVA PROJECTS, S.L.",
+    "time": 1712409012393,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826280001-1179",
+    "business_name": "NOSTRA FRUITERIA",
+    "time": 1712409012494,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-1881",
+    "business_name": "UTE Castellbisbal - Martorell",
+    "time": 1712409012598,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826340003-12520",
+    "business_name": "BARRADO IMPORT-EXPORT SL",
+    "time": 1712409012698,
+    "rating": 4,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819950006-20",
+    "business_name": "Mas Reig SCP",
+    "time": 1712409012793,
+    "rating": 3,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0801210007-147",
+    "business_name": "nan",
+    "time": 1712409012890,
+    "rating": 1,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-228",
+    "business_name": "CALER RACING",
+    "time": 1712409012992,
+    "rating": 1,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827850006-558",
+    "business_name": "MAS CAL MONJO",
+    "time": 1712409013092,
+    "rating": 4,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-2921",
+    "business_name": "nan",
+    "time": 1712409013198,
+    "rating": 4,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-74",
+    "business_name": "PEIXATERIA J.MAR\u00c9S",
+    "time": 1712409013303,
+    "rating": 2,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-794",
+    "business_name": "TALLERS JORIC",
+    "time": 1712409013426,
+    "rating": 4,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825150006-463",
+    "business_name": "nan",
+    "time": 1712409013525,
+    "rating": 5,
+    "text": "Some of the best organic tomatoes I\u2019ve tasted. Will definitely order again!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803480001-23",
+    "business_name": "EL XALOC",
+    "time": 1712409013628,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-1549",
+    "business_name": "MERCADONA",
+    "time": 1712409013731,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825920002-1418",
+    "business_name": "VENTANA HERM\u00c8TICA UIN 2, S.L.",
+    "time": 1712409013830,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826340003-11991",
+    "business_name": "BARRADO",
+    "time": 1712409013927,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816140003-653",
+    "business_name": "Espai de Llum",
+    "time": 1712409014037,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7164",
+    "business_name": "Saloon Beauty and Barber Shop",
+    "time": 1712409014142,
+    "rating": 3,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814190004-414",
+    "business_name": "MSA MECANITZATS",
+    "time": 1712409014251,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824010007-153",
+    "business_name": "CAVA ROSELL GALLART",
+    "time": 1712409014347,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815800000-588",
+    "business_name": "SATEL COMUNICACIONES",
+    "time": 1712409014442,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812060009-58",
+    "business_name": "JOV\u00c9",
+    "time": 1712409014539,
+    "rating": 4,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-705",
+    "business_name": "nan",
+    "time": 1712409014637,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1700",
+    "business_name": "nan",
+    "time": 1712409014734,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-3301",
+    "business_name": "REGISTRE DE LA PROPIETAT",
+    "time": 1712409014832,
+    "rating": 5,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819950006-34",
+    "business_name": "bar restaurant Caribe",
+    "time": 1712409014929,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-141",
+    "business_name": "nan",
+    "time": 1712409015031,
+    "rating": 1,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1027",
+    "business_name": "nan",
+    "time": 1712409015141,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827850006-306",
+    "business_name": "ELECTR\u00d2NICA SOLER",
+    "time": 1712409015283,
+    "rating": 5,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-1081",
+    "business_name": "CONSTRULLAR",
+    "time": 1712409015405,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-889",
+    "business_name": "nan",
+    "time": 1712409015548,
+    "rating": 1,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-3287",
+    "business_name": "nan",
+    "time": 1712409015656,
+    "rating": 5,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822990004-19",
+    "business_name": "CASA DUARRI",
+    "time": 1712409015764,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-672",
+    "business_name": "MOBLES PIRINEUS",
+    "time": 1712409015890,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812650006-322",
+    "business_name": "PLAQUES SOLARS FOTOVOLTAIQUES",
+    "time": 1712409016001,
+    "rating": 5,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-1804",
+    "business_name": "C\u00e1maras-Express SL",
+    "time": 1712409016114,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818100000-276",
+    "business_name": "CALVIN KLEIN UNDERWEAR",
+    "time": 1712409016221,
+    "rating": 2,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819180001-1024",
+    "business_name": "CLUB NATACI\u00d3 SALLENT",
+    "time": 1712409016340,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808320002-87",
+    "business_name": "nan",
+    "time": 1712409016453,
+    "rating": 1,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806150006-30",
+    "business_name": "SUPERMERCAT MAS PLANOI",
+    "time": 1712409016549,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812060009-129",
+    "business_name": "ROCHESTER LANGUAGE CENTER",
+    "time": 1712409016647,
+    "rating": 4,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827320002-599",
+    "business_name": "NETISAN",
+    "time": 1712409016760,
+    "rating": 2,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-2201",
+    "business_name": "MARTA",
+    "time": 1712409016864,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823310007-54",
+    "business_name": "nan",
+    "time": 1712409016965,
+    "rating": 2,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816140003-1060",
+    "business_name": "Vap's Monkey",
+    "time": 1712409017078,
+    "rating": 4,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827470005-925",
+    "business_name": "LA REPERA",
+    "time": 1712409017196,
+    "rating": 5,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-83",
+    "business_name": "nan",
+    "time": 1712409017297,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0890580001-430",
+    "business_name": "BANC DE SABADELL",
+    "time": 1712409017397,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824010007-1070",
+    "business_name": "LOCUTORI-INTERNET",
+    "time": 1712409017500,
+    "rating": 4,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819230008-2239",
+    "business_name": "NATUREL",
+    "time": 1712409017610,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815800000-327",
+    "business_name": "nan",
+    "time": 1712409017720,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822270005-74",
+    "business_name": "nan",
+    "time": 1712409017821,
+    "rating": 2,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-1241",
+    "business_name": "nan",
+    "time": 1712409017922,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818100000-283",
+    "business_name": "EL SINDICAT QUEVIURES",
+    "time": 1712409018019,
+    "rating": 3,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826900000-275",
+    "business_name": "MONTANY\u00c0 HOTEL",
+    "time": 1712409018120,
+    "rating": 5,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-3126",
+    "business_name": "nan",
+    "time": 1712409018250,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-424",
+    "business_name": "PERDIUS SELECTES GIRALT",
+    "time": 1712409018352,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810000000-456",
+    "business_name": "VIG PRIVEE ESPAI LA DISCO",
+    "time": 1712409018450,
+    "rating": 3,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-3388",
+    "business_name": "COLEO RECYCLING BCN",
+    "time": 1712409018549,
+    "rating": 3,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0809450006-142",
+    "business_name": "XTA.CAT",
+    "time": 1712409018646,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-123",
+    "business_name": "nan",
+    "time": 1712409018745,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-871",
+    "business_name": "EDIF SL",
+    "time": 1712409018859,
+    "rating": 1,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813500000-159",
+    "business_name": "VERNIPLUS SL",
+    "time": 1712409018969,
+    "rating": 1,
+    "text": "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-450",
+    "business_name": "ESTRUCTURAS ORTIZ-CASADO",
+    "time": 1712409019066,
+    "rating": 1,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815930008-2807",
+    "business_name": "KFC",
+    "time": 1712409019169,
+    "rating": 4,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820370005-72",
+    "business_name": "AJUNTAMENT DE SANT CEBRI\u00c0 DE VALLALTA",
+    "time": 1712409019289,
+    "rating": 5,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-1207",
+    "business_name": "LLAGOSTPARK",
+    "time": 1712409019387,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-391",
+    "business_name": "L'ESPIGA D'OR",
+    "time": 1712409019483,
+    "rating": 3,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827470005-311",
+    "business_name": "CAL PLANES",
+    "time": 1712409019582,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815930008-551",
+    "business_name": "GRIFOLS",
+    "time": 1712409019697,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-1866",
+    "business_name": "La Calma",
+    "time": 1712409019821,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-1917",
+    "business_name": "SPORT 333",
+    "time": 1712409019920,
+    "rating": 1,
+    "text": "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828770005-180",
+    "business_name": "HABITATGE TUR\u00cdSTIC CAN ROSSELL",
+    "time": 1712409020046,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-267",
+    "business_name": "BRL",
+    "time": 1712409020155,
+    "rating": 2,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1177",
+    "business_name": "nan",
+    "time": 1712409020252,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1384",
+    "business_name": "nan",
+    "time": 1712409020348,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-3971",
+    "business_name": "TABACS ARAGON",
+    "time": 1712409020453,
+    "rating": 3,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-530",
+    "business_name": "MELEGHY AUTOMOTIVE",
+    "time": 1712409020572,
+    "rating": 5,
+    "text": "The store brand products are top quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-47",
+    "business_name": "BANCO POPULAR",
+    "time": 1712409020670,
+    "rating": 5,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810810007-53",
+    "business_name": "nan",
+    "time": 1712409020785,
+    "rating": 5,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-1013",
+    "business_name": "LA RIERA",
+    "time": 1712409020907,
+    "rating": 3,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806730008-55",
+    "business_name": "Peixeteria Centelles",
+    "time": 1712409021002,
+    "rating": 5,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-661",
+    "business_name": "ESPA\u00d1OL, SA",
+    "time": 1712409021124,
+    "rating": 5,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823460009-214",
+    "business_name": "nan",
+    "time": 1712409021251,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-3460",
+    "business_name": "nan",
+    "time": 1712409021379,
+    "rating": 5,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-1308",
+    "business_name": "EXCAVACIONS I TRANSPORTS SEG\u00da",
+    "time": 1712409021478,
+    "rating": 2,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-477",
+    "business_name": "BARBERIA NASSER",
+    "time": 1712409021603,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-38",
+    "business_name": "GROLMAN",
+    "time": 1712409021740,
+    "rating": 5,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-348",
+    "business_name": "GUALA CLOUSURESIB\u00c9RICA",
+    "time": 1712409021838,
+    "rating": 3,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815800000-540",
+    "business_name": "BAR-RESTAURANTE CASA PACO",
+    "time": 1712409021939,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-945",
+    "business_name": "VILAR2, CB",
+    "time": 1712409022047,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-182",
+    "business_name": "CATT TREBALL",
+    "time": 1712409022170,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-1744",
+    "business_name": "nan",
+    "time": 1712409022289,
+    "rating": 4,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803120002-463",
+    "business_name": "nan",
+    "time": 1712409022414,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-7004660009-104",
+    "business_name": "nan",
+    "time": 1712409022519,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823310007-106",
+    "business_name": "PROLABOR",
+    "time": 1712409022615,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806920002-191",
+    "business_name": "PALSON 2",
+    "time": 1712409022738,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-1205",
+    "business_name": "MARTI M&I ROCA PERRUQUERS",
+    "time": 1712409022876,
+    "rating": 5,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814300000-277",
+    "business_name": "nan",
+    "time": 1712409022975,
+    "rating": 4,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800570005-854",
+    "business_name": "SALA D'ART CARLES SINDREU",
+    "time": 1712409023075,
+    "rating": 3,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813790004-47",
+    "business_name": "AJUNTAMENT DE MONTSENY",
+    "time": 1712409023180,
+    "rating": 5,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803700000-66",
+    "business_name": "FARMACIA",
+    "time": 1712409023304,
+    "rating": 5,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826340003-901",
+    "business_name": "nan",
+    "time": 1712409023410,
+    "rating": 5,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803050006-378",
+    "business_name": "nan",
+    "time": 1712409023507,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818310007-494",
+    "business_name": "nan",
+    "time": 1712409023620,
+    "rating": 4,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802530008-138",
+    "business_name": "nan",
+    "time": 1712409023751,
+    "rating": 3,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2753",
+    "business_name": "nan",
+    "time": 1712409023879,
+    "rating": 5,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-2218",
+    "business_name": "EL BOCARROT",
+    "time": 1712409023997,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-392",
+    "business_name": "PENED\u00c8S LOGISTICS",
+    "time": 1712409024113,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1101",
+    "business_name": "nan",
+    "time": 1712409024232,
+    "rating": 1,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1449",
+    "business_name": "nan",
+    "time": 1712409024355,
+    "rating": 1,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-9",
+    "business_name": "FORN DE CABRIANES",
+    "time": 1712409024479,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7849",
+    "business_name": "Pp\u00e0stics Gomalf",
+    "time": 1712409024616,
+    "rating": 2,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0890240003-674",
+    "business_name": "ROY DISTRIBUCIONES LIBRERIA, PAPELERIA I JUGUETERIA",
+    "time": 1712409024724,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-3716",
+    "business_name": "XURRERIA LA ROYAL",
+    "time": 1712409024837,
+    "rating": 4,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818100000-149",
+    "business_name": "SEE-YOU",
+    "time": 1712409024937,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815930008-2714",
+    "business_name": "nan",
+    "time": 1712409025046,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821530008-171",
+    "business_name": "nan",
+    "time": 1712409025169,
+    "rating": 4,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-471",
+    "business_name": "INMODEL 2007, SLU",
+    "time": 1712409025280,
+    "rating": 5,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-950",
+    "business_name": "nan",
+    "time": 1712409025380,
+    "rating": 1,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826340003-356",
+    "business_name": "CEMENTIRI",
+    "time": 1712409025480,
+    "rating": 3,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2534",
+    "business_name": "TERRANOVA CNC 45",
+    "time": 1712409025585,
+    "rating": 3,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-1349",
+    "business_name": "JOSEP LLU\u00cdS L\u00d3PEZ - INSTAL\u00b7LACIONS EL\u00c8CTRIQUES",
+    "time": 1712409025726,
+    "rating": 3,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-310",
+    "business_name": "TEIXITS SABOTEX",
+    "time": 1712409025824,
+    "rating": 5,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-1400",
+    "business_name": "TALLERS MARFE",
+    "time": 1712409025922,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-2917",
+    "business_name": "ROSTISSERIA MONTSE 2",
+    "time": 1712409026018,
+    "rating": 5,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-465",
+    "business_name": "nan",
+    "time": 1712409026119,
+    "rating": 4,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806920002-206",
+    "business_name": "CUEROS CONDAL",
+    "time": 1712409026241,
+    "rating": 5,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804780001-355",
+    "business_name": "nan",
+    "time": 1712409026340,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-324",
+    "business_name": "EMBALAJES MONTE",
+    "time": 1712409026435,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0817120002-142",
+    "business_name": "PERFUMERIA SUSSI",
+    "time": 1712409026533,
+    "rating": 1,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824010007-1347",
+    "business_name": "nan",
+    "time": 1712409026629,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-49",
+    "business_name": "H\u00b7TOP ROYAL SUN SUITES",
+    "time": 1712409026726,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-1069",
+    "business_name": "CORTINAS JAP",
+    "time": 1712409026825,
+    "rating": 4,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-1053",
+    "business_name": "TRADERFILL COATINGS",
+    "time": 1712409026920,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2503",
+    "business_name": "TEMPS MULTIWORK",
+    "time": 1712409027019,
+    "rating": 2,
+    "text": "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1453",
+    "business_name": "nan",
+    "time": 1712409027118,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-1431",
+    "business_name": "MERCERIA LLIBRERIA - FILS I PAPERS",
+    "time": 1712409027215,
+    "rating": 5,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810810007-213",
+    "business_name": "nan",
+    "time": 1712409027312,
+    "rating": 2,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803120002-501",
+    "business_name": "nan",
+    "time": 1712409027410,
+    "rating": 3,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-983",
+    "business_name": "nan",
+    "time": 1712409027507,
+    "rating": 2,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804460009-117",
+    "business_name": "TGB",
+    "time": 1712409027603,
+    "rating": 5,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815930008-2439",
+    "business_name": "FORN I PASTISSERIA CALVO",
+    "time": 1712409027702,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826900000-286",
+    "business_name": "nan",
+    "time": 1712409027799,
+    "rating": 5,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819180001-144",
+    "business_name": "GRANJA QUATRE VENTS",
+    "time": 1712409027897,
+    "rating": 2,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7601",
+    "business_name": "Hypnosis Project Design SL",
+    "time": 1712409027995,
+    "rating": 5,
+    "text": "Some of the best organic tomatoes I\u2019ve tasted. Will definitely order again!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-5102",
+    "business_name": "nan",
+    "time": 1712409028092,
+    "rating": 4,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813500000-357",
+    "business_name": "VIDA KINESIOLOGIA",
+    "time": 1712409028190,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-5467",
+    "business_name": "OFICINA DE LA LLEI DE BARRIS",
+    "time": 1712409028289,
+    "rating": 2,
+    "text": "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-86",
+    "business_name": "TAMOIL",
+    "time": 1712409028387,
+    "rating": 5,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-287",
+    "business_name": "nan",
+    "time": 1712409028485,
+    "rating": 1,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-346",
+    "business_name": "nan",
+    "time": 1712409028583,
+    "rating": 2,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822270005-482",
+    "business_name": "nan",
+    "time": 1712409028681,
+    "rating": 2,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824440003-324",
+    "business_name": "FORN SANT JAUME",
+    "time": 1712409028780,
+    "rating": 1,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-2947",
+    "business_name": "MERCADONA",
+    "time": 1712409028878,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813500000-337",
+    "business_name": "TALLERS SERRAT FONT SL",
+    "time": 1712409028975,
+    "rating": 2,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-1558",
+    "business_name": "EDUNE MAQUINARIA Y UTILLAJE",
+    "time": 1712409029076,
+    "rating": 5,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804780001-570",
+    "business_name": "nan",
+    "time": 1712409029174,
+    "rating": 3,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-1248",
+    "business_name": "nan",
+    "time": 1712409029270,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814020002-607",
+    "business_name": "J&M DIVERSOS",
+    "time": 1712409029367,
+    "rating": 5,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7965",
+    "business_name": "La Clau Verda",
+    "time": 1712409029465,
+    "rating": 4,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-1168",
+    "business_name": "nan",
+    "time": 1712409029562,
+    "rating": 3,
+    "text": "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824390004-17",
+    "business_name": "CAN TANY\u00c0",
+    "time": 1712409029661,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-1298",
+    "business_name": "LA CAIXA",
+    "time": 1712409029758,
+    "rating": 4,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-1052",
+    "business_name": "nan",
+    "time": 1712409029854,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806540003-233",
+    "business_name": "nan",
+    "time": 1712409029952,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806410007-79",
+    "business_name": "nan",
+    "time": 1712409030050,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0817120002-209",
+    "business_name": "CAF\u00c8 ORIENT",
+    "time": 1712409030148,
+    "rating": 3,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-2861",
+    "business_name": "FORN MARTA",
+    "time": 1712409030248,
+    "rating": 4,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-218",
+    "business_name": "nan",
+    "time": 1712409030345,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814450006-172",
+    "business_name": "L'ATALAIA",
+    "time": 1712409030443,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2763",
+    "business_name": "nan",
+    "time": 1712409030541,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1311",
+    "business_name": "GOCCIA VERDE",
+    "time": 1712409030638,
+    "rating": 3,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815550006-229",
+    "business_name": "DRAULIC FREN SL",
+    "time": 1712409030737,
+    "rating": 1,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802530008-6",
+    "business_name": "DANSESTUDI",
+    "time": 1712409030836,
+    "rating": 5,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-672",
+    "business_name": "Exel",
+    "time": 1712409030933,
+    "rating": 5,
+    "text": "Best place for vegan groceries.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802400000-13",
+    "business_name": "EL CAROL",
+    "time": 1712409031034,
+    "rating": 5,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1433",
+    "business_name": "nan",
+    "time": 1712409031132,
+    "rating": 2,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808470005-11",
+    "business_name": "GRANJA PALA",
+    "time": 1712409031231,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823460009-35",
+    "business_name": "PISCINA MUNICIPAL CAN RAM",
+    "time": 1712409031327,
+    "rating": 2,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819180001-312",
+    "business_name": "EMYPRO",
+    "time": 1712409031424,
+    "rating": 2,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0830080001-54",
+    "business_name": "EGARSERVER AIE",
+    "time": 1712409031532,
+    "rating": 1,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823620002-64",
+    "business_name": "CA L'OLIVER MOLI PAPERER",
+    "time": 1712409031637,
+    "rating": 4,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-894",
+    "business_name": "ANGELS I SOMNIS",
+    "time": 1712409031737,
+    "rating": 5,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-1493",
+    "business_name": "CAFES ROS, S.A.",
+    "time": 1712409031837,
+    "rating": 2,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823030008-496",
+    "business_name": "FUSTERIA QUEROL",
+    "time": 1712409031938,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1496",
+    "business_name": "nan",
+    "time": 1712409032039,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-1332",
+    "business_name": "HAM",
+    "time": 1712409032139,
+    "rating": 5,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-1346",
+    "business_name": "NOGAL PALETS, SL",
+    "time": 1712409032241,
+    "rating": 5,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816140003-367",
+    "business_name": "Dinamic Fitness",
+    "time": 1712409032343,
+    "rating": 4,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803120002-41",
+    "business_name": "METUSYSTEM IBERICA",
+    "time": 1712409032444,
+    "rating": 1,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-1895",
+    "business_name": "nan",
+    "time": 1712409032545,
+    "rating": 4,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803120002-142",
+    "business_name": "nan",
+    "time": 1712409032646,
+    "rating": 5,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-28",
+    "business_name": "PLANXISTERIA MOI\u00c0",
+    "time": 1712409032746,
+    "rating": 3,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0805380001-146",
+    "business_name": "GRANJA CA L'OLIVER",
+    "time": 1712409032858,
+    "rating": 4,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0807490004-491",
+    "business_name": "nan",
+    "time": 1712409032964,
+    "rating": 4,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800570005-549",
+    "business_name": "MOBLES TOT SOFA",
+    "time": 1712409033066,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827320002-274",
+    "business_name": "DISTRIBUCIONS SURIOL",
+    "time": 1712409033164,
+    "rating": 5,
+    "text": "Great prices and friendly staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823030008-122",
+    "business_name": "RESTAURANT LA CORMA",
+    "time": 1712409033261,
+    "rating": 1,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815550006-286",
+    "business_name": "ROSTISSERIA I XURRERIA MU\u00d1OZ",
+    "time": 1712409033362,
+    "rating": 3,
+    "text": "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825540003-30",
+    "business_name": "MAS LA PINYA",
+    "time": 1712409033461,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1194",
+    "business_name": "BOCACTORIA",
+    "time": 1712409033562,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-51",
+    "business_name": "CATALUNYA CAIXA- BBVA",
+    "time": 1712409033662,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-267",
+    "business_name": "nan",
+    "time": 1712409033759,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-688",
+    "business_name": "RASHID ZEKERIAEV",
+    "time": 1712409033859,
+    "rating": 3,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1142",
+    "business_name": "SERVEI TECNIC NEW PC",
+    "time": 1712409033958,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823030008-435",
+    "business_name": "nan",
+    "time": 1712409034054,
+    "rating": 4,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1254",
+    "business_name": "FORN PRAT",
+    "time": 1712409034156,
+    "rating": 4,
+    "text": "Found everything I needed and more!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-1038",
+    "business_name": "JIVESTONA / GRANJA FLORIDA",
+    "time": 1712409034282,
+    "rating": 4,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814020002-646",
+    "business_name": "EL REBOST IB\u00c8RIC",
+    "time": 1712409034385,
+    "rating": 5,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-1371",
+    "business_name": "nan",
+    "time": 1712409034487,
+    "rating": 4,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806890004-138",
+    "business_name": "TALLERS MIQUEL SALA",
+    "time": 1712409034585,
+    "rating": 4,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826280001-984",
+    "business_name": "MONTSERRAT I QUERALT",
+    "time": 1712409034686,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-2608",
+    "business_name": "FERIMET CALDES",
+    "time": 1712409034790,
+    "rating": 2,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819180001-436",
+    "business_name": "GIL-VERNET CL\u00cdNICA DENTAL",
+    "time": 1712409034890,
+    "rating": 3,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-2140",
+    "business_name": "nan",
+    "time": 1712409034991,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816140003-633",
+    "business_name": "Auto reparacions  Sanjuan",
+    "time": 1712409035095,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-1294",
+    "business_name": "PATRICIA MORAL ADVOCADA",
+    "time": 1712409035194,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-5",
+    "business_name": "nan",
+    "time": 1712409035291,
+    "rating": 4,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819230008-722",
+    "business_name": "GRANJA ROSENDO",
+    "time": 1712409035388,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-965",
+    "business_name": "CENTRE CAN\u00cd LA TALAIA",
+    "time": 1712409035485,
+    "rating": 5,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-789",
+    "business_name": "TELEPIZZA",
+    "time": 1712409035584,
+    "rating": 2,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810000000-693",
+    "business_name": "GRANJA ECOLOGICA SASSORBA SCP",
+    "time": 1712409035683,
+    "rating": 4,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803700000-429",
+    "business_name": "Supermercat SPAR",
+    "time": 1712409035784,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-426",
+    "business_name": "MOLCASIL",
+    "time": 1712409035883,
+    "rating": 5,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-55",
+    "business_name": "POLYLIB GESTION Y TRATAMIENTO PLASTICO",
+    "time": 1712409035981,
+    "rating": 4,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-1226",
+    "business_name": "nan",
+    "time": 1712409036082,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2297",
+    "business_name": "VA DE GL\u00c0",
+    "time": 1712409036182,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-334",
+    "business_name": "MATSUKAWA",
+    "time": 1712409036280,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-757",
+    "business_name": "ANGE'LS",
+    "time": 1712409036389,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825920002-580",
+    "business_name": "ETS I UTS",
+    "time": 1712409036495,
+    "rating": 2,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0829170005-177",
+    "business_name": "TRATESA",
+    "time": 1712409036593,
+    "rating": 3,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-992",
+    "business_name": "MOVILPAQ",
+    "time": 1712409036694,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-1079",
+    "business_name": "CANYAMERES",
+    "time": 1712409036797,
+    "rating": 5,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825920002-1146",
+    "business_name": "CAN CARRERONS",
+    "time": 1712409036900,
+    "rating": 4,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812710007-45",
+    "business_name": "CAYVOL MONISTROL",
+    "time": 1712409037000,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-282",
+    "business_name": "nan",
+    "time": 1712409037100,
+    "rating": 5,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2477",
+    "business_name": "CALID'S",
+    "time": 1712409037199,
+    "rating": 4,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800570005-267",
+    "business_name": "DNC",
+    "time": 1712409037299,
+    "rating": 2,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-501",
+    "business_name": "nan",
+    "time": 1712409037398,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814300000-622",
+    "business_name": "TOT MARCA OUTLET",
+    "time": 1712409037497,
+    "rating": 4,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810810007-23",
+    "business_name": "DRUNPE",
+    "time": 1712409037596,
+    "rating": 1,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825920002-684",
+    "business_name": "IBER PROTEXION LABORAL SL",
+    "time": 1712409037697,
+    "rating": 5,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2583",
+    "business_name": "PERRUQUERIA M\u00aaANGELS",
+    "time": 1712409037797,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819180001-139",
+    "business_name": "BANC SABADELL ATL\u00c1NTICO",
+    "time": 1712409037895,
+    "rating": 1,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826490004-343",
+    "business_name": "HUTB-012528",
+    "time": 1712409037996,
+    "rating": 4,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-1487",
+    "business_name": "L'ESPLAI",
+    "time": 1712409038092,
+    "rating": 4,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814190004-611",
+    "business_name": "LOCALHOST127.0.0.1 SCP",
+    "time": 1712409038191,
+    "rating": 2,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824600000-99",
+    "business_name": "MAS DEL FRARES",
+    "time": 1712409038290,
+    "rating": 4,
+    "text": "Some of the best organic tomatoes I\u2019ve tasted. Will definitely order again!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-769",
+    "business_name": "PEIXETERIA CASABLANCA",
+    "time": 1712409038388,
+    "rating": 3,
+    "text": "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-124",
+    "business_name": "CONDIS",
+    "time": 1712409038487,
+    "rating": 4,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1075",
+    "business_name": "TALLER DE RELOJERIA D. ALONSO",
+    "time": 1712409038583,
+    "rating": 4,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810000000-383",
+    "business_name": "nan",
+    "time": 1712409038680,
+    "rating": 1,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818100000-512",
+    "business_name": "DIA MARKET",
+    "time": 1712409038777,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826490004-110",
+    "business_name": "JET SERVICE MAQUINARIA, SL",
+    "time": 1712409038876,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7634",
+    "business_name": "El Sabater del Poble",
+    "time": 1712409038975,
+    "rating": 4,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811730008-255",
+    "business_name": "GRANJA CAMPDELACREU",
+    "time": 1712409039075,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811730008-227",
+    "business_name": "LA CODINA",
+    "time": 1712409039175,
+    "rating": 2,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-2537",
+    "business_name": "DIA",
+    "time": 1712409039275,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-1558",
+    "business_name": "TSE TSE",
+    "time": 1712409039373,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-2333",
+    "business_name": "nan",
+    "time": 1712409039469,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-748",
+    "business_name": "HUT B -065271- 64",
+    "time": 1712409039566,
+    "rating": 2,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1182",
+    "business_name": "nan",
+    "time": 1712409039667,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0829170005-309",
+    "business_name": "AJUNTAMENT",
+    "time": 1712409039765,
+    "rating": 4,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-1040",
+    "business_name": "XURRERIA",
+    "time": 1712409039865,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810000000-600",
+    "business_name": "nan",
+    "time": 1712409039963,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1191",
+    "business_name": "nan",
+    "time": 1712409040059,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818310007-915",
+    "business_name": "Club de Boxa Osona",
+    "time": 1712409040157,
+    "rating": 1,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822990004-87",
+    "business_name": "CASA HORTA",
+    "time": 1712409040261,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827850006-359",
+    "business_name": "MAS BELLPUIG",
+    "time": 1712409040362,
+    "rating": 5,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820420002-661",
+    "business_name": "MARMOLES URREA",
+    "time": 1712409040464,
+    "rating": 5,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0817480001-3",
+    "business_name": "nan",
+    "time": 1712409040564,
+    "rating": 1,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-981",
+    "business_name": "nan",
+    "time": 1712409040665,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823460009-36",
+    "business_name": "PUNT INFORMACI\u00d3 LA MONGIA",
+    "time": 1712409040762,
+    "rating": 2,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812060009-225",
+    "business_name": "RESID\u00c8NCIA SAGRADA FAM\u00cdLIA",
+    "time": 1712409040861,
+    "rating": 2,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-2791",
+    "business_name": "RPM",
+    "time": 1712409040960,
+    "rating": 3,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-204",
+    "business_name": "PEDRAGOSA",
+    "time": 1712409041060,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804250006-77",
+    "business_name": "LOCAL SOCIAL DE CAN VOLART",
+    "time": 1712409041160,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-63",
+    "business_name": "CAROL BRUGUERA",
+    "time": 1712409041258,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1528",
+    "business_name": "nan",
+    "time": 1712409041355,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-2356",
+    "business_name": "ECELENI",
+    "time": 1712409041454,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0805380001-7",
+    "business_name": "H\u00cdPICA TERAPEUTICA CASA BAUMA",
+    "time": 1712409041552,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810000000-685",
+    "business_name": "EL MU",
+    "time": 1712409041648,
+    "rating": 2,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812710007-385",
+    "business_name": "nan",
+    "time": 1712409041746,
+    "rating": 2,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812060009-577",
+    "business_name": "nan",
+    "time": 1712409041846,
+    "rating": 2,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810810007-15",
+    "business_name": "NTG EBREX",
+    "time": 1712409041945,
+    "rating": 3,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-675",
+    "business_name": "MANIPULADOS ESPEJO SL",
+    "time": 1712409042049,
+    "rating": 5,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826710007-659",
+    "business_name": "F.G.METALES",
+    "time": 1712409042165,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-853",
+    "business_name": "CALS AVIS - RESID\u00c8NCIA ROCAPREVERA",
+    "time": 1712409042268,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-762",
+    "business_name": "nan",
+    "time": 1712409042401,
+    "rating": 5,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-1054",
+    "business_name": "SUMEVA",
+    "time": 1712409042523,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-677",
+    "business_name": "CORREOS",
+    "time": 1712409042625,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813500000-337",
+    "business_name": "TALLERS SERRAT FONT SL",
+    "time": 1712409042724,
+    "rating": 5,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1485",
+    "business_name": "ALDI",
+    "time": 1712409042832,
+    "rating": 2,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0801160009-52",
+    "business_name": "'GRANJA VILAMAR\u00cd'",
+    "time": 1712409042935,
+    "rating": 4,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-204",
+    "business_name": "CAN FREIXES",
+    "time": 1712409043037,
+    "rating": 5,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7434",
+    "business_name": "Caf\u00e8 de Lluna",
+    "time": 1712409043138,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-193",
+    "business_name": "CIRO DE ALAMINOS CLINICA VETERINARIA",
+    "time": 1712409043238,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-1520",
+    "business_name": "DE TELA",
+    "time": 1712409043336,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800570005-961",
+    "business_name": "TRIMORMECANIZADOS",
+    "time": 1712409043435,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1244",
+    "business_name": "nan",
+    "time": 1712409043538,
+    "rating": 2,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1499",
+    "business_name": "REPARACIONS DE CAL\u00c7AT GTZ",
+    "time": 1712409043650,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-1050",
+    "business_name": "UNIO DEMOCRATICA DE CATALUNYA",
+    "time": 1712409043757,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810810007-444",
+    "business_name": "DESGUACES DE AUTOMOVILES, SL",
+    "time": 1712409043856,
+    "rating": 4,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806410007-95",
+    "business_name": "nan",
+    "time": 1712409043954,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-499",
+    "business_name": "POPULAR",
+    "time": 1712409044053,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-2",
+    "business_name": "nan",
+    "time": 1712409044157,
+    "rating": 1,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7996",
+    "business_name": "Intermas",
+    "time": 1712409044262,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812650006-197",
+    "business_name": "GARATGE D'\u00daS PRIVAT",
+    "time": 1712409044365,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826280001-502",
+    "business_name": "NOSTRUM",
+    "time": 1712409044465,
+    "rating": 3,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-3574",
+    "business_name": "Peixateria Mari",
+    "time": 1712409044563,
+    "rating": 2,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802910007-229",
+    "business_name": "AI HOME BCN",
+    "time": 1712409044661,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-2169",
+    "business_name": "CENTRE DE NEGOCIS",
+    "time": 1712409044761,
+    "rating": 3,
+    "text": "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827850006-301",
+    "business_name": "nan",
+    "time": 1712409044863,
+    "rating": 5,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815930008-2713",
+    "business_name": "SYMRISE",
+    "time": 1712409044961,
+    "rating": 3,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-173",
+    "business_name": "DEA - AUTOMATISMOS PARA PUERTAS",
+    "time": 1712409045060,
+    "rating": 4,
+    "text": "Best place for vegan groceries.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-2476",
+    "business_name": "OPCIONES VIALES, SL",
+    "time": 1712409045160,
+    "rating": 1,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-205",
+    "business_name": "RESTAURANT MA BRASA",
+    "time": 1712409045271,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828450006-3077",
+    "business_name": "NEOCARN2020 SL",
+    "time": 1712409045393,
+    "rating": 5,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-2666",
+    "business_name": "FINQUES VILA VALLS",
+    "time": 1712409045496,
+    "rating": 2,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814190004-406",
+    "business_name": "VINYAS D'EMPREMPTA",
+    "time": 1712409045598,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824600000-184",
+    "business_name": "FORN NOU",
+    "time": 1712409045701,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822050006-274",
+    "business_name": "PISCINA MUNICIPAL",
+    "time": 1712409045809,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811540003-690",
+    "business_name": "nan",
+    "time": 1712409045915,
+    "rating": 2,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1332",
+    "business_name": "L'EMPORDA CATERING & EVENTS",
+    "time": 1712409046021,
+    "rating": 1,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806730008-158",
+    "business_name": "El Gimn\u00e0s",
+    "time": 1712409046120,
+    "rating": 4,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823460009-77",
+    "business_name": "CAN QUICO RIBALTA",
+    "time": 1712409046222,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812710007-248",
+    "business_name": "QUADRA CAVALLS",
+    "time": 1712409046323,
+    "rating": 4,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2605",
+    "business_name": "LA VILA PERFUMERIA",
+    "time": 1712409046425,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-1455",
+    "business_name": "PURA BRASA",
+    "time": 1712409046525,
+    "rating": 1,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-3259",
+    "business_name": "Missatges del Bergueda Express",
+    "time": 1712409046623,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810430008-164",
+    "business_name": "HABITATGE EL MIRADOR",
+    "time": 1712409046723,
+    "rating": 2,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803050006-125",
+    "business_name": "J. RIBAS INSTAL\u00b7LACIONS",
+    "time": 1712409046832,
+    "rating": 3,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804970005-7",
+    "business_name": "PAVELL\u00d3 MUNICIPAL",
+    "time": 1712409046936,
+    "rating": 5,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-3191",
+    "business_name": "LOAL",
+    "time": 1712409047036,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2557",
+    "business_name": "nan",
+    "time": 1712409047134,
+    "rating": 4,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-1083",
+    "business_name": "M-YOGA",
+    "time": 1712409047229,
+    "rating": 2,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826130008-531",
+    "business_name": "nan",
+    "time": 1712409047329,
+    "rating": 3,
+    "text": "Prices have been creeping up without any clear improvement in selection or quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-964",
+    "business_name": "TERESA MODES",
+    "time": 1712409047431,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0890240003-613",
+    "business_name": "MON PELUT",
+    "time": 1712409047532,
+    "rating": 3,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808320002-29",
+    "business_name": "nan",
+    "time": 1712409047632,
+    "rating": 5,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-3870",
+    "business_name": "Habitatge d'\u00fas tur\u00edstic",
+    "time": 1712409047732,
+    "rating": 1,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-365",
+    "business_name": "GPS 2000",
+    "time": 1712409047834,
+    "rating": 5,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819180001-66",
+    "business_name": "GRANJA MANIVERTES",
+    "time": 1712409047938,
+    "rating": 5,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-206",
+    "business_name": "CAL\u00c7ATS SANT JOAN",
+    "time": 1712409048038,
+    "rating": 4,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0807490004-251",
+    "business_name": "nan",
+    "time": 1712409048145,
+    "rating": 1,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815550006-579",
+    "business_name": "nan",
+    "time": 1712409048247,
+    "rating": 4,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted \u2013 the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819230008-1500",
+    "business_name": "PASTISSERIA SANT PERE D'OR",
+    "time": 1712409048347,
+    "rating": 4,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-259",
+    "business_name": "OPTICA UBACH",
+    "time": 1712409048447,
+    "rating": 3,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-506",
+    "business_name": "nan",
+    "time": 1712409048547,
+    "rating": 5,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0801740003-324",
+    "business_name": "PISCINES MUNICIPALS",
+    "time": 1712409048649,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814300000-745",
+    "business_name": "ESTADI MUNICIPAL LA SORT",
+    "time": 1712409048751,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-464",
+    "business_name": "PLANA RODONA",
+    "time": 1712409048852,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-330",
+    "business_name": "nan",
+    "time": 1712409048952,
+    "rating": 3,
+    "text": "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-2507",
+    "business_name": "KUBIK F4 DESIGN SL",
+    "time": 1712409049054,
+    "rating": 3,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812710007-255",
+    "business_name": "SALA D'EXPOSICI\u00d3",
+    "time": 1712409049155,
+    "rating": 2,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812900000-9",
+    "business_name": "nan",
+    "time": 1712409049255,
+    "rating": 1,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826280001-1212",
+    "business_name": "CASA DE POBLE",
+    "time": 1712409049355,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1433",
+    "business_name": "PEIXATERIA MEDITERRANI",
+    "time": 1712409049454,
+    "rating": 5,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816140003-668",
+    "business_name": "Joyeria-Rellotgeria \u00c1lvarez",
+    "time": 1712409049552,
+    "rating": 3,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0806920002-335",
+    "business_name": "PALSON 6",
+    "time": 1712409049652,
+    "rating": 2,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-3188",
+    "business_name": "nan",
+    "time": 1712409049753,
+    "rating": 4,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0827850006-92",
+    "business_name": "nan",
+    "time": 1712409049851,
+    "rating": 3,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826490004-348",
+    "business_name": "HUTB-011966",
+    "time": 1712409049948,
+    "rating": 1,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810430008-84",
+    "business_name": "Ajuntament de la Llacuna",
+    "time": 1712409050046,
+    "rating": 4,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825540003-38",
+    "business_name": "CA L'ANDAL\u00d3",
+    "time": 1712409050144,
+    "rating": 4,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810430008-21",
+    "business_name": "Cal Pujado",
+    "time": 1712409050243,
+    "rating": 3,
+    "text": "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-6",
+    "business_name": "nan",
+    "time": 1712409050345,
+    "rating": 2,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811540003-369",
+    "business_name": "DECOCRUZ",
+    "time": 1712409050442,
+    "rating": 1,
+    "text": "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824820002-707",
+    "business_name": "BOMBAS BOYSER",
+    "time": 1712409050540,
+    "rating": 1,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2919",
+    "business_name": "TETUAN",
+    "time": 1712409050664,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825920002-62",
+    "business_name": "JM PASCUAL",
+    "time": 1712409050762,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0807490004-260",
+    "business_name": "nan",
+    "time": 1712409050859,
+    "rating": 5,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1093",
+    "business_name": "EL RACO DEL PICARESC",
+    "time": 1712409050957,
+    "rating": 4,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0829170005-401",
+    "business_name": "CEIP FONT DE L'ORPINA",
+    "time": 1712409051058,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-3967",
+    "business_name": "nan",
+    "time": 1712409051157,
+    "rating": 4,
+    "text": "The cheese variety is incredible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-201",
+    "business_name": "nan",
+    "time": 1712409051278,
+    "rating": 4,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2211",
+    "business_name": "PERRUQUERIA CATALUNYA",
+    "time": 1712409051385,
+    "rating": 3,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0813850006-177",
+    "business_name": "MOBLES TOSCA",
+    "time": 1712409051485,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-5368",
+    "business_name": "CPS LABORATORIO",
+    "time": 1712409051586,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-1616",
+    "business_name": "Quetzal",
+    "time": 1712409051687,
+    "rating": 1,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0812280001-245",
+    "business_name": "nan",
+    "time": 1712409051795,
+    "rating": 5,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828300000-1196",
+    "business_name": "PICO MOTOR",
+    "time": 1712409051906,
+    "rating": 3,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824440003-201",
+    "business_name": "OPTICHROME COMPUTER SYSTEMS ESPA\u00d1A, SAU",
+    "time": 1712409052016,
+    "rating": 5,
+    "text": "Impressed by the local produce selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7380",
+    "business_name": "El Xaragall",
+    "time": 1712409052115,
+    "rating": 3,
+    "text": "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7485",
+    "business_name": "Lega Sistemes",
+    "time": 1712409052211,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0826280001-243",
+    "business_name": "nan",
+    "time": 1712409052311,
+    "rating": 4,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816720002-368",
+    "business_name": "NUDEC",
+    "time": 1712409052410,
+    "rating": 4,
+    "text": "The cheese variety is incredible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-7004660009-52",
+    "business_name": "PERRUQUERIA",
+    "time": 1712409052509,
+    "rating": 4,
+    "text": "Found everything I needed and more!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814190004-268",
+    "business_name": "MIQUEL MART\u00cdNEZ",
+    "time": 1712409052611,
+    "rating": 5,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-4485",
+    "business_name": "FLECA ORDEIG",
+    "time": 1712409052711,
+    "rating": 1,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828960009-131",
+    "business_name": "SIDERTEX",
+    "time": 1712409052808,
+    "rating": 2,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0803330008-376",
+    "business_name": "HARD VALLES",
+    "time": 1712409052909,
+    "rating": 2,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804620002-1071",
+    "business_name": "ARCO IRIS",
+    "time": 1712409053009,
+    "rating": 4,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814300000-682",
+    "business_name": "TALLER RAMON",
+    "time": 1712409053112,
+    "rating": 5,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-1132",
+    "business_name": "MAS CANOVAS",
+    "time": 1712409053208,
+    "rating": 4,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1303",
+    "business_name": "PERRUQUERIA GERARD",
+    "time": 1712409053309,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824390004-27",
+    "business_name": "LA TERRADA",
+    "time": 1712409053403,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0825150006-786",
+    "business_name": "SERIVID TRADE, S.L.",
+    "time": 1712409053504,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1098",
+    "business_name": "nan",
+    "time": 1712409053602,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-2224",
+    "business_name": "nan",
+    "time": 1712409053702,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-2405",
+    "business_name": "nan",
+    "time": 1712409053802,
+    "rating": 5,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818100000-324",
+    "business_name": "nan",
+    "time": 1712409053903,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816350006-3234",
+    "business_name": "nan",
+    "time": 1712409054002,
+    "rating": 1,
+    "text": "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-2528",
+    "business_name": "PERRUQUERIA EL BARRI",
+    "time": 1712409054102,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823460009-57",
+    "business_name": "EUGASSADA JUANOLA SCP",
+    "time": 1712409054203,
+    "rating": 1,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-649",
+    "business_name": "nan",
+    "time": 1712409054302,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823030008-106",
+    "business_name": "nan",
+    "time": 1712409054398,
+    "rating": 1,
+    "text": "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810690004-7614",
+    "business_name": "Evarist Automoci\u00f3 SL",
+    "time": 1712409054497,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-711",
+    "business_name": "nan",
+    "time": 1712409054599,
+    "rating": 3,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-525",
+    "business_name": "FORN SANT PERE CUCO'S DELICATESSEN",
+    "time": 1712409054698,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810000000-551",
+    "business_name": "nan",
+    "time": 1712409054797,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824760009-345",
+    "business_name": "nan",
+    "time": 1712409054899,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800570005-65",
+    "business_name": "HOLZMA",
+    "time": 1712409054996,
+    "rating": 3,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0814580001-623",
+    "business_name": "CAVES TORREBLANCA GRIMAU",
+    "time": 1712409055097,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800600000-2753",
+    "business_name": "nan",
+    "time": 1712409055198,
+    "rating": 2,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-362",
+    "business_name": "FRAVIA FABRICA DE SOFAS",
+    "time": 1712409055298,
+    "rating": 5,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0822270005-207",
+    "business_name": "COEMVA",
+    "time": 1712409055398,
+    "rating": 1,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0805380001-101",
+    "business_name": "FRUITERIA M\u00c9S QUE FRUITA",
+    "time": 1712409055496,
+    "rating": 1,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828960009-209",
+    "business_name": "OUS DE CAN REINAL",
+    "time": 1712409055595,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828580001-1155",
+    "business_name": "LA PISCINA",
+    "time": 1712409055696,
+    "rating": 5,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819230008-2235",
+    "business_name": "FENIX ENGINYERS",
+    "time": 1712409055797,
+    "rating": 2,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0819760009-1026",
+    "business_name": "nan",
+    "time": 1712409055899,
+    "rating": 5,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0824010007-1083",
+    "business_name": "CAVES MONASTELL",
+    "time": 1712409056006,
+    "rating": 3,
+    "text": "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811410007-74",
+    "business_name": "BASAR ORIENT",
+    "time": 1712409056105,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0818030008-5657",
+    "business_name": "DEPARTAMENT DE SERVEIS SOCIALS",
+    "time": 1712409056205,
+    "rating": 2,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0815930008-2454",
+    "business_name": "nan",
+    "time": 1712409056302,
+    "rating": 4,
+    "text": "Best place for vegan groceries.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0800180001-1962",
+    "business_name": "Malla R\u00e0pid",
+    "time": 1712409056401,
+    "rating": 4,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0816140003-978",
+    "business_name": "Clarel",
+    "time": 1712409056502,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0802290004-2357",
+    "business_name": "EL POLLASTRE D'OR, SL",
+    "time": 1712409056603,
+    "rating": 5,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0801680001-82",
+    "business_name": "GRANJA RIUGREIXER",
+    "time": 1712409056700,
+    "rating": 2,
+    "text": "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0828960009-272",
+    "business_name": "SERVEIS COMARCALS I D'INSTAL\u00b7LACIONS SL",
+    "time": 1712409056798,
+    "rating": 4,
+    "text": "The loyalty app is super convenient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821880001-249",
+    "business_name": "BAGES ASSESSORAMENT I GESTIO",
+    "time": 1712409056898,
+    "rating": 4,
+    "text": "The loyalty app is super convenient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0808850006-1693",
+    "business_name": "MONTSERRAT CIRERA PERRUQUERIA",
+    "time": 1712409056996,
+    "rating": 1,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821400000-399",
+    "business_name": "CAIXA D'ESTALVIS I PENSIONS DE BARCELONA",
+    "time": 1712409057094,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0811200000-1488",
+    "business_name": "nan",
+    "time": 1712409057196,
+    "rating": 3,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0810560009-1302",
+    "business_name": "LOCUTORI I INTERNET",
+    "time": 1712409057296,
+    "rating": 5,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0804100000-1275",
+    "business_name": "nan",
+    "time": 1712409057396,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0820210007-3623",
+    "business_name": "nan",
+    "time": 1712409057497,
+    "rating": 1,
+    "text": "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0821350006-138",
+    "business_name": "nan",
+    "time": 1712409057597,
+    "rating": 5,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "business_id": "cens-0823310007-265",
+    "business_name": "MAS REDORTRA",
+    "time": 1712409057694,
+    "rating": 1,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  }
+]
