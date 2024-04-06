@@ -1,10 +1,9 @@
 
 import time
-from random import randint, getrandbits, choice
+from random import randint, choice, getrandbits
 import json
 import csv
 from faker import Faker
-import pandas as pd
 import os
 import configparser
 import logging
@@ -26,11 +25,11 @@ config_file_path = os.path.join(config_dir, "config.ini")
 config = configparser.ConfigParser()
 config.read(config_file_path)
 
-# Splitting sentiments into positive and negative for simplicity
+
 positive_sentiments = [
     "Love the fresh produce!",
     "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
-    "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "Some of the best organic tomatoes I’ve tasted. Will definitely order again!",
     "Great prices and friendly staff.",
     "Awesome selection of organic foods!",
     "Best place for vegan groceries.",
@@ -46,7 +45,7 @@ positive_sentiments = [
     "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
     "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
     "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
-    "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted - the early morning aroma of fresh baking is irresistible.",
+    "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted – the early morning aroma of fresh baking is irresistible.",
     "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
     "Their loyalty program is really worth it.",
     "The deli section offers amazing sandwiches.",
@@ -82,7 +81,6 @@ positive_sentiments = [
     "Free samples are always appreciated!",
     "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
     "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
-    "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
     "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
     "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
     "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
@@ -92,7 +90,9 @@ positive_sentiments = [
     "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
     "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient."]
 
-negative_sentiments= [ "Could use more variety in organic options.",
+
+negative_sentiments = [
+    "Could use more variety in organic options.",
     "Not satisfied with the freshness of perishables.",
     "The bakery section is a bit lacking.",
     "Disappointed by the seafood selection.",
@@ -110,46 +110,22 @@ negative_sentiments= [ "Could use more variety in organic options.",
     "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
     "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
     "The health and beauty section is lacking.",
-    "The fruit arrived overripe and unusable, a complete waste of money.",
-    "My order was missing several items, and customer service was slow to respond.",
-    "Received wilted vegetables that looked nothing like the online photos.",
-    "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
-    "Delivery was delayed multiple times without any communication from the seller.",
-    "Found a foreign object in my food package, which is completely unacceptable.",
-    "The quality of the meat was poor, with a lot of fat and gristle.",
-    "Prices have skyrocketed recently without any noticeable improvement in quality or service.",
-    "The description promised organic produce, but the items I received were clearly not.",
-    "Attempted to return a spoiled product but the process was complicated and frustrating.",
-    "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
-    "Customer service promised a refund that I never received.",
-    "The app is glitchy and makes ordering a frustrating experience.",
-    "Many products were out of stock, significantly limiting the variety available.",
-    "Received an incorrect order and had to go through a lengthy process to get the right items.",
-    "The 'next day delivery' took nearly a week, ruining my meal planning.",
-    "Found the website difficult to navigate, with many broken links and outdated information.",
-    "The product descriptions are misleading, giving a false impression of the item's quality.",
-    "Charged for items that were never delivered, and it's been a hassle to get a refund.",
-    "The subscription service is difficult to cancel, with customer service being unresponsive.",
-    "Advertised discounts were not applied at checkout, leading to overcharging.",
-    "The selection is not as curated as it claims to be, with many low-quality items.",
-    "Received expired products but the company refused to acknowledge or rectify the issue.",
-    "The estimated delivery times are never accurate, always expect delays.",
-    "Packaging is often excessive and not environmentally friendly, contrary to their green claims.",
-    "Tried to give feedback through their survey, but it seems like no one actually reads it.",
-    "The produce selection is mediocre at best, you're better off going to a local farmer's market.",
-    "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
-    "The specialty items are overpriced for what you actually get.",
-    "There's a lack of transparency about where the food is sourced from.",
-    "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
-    "The quality control on perishable goods is lacking, as evidenced by inconsistent product quality."]
+    "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "Received a batch of spoiled fruits that were inedible upon arrival.",
+    "The online inventory often doesn't match what's actually available, leading to disappointing substitutions.",
+    "Found mold on several items that were supposed to be fresh; it's clear that quality control is lacking.",
+    "Customer service responses are generic and unhelpful, failing to address specific concerns.",
+    "Products are frequently mislabeled, causing confusion and inconvenience.",
+    "Delivery drivers are careless, often leaving groceries in unsuitable locations where they can be damaged or stolen.",
+    "The promised 'farm-fresh' quality falls short, with many items tasting no better than what's found in conventional stores.",
+    "Prices have been creeping up without any clear improvement in selection or quality.",
+    "The refund process is overly complicated and time-consuming, making it a hassle to return unsatisfactory items"]
 
 
-
-def generate_review(ID, user_name, rating, text, verified=True):
+def generate_review(user_id, business_name, rating, text, verified=True):
     review = {
-        'ID': ID,
-        'user_name': user_name,
-        # 'seller_name': seller_name,
+        'user_id': user_id,
+        'Business_name': business_name,
         'time': int(time.time() * 1000),
         'rating': rating,
         'text': text,
@@ -158,70 +134,98 @@ def generate_review(ID, user_name, rating, text, verified=True):
     }
     return review
 
+def random_user_id():
+    """Generate a pseudo-random user ID."""
+    return str(getrandbits(64))
 
 
-def random_user_id(raw_data_dir):
-    customer_df = pd.read_csv(os.path.join(raw_data_dir,'customers.csv'))
-    random_row_index = customer_df.sample(n=1).index[0]
+def random_business_name():
+    """Return a random business name from a large list."""
+    businesses = ["Fresh & Green Groceries",
+    "Daily Harvest Market",
+    "Organic Essentials",
+    "Sunshine Grocery",
+    "City Market",
+    "The Grocery Basket",
+    "Urban Fresh Foods",
+    "Nature's Pantry",
+    "Field to Fork Market",
+    "Harvest Moon Grocers",
+    "Purely Organic Produce",
+    "The Local Grocer",
+    "Season's Best Market",
+    "EcoFood Supermarket",
+    "Neighborhood Fresh Market",
+    "GreenLeaf Market",
+    "Farm Fresh Fare",
+    "Local Bounty Grocers",
+    "Earth's Basket",
+    "Prime Produce Market",
+    "Sustainable Harvests",
+    "The Green Grocer",
+    "Fresh Finds Market",
+    "Organic Oasis",
+    "Urban Harvest",
+    "Garden Gourmet Market",
+    "Fresh Field Markets",
+    "The Organic Emporium",
+    "Farm to Table Grocers",
+    "GreenSprout Groceries",
+    "Pure Harvest Market",
+    "EcoChoice Grocers",
+    "Vitality Grocers",
+    "The Farmers' Market",
+    "Fresh Fork Groceries",
+    "Harvest Health Market",
+    "Nature's Best Grocers",
+    "The Eco Market",
+    "Fresh Perspectives",
+    "The Seasonal Grocer"]
+    return choice(businesses)
 
-    # Select the random row using iloc
-    random_row = customer_df.iloc[random_row_index]
-    return str(random_row["customer_id"]), str(random_row["customer_name"])
-
-
-
-def random_text_and_rating():
-    """Return a random review text and corresponding rating."""
-    # Decide first if the review will be positive or negative
-    if randint(0, 1):  # Randomly choose between positive (1) and negative (0)
-        text = choice(positive_sentiments)
-        rating = randint(3, 5)  # Positive reviews have higher ratings
+def random_text(rating):
+    """Return a review text based on rating."""
+    if rating > 3:
+        return choice(positive_sentiments)
     else:
-        text = choice(negative_sentiments)
-        rating = randint(1, 3)  # Negative reviews have lower ratings
-    return text, rating
+        return choice(negative_sentiments)
 
-
-def generate_reviews(n,raw_data_dir):
+def generate_reviews(n):
     reviews = []
     for _ in range(n):
-        ID, user_name = random_user_id(raw_data_dir)
-        #user_name = random_name()  # Generating fake user names
-        # seller_name = random_name()  # Generating fake seller names
-        text, rating = random_text_and_rating()  # Get both text and rating
-        verified = fake.boolean()  # Randomly choose verified status using Faker
-        review = generate_review(ID, user_name, rating, text, verified)
+        user_id = random_user_id()
+        business_name = random_business_name()  # Assuming businesses are neutral
+        rating = randint(1, 5)  # Decide the rating first
+        text = random_text(rating)  # Then choose text based on rating
+        verified = choice([True, False])  # Randomly choose verified status
+        review = generate_review(user_id, business_name, rating, text, verified)
         reviews.append(review)
     return reviews
 
-
-
 def save_to_json(reviews, filename):
-    filename = os.path.join(raw_data_dir,'individual_reviews.json')
+    filename = os.path.join(raw_data_dir,'business_reviews.json')
     with open(filename, "w") as f:
         json.dump(reviews, f, indent=2)
 
-
-
 def save_to_csv(reviews, filename):
-    filename = os.path.join(raw_data_dir,'individual_reviews.csv')
-    fieldnames = ['ID', 'user_name', 'time', 'rating', 'text', 'verified', 'date']
+    filename = os.path.join(raw_data_dir,'business_reviews.csv')
+    fieldnames = ['user_id', 'Business_name', 'time', 'rating', 'text', 'verified', 'date']
     with open(filename, mode="w", newline='', encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for review in reviews:
             writer.writerow(review)
 
-
-
 if __name__ == "__main__":
     raw_data_dir = config["COMMON"]["raw_data_dir"]
     num_of_reviews = int(config["SENTIMENT_REVIEWS"]["num_of_reviews"])
 
     logger.info('-----------------------------------------------------')
-    logger.info("Generating synthetic data for Individual Sentiment Reviews")
+    logger.info("Generating synthetic data for Business Sentiment Reviews")
 
-    reviews = generate_reviews(num_of_reviews,raw_data_dir)
+    reviews = generate_reviews(num_of_reviews)
     save_to_json(reviews, raw_data_dir)
     save_to_csv(reviews, raw_data_dir)
-    print("Generated and saved individual seller reviews completely.")
+    print("Generated and saved reviews completely.")
+
+    

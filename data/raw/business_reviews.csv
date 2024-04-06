@@ -1,0 +1,4502 @@
+[
+  {
+    "ID": "1883",
+    "user_name": "Eileen Perez",
+    "time": 1712394602993,
+    "rating": 3,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5939",
+    "user_name": "Katie Gonzales",
+    "time": 1712394602998,
+    "rating": 2,
+    "text": "The product descriptions are misleading, giving a false impression of the item's quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9124",
+    "user_name": "Steve Jenkins",
+    "time": 1712394603004,
+    "rating": 2,
+    "text": "The produce selection is mediocre at best, you're better off going to a local farmer's market.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5164",
+    "user_name": "Dominique Frost",
+    "time": 1712394603009,
+    "rating": 1,
+    "text": "The app is glitchy and makes ordering a frustrating experience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5813",
+    "user_name": "Kristina Bush",
+    "time": 1712394603014,
+    "rating": 3,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3887",
+    "user_name": "Cristina Schneider",
+    "time": 1712394603019,
+    "rating": 3,
+    "text": "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1233",
+    "user_name": "Emily Garcia",
+    "time": 1712394603024,
+    "rating": 3,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "244",
+    "user_name": "Samantha Johnston",
+    "time": 1712394603028,
+    "rating": 5,
+    "text": "The loyalty app is super convenient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8523",
+    "user_name": "Jennifer Dudley",
+    "time": 1712394603034,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5586",
+    "user_name": "Joanna Frye",
+    "time": 1712394603039,
+    "rating": 5,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3795",
+    "user_name": "Joseph Phillips",
+    "time": 1712394603044,
+    "rating": 3,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9235",
+    "user_name": "Michelle Huffman PhD",
+    "time": 1712394603049,
+    "rating": 1,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7584",
+    "user_name": "William Rose",
+    "time": 1712394603054,
+    "rating": 3,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7916",
+    "user_name": "Larry Miles",
+    "time": 1712394603060,
+    "rating": 3,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7316",
+    "user_name": "Joyce Brown",
+    "time": 1712394603066,
+    "rating": 4,
+    "text": "Organic meat selection is unmatched.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "644",
+    "user_name": "Edward Gardner",
+    "time": 1712394603071,
+    "rating": 1,
+    "text": "Prices have skyrocketed recently without any noticeable improvement in quality or service.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9687",
+    "user_name": "Hunter Vang",
+    "time": 1712394603075,
+    "rating": 2,
+    "text": "The quality control on perishable goods is lacking, as evidenced by inconsistent product quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3040",
+    "user_name": "Colleen Williamson",
+    "time": 1712394603081,
+    "rating": 4,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8629",
+    "user_name": "Bryan Marsh",
+    "time": 1712394603086,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "184",
+    "user_name": "Danielle James",
+    "time": 1712394603092,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8245",
+    "user_name": "Isaac Adams",
+    "time": 1712394603097,
+    "rating": 4,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8740",
+    "user_name": "Jennifer Middleton",
+    "time": 1712394603102,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6717",
+    "user_name": "Anthony Holmes",
+    "time": 1712394603107,
+    "rating": 3,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1454",
+    "user_name": "Michael Henderson",
+    "time": 1712394603113,
+    "rating": 2,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1527",
+    "user_name": "Jessica Reed",
+    "time": 1712394603117,
+    "rating": 5,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8497",
+    "user_name": "Angela Brooks",
+    "time": 1712394603123,
+    "rating": 5,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1775",
+    "user_name": "Albert Montgomery",
+    "time": 1712394603130,
+    "rating": 4,
+    "text": "Love their gluten-free options!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5855",
+    "user_name": "Carrie Ortega MD",
+    "time": 1712394603136,
+    "rating": 4,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3635",
+    "user_name": "Kristi Tran",
+    "time": 1712394603142,
+    "rating": 1,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4468",
+    "user_name": "Louis Goodman",
+    "time": 1712394603147,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4882",
+    "user_name": "Miguel Williams",
+    "time": 1712394603152,
+    "rating": 1,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6234",
+    "user_name": "Kristen Wilson",
+    "time": 1712394603157,
+    "rating": 3,
+    "text": "The cheese variety is incredible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8035",
+    "user_name": "Sarah Foster",
+    "time": 1712394603163,
+    "rating": 1,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7567",
+    "user_name": "Jacob Salazar",
+    "time": 1712394603168,
+    "rating": 5,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9963",
+    "user_name": "Raymond Santos",
+    "time": 1712394603173,
+    "rating": 2,
+    "text": "The selection is not as curated as it claims to be, with many low-quality items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5506",
+    "user_name": "Austin Steele",
+    "time": 1712394603179,
+    "rating": 3,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7129",
+    "user_name": "Anthony Nguyen",
+    "time": 1712394603185,
+    "rating": 2,
+    "text": "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6632",
+    "user_name": "Cynthia Thompson",
+    "time": 1712394603191,
+    "rating": 4,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "806",
+    "user_name": "Julie Kennedy",
+    "time": 1712394603196,
+    "rating": 5,
+    "text": "Best place for vegan groceries.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5746",
+    "user_name": "Teresa Horne",
+    "time": 1712394603201,
+    "rating": 2,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4090",
+    "user_name": "Wesley West MD",
+    "time": 1712394603207,
+    "rating": 3,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3453",
+    "user_name": "Jennifer Cunningham",
+    "time": 1712394603213,
+    "rating": 1,
+    "text": "The app is glitchy and makes ordering a frustrating experience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9621",
+    "user_name": "Richard Jones",
+    "time": 1712394603218,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7736",
+    "user_name": "Jacob Dean",
+    "time": 1712394603224,
+    "rating": 3,
+    "text": "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9448",
+    "user_name": "Jennifer Robinson",
+    "time": 1712394603229,
+    "rating": 2,
+    "text": "Packaging is often excessive and not environmentally friendly, contrary to their green claims.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7884",
+    "user_name": "Nichole Gray MD",
+    "time": 1712394603235,
+    "rating": 3,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4725",
+    "user_name": "Jeanette Gonzalez",
+    "time": 1712394603240,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7932",
+    "user_name": "Julie Martinez",
+    "time": 1712394603245,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3809",
+    "user_name": "David Myers",
+    "time": 1712394603250,
+    "rating": 3,
+    "text": "The bakery section is a bit lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "327",
+    "user_name": "Samantha Ramos",
+    "time": 1712394603256,
+    "rating": 1,
+    "text": "Many products were out of stock, significantly limiting the variety available.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3180",
+    "user_name": "Brian Clarke",
+    "time": 1712394603261,
+    "rating": 4,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3916",
+    "user_name": "Maureen Norman",
+    "time": 1712394603267,
+    "rating": 1,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3787",
+    "user_name": "Caitlin Lopez",
+    "time": 1712394603272,
+    "rating": 3,
+    "text": "My order was missing several items, and customer service was slow to respond.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8180",
+    "user_name": "Nicole Frazier",
+    "time": 1712394603277,
+    "rating": 4,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6168",
+    "user_name": "Michael Holloway",
+    "time": 1712394603282,
+    "rating": 5,
+    "text": "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8015",
+    "user_name": "Erika Jones",
+    "time": 1712394603287,
+    "rating": 2,
+    "text": "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1809",
+    "user_name": "Nicholas Logan",
+    "time": 1712394603292,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2600",
+    "user_name": "Jonathan Thomas",
+    "time": 1712394603298,
+    "rating": 3,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9553",
+    "user_name": "Steven Kelly",
+    "time": 1712394603304,
+    "rating": 2,
+    "text": "The product descriptions are misleading, giving a false impression of the item's quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2925",
+    "user_name": "Mr. Anthony Parker",
+    "time": 1712394603309,
+    "rating": 3,
+    "text": "Best place for vegan groceries.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4522",
+    "user_name": "Michelle Miller",
+    "time": 1712394603315,
+    "rating": 5,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5659",
+    "user_name": "Ashley Rangel",
+    "time": 1712394603320,
+    "rating": 1,
+    "text": "Packaging is often excessive and not environmentally friendly, contrary to their green claims.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "301",
+    "user_name": "Ashley Jones",
+    "time": 1712394603326,
+    "rating": 3,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3698",
+    "user_name": "Victoria Smith",
+    "time": 1712394603331,
+    "rating": 5,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4795",
+    "user_name": "Mark Fields",
+    "time": 1712394603336,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "454",
+    "user_name": "Angela Brown",
+    "time": 1712394603341,
+    "rating": 3,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5890",
+    "user_name": "Jason Watkins",
+    "time": 1712394603348,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4753",
+    "user_name": "John Miller",
+    "time": 1712394603354,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4378",
+    "user_name": "Natalie Erickson",
+    "time": 1712394603359,
+    "rating": 5,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7024",
+    "user_name": "Jaime Griffin",
+    "time": 1712394603365,
+    "rating": 3,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted - the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6421",
+    "user_name": "Aaron Cook",
+    "time": 1712394603370,
+    "rating": 3,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "291",
+    "user_name": "Craig Stewart",
+    "time": 1712394603375,
+    "rating": 3,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7848",
+    "user_name": "Joshua Williams",
+    "time": 1712394603381,
+    "rating": 2,
+    "text": "The fruit arrived overripe and unusable, a complete waste of money.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1510",
+    "user_name": "Scott Rowe",
+    "time": 1712394603387,
+    "rating": 3,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1110",
+    "user_name": "Phillip Taylor",
+    "time": 1712394603393,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7709",
+    "user_name": "Dawn Ramirez",
+    "time": 1712394603398,
+    "rating": 4,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3838",
+    "user_name": "Tyler Campos",
+    "time": 1712394603403,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3727",
+    "user_name": "Roger Allen",
+    "time": 1712394603410,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4405",
+    "user_name": "Jennifer Jones",
+    "time": 1712394603415,
+    "rating": 1,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2131",
+    "user_name": "Michael Nichols",
+    "time": 1712394603420,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6713",
+    "user_name": "Desiree Flores",
+    "time": 1712394603426,
+    "rating": 5,
+    "text": "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4391",
+    "user_name": "David Faulkner",
+    "time": 1712394603432,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3826",
+    "user_name": "Timothy Jordan",
+    "time": 1712394603437,
+    "rating": 3,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4346",
+    "user_name": "Daniel Cooke",
+    "time": 1712394603442,
+    "rating": 3,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9023",
+    "user_name": "Douglas Whitehead",
+    "time": 1712394603446,
+    "rating": 1,
+    "text": "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8168",
+    "user_name": "Brittany Turner",
+    "time": 1712394603452,
+    "rating": 5,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6079",
+    "user_name": "Michelle Flynn",
+    "time": 1712394603457,
+    "rating": 3,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1539",
+    "user_name": "Jennifer Holmes",
+    "time": 1712394603462,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8350",
+    "user_name": "Andrea Flores",
+    "time": 1712394603467,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1824",
+    "user_name": "Kristy Ward",
+    "time": 1712394603473,
+    "rating": 3,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3311",
+    "user_name": "Kara Ferguson",
+    "time": 1712394603477,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5524",
+    "user_name": "Michele Day",
+    "time": 1712394603483,
+    "rating": 5,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "682",
+    "user_name": "Jessica Gibson",
+    "time": 1712394603487,
+    "rating": 5,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1885",
+    "user_name": "Thomas Humphrey",
+    "time": 1712394603492,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2702",
+    "user_name": "Stephanie Martin",
+    "time": 1712394603498,
+    "rating": 1,
+    "text": "The selection is not as curated as it claims to be, with many low-quality items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8195",
+    "user_name": "Shannon Fox",
+    "time": 1712394603503,
+    "rating": 1,
+    "text": "The product descriptions are misleading, giving a false impression of the item's quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8697",
+    "user_name": "Barry White",
+    "time": 1712394603507,
+    "rating": 4,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1133",
+    "user_name": "Jeffrey Butler",
+    "time": 1712394603512,
+    "rating": 3,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8487",
+    "user_name": "Belinda House",
+    "time": 1712394603518,
+    "rating": 4,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7595",
+    "user_name": "Nicholas Ramos",
+    "time": 1712394603523,
+    "rating": 2,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6511",
+    "user_name": "Thomas Ramirez",
+    "time": 1712394603527,
+    "rating": 3,
+    "text": "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8385",
+    "user_name": "Mrs. Katie Rojas DVM",
+    "time": 1712394603533,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9404",
+    "user_name": "Jesse Noble",
+    "time": 1712394603538,
+    "rating": 3,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5217",
+    "user_name": "Jonathan Parrish",
+    "time": 1712394603543,
+    "rating": 3,
+    "text": "The fruit arrived overripe and unusable, a complete waste of money.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5841",
+    "user_name": "Adam Kidd",
+    "time": 1712394603548,
+    "rating": 3,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3363",
+    "user_name": "Jesse Cross",
+    "time": 1712394603553,
+    "rating": 3,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2696",
+    "user_name": "Jennifer Shaw",
+    "time": 1712394603558,
+    "rating": 3,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3732",
+    "user_name": "Heather Ramos",
+    "time": 1712394603563,
+    "rating": 2,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9688",
+    "user_name": "Allison Roberts",
+    "time": 1712394603568,
+    "rating": 1,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "356",
+    "user_name": "Carolyn Hart",
+    "time": 1712394603573,
+    "rating": 5,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6024",
+    "user_name": "James Sullivan",
+    "time": 1712394603578,
+    "rating": 5,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4581",
+    "user_name": "Kathryn Erickson",
+    "time": 1712394603583,
+    "rating": 3,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7477",
+    "user_name": "Anna Carey",
+    "time": 1712394603588,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7331",
+    "user_name": "Jessica Perez",
+    "time": 1712394603593,
+    "rating": 4,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2620",
+    "user_name": "Mike Gilbert",
+    "time": 1712394603598,
+    "rating": 1,
+    "text": "The subscription service is difficult to cancel, with customer service being unresponsive.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2488",
+    "user_name": "Albert Reeves",
+    "time": 1712394603603,
+    "rating": 4,
+    "text": "The aisles are always clutter-free.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8548",
+    "user_name": "Jordan Lucas",
+    "time": 1712394603609,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4684",
+    "user_name": "Angela Davis",
+    "time": 1712394603613,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8084",
+    "user_name": "Tammy Larson",
+    "time": 1712394603619,
+    "rating": 3,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2004",
+    "user_name": "Kathryn Powell",
+    "time": 1712394603624,
+    "rating": 3,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1545",
+    "user_name": "Chad Monroe",
+    "time": 1712394603629,
+    "rating": 2,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5238",
+    "user_name": "Michelle Reeves",
+    "time": 1712394603634,
+    "rating": 5,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3878",
+    "user_name": "Tammy Foster",
+    "time": 1712394603639,
+    "rating": 4,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6139",
+    "user_name": "Vincent Vargas",
+    "time": 1712394603644,
+    "rating": 4,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5420",
+    "user_name": "Timothy Nichols",
+    "time": 1712394603649,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "973",
+    "user_name": "Charles Hughes",
+    "time": 1712394603654,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "801",
+    "user_name": "Brian Weaver",
+    "time": 1712394603659,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "194",
+    "user_name": "Matthew Ward",
+    "time": 1712394603665,
+    "rating": 3,
+    "text": "Received wilted vegetables that looked nothing like the online photos.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "844",
+    "user_name": "Tammy Holden DDS",
+    "time": 1712394603669,
+    "rating": 4,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1949",
+    "user_name": "Kimberly Walker",
+    "time": 1712394603674,
+    "rating": 4,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6989",
+    "user_name": "David Lawson",
+    "time": 1712394603680,
+    "rating": 1,
+    "text": "The 'next day delivery' took nearly a week, ruining my meal planning.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5757",
+    "user_name": "Belinda Cannon",
+    "time": 1712394603685,
+    "rating": 3,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2763",
+    "user_name": "Joshua Dixon",
+    "time": 1712394603690,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4045",
+    "user_name": "Dalton Hamilton",
+    "time": 1712394603695,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9836",
+    "user_name": "Elizabeth Hernandez",
+    "time": 1712394603700,
+    "rating": 3,
+    "text": "Delivery was delayed multiple times without any communication from the seller.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7136",
+    "user_name": "Mitchell Moore",
+    "time": 1712394603705,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9290",
+    "user_name": "Joshua Wilson",
+    "time": 1712394603711,
+    "rating": 5,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6260",
+    "user_name": "Edward Miranda",
+    "time": 1712394603715,
+    "rating": 2,
+    "text": "Tried to give feedback through their survey, but it seems like no one actually reads it.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "301",
+    "user_name": "Ashley Jones",
+    "time": 1712394603721,
+    "rating": 5,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1825",
+    "user_name": "William Wright",
+    "time": 1712394603725,
+    "rating": 1,
+    "text": "The quality of the meat was poor, with a lot of fat and gristle.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2535",
+    "user_name": "Deborah Hampton",
+    "time": 1712394603730,
+    "rating": 4,
+    "text": "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1898",
+    "user_name": "Donna Bell",
+    "time": 1712394603735,
+    "rating": 2,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1970",
+    "user_name": "Laura Andrews",
+    "time": 1712394603741,
+    "rating": 3,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8620",
+    "user_name": "Brian Daniels",
+    "time": 1712394603746,
+    "rating": 3,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4382",
+    "user_name": "Haley Hill",
+    "time": 1712394603751,
+    "rating": 2,
+    "text": "The selection is not as curated as it claims to be, with many low-quality items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2366",
+    "user_name": "William Odom",
+    "time": 1712394603756,
+    "rating": 5,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8941",
+    "user_name": "Brian Carpenter",
+    "time": 1712394603761,
+    "rating": 3,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3416",
+    "user_name": "Joy Mcclure",
+    "time": 1712394603766,
+    "rating": 2,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8063",
+    "user_name": "Cynthia Ramos",
+    "time": 1712394603771,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6362",
+    "user_name": "Ronald Mann",
+    "time": 1712394603776,
+    "rating": 5,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5719",
+    "user_name": "Mark Rodriguez",
+    "time": 1712394603782,
+    "rating": 2,
+    "text": "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3127",
+    "user_name": "Mrs. Danielle Nguyen",
+    "time": 1712394603787,
+    "rating": 5,
+    "text": "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3752",
+    "user_name": "Jennifer Barrett",
+    "time": 1712394603792,
+    "rating": 4,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9780",
+    "user_name": "Robert Cole",
+    "time": 1712394603798,
+    "rating": 5,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3940",
+    "user_name": "Anne Strickland",
+    "time": 1712394603802,
+    "rating": 3,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3334",
+    "user_name": "William Castro",
+    "time": 1712394603807,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "103",
+    "user_name": "Melanie Mcintosh",
+    "time": 1712394603813,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5560",
+    "user_name": "Christopher Mccann",
+    "time": 1712394603817,
+    "rating": 3,
+    "text": "The specialty items are overpriced for what you actually get.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8590",
+    "user_name": "Gina Ingram",
+    "time": 1712394603823,
+    "rating": 3,
+    "text": "Received wilted vegetables that looked nothing like the online photos.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1171",
+    "user_name": "Mark Ferguson",
+    "time": 1712394603828,
+    "rating": 2,
+    "text": "The estimated delivery times are never accurate, always expect delays.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7258",
+    "user_name": "Jerry Olson",
+    "time": 1712394603833,
+    "rating": 4,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8944",
+    "user_name": "Dylan Mullins",
+    "time": 1712394603838,
+    "rating": 3,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8152",
+    "user_name": "Elizabeth Goodwin",
+    "time": 1712394603843,
+    "rating": 5,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4413",
+    "user_name": "Travis Stanley",
+    "time": 1712394603848,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9909",
+    "user_name": "Leah Riley",
+    "time": 1712394603853,
+    "rating": 3,
+    "text": "The estimated delivery times are never accurate, always expect delays.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2734",
+    "user_name": "Stephanie Leonard",
+    "time": 1712394603858,
+    "rating": 3,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5357",
+    "user_name": "Joseph French",
+    "time": 1712394603864,
+    "rating": 3,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1910",
+    "user_name": "Diana Rodriguez",
+    "time": 1712394603869,
+    "rating": 2,
+    "text": "The 'next day delivery' took nearly a week, ruining my meal planning.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "54",
+    "user_name": "Curtis Elliott",
+    "time": 1712394603874,
+    "rating": 2,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "224",
+    "user_name": "Kelly Tanner",
+    "time": 1712394603879,
+    "rating": 5,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3460",
+    "user_name": "Angela Perry DDS",
+    "time": 1712394603885,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5861",
+    "user_name": "John Walton",
+    "time": 1712394603890,
+    "rating": 1,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3629",
+    "user_name": "Paul Melton",
+    "time": 1712394603895,
+    "rating": 4,
+    "text": "The cheese variety is incredible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9690",
+    "user_name": "James Rivera",
+    "time": 1712394603900,
+    "rating": 2,
+    "text": "The fruit arrived overripe and unusable, a complete waste of money.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8913",
+    "user_name": "Christopher Morrison",
+    "time": 1712394603905,
+    "rating": 1,
+    "text": "Found a foreign object in my food package, which is completely unacceptable.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4841",
+    "user_name": "Patrick Ewing",
+    "time": 1712394603910,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1357",
+    "user_name": "Theresa Johnson",
+    "time": 1712394603915,
+    "rating": 2,
+    "text": "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9555",
+    "user_name": "Chad Daniels",
+    "time": 1712394603921,
+    "rating": 5,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3699",
+    "user_name": "Charles Pineda",
+    "time": 1712394603925,
+    "rating": 5,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1870",
+    "user_name": "Marco Jackson",
+    "time": 1712394603931,
+    "rating": 3,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3430",
+    "user_name": "Lee Oconnell",
+    "time": 1712394603936,
+    "rating": 1,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1974",
+    "user_name": "Jenna Wallace",
+    "time": 1712394603941,
+    "rating": 3,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2670",
+    "user_name": "Tina Campbell",
+    "time": 1712394603946,
+    "rating": 3,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1272",
+    "user_name": "Travis Griffin",
+    "time": 1712394603951,
+    "rating": 5,
+    "text": "Best place for vegan groceries.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4602",
+    "user_name": "Ryan Rios",
+    "time": 1712394603957,
+    "rating": 3,
+    "text": "Bulk bin section is a money-saver.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2088",
+    "user_name": "Cory Bryant",
+    "time": 1712394603961,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1139",
+    "user_name": "Katelyn Delgado",
+    "time": 1712394603966,
+    "rating": 2,
+    "text": "My order was missing several items, and customer service was slow to respond.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1028",
+    "user_name": "Chad Herrera",
+    "time": 1712394603973,
+    "rating": 5,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1953",
+    "user_name": "Crystal Duncan",
+    "time": 1712394603977,
+    "rating": 1,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9442",
+    "user_name": "Tristan Howard",
+    "time": 1712394603983,
+    "rating": 4,
+    "text": "Friendly and helpful pharmacy staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5354",
+    "user_name": "Joshua Brewer",
+    "time": 1712394603987,
+    "rating": 4,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2072",
+    "user_name": "Patrick Lawrence",
+    "time": 1712394603992,
+    "rating": 4,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9885",
+    "user_name": "Veronica Johnson",
+    "time": 1712394603998,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1014",
+    "user_name": "Rachel Kaiser",
+    "time": 1712394604003,
+    "rating": 5,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted - the early morning aroma of fresh baking is irresistible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3400",
+    "user_name": "Carl Stewart",
+    "time": 1712394604008,
+    "rating": 3,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6432",
+    "user_name": "Amanda Jones",
+    "time": 1712394604013,
+    "rating": 1,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5011",
+    "user_name": "Shannon Parrish",
+    "time": 1712394604018,
+    "rating": 4,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1683",
+    "user_name": "Anita Walker",
+    "time": 1712394604023,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2205",
+    "user_name": "Lisa Jensen",
+    "time": 1712394604028,
+    "rating": 4,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2686",
+    "user_name": "David Garcia",
+    "time": 1712394604033,
+    "rating": 2,
+    "text": "Packaging is often excessive and not environmentally friendly, contrary to their green claims.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1765",
+    "user_name": "Dr. Sheri Wade",
+    "time": 1712394604038,
+    "rating": 3,
+    "text": "The selection is not as curated as it claims to be, with many low-quality items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "555",
+    "user_name": "Richard Stewart",
+    "time": 1712394604044,
+    "rating": 3,
+    "text": "Not satisfied with the freshness of perishables.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2994",
+    "user_name": "Kristin Moore",
+    "time": 1712394604049,
+    "rating": 4,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9751",
+    "user_name": "Stephanie Avila",
+    "time": 1712394604054,
+    "rating": 4,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7178",
+    "user_name": "Brian Brown",
+    "time": 1712394604059,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6953",
+    "user_name": "Russell Castro",
+    "time": 1712394604064,
+    "rating": 3,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9384",
+    "user_name": "Randy Wallace",
+    "time": 1712394604069,
+    "rating": 1,
+    "text": "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1497",
+    "user_name": "Kelly Klein",
+    "time": 1712394604074,
+    "rating": 2,
+    "text": "Prices have skyrocketed recently without any noticeable improvement in quality or service.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2877",
+    "user_name": "Kelsey Kelley",
+    "time": 1712394604080,
+    "rating": 3,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4562",
+    "user_name": "Mrs. Joann Hernandez",
+    "time": 1712394604085,
+    "rating": 3,
+    "text": "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6589",
+    "user_name": "Maria Olson",
+    "time": 1712394604091,
+    "rating": 3,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2152",
+    "user_name": "Robert Anthony",
+    "time": 1712394604096,
+    "rating": 5,
+    "text": "Love their gluten-free options!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4382",
+    "user_name": "Haley Hill",
+    "time": 1712394604100,
+    "rating": 3,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4842",
+    "user_name": "Jerry Hill",
+    "time": 1712394604106,
+    "rating": 5,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6526",
+    "user_name": "Harold Gonzalez",
+    "time": 1712394604111,
+    "rating": 5,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1348",
+    "user_name": "Emily Fields",
+    "time": 1712394604116,
+    "rating": 2,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4073",
+    "user_name": "Dr. Jack May",
+    "time": 1712394604121,
+    "rating": 3,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1691",
+    "user_name": "Summer Grant",
+    "time": 1712394604127,
+    "rating": 1,
+    "text": "The subscription service is difficult to cancel, with customer service being unresponsive.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7957",
+    "user_name": "Victor Chen",
+    "time": 1712394604132,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2043",
+    "user_name": "Nicholas Hall",
+    "time": 1712394604137,
+    "rating": 4,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted - the early morning aroma of fresh baking is irresistible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6229",
+    "user_name": "Virginia Williams",
+    "time": 1712394604142,
+    "rating": 4,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9776",
+    "user_name": "Jennifer Miller",
+    "time": 1712394604148,
+    "rating": 3,
+    "text": "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9890",
+    "user_name": "Debra Morgan",
+    "time": 1712394604152,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7459",
+    "user_name": "Stephen Phillips",
+    "time": 1712394604158,
+    "rating": 2,
+    "text": "Many products were out of stock, significantly limiting the variety available.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2065",
+    "user_name": "Anna Guerrero",
+    "time": 1712394604162,
+    "rating": 3,
+    "text": "The 'next day delivery' took nearly a week, ruining my meal planning.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "644",
+    "user_name": "Edward Gardner",
+    "time": 1712394604168,
+    "rating": 5,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5272",
+    "user_name": "Kevin Larson",
+    "time": 1712394604173,
+    "rating": 4,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1310",
+    "user_name": "Melissa Vargas",
+    "time": 1712394604177,
+    "rating": 2,
+    "text": "Found a foreign object in my food package, which is completely unacceptable.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3079",
+    "user_name": "Dr. John Stark",
+    "time": 1712394604182,
+    "rating": 2,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6523",
+    "user_name": "Candace Thompson",
+    "time": 1712394604188,
+    "rating": 3,
+    "text": "Love their gluten-free options!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4565",
+    "user_name": "Kaitlyn Hester",
+    "time": 1712394604194,
+    "rating": 1,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2162",
+    "user_name": "Joseph Elliott",
+    "time": 1712394604198,
+    "rating": 1,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8086",
+    "user_name": "Jesus Bradley",
+    "time": 1712394604203,
+    "rating": 1,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8572",
+    "user_name": "Brandon Dixon",
+    "time": 1712394604209,
+    "rating": 1,
+    "text": "The packaging was inadequate, leading to bruised and damaged goods upon arrival.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1666",
+    "user_name": "Michael Nichols",
+    "time": 1712394604214,
+    "rating": 5,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9150",
+    "user_name": "Mary Fischer",
+    "time": 1712394604219,
+    "rating": 5,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7098",
+    "user_name": "Sydney Nelson",
+    "time": 1712394604223,
+    "rating": 4,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6648",
+    "user_name": "Andrea Perez",
+    "time": 1712394604229,
+    "rating": 2,
+    "text": "The estimated delivery times are never accurate, always expect delays.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "817",
+    "user_name": "Tracy Maxwell",
+    "time": 1712394604234,
+    "rating": 4,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3979",
+    "user_name": "Anthony Levy",
+    "time": 1712394604239,
+    "rating": 1,
+    "text": "The product descriptions are misleading, giving a false impression of the item's quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9480",
+    "user_name": "Kenneth Powell",
+    "time": 1712394604244,
+    "rating": 3,
+    "text": "The floral department is always a delight.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2051",
+    "user_name": "Robert Hudson",
+    "time": 1712394604250,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6678",
+    "user_name": "Ashley Melton",
+    "time": 1712394604255,
+    "rating": 2,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3202",
+    "user_name": "James Martinez",
+    "time": 1712394604260,
+    "rating": 5,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4458",
+    "user_name": "Anna Perkins",
+    "time": 1712394604265,
+    "rating": 2,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9082",
+    "user_name": "Nicole Robinson",
+    "time": 1712394604270,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5059",
+    "user_name": "Scott Knight",
+    "time": 1712394604275,
+    "rating": 2,
+    "text": "Found a foreign object in my food package, which is completely unacceptable.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5261",
+    "user_name": "Jason Holland",
+    "time": 1712394604280,
+    "rating": 3,
+    "text": "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2113",
+    "user_name": "Cody Marshall",
+    "time": 1712394604285,
+    "rating": 2,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2429",
+    "user_name": "Benjamin Young",
+    "time": 1712394604290,
+    "rating": 5,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1688",
+    "user_name": "Kevin Miller",
+    "time": 1712394604296,
+    "rating": 3,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3234",
+    "user_name": "Adam Thomas MD",
+    "time": 1712394604301,
+    "rating": 5,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8339",
+    "user_name": "Teresa Peters",
+    "time": 1712394604305,
+    "rating": 1,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "421",
+    "user_name": "Erica Davidson",
+    "time": 1712394604312,
+    "rating": 4,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7761",
+    "user_name": "Jeremy Thomas",
+    "time": 1712394604317,
+    "rating": 2,
+    "text": "The 'next day delivery' took nearly a week, ruining my meal planning.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5506",
+    "user_name": "Austin Steele",
+    "time": 1712394604322,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "980",
+    "user_name": "Barry Kane",
+    "time": 1712394604328,
+    "rating": 3,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6414",
+    "user_name": "Alejandra Richardson",
+    "time": 1712394604332,
+    "rating": 5,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9643",
+    "user_name": "Paul Woods",
+    "time": 1712394604338,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7693",
+    "user_name": "Amanda Floyd",
+    "time": 1712394604345,
+    "rating": 5,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "271",
+    "user_name": "Brandon Knox",
+    "time": 1712394604351,
+    "rating": 1,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1774",
+    "user_name": "Jonathan Chang",
+    "time": 1712394604357,
+    "rating": 3,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2272",
+    "user_name": "Jeffrey Bolton",
+    "time": 1712394604362,
+    "rating": 5,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4478",
+    "user_name": "David Freeman",
+    "time": 1712394604367,
+    "rating": 5,
+    "text": "Best place for vegan groceries.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2230",
+    "user_name": "Andrew Hines",
+    "time": 1712394604372,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8921",
+    "user_name": "Amber Powell",
+    "time": 1712394604377,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6875",
+    "user_name": "Peter Allen",
+    "time": 1712394604382,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5108",
+    "user_name": "Karen Olson",
+    "time": 1712394604387,
+    "rating": 5,
+    "text": "Excellent packaging, ensuring all the delicate greens arrived in perfect condition.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4717",
+    "user_name": "Madison Cooper",
+    "time": 1712394604392,
+    "rating": 3,
+    "text": "The specialty items are overpriced for what you actually get.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "235",
+    "user_name": "John Smith",
+    "time": 1712394604398,
+    "rating": 2,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9108",
+    "user_name": "Brooke Ruiz",
+    "time": 1712394604402,
+    "rating": 3,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "144",
+    "user_name": "Kristin Freeman",
+    "time": 1712394604408,
+    "rating": 1,
+    "text": "Prices have skyrocketed recently without any noticeable improvement in quality or service.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1461",
+    "user_name": "Steven Oliver",
+    "time": 1712394604413,
+    "rating": 3,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1197",
+    "user_name": "Kimberly Stein",
+    "time": 1712394604420,
+    "rating": 1,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6165",
+    "user_name": "Anthony Miller",
+    "time": 1712394604424,
+    "rating": 4,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4525",
+    "user_name": "Kimberly Christian",
+    "time": 1712394604429,
+    "rating": 3,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6916",
+    "user_name": "Anne Lambert",
+    "time": 1712394604434,
+    "rating": 3,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9313",
+    "user_name": "Rebecca Martin",
+    "time": 1712394604439,
+    "rating": 1,
+    "text": "The quality of the meat was poor, with a lot of fat and gristle.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9032",
+    "user_name": "Ms. Stacy Lucas",
+    "time": 1712394604445,
+    "rating": 2,
+    "text": "My order was missing several items, and customer service was slow to respond.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1322",
+    "user_name": "Diana Simpson",
+    "time": 1712394604450,
+    "rating": 5,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9076",
+    "user_name": "Karen Steele",
+    "time": 1712394604454,
+    "rating": 5,
+    "text": "While the prices can be a bit higher than at big box stores, the quality and customer service offered here make it worth the extra cost.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4327",
+    "user_name": "Derek Rivera",
+    "time": 1712394604460,
+    "rating": 3,
+    "text": "Customer service could be more attentive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6601",
+    "user_name": "Kathryn Salazar",
+    "time": 1712394604466,
+    "rating": 2,
+    "text": "The quality control on perishable goods is lacking, as evidenced by inconsistent product quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5729",
+    "user_name": "Jordan Jones",
+    "time": 1712394604471,
+    "rating": 3,
+    "text": "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9880",
+    "user_name": "Justin Cantu",
+    "time": 1712394604475,
+    "rating": 3,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3769",
+    "user_name": "Rachel Larson",
+    "time": 1712394604480,
+    "rating": 3,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9220",
+    "user_name": "Ross Smith",
+    "time": 1712394604486,
+    "rating": 1,
+    "text": "The specialty items are overpriced for what you actually get.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5455",
+    "user_name": "Joseph Richmond",
+    "time": 1712394604491,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8288",
+    "user_name": "Kevin Fisher",
+    "time": 1712394604496,
+    "rating": 5,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5016",
+    "user_name": "Philip Wallace",
+    "time": 1712394604501,
+    "rating": 4,
+    "text": "Awesome selection of organic foods!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5922",
+    "user_name": "Lisa Kaufman",
+    "time": 1712394604507,
+    "rating": 1,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7465",
+    "user_name": "Stephanie Johnson",
+    "time": 1712394604512,
+    "rating": 2,
+    "text": "The freshness guarantee seemed promising, but the reality did not live up to the hype.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7080",
+    "user_name": "Patricia Gay",
+    "time": 1712394604517,
+    "rating": 3,
+    "text": "The specialty items are overpriced for what you actually get.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4640",
+    "user_name": "Garrett Ellis",
+    "time": 1712394604523,
+    "rating": 5,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6586",
+    "user_name": "Carrie Thornton",
+    "time": 1712394604528,
+    "rating": 4,
+    "text": "I appreciate the store's effort in organizing cooking classes; it's a great way to engage with the community and learn new recipes using ingredients sold right there.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5454",
+    "user_name": "Angie Greene",
+    "time": 1712394604533,
+    "rating": 4,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9595",
+    "user_name": "Jonathan Stokes",
+    "time": 1712394604538,
+    "rating": 3,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8961",
+    "user_name": "Tara Gordon",
+    "time": 1712394604544,
+    "rating": 3,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6324",
+    "user_name": "Andrew Mcdaniel",
+    "time": 1712394604550,
+    "rating": 4,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7511",
+    "user_name": "Christian Smith",
+    "time": 1712394604555,
+    "rating": 2,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7686",
+    "user_name": "Gary Melendez",
+    "time": 1712394604560,
+    "rating": 1,
+    "text": "Disappointed by the seafood selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6449",
+    "user_name": "James Johnson",
+    "time": 1712394604566,
+    "rating": 1,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8168",
+    "user_name": "Brittany Turner",
+    "time": 1712394604571,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2975",
+    "user_name": "Michael Ewing",
+    "time": 1712394604576,
+    "rating": 4,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3024",
+    "user_name": "John Velasquez",
+    "time": 1712394604581,
+    "rating": 2,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5515",
+    "user_name": "Catherine Rojas",
+    "time": 1712394604586,
+    "rating": 4,
+    "text": "The wine and beer selection is curated with care, featuring local breweries and vineyards alongside well-known global brands, making it a go-to for any occasion.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8622",
+    "user_name": "Michael Garner",
+    "time": 1712394604591,
+    "rating": 3,
+    "text": "Fresh sushi made daily is a treat.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4966",
+    "user_name": "Angela Heath",
+    "time": 1712394604596,
+    "rating": 3,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6900",
+    "user_name": "Gregory Johnson",
+    "time": 1712394604601,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "590",
+    "user_name": "Kayla Thompson",
+    "time": 1712394604607,
+    "rating": 1,
+    "text": "Packaging is often excessive and not environmentally friendly, contrary to their green claims.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8322",
+    "user_name": "Mark Hall",
+    "time": 1712394604612,
+    "rating": 2,
+    "text": "My order was missing several items, and customer service was slow to respond.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3201",
+    "user_name": "Cody Martin",
+    "time": 1712394604617,
+    "rating": 2,
+    "text": "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "10",
+    "user_name": "Jeanne Nguyen",
+    "time": 1712394604622,
+    "rating": 3,
+    "text": "Best place for vegan groceries.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2912",
+    "user_name": "Joshua Riley",
+    "time": 1712394604628,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "103",
+    "user_name": "Melanie Mcintosh",
+    "time": 1712394604633,
+    "rating": 3,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6457",
+    "user_name": "Timothy Johnson",
+    "time": 1712394604639,
+    "rating": 1,
+    "text": "The store layout is confusing.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3154",
+    "user_name": "Karen Martinez",
+    "time": 1712394604644,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3491",
+    "user_name": "Kristin Lang",
+    "time": 1712394604648,
+    "rating": 3,
+    "text": "My order was missing several items, and customer service was slow to respond.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1148",
+    "user_name": "Aaron Todd",
+    "time": 1712394604653,
+    "rating": 3,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2292",
+    "user_name": "Joanna Ashley",
+    "time": 1712394604658,
+    "rating": 4,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2282",
+    "user_name": "Daniel Mann",
+    "time": 1712394604663,
+    "rating": 2,
+    "text": "Found a foreign object in my food package, which is completely unacceptable.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "701",
+    "user_name": "Robyn Robinson",
+    "time": 1712394604669,
+    "rating": 1,
+    "text": "My order was missing several items, and customer service was slow to respond.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9382",
+    "user_name": "Derrick Davis",
+    "time": 1712394604674,
+    "rating": 3,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9540",
+    "user_name": "Charles Allen",
+    "time": 1712394604679,
+    "rating": 4,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3426",
+    "user_name": "Jay Williams",
+    "time": 1712394604685,
+    "rating": 2,
+    "text": "The produce selection is mediocre at best, you're better off going to a local farmer's market.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4660",
+    "user_name": "Jasmine Deleon",
+    "time": 1712394604690,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6979",
+    "user_name": "Michael Lopez",
+    "time": 1712394604695,
+    "rating": 4,
+    "text": "Love the fresh produce!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2715",
+    "user_name": "Kyle Flynn",
+    "time": 1712394604701,
+    "rating": 1,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2673",
+    "user_name": "Melissa Wallace",
+    "time": 1712394604706,
+    "rating": 2,
+    "text": "The 'next day delivery' took nearly a week, ruining my meal planning.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1919",
+    "user_name": "Heather Reeves",
+    "time": 1712394604711,
+    "rating": 5,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7698",
+    "user_name": "John Walsh",
+    "time": 1712394604716,
+    "rating": 2,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2978",
+    "user_name": "Jeffery Stevens",
+    "time": 1712394604721,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3252",
+    "user_name": "Eric Hall",
+    "time": 1712394604727,
+    "rating": 3,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5209",
+    "user_name": "Robert Allen",
+    "time": 1712394604732,
+    "rating": 1,
+    "text": "The selection is not as curated as it claims to be, with many low-quality items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1904",
+    "user_name": "Jorge Jenkins",
+    "time": 1712394604737,
+    "rating": 5,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4250",
+    "user_name": "Ryan Daniel",
+    "time": 1712394604743,
+    "rating": 3,
+    "text": "The aisles are always clutter-free.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5773",
+    "user_name": "Anthony Kelley",
+    "time": 1712394604748,
+    "rating": 2,
+    "text": "Delivery was delayed multiple times without any communication from the seller.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1707",
+    "user_name": "Johnny Walker",
+    "time": 1712394604752,
+    "rating": 1,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1511",
+    "user_name": "Daniel Lynn",
+    "time": 1712394604758,
+    "rating": 2,
+    "text": "Could use more variety in organic options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3641",
+    "user_name": "Jamie Pierce",
+    "time": 1712394604763,
+    "rating": 3,
+    "text": "Free samples are always appreciated!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4614",
+    "user_name": "Thomas Martinez",
+    "time": 1712394604768,
+    "rating": 2,
+    "text": "Received expired products but the company refused to acknowledge or rectify the issue.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6390",
+    "user_name": "David Robinson",
+    "time": 1712394604773,
+    "rating": 1,
+    "text": "The health and beauty section is lacking.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9026",
+    "user_name": "Debra Meyer",
+    "time": 1712394604778,
+    "rating": 5,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6092",
+    "user_name": "Robert Cunningham",
+    "time": 1712394604783,
+    "rating": 1,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5916",
+    "user_name": "Marc Friedman",
+    "time": 1712394604790,
+    "rating": 3,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5917",
+    "user_name": "Katherine Harvey DVM",
+    "time": 1712394604794,
+    "rating": 5,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6901",
+    "user_name": "Heidi Wall",
+    "time": 1712394604799,
+    "rating": 3,
+    "text": "The description promised organic produce, but the items I received were clearly not.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "119",
+    "user_name": "Tina Edwards",
+    "time": 1712394604804,
+    "rating": 5,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8853",
+    "user_name": "Jack Howard",
+    "time": 1712394604810,
+    "rating": 3,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1668",
+    "user_name": "Elizabeth Cummings",
+    "time": 1712394604815,
+    "rating": 4,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8165",
+    "user_name": "Benjamin Chavez",
+    "time": 1712394604820,
+    "rating": 4,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3831",
+    "user_name": "Rachel Saunders",
+    "time": 1712394604826,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8334",
+    "user_name": "Ariel Moody",
+    "time": 1712394604831,
+    "rating": 2,
+    "text": "Many products were out of stock, significantly limiting the variety available.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4696",
+    "user_name": "Anthony Byrd",
+    "time": 1712394604835,
+    "rating": 2,
+    "text": "Delivery was delayed multiple times without any communication from the seller.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6067",
+    "user_name": "Ronnie Mcintosh",
+    "time": 1712394604842,
+    "rating": 3,
+    "text": "One of the best aspects is the freshness and variety of the salad bar, offering a plethora of options for healthy and quick meal solutions.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7502",
+    "user_name": "Lynn Schmidt",
+    "time": 1712394604847,
+    "rating": 3,
+    "text": "The inclusion of a small cafe within the store is perfect for a quick break during shopping trips, offering excellent coffee and snacks.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6114",
+    "user_name": "Alexandra Davis",
+    "time": 1712394604852,
+    "rating": 5,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3715",
+    "user_name": "Julie Williams",
+    "time": 1712394604856,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7754",
+    "user_name": "Katrina Murphy",
+    "time": 1712394604861,
+    "rating": 4,
+    "text": "Although the selection of products is generally outstanding, I've noticed that staple items can be out of stock, which can be inconvenient for regular shopping.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2341",
+    "user_name": "Victor Liu",
+    "time": 1712394604868,
+    "rating": 4,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1399",
+    "user_name": "Walter Smith",
+    "time": 1712394604873,
+    "rating": 5,
+    "text": "Impressed by the local produce selection.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5180",
+    "user_name": "William Jones",
+    "time": 1712394604877,
+    "rating": 3,
+    "text": "The estimated delivery times are never accurate, always expect delays.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4382",
+    "user_name": "Haley Hill",
+    "time": 1712394604883,
+    "rating": 1,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6317",
+    "user_name": "Caitlin Sutton",
+    "time": 1712394604887,
+    "rating": 1,
+    "text": "Many products were out of stock, significantly limiting the variety available.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1634",
+    "user_name": "Dave Rivas",
+    "time": 1712394604893,
+    "rating": 2,
+    "text": "Tried to give feedback through their survey, but it seems like no one actually reads it.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5998",
+    "user_name": "Richard Daniels",
+    "time": 1712394604898,
+    "rating": 3,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5637",
+    "user_name": "David Clarke",
+    "time": 1712394604903,
+    "rating": 3,
+    "text": "The produce selection is mediocre at best, you're better off going to a local farmer's market.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2933",
+    "user_name": "Sean Jordan",
+    "time": 1712394604908,
+    "rating": 2,
+    "text": "Attempted to return a spoiled product but the process was complicated and frustrating.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "643",
+    "user_name": "Jose Johnson",
+    "time": 1712394604913,
+    "rating": 3,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3149",
+    "user_name": "Jenna Johnson",
+    "time": 1712394604918,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "252",
+    "user_name": "Kevin Lopez",
+    "time": 1712394604923,
+    "rating": 1,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4304",
+    "user_name": "Jeremy Stafford",
+    "time": 1712394604928,
+    "rating": 3,
+    "text": "The butcher counter is a standout, offering custom cuts of meat that are always fresh and sourced from ethical farms.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3708",
+    "user_name": "Cynthia Bullock",
+    "time": 1712394604933,
+    "rating": 4,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1917",
+    "user_name": "James Ramsey",
+    "time": 1712394604938,
+    "rating": 2,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "727",
+    "user_name": "Victor Owens",
+    "time": 1712394604944,
+    "rating": 2,
+    "text": "Customer service could be more attentive.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7004",
+    "user_name": "Catherine Williams",
+    "time": 1712394604949,
+    "rating": 3,
+    "text": "It's refreshing to see a grocery store that places such a high value on customer feedback, with suggestion boxes and responsive management.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8059",
+    "user_name": "Melanie Coleman",
+    "time": 1712394604954,
+    "rating": 5,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6",
+    "user_name": "Mary Robertson",
+    "time": 1712394604959,
+    "rating": 4,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7217",
+    "user_name": "John Best",
+    "time": 1712394604965,
+    "rating": 5,
+    "text": "Excellent customer service!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "194",
+    "user_name": "Matthew Ward",
+    "time": 1712394604970,
+    "rating": 5,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7362",
+    "user_name": "Sara Barnes",
+    "time": 1712394604975,
+    "rating": 3,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5639",
+    "user_name": "Heidi Allen",
+    "time": 1712394604980,
+    "rating": 5,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "228",
+    "user_name": "Carolyn Simmons",
+    "time": 1712394604985,
+    "rating": 4,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1499",
+    "user_name": "Brett Williams",
+    "time": 1712394604990,
+    "rating": 5,
+    "text": "The loyalty app is super convenient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4944",
+    "user_name": "Courtney Vega",
+    "time": 1712394604996,
+    "rating": 5,
+    "text": "Meat and fish sections are well-maintained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1144",
+    "user_name": "Tonya Beck",
+    "time": 1712394605000,
+    "rating": 4,
+    "text": "The variety of plant-based and vegan products is impressive, catering to dietary needs that are often overlooked in traditional grocery stores.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "836",
+    "user_name": "Jacob Campbell",
+    "time": 1712394605006,
+    "rating": 4,
+    "text": "The seafood counter offers an impressive array of fresh, sustainable options, and the knowledgeable staff can provide cooking tips and recipe ideas.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "123",
+    "user_name": "Bridget Johnson",
+    "time": 1712394605011,
+    "rating": 3,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5221",
+    "user_name": "Kristin Valdez",
+    "time": 1712394605016,
+    "rating": 4,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5720",
+    "user_name": "Mary Chan",
+    "time": 1712394605021,
+    "rating": 2,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7320",
+    "user_name": "Taylor Taylor",
+    "time": 1712394605027,
+    "rating": 3,
+    "text": "The aisles are always clutter-free.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6014",
+    "user_name": "Patricia Jennings",
+    "time": 1712394605033,
+    "rating": 3,
+    "text": "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "694",
+    "user_name": "Johnny Olson",
+    "time": 1712394605038,
+    "rating": 3,
+    "text": "The deli section offers amazing sandwiches.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "841",
+    "user_name": "Dominic Day",
+    "time": 1712394605042,
+    "rating": 1,
+    "text": "The quality control on perishable goods is lacking, as evidenced by inconsistent product quality.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7",
+    "user_name": "Cynthia Richmond",
+    "time": 1712394605048,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2341",
+    "user_name": "Victor Liu",
+    "time": 1712394605053,
+    "rating": 1,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6657",
+    "user_name": "Charles Payne",
+    "time": 1712394605058,
+    "rating": 3,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8229",
+    "user_name": "Micheal Anderson",
+    "time": 1712394605063,
+    "rating": 1,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6412",
+    "user_name": "Dawn Morales",
+    "time": 1712394605068,
+    "rating": 3,
+    "text": "Wish there were more discounts.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6775",
+    "user_name": "John Robinson",
+    "time": 1712394605074,
+    "rating": 4,
+    "text": "Checkout is seamless with self-service options.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5791",
+    "user_name": "Scott Riddle",
+    "time": 1712394605079,
+    "rating": 2,
+    "text": "Received wilted vegetables that looked nothing like the online photos.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3853",
+    "user_name": "Janet Wise",
+    "time": 1712394605084,
+    "rating": 3,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3869",
+    "user_name": "Michael Kim",
+    "time": 1712394605090,
+    "rating": 3,
+    "text": "The quality of the meat was poor, with a lot of fat and gristle.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6593",
+    "user_name": "Amy Williams",
+    "time": 1712394605095,
+    "rating": 4,
+    "text": "The floral department is always a delight.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "683",
+    "user_name": "Brian Day",
+    "time": 1712394605100,
+    "rating": 2,
+    "text": "The health and beauty section is lacking.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "313",
+    "user_name": "Thomas Kelly",
+    "time": 1712394605105,
+    "rating": 3,
+    "text": "Love the fresh produce!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9585",
+    "user_name": "Melanie Middleton",
+    "time": 1712394605110,
+    "rating": 1,
+    "text": "Tried to give feedback through their survey, but it seems like no one actually reads it.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8208",
+    "user_name": "Nicole Bell",
+    "time": 1712394605115,
+    "rating": 3,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6385",
+    "user_name": "James Abbott",
+    "time": 1712394605120,
+    "rating": 5,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8284",
+    "user_name": "Mario Allen",
+    "time": 1712394605125,
+    "rating": 4,
+    "text": "Their in-house bakery produces some of the most delightful pastries and bread I've ever tasted - the early morning aroma of fresh baking is irresistible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7759",
+    "user_name": "Russell Obrien",
+    "time": 1712394605130,
+    "rating": 5,
+    "text": "Free samples are always appreciated!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5089",
+    "user_name": "Randy Jones",
+    "time": 1712394605137,
+    "rating": 2,
+    "text": "Found a foreign object in my food package, which is completely unacceptable.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5600",
+    "user_name": "Ashley Snyder",
+    "time": 1712394605143,
+    "rating": 4,
+    "text": "Online ordering process is smooth.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4579",
+    "user_name": "Angela Mendoza",
+    "time": 1712394605148,
+    "rating": 4,
+    "text": "I had an issue with a product, and the way the customer service team handled my complaint was exemplary, offering a refund and a coupon for future use.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "494",
+    "user_name": "Jamie Bailey",
+    "time": 1712394605154,
+    "rating": 5,
+    "text": "The availability of rare and exotic fruits and vegetables encourages culinary exploration and creativity in the kitchen.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3314",
+    "user_name": "Jody Lucas",
+    "time": 1712394605159,
+    "rating": 2,
+    "text": "Parking was a nightmare.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "734",
+    "user_name": "Nicole Jones",
+    "time": 1712394605164,
+    "rating": 3,
+    "text": "The loyalty app is super convenient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7871",
+    "user_name": "James White",
+    "time": 1712394605169,
+    "rating": 3,
+    "text": "Found the website difficult to navigate, with many broken links and outdated information.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6082",
+    "user_name": "Luis Luna",
+    "time": 1712394605174,
+    "rating": 3,
+    "text": "I was pleasantly surprised by their commitment to sustainability, with eco-friendly packaging and a wide range of bulk purchase options reducing plastic waste.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6909",
+    "user_name": "Eric Morgan",
+    "time": 1712394605179,
+    "rating": 3,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4549",
+    "user_name": "Roger Clark",
+    "time": 1712394605183,
+    "rating": 2,
+    "text": "Advertised discounts were not applied at checkout, leading to overcharging.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8084",
+    "user_name": "Tammy Larson",
+    "time": 1712394605188,
+    "rating": 3,
+    "text": "Could use more variety in organic options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5065",
+    "user_name": "Brian Johnson",
+    "time": 1712394605193,
+    "rating": 3,
+    "text": "I found their selection of international foods to be unparalleled, offering authentic ingredients from around the world that are hard to find elsewhere.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "111",
+    "user_name": "Patrick James",
+    "time": 1712394605199,
+    "rating": 3,
+    "text": "The selection is not as curated as it claims to be, with many low-quality items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5147",
+    "user_name": "Juan Silva",
+    "time": 1712394605204,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9929",
+    "user_name": "Victor Pratt",
+    "time": 1712394605209,
+    "rating": 1,
+    "text": "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8068",
+    "user_name": "Jessica Brown",
+    "time": 1712394605215,
+    "rating": 3,
+    "text": "I wish they had more cashiers on duty.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3444",
+    "user_name": "Samuel Anderson",
+    "time": 1712394605220,
+    "rating": 1,
+    "text": "Found a foreign object in my food package, which is completely unacceptable.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "387",
+    "user_name": "Janet Young",
+    "time": 1712394605225,
+    "rating": 3,
+    "text": "The cheese variety is incredible.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5191",
+    "user_name": "Joseph Ramirez",
+    "time": 1712394605230,
+    "rating": 4,
+    "text": "The store's effort to feature and promote products from women-owned and minority-owned businesses is a great way to support diverse entrepreneurs.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4108",
+    "user_name": "Angel Orr",
+    "time": 1712394605235,
+    "rating": 3,
+    "text": "Customer service promised a refund that I never received.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "28",
+    "user_name": "Joshua Brown",
+    "time": 1712394605240,
+    "rating": 3,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2335",
+    "user_name": "Joseph Mays",
+    "time": 1712394605245,
+    "rating": 2,
+    "text": "Customer service promised a refund that I never received.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2769",
+    "user_name": "Katherine Mack",
+    "time": 1712394605250,
+    "rating": 5,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3564",
+    "user_name": "Allison Wagner",
+    "time": 1712394605256,
+    "rating": 3,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2184",
+    "user_name": "Daniel Taylor",
+    "time": 1712394605260,
+    "rating": 3,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3632",
+    "user_name": "Darlene Hill",
+    "time": 1712394605266,
+    "rating": 3,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2660",
+    "user_name": "Christine Torres",
+    "time": 1712394605271,
+    "rating": 5,
+    "text": "Excellent wine and spirits selection.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9106",
+    "user_name": "Jon Matthews",
+    "time": 1712394605276,
+    "rating": 3,
+    "text": "Received expired products but the company refused to acknowledge or rectify the issue.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3491",
+    "user_name": "Kristin Lang",
+    "time": 1712394605281,
+    "rating": 2,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9766",
+    "user_name": "Steven Yu",
+    "time": 1712394605286,
+    "rating": 4,
+    "text": "A go-to for specialty gourmet products.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9177",
+    "user_name": "Jeffery Henderson",
+    "time": 1712394605291,
+    "rating": 4,
+    "text": "The prepared foods section saves my dinners!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1837",
+    "user_name": "Sarah Montgomery",
+    "time": 1712394605296,
+    "rating": 3,
+    "text": "Their commitment to reducing food waste, through partnerships with local food banks and offering discounts on near-expiration items, is truly commendable.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5647",
+    "user_name": "Daniel Barnes",
+    "time": 1712394605301,
+    "rating": 1,
+    "text": "Received an incorrect order and had to go through a lengthy process to get the right items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7959",
+    "user_name": "Katrina Vincent",
+    "time": 1712394605307,
+    "rating": 2,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8421",
+    "user_name": "Christina Oliver",
+    "time": 1712394605312,
+    "rating": 2,
+    "text": "I was disappointed to find that some of the produce, while labeled organic, did not seem to meet the usual standards of freshness and quality I expected.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9905",
+    "user_name": "Carly Lee",
+    "time": 1712394605316,
+    "rating": 3,
+    "text": "Checkout lines were too long.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3668",
+    "user_name": "Lisa Smith",
+    "time": 1712394605322,
+    "rating": 5,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5219",
+    "user_name": "Regina House",
+    "time": 1712394605327,
+    "rating": 4,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8869",
+    "user_name": "Jessica Franco",
+    "time": 1712394605332,
+    "rating": 1,
+    "text": "Could improve on the organic snack options.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "1938",
+    "user_name": "Catherine Coleman",
+    "time": 1712394605337,
+    "rating": 4,
+    "text": "Pet-friendly shopping is a plus.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7676",
+    "user_name": "Kyle Bolton",
+    "time": 1712394605342,
+    "rating": 2,
+    "text": "The app is glitchy and makes ordering a frustrating experience.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9343",
+    "user_name": "Mariah Escobar",
+    "time": 1712394605347,
+    "rating": 3,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9846",
+    "user_name": "Michael Smith",
+    "time": 1712394605352,
+    "rating": 3,
+    "text": "Charged for items that were never delivered, and it's been a hassle to get a refund.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6614",
+    "user_name": "Jessica Chaney",
+    "time": 1712394605357,
+    "rating": 1,
+    "text": "Always out of my favorite items.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4942",
+    "user_name": "Jose Wallace",
+    "time": 1712394605362,
+    "rating": 5,
+    "text": "The loyalty program is not only rewarding but also includes personalized discounts based on shopping history, which I find to be a thoughtful touch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "612",
+    "user_name": "Charles Wilson",
+    "time": 1712394605368,
+    "rating": 5,
+    "text": "I was impressed by the store's initiative to offer educational tours to schools, teaching children about nutrition and the importance of local farming.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4643",
+    "user_name": "Jennifer Mathews",
+    "time": 1712394605373,
+    "rating": 5,
+    "text": "The aisles are always clutter-free.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "755",
+    "user_name": "Ryan Cannon",
+    "time": 1712394605377,
+    "rating": 3,
+    "text": "Their holiday-themed events bring the community together, offering tastings, special deals, and festive decorations that enhance the shopping experience.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9180",
+    "user_name": "Walter Jacobs",
+    "time": 1712394605383,
+    "rating": 5,
+    "text": "They always have the best seasonal fruits.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7537",
+    "user_name": "Larry Suarez",
+    "time": 1712394605388,
+    "rating": 5,
+    "text": "The freshness guarantee is reassuring.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5692",
+    "user_name": "Brittany Paul",
+    "time": 1712394605393,
+    "rating": 3,
+    "text": "They've created a community bulletin board where local events and services are posted, fostering a strong sense of community engagement.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4402",
+    "user_name": "Emily Griffith",
+    "time": 1712394605398,
+    "rating": 5,
+    "text": "Found everything I needed and more!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4059",
+    "user_name": "Debra Wang",
+    "time": 1712394605403,
+    "rating": 3,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2179",
+    "user_name": "Terry Conley",
+    "time": 1712394605407,
+    "rating": 3,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9220",
+    "user_name": "Ross Smith",
+    "time": 1712394605414,
+    "rating": 4,
+    "text": "Some of the best organic tomatoes I've tasted. Will definitely order again!",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3254",
+    "user_name": "Tara Calderon",
+    "time": 1712394605419,
+    "rating": 1,
+    "text": "More eco-friendly packaging needed.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9521",
+    "user_name": "Rickey Ray",
+    "time": 1712394605423,
+    "rating": 2,
+    "text": "The fruit arrived overripe and unusable, a complete waste of money.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8664",
+    "user_name": "Lee Randolph",
+    "time": 1712394605428,
+    "rating": 5,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2690",
+    "user_name": "Melissa Conway",
+    "time": 1712394605434,
+    "rating": 5,
+    "text": "Their loyalty program is really worth it.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7078",
+    "user_name": "Richard Flores",
+    "time": 1712394605439,
+    "rating": 1,
+    "text": "Needs more checkout staff during peak hours.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "875",
+    "user_name": "Erica Hendrix",
+    "time": 1712394605444,
+    "rating": 4,
+    "text": "Online ordering process is smooth.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8449",
+    "user_name": "Jonathan Rodriguez",
+    "time": 1712394605448,
+    "rating": 3,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5695",
+    "user_name": "Sharon Marks",
+    "time": 1712394605454,
+    "rating": 4,
+    "text": "The kids' play area is a thoughtful addition, allowing parents to shop in peace while their children are safely entertained.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "372",
+    "user_name": "Anthony Ross",
+    "time": 1712394605459,
+    "rating": 4,
+    "text": "Love their gluten-free options!",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9661",
+    "user_name": "Chelsea Gray",
+    "time": 1712394605464,
+    "rating": 5,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "275",
+    "user_name": "Gregory Henderson",
+    "time": 1712394605469,
+    "rating": 5,
+    "text": "The store brand products are top quality.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5257",
+    "user_name": "Tamara Castillo",
+    "time": 1712394605474,
+    "rating": 3,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "5572",
+    "user_name": "Robin Smith",
+    "time": 1712394605480,
+    "rating": 4,
+    "text": "They offer great cooking classes and demos.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9452",
+    "user_name": "Leslie Solis",
+    "time": 1712394605485,
+    "rating": 1,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7580",
+    "user_name": "Lori Curtis",
+    "time": 1712394605490,
+    "rating": 3,
+    "text": "Their online shopping and home delivery service have been a game-changer, especially with the intuitive app that makes ordering easy and efficient.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8407",
+    "user_name": "Carol Phelps",
+    "time": 1712394605495,
+    "rating": 5,
+    "text": "The staff went above and beyond when I inquired about gluten-free options, guiding me through the aisles and providing recommendations on products and brands.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "743",
+    "user_name": "Jacob Parker",
+    "time": 1712394605501,
+    "rating": 2,
+    "text": "Claims of 'farm to table' freshness seem exaggerated based on what I received.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9780",
+    "user_name": "Robert Cole",
+    "time": 1712394605505,
+    "rating": 3,
+    "text": "Great prices and friendly staff.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8653",
+    "user_name": "Nicole Johnson",
+    "time": 1712394605510,
+    "rating": 5,
+    "text": "They offer a remarkable range of dietary-specific products, from keto and paleo to gluten-free and sugar-free, making healthy living more accessible.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6824",
+    "user_name": "Douglas Young",
+    "time": 1712394605515,
+    "rating": 1,
+    "text": "The subscription service is difficult to cancel, with customer service being unresponsive.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6605",
+    "user_name": "Holly Schneider",
+    "time": 1712394605521,
+    "rating": 4,
+    "text": "Could be cleaner, but the produce is top-notch.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "79",
+    "user_name": "Amanda Swanson",
+    "time": 1712394605526,
+    "rating": 5,
+    "text": "The selection of locally sourced honey and jams is not only extensive but brings a taste of the region's best flavors directly to our table.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "9854",
+    "user_name": "Carolyn Newman",
+    "time": 1712394605531,
+    "rating": 1,
+    "text": "Needs a better selection of non-dairy milk.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8686",
+    "user_name": "Terry Green",
+    "time": 1712394605536,
+    "rating": 5,
+    "text": "The parking lot is well-lit and safe.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6874",
+    "user_name": "Brandon Mckinney",
+    "time": 1712394605541,
+    "rating": 3,
+    "text": "Best place for vegan groceries.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4153",
+    "user_name": "Brittney Stuart",
+    "time": 1712394605546,
+    "rating": 3,
+    "text": "The description promised organic produce, but the items I received were clearly not.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2960",
+    "user_name": "Amy White",
+    "time": 1712394605551,
+    "rating": 3,
+    "text": "Received expired products but the company refused to acknowledge or rectify the issue.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "3245",
+    "user_name": "Allen Farmer",
+    "time": 1712394605556,
+    "rating": 2,
+    "text": "The fruit arrived overripe and unusable, a complete waste of money.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "8280",
+    "user_name": "Jerry Huerta",
+    "time": 1712394605561,
+    "rating": 5,
+    "text": "The store's interior design and layout make shopping a pleasant experience, with wide aisles, clearly marked sections, and a welcoming atmosphere.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6386",
+    "user_name": "Jeremy Stevenson",
+    "time": 1712394605567,
+    "rating": 5,
+    "text": "In-store cafe makes shopping a pleasure.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "2373",
+    "user_name": "Michele Jones",
+    "time": 1712394605572,
+    "rating": 1,
+    "text": "Customer loyalty seems undervalued, with no incentives or rewards for repeat purchases.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "7938",
+    "user_name": "Benjamin Robinson",
+    "time": 1712394605577,
+    "rating": 5,
+    "text": "Their seasonal outdoor farmers' market is a must-visit, offering an exceptional variety of fresh produce, artisanal cheeses, and handmade goods from local vendors.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "6127",
+    "user_name": "Gregory Kidd",
+    "time": 1712394605581,
+    "rating": 2,
+    "text": "Despite its many positives, the store could improve by extending its hours on weekends to accommodate those with busy work schedules.",
+    "verified": "No",
+    "date": "2024-04-06"
+  },
+  {
+    "ID": "4185",
+    "user_name": "Victoria Morrison",
+    "time": 1712394605586,
+    "rating": 1,
+    "text": "There's a lack of transparency about where the food is sourced from.",
+    "verified": "Yes",
+    "date": "2024-04-06"
+  }
+]
