@@ -6,3 +6,5 @@ pandas
 scrapy
 selenium 
 webdriver-manager
+minio
+docker
