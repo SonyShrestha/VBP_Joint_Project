@@ -223,5 +223,5 @@ if __name__ == "__main__":
 
     reviews = generate_reviews(num_of_reviews,raw_data_dir)
     save_to_json(reviews, raw_data_dir)
-    save_to_csv(reviews, raw_data_dir)
+    # save_to_csv(reviews, raw_data_dir)
     print("Generated and saved individual seller reviews completely.")
