@@ -1,76 +1,3 @@
-name: project.py
-
-on:
-  schedule:
-    - cron: '0 0 * * 5' # At 00:00 on Friday
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout repo content
-        uses: actions/checkout@v2 
-
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10' 
-
-      - name: install python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      # # Scrapy spiders
-      # - name: execute mealdb Scrapy spider 
-      #   run: scrapy crawl mealdb -O mealdb.json
-      #   working-directory: ./landing_zone/collectors/Mealdb/mealscraper
-
-      # - name: execute approvedfood Scrapy spider 
-      #   run: scrapy crawl approvedfood_groceries -O Approvedfood.json
-      #   working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
-
-      # Python scripts
-      - name: execute eat_by_date.py script 
-        run: python eat_by_date.py
-        working-directory: ./landing_zone/collectors/eat_by_date
-
-      # - name: execute flipkart.py script 
-      #   run: python scrap_flipkart.py
-      #   working-directory: ./landing_zone/collectors/Flipkart
-      
-      # - name: Notify Slack
-      #   uses: 8398a7/action-slack@v3
-      #   with:
-      #     status: ${{ job.status }}
-      #     fields: workflow,job,commit,repo,ref,author,took 
-      #     text: 'Job done. Workflow: ${{ github.workflow }}. Status: ${{ job.status }}.'
-      #     webhook_url: ${{ secrets.SLACK_WEBHOOK }}
-      #   if: always() 
-      
-      
-      - name: Configure Git
-        run: |
-          git config --local user.email "61274755+Pce-iyos@users.noreply.github.com"
-          git config --local user.name "GitHub Action"
-
-      - name: Commit and Push Changes to the Triggered Branch
-        run: |
-          git config --global user.email "61274755+Pce-iyos@users.noreply.github.com"
-          git config --global user.name "GitHub Action"
-          git add .
-          if git diff --quiet --staged; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update JSON outputs"
-            git push origin HEAD
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
 # name: project.py
 
@@ -87,17 +14,15 @@ jobs:
 #     outputs:
 #       script_name: 'Mealdb Script'
 #       status: ${{ steps.set_status.outputs.status }}
+#       error: ${{ steps.set_status.outputs.error }}
 #     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v2
+#       - uses: actions/checkout@v2
 
-#       - name: Setup Python
-#         uses: actions/setup-python@v4
+#       - uses: actions/setup-python@v4
 #         with:
 #           python-version: '3.10'
 
-#       - name: Cache Python packages
-#         uses: actions/cache@v3
+#       - uses: actions/cache@v3
 #         with:
 #           path: ~/.cache/pip
 #           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -110,71 +35,311 @@ jobs:
 #           pip install -r requirements.txt
 
 #       - name: Execute mealdb Scrapy spider
-#         run: scrapy crawl mealdb -O mealdb.json
+#         id: mealdb_execution
+#         run: |
+#           scrapy crawl mealdb -O ./data/raw/mealdb.json . 2>mealdb_error.log || echo "error" > mealdb_error.log
 #         working-directory: ./landing_zone/collectors/Mealdb/mealscraper
-
-#       - name: Set job status
+      
+#       - name: Set job status and error
 #         id: set_status
 #         if: always()
 #         run: |
-#           echo "Job completed with status success."
-#           echo "::set-output name=status::success"
+#           if [ -s mealdb_error.log ]; then
+#             ERROR_MSG=$(<mealdb_error.log)
+#             echo "::set-output name=status::failure"
+#             echo "::set-output name=error::$ERROR_MSG"
+#           else
+#             echo "::set-output name=status::success"
+#             echo "::set-output name=error::None"
+#           fi
 
 #   run_ApprovedFood:
 #     runs-on: ubuntu-latest
 #     outputs:
 #       script_name: 'ApprovedFood Script'
 #       status: ${{ steps.set_status.outputs.status }}
+#       error: ${{ steps.set_status.outputs.error }}
 #     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v2
-
-#       - name: Setup Python
-#         uses: actions/setup-python@v4
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-python@v4
 #         with:
 #           python-version: '3.10'
-
-#       - name: Cache Python packages
-#         uses: actions/cache@v3
+#       - uses: actions/cache@v3
 #         with:
 #           path: ~/.cache/pip
 #           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-#           restore-keys: |
-#             ${{ runner.os }}-pip-
-
 #       - name: Install dependencies
 #         run: |
 #           python -m pip install --upgrade pip
 #           pip install -r requirements.txt
-
-        
 #       - name: Execute approvedfood Scrapy spider
-#         run: scrapy crawl approvedfood_groceries -O Approvedfood.json
+#         run: |
+#           scrapy crawl approvedfood_groceries -O ./data/raw/Approvedfood.json 2>approvedfood_error.log || echo "error" > approvedfood_error.log
 #         working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
-
-#       - name: Set job status
+#       - name: Set job status and error
 #         id: set_status
 #         if: always()
 #         run: |
-#           echo "Job completed with status success."
-#           echo "::set-output name=status::success"
+#           if [ -s approvedfood_error.log ]; then
+#             ERROR_MSG=$(<approvedfood_error.log)
+#             echo "::set-output name=status::failure"
+#             echo "::set-output name=error::$ERROR_MSG"
+#           else
+#             echo "::set-output name=status::success"
+#             echo "::set-output name=error::None"
+#           fi
+
+  # run_eat_by_date:
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     script_name: 'Eat by Date Script'
+  #     status: ${{ steps.set_status.outputs.status }}
+  #     error: ${{ steps.set_status.outputs.error }}
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.10'
+  #     - uses: actions/cache@v3
+  #       with:
+  #         path: ~/.cache/pip
+  #         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+  #     - name: Install dependencies
+  #       run: |
+  #         python -m pip install --upgrade pip
+  #         pip install -r requirements.txt
+  #     - name: Execute eat_by_date.py script
+  #       run: |
+  #         python eat_by_date.py 2>eat_by_date_error.log || echo "error" > eat_by_date_error.log
+  #       working-directory: ./landing_zone/collectors/eat_by_date
+  #     - name: Set job status and error
+  #       id: set_status
+  #       if: always()
+  #       run: |
+  #         if [ -s eat_by_date_error.log ]; then
+  #           ERROR_MSG=$(<eat_by_date_error.log)
+  #           echo "::set-output name=status::failure"
+  #           echo "::set-output name=error::$ERROR_MSG"
+  #         else
+  #           echo "::set-output name=status::success"
+  #           echo "::set-output name=error::None"
+  #         fi
+
+  # notify_slack:
+  #   needs: [run_Mealdb, run_ApprovedFood] #, run_eat_by_date]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Set current date
+  #       run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+  #     - name: Notify Slack on Error
+  #       uses: 8398a7/action-slack@v3
+  #       with:
+  #         status: custom
+  #         custom_payload: |
+  #           {
+  #             "attachments": [{
+  #               "color": "${{ needs.run_Mealdb.outputs.status }} === 'success' && '${{ needs.run_ApprovedFood.outputs.status }} === 'success' ? 'good' : 'danger'", 
+  #               "text": "Workflow: ${{ github.workflow }}\nDate: ${{ env.CURRENT_DATE }}\nJob: Detailed Status Update\n- Mealdb Script Status: ${{ needs.run_Mealdb.outputs.status }} (Error: ${{ needs.run_Mealdb.outputs.error }})\n- ApprovedFood Script Status: ${{ needs.run_ApprovedFood.outputs.status }} (Error: ${{ needs.run_ApprovedFood.outputs.error }})\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
+  #             }]
+  #           }
+  #       env:
+  #         SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+  #         CURRENT_DATE: ${{ env.CURRENT_DATE }}
+  #       if: always()
 
 
-#   notify_slack:
-#     needs: [run_Mealdb, run_ApprovedFood] # Ensure these jobs are defined elsewhere in your workflow
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Notify Slack 
-#         uses: 8398a7/action-slack@v3
-#         with:
-#           status: custom
-#           custom_payload: |
-#             {
-#               attachments: [{
-#                 color: '${{ needs.run_Mealdb.outputs.status }}' === 'success' && '${{ needs.run_ApprovedFood.outputs.status }}' === 'success' ? 'good' : 'danger',
-#                 text: `Workflow: ${{ github.workflow }}\nJob: Detailed Status Update\n- Mealdb Script Status: ${{ needs.run_Mealdb.outputs.status }}\n- ApprovedFood Script Status: ${{ needs.run_ApprovedFood.outputs.status }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}`
-#               }]
-#             }
-#         env:
-#           SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-#         if: always()
+
+name: project.py
+
+on:
+  schedule:
+    - cron: '0 0 * * 5' # At 00:00 on Friday
+  push:
+    branches:
+      - main
+
+jobs:
+  run_Mealdb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Cache Python packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Execute mealdb Scrapy spider
+        run: scrapy crawl mealdb -O ./data/raw/mealdb.json
+        working-directory: ./landing_zone/collectors/Mealdb/mealscraper
+        continue-on-error: true
+
+      - name: Prepare error log
+        id: prep_log
+        if: failure()
+        run: |
+          echo "ERROR_LOG<<EOF" >> $GITHUB_ENV
+          cat mealdb_error.log >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+        working-directory: ./landing_zone/collectors/Mealdb/mealscraper
+
+      - name: Determine success/failure indicator and message (Mealdb)
+        id: status_indicator
+        run: |
+          if [ -s mealdb_error.log ]; then
+            echo "STATUS_MESSAGE=Fail :x:" >> $GITHUB_ENV
+            echo "COLOR=#ff0000" >> $GITHUB_ENV
+          else
+            echo "STATUS_MESSAGE=Success :white_check_mark:" >> $GITHUB_ENV
+            echo "COLOR=#36a64f" >> $GITHUB_ENV
+          fi
+        working-directory: ./landing_zone/collectors/Mealdb/mealscraper
+
+
+      - name: Set current date
+        run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+      - name: Notify Slack (Mealdb Script)
+        if: always()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: custom
+          custom_payload: |
+            {
+              "attachments": [
+                {
+                   "color": "${{ env.COLOR }}",
+                  "text": "Mealdb Script\nStatus: ${{ job.status }}\nError Log: ${{ env.ERROR_LOG }}\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+
+  run_ApprovedFood:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Cache Python packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Execute approvedfood Scrapy spider
+        run: scrapy crawl approvedfood_groceries -O ./data/raw/Approvedfood.json
+        working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
+        continue-on-error: true
+
+      - name: Prepare error log (ApprovedFood)
+        if: failure()
+        run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat approvedfood_error.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
+        working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
+
+      - name: Determine success/failure indicator and message (Mealdb)
+        id: status_indicator
+        run: |
+          if [ -s mealdb_error.log ]; then
+            echo "STATUS_MESSAGE=Fail :x:" >> $GITHUB_ENV
+            echo "COLOR=#ff0000" >> $GITHUB_ENV
+          else
+            echo "STATUS_MESSAGE=Success :white_check_mark:" >> $GITHUB_ENV
+            echo "COLOR=#36a64f" >> $GITHUB_ENV
+          fi
+        working-directory: ./landing_zone/collectors/ApprovedFoodUK/approvedfood_scraper
+
+
+      - name: Set current date (ApprovedFood)
+        run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+      - name: Notify Slack (ApprovedFood Script)
+        if: always()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: custom
+          custom_payload: |
+            {
+              "attachments": [
+                {
+                   "color": "${{ env.COLOR }}",
+                  "text": "ApprovedFood Script\nStatus: ${{ job.status }}\nError Log: ${{ env.ERROR_LOG }}\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+
+  # run_eat_by_date:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+
+  #     - name: Setup Python
+  #       uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.10'
+
+  #     - name: Cache Python packages
+  #       uses: actions/cache@v3
+  #       with:
+  #         path: ~/.cache/pip
+  #         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+  #         restore-keys: |
+  #           ${{ runner.os }}-pip-
+
+  #     - name: Install dependencies
+  #       run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+  #     - name: Execute eat_by_date.py script
+  #       run: python eat_by_date.py
+  #       working-directory: ./landing_zone/collectors/eat_by_date
+  #       continue-on-error: true
+
+  #     - name: Prepare error log (Eat by Date)
+  #       if: failure()
+  #       run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat eat_by_date_error.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
+  #       working-directory: ./landing_zone/collectors/eat_by_date
+
+  #     - name: Set current date (Eat by Date)
+  #       run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+  #     - name: Notify Slack (Eat by Date Script)
+  #       if: always()
+  #       uses: 8398a7/action-slack@v3
+  #       with:
+  #         status: custom
+  #         custom_payload: |
+  #           {
+  #             "attachments": [
+  #               {
+  #                 "color": "${{ job.status }} == 'success' ? 'good' : 'danger'",
+  #                 "text": "Eat by Date Script\nStatus: ${{ job.status }}\nError Log: ${{ env.ERROR_LOG }}\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
+  #               }
+  #             ]
+  #           }
+  #       env:
+  #         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
