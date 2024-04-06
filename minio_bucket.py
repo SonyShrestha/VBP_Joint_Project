@@ -16,22 +16,22 @@ config_file_path = os.path.join(config_dir, "config.ini")
 config = configparser.ConfigParser()
 config.read(config_file_path)
 raw_data_folder_path= config['COMMON']['raw_data_dir']
+endpoint = config['COMMON']['endpoint']
+access_key = config['COMMON']['access_key']
+secret_key = config['COMMON']['secret_key']
+bucket_name = config['COMMON']['bucket_name']
 
 def main():
     # Create a client with the MinIO server playground, its access key
     # and secret key.
-    client = Minio("localhost:9000",
-    access_key="spicibytes",
-    secret_key="spicybytes123",
+    client = Minio(endpoint,
+    access_key,
+    secret_key,
     secure=False
     )
 
     # The file to upload, change this path if needed
     # source_file = "D:/BDMA/UPC/BDM/P1/VBP_Joint_Project/data/raw/ApprovedFood.json"
-
-    # The destination bucket and filename on the MinIO server
-    bucket_name = "spicybytes-bucket"
-    destination_file = "ApprovedFood.json"
     
     # Make the bucket if it doesn't exist.
     found = client.bucket_exists(bucket_name)
