@@ -4,8 +4,20 @@ from random import randint, getrandbits, choice
 import json
 import csv
 from faker import Faker
+import pandas as pd
+import os
+import configparser
 
 fake = Faker()
+
+# Get the path to the parent parent directory
+config_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir, os.pardir))
+
+# Specify the path to config file
+config_file_path = os.path.join(config_dir, "config.ini")
+
+config = configparser.ConfigParser()
+config.read(config_file_path)
 
 # Splitting sentiments into positive and negative for simplicity
 positive_sentiments = [
@@ -139,13 +151,17 @@ def generate_review(ID, user_name, rating, text, verified=True):
     }
     return review
 
-def random_user_id():
-    """Generate a pseudo-random user ID."""
-    return str(getrandbits(64))
 
-def random_name():
-    """Generate a random first and last name using Faker."""
-    return fake.name()
+
+def random_user_id(raw_data_dir):
+    customer_df = pd.read_csv(os.path.join(raw_data_dir,'customers.csv'))
+    random_row_index = customer_df.sample(n=1).index[0]
+
+    # Select the random row using iloc
+    random_row = customer_df.iloc[random_row_index]
+    return str(random_row["customer_id"]), str(random_row["customer_name"])
+
+
 
 def random_text_and_rating():
     """Return a random review text and corresponding rating."""
@@ -158,11 +174,13 @@ def random_text_and_rating():
         rating = randint(1, 3)  # Negative reviews have lower ratings
     return text, rating
 
-def generate_reviews(n=500):
+
+def generate_reviews(n,raw_data_dir):
     reviews = []
+    n=int(n)
     for _ in range(n):
-        ID = random_user_id()
-        user_name = random_name()  # Generating fake user names
+        ID, user_name = random_user_id(raw_data_dir)
+        #user_name = random_name()  # Generating fake user names
         # seller_name = random_name()  # Generating fake seller names
         text, rating = random_text_and_rating()  # Get both text and rating
         verified = fake.boolean()  # Randomly choose verified status using Faker
@@ -171,11 +189,16 @@ def generate_reviews(n=500):
     return reviews
 
 
-def save_to_json(reviews, filename="/home/pce/Pictures/individual_reviews.json"):
+
+def save_to_json(reviews, filename):
+    filename = os.path.join(raw_data_dir,'business_reviews.csv')
     with open(filename, "w") as f:
         json.dump(reviews, f, indent=2)
 
-def save_to_csv(reviews, filename="/home/pce/Pictures/individual_reviews.csv"):
+
+
+def save_to_csv(reviews, filename):
+    filename = os.path.join(raw_data_dir,'individual_reviews.csv')
     fieldnames = ['ID', 'user_name', 'time', 'rating', 'text', 'verified', 'date']
     with open(filename, mode="w", newline='', encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -183,8 +206,13 @@ def save_to_csv(reviews, filename="/home/pce/Pictures/individual_reviews.csv"):
         for review in reviews:
             writer.writerow(review)
 
+
+
 if __name__ == "__main__":
-    reviews = generate_reviews(500)
-    save_to_json(reviews)
-    save_to_csv(reviews)
+    raw_data_dir = config["COMMON"]["raw_data_dir"]
+    num_of_reviews = int(config["SENTIMENT_REVIEWS"]["num_of_reviews"])
+
+    reviews = generate_reviews(num_of_reviews,raw_data_dir)
+    save_to_json(reviews, raw_data_dir)
+    save_to_csv(reviews, raw_data_dir)
     print("Generated and saved individual seller reviews completely.")
