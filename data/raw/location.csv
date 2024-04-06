@@ -1,0 +1,578 @@
+location_id,country_code,postal_code,place_name,admin_name1,admin_code1,admin_name2,admin_code2,admin_name3,admin_code3,latitude,longitude,accuracy
+21219,ES,08001,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3799,2.1687,4
+21220,ES,08002,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3823,2.176,4
+21221,ES,08003,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3831,2.1848,4
+21222,ES,08004,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3722,2.1593,4
+21223,ES,08005,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3984,2.2005,4
+21224,ES,08006,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4008,2.1481,4
+21225,ES,08007,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3898,2.1643,4
+21226,ES,08008,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3937,2.1586,4
+21227,ES,08009,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3953,2.1698,4
+21228,ES,08010,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3913,2.1749,4
+21229,ES,08011,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3846,2.1595,4
+21230,ES,08012,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4023,2.157,4
+21231,ES,08013,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4007,2.1792,4
+21232,ES,08014,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.376,2.1382,4
+21233,ES,08015,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.379,2.1552,4
+21234,ES,08016,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4373,2.1795,4
+21235,ES,08017,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4093,2.1129,4
+21236,ES,08018,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4039,2.192,4
+21237,ES,08019,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4158,2.2185,4
+21238,ES,08020,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4245,2.2091,4
+21239,ES,08021,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.397,2.1423,4
+21240,ES,08022,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.407,2.1346,4
+21241,ES,08023,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4129,2.1454,4
+21242,ES,08024,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4112,2.1588,4
+21243,ES,08025,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4079,2.1705,4
+21244,ES,08026,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4118,2.1838,4
+21245,ES,08027,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4225,2.1856,4
+21246,ES,08028,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.378,2.1278,4
+21247,ES,08029,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3868,2.1424,4
+21248,ES,08030,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4327,2.2058,4
+21249,ES,08031,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4324,2.1655,4
+21250,ES,08032,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4248,2.1599,4
+21251,ES,08033,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4551,2.1827,4
+21252,ES,08034,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3859,2.1066,4
+21253,ES,08035,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4262,2.1413,4
+21254,ES,08036,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3906,2.1521,4
+21255,ES,08037,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3998,2.1651,4
+21256,ES,08038,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.359,2.1451,4
+21257,ES,08039,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.3539,2.1578,4
+21258,ES,08040,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.345,2.1272,4
+21259,ES,08041,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4185,2.1763,4
+21260,ES,08042,Barcelona,Cataluna,CT,Barcelona,B,Barcelona,8019.0,41.4434,2.1727,4
+21261,ES,08070,Barcelona,Cataluna,CT,Barcelona,B,,,41.3888,2.159,4
+21262,ES,08071,Barcelona,Cataluna,CT,Barcelona,B,,,41.3888,2.159,4
+21263,ES,08075,Barcelona,Cataluna,CT,Barcelona,B,,,41.3888,2.159,1
+21264,ES,08080,Barcelona,Cataluna,CT,Barcelona,B,,,41.3888,2.159,4
+21265,ES,08100,Mollet Del Valles,Cataluna,CT,Barcelona,B,Mollet del Vallès,8124.0,41.5403,2.2131,4
+21266,ES,08104,Gallecs,Cataluna,CT,Barcelona,B,Mollet del Vallès,8124.0,41.5623,2.1981,1
+21267,ES,08105,"Conreria, La (Sant Fost Campcentelles)",Cataluna,CT,Barcelona,B,Sant Fost de Campsentelles,8209.0,41.5167,2.2333,3
+21268,ES,08105,Sant Fost De Campsentelles,Cataluna,CT,Barcelona,B,Sant Fost de Campsentelles,8209.0,41.5167,2.2333,4
+21269,ES,08106,Santa Maria De Martorelles,Cataluna,CT,Barcelona,B,Santa Maria de Martorelles,8256.0,41.5167,2.25,4
+21270,ES,08107,Martorelles,Cataluna,CT,Barcelona,B,Martorelles,8115.0,41.5269,2.2375,4
+21271,ES,08110,La Vallençana,Cataluna,CT,Barcelona,B,Montcada i Reixac,8125.0,41.4766,2.2128,4
+21272,ES,08110,Montcada I Reixac,Cataluna,CT,Barcelona,B,Montcada i Reixac,8125.0,41.4833,2.1833,4
+21273,ES,08120,La Llagosta,Cataluna,CT,Barcelona,B,la Llagosta,8105.0,41.5172,2.198,4
+21274,ES,08130,Mogoda,Cataluna,CT,Barcelona,B,Santa Perpètua de Mogoda,8260.0,41.5286,2.1973,3
+21275,ES,08130,La Florida,Cataluna,CT,Barcelona,B,Santa Perpètua de Mogoda,8260.0,41.5212,2.1904,4
+21276,ES,08130,Santa Perpetua De Mogoda,Cataluna,CT,Barcelona,B,Santa Perpètua de Mogoda,8260.0,41.5333,2.1833,4
+21277,ES,08130,Santiga (Santa Perpetua De Mogoda),Cataluna,CT,Barcelona,B,Santa Perpètua de Mogoda,8260.0,41.5266,2.1868,3
+21278,ES,08140,Can Valls-To (Urbanitzacio),Cataluna,CT,Barcelona,B,Caldes de Montbui,8033.0,41.6206,2.1896,4
+21279,ES,08140,Caldes De Montbui,Cataluna,CT,Barcelona,B,Caldes de Montbui,8033.0,41.6333,2.1667,4
+21280,ES,08146,Gallifa,Cataluna,CT,Barcelona,B,Gallifa,8087.0,41.6934,2.1152,4
+21281,ES,08148,"Estany, L'",Cataluna,CT,Barcelona,B,Castellolí,8063.0,41.8692,2.1122,4
+21282,ES,08150,Parets Del Valles,Cataluna,CT,Barcelona,B,Parets del Vallès,8159.0,41.5748,2.2331,4
+21283,ES,08150,"Eixample, L'",Cataluna,CT,Barcelona,B,Parets del Vallès,8159.0,41.5748,2.2331,3
+21284,ES,08160,Montmelo,Cataluna,CT,Barcelona,B,Montmeló,8135.0,41.55,2.2419,4
+21285,ES,08170,Montornes Del Valles,Cataluna,CT,Barcelona,B,Montornès del Vallès,8136.0,41.5333,2.2667,4
+21286,ES,08171,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,,,41.4667,2.0833,4
+21287,ES,08172,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21288,ES,08173,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21289,ES,08174,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21290,ES,08178,Collsuspina,Cataluna,CT,Barcelona,B,Collsuspina,8070.0,41.8261,2.1754,4
+21291,ES,08180,Moia,Cataluna,CT,Barcelona,B,Moià,8138.0,41.8111,2.0984,4
+21292,ES,08181,Sentmenat,Cataluna,CT,Barcelona,B,Sentmenat,8267.0,41.6098,2.1368,4
+21293,ES,08182,Sant Feliu De Codines,Cataluna,CT,Barcelona,B,Sant Feliu de Codines,8210.0,41.7,2.1667,4
+21294,ES,08183,Granera,Cataluna,CT,Barcelona,B,Castellcir,8055.0,41.729,2.0613,4
+21295,ES,08183,Castellterçol,Cataluna,CT,Barcelona,B,Castellcir,8055.0,41.7513,2.1203,4
+21296,ES,08183,Castellcir,Cataluna,CT,Barcelona,B,Castellcir,8055.0,41.7612,2.1492,4
+21297,ES,08184,Palau-Solita I Plegamans,Cataluna,CT,Barcelona,B,l'Estany,8079.0,41.6802,2.1723,1
+21298,ES,08185,Lliça De Vall,Cataluna,CT,Barcelona,B,Lliçà de Vall,8108.0,41.5905,2.2412,4
+21299,ES,08186,Lliça D'Amunt,Cataluna,CT,Barcelona,B,Lliçà d'Amunt,8107.0,41.6167,2.2333,4
+21300,ES,08187,Santa Eulalia De Ronçana,Cataluna,CT,Barcelona,B,Santa Eulàlia de Ronçana,8248.0,41.65,2.2333,4
+21301,ES,08187,"Rieral, El (Stª Eulalia De Ronçana)",Cataluna,CT,Barcelona,B,Santa Eulàlia de Ronçana,8248.0,41.65,2.2333,3
+21302,ES,08188,Vallromanes,Cataluna,CT,Barcelona,B,Vallromanes,8296.0,41.5381,2.2976,4
+21303,ES,08189,Sant Quirze Safaja,Cataluna,CT,Barcelona,B,Sant Quirze Safaja,8239.0,41.7281,2.1546,4
+21304,ES,08190,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21305,ES,08191,Rubi,Cataluna,CT,Barcelona,B,Rubí,8184.0,41.4923,2.033,4
+21306,ES,08192,Sant Quirze Del Valles,Cataluna,CT,Barcelona,B,Sant Quirze del Vallès,8238.0,41.5333,2.0833,4
+21307,ES,08193,Bellaterra,Cataluna,CT,Barcelona,B,Cerdanyola del Vallès,8266.0,41.4929,2.0807,4
+21308,ES,08193,Universitat Autonoma De Barcelona,Cataluna,CT,Barcelona,B,Cerdanyola del Vallès,8266.0,41.5026,2.0875,3
+21309,ES,08194,"Fonts, Les (Sant Quirze Del Valles)",Cataluna,CT,Barcelona,B,Sant Quirze del Vallès,8238.0,41.5333,2.0833,4
+21310,ES,08195,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21311,ES,08195,Mira-Sol (Ver Callejero Sant Cugat),Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,3
+21312,ES,08196,"Planes, Les (Ver Callejero Sant Cugat)",Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,3
+21313,ES,08196,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21314,ES,08197,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21315,ES,08197,Valldoreix (Ver Callejero Sant Cugat),Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,3
+21316,ES,08198,Sant Cugat Del Valles,Cataluna,CT,Barcelona,B,Sant Cugat del Vallès,8205.0,41.4667,2.0833,4
+21317,ES,08199,Santa Cecilia (Marganell),Cataluna,CT,Barcelona,B,,,41.4883,2.0782,1
+21318,ES,08199,Montserrat (Monestir),Cataluna,CT,Barcelona,B,,,41.4883,2.0782,1
+21319,ES,08199,"Colonia Puig, La (Marganell)",Cataluna,CT,Barcelona,B,,,41.4883,2.0782,1
+21320,ES,08200,Sabadell,Cataluna,CT,Barcelona,B,,,41.5433,2.1094,4
+21321,ES,08201,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5458,2.1053,4
+21322,ES,08202,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.548,2.1127,4
+21323,ES,08203,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5374,2.1147,4
+21324,ES,08204,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5274,2.1163,4
+21325,ES,08205,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5289,2.0988,4
+21326,ES,08206,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5525,2.0898,4
+21327,ES,08207,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5686,2.0897,4
+21328,ES,08208,Sabadell,Cataluna,CT,Barcelona,B,Sabadell,8187.0,41.5579,2.1037,4
+21329,ES,08210,Barbera Del Valles,Cataluna,CT,Barcelona,B,Barberà del Vallès,8252.0,41.5159,2.1246,4
+21330,ES,08211,Castellar Del Valles,Cataluna,CT,Barcelona,B,Castellar del Vallès,8051.0,41.6167,2.0833,4
+21331,ES,08211,Sant Feliu Del Raco,Cataluna,CT,Barcelona,B,Castellar del Vallès,8051.0,41.6167,2.0667,4
+21332,ES,08211,Can Carner (Residencial),Cataluna,CT,Barcelona,B,Castellar del Vallès,8051.0,41.6167,2.075,3
+21333,ES,08211,Pla De La Bruguera,Cataluna,CT,Barcelona,B,Castellar del Vallès,8051.0,41.6167,2.075,3
+21334,ES,08212,Sant Llorenç Savall,Cataluna,CT,Barcelona,B,Sant Llorenç Savall,8223.0,41.6802,2.0541,4
+21335,ES,08213,Polinya,Cataluna,CT,Barcelona,B,Polinyà,8167.0,41.55,2.15,4
+21336,ES,08214,Badia Del Valles,Cataluna,CT,Barcelona,B,Badia del Vallès,8904.0,41.5965,2.0982,1
+21337,ES,08220,Terrassa,Cataluna,CT,Barcelona,B,Sant Boi de Llobregat,8200.0,41.5667,2.0167,4
+21338,ES,08221,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5635,2.0127,4
+21339,ES,08222,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5636,2.0268,4
+21340,ES,08223,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5543,2.0201,4
+21341,ES,08224,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5601,2.0005,4
+21342,ES,08225,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5745,2.0079,4
+21343,ES,08226,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5744,2.0243,4
+21344,ES,08227,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5701,2.0375,4
+21345,ES,08227,Torrebonica,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5667,2.0167,3
+21346,ES,08228,"Fonts, Les (Terrassa)",Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5667,2.0167,4
+21347,ES,08228,Terrassa,Cataluna,CT,Barcelona,B,Terrassa,8279.0,41.5372,2.0423,4
+21348,ES,08230,"Pedritxes, Les",Cataluna,CT,Barcelona,B,Matadepera,8120.0,41.5989,2.0265,3
+21349,ES,08230,Matadepera,Cataluna,CT,Barcelona,B,Matadepera,8120.0,41.5992,2.0267,4
+21350,ES,08230,Sant Llorenç (Matadepera),Cataluna,CT,Barcelona,B,Matadepera,8120.0,41.5989,2.0265,4
+21351,ES,08231,Ullastrell,Cataluna,CT,Barcelona,B,la Nou de Berguedà,8142.0,41.5262,1.9578,4
+21352,ES,08232,Viladecavalls,Cataluna,CT,Barcelona,B,Viladecavalls,8300.0,41.5558,1.9539,4
+21353,ES,08233,Vacarisses,Cataluna,CT,Barcelona,B,Vacarisses,8291.0,41.6043,1.92,4
+21354,ES,08240,Manresa,Cataluna,CT,Barcelona,B,Manresa,8113.0,41.725,1.8266,4
+21355,ES,08240,Viladordis,Cataluna,CT,Barcelona,B,Manresa,8113.0,41.725,1.863,4
+21356,ES,08241,Manresa,Cataluna,CT,Barcelona,B,Manresa,8113.0,41.7247,1.8282,4
+21357,ES,08242,Manresa,Cataluna,CT,Barcelona,B,Manresa,8113.0,41.7324,1.8229,4
+21358,ES,08243,Manresa,Cataluna,CT,Barcelona,B,Manresa,8113.0,41.7322,1.8369,4
+21359,ES,08248,Manresa,Cataluna,CT,Barcelona,B,,,41.725,1.8266,4
+21360,ES,08250,Sant Joan De Vilatorrada,Cataluna,CT,Barcelona,B,Sant Joan de Vilatorrada,8218.0,41.7455,1.8048,4
+21361,ES,08250,Sant Marti De Torroella,Cataluna,CT,Barcelona,B,Sant Joan de Vilatorrada,8218.0,41.7455,1.8048,3
+21362,ES,08251,Castellnou De Bages,Cataluna,CT,Barcelona,B,Castellnou de Bages,8062.0,41.7831,1.8467,3
+21363,ES,08251,Santpedor,Cataluna,CT,Barcelona,B,Castellnou de Bages,8062.0,41.784,1.8384,4
+21364,ES,08253,Sant Salvador De Guardiola,Cataluna,CT,Barcelona,B,Sant Salvador de Guardiola,8098.0,41.6833,1.7667,4
+21365,ES,08254,El Pont De Vilomara I Rocafort,Cataluna,CT,Barcelona,B,Manresa,8113.0,41.7311,1.7317,1
+21366,ES,08254,Pont De Vilumara (Manresa),Cataluna,CT,Barcelona,B,Manresa,8113.0,41.7311,1.7317,1
+21367,ES,08255,Castellfollit Del Boix,Cataluna,CT,Barcelona,B,Castellfollit del Boix,8059.0,41.6667,1.7,4
+21368,ES,08256,Rajadell,Cataluna,CT,Barcelona,B,Aguilar de Segarra,8002.0,41.7287,1.707,4
+21369,ES,08256,Aguilar De Segarra,Cataluna,CT,Barcelona,B,Aguilar de Segarra,8002.0,41.7482,1.6292,4
+21370,ES,08259,Fals,Cataluna,CT,Barcelona,B,Fonollosa,8084.0,41.743,1.7137,3
+21371,ES,08259,Fonollosa,Cataluna,CT,Barcelona,B,Fonollosa,8084.0,41.7627,1.6684,4
+21372,ES,08260,Suria,Cataluna,CT,Barcelona,B,Súria,8274.0,41.8333,1.75,4
+21373,ES,08260,Argensola (Castellnou De Bages),Cataluna,CT,Barcelona,B,Súria,8274.0,41.8333,1.75,3
+21374,ES,08261,Cardona,Cataluna,CT,Barcelona,B,Cardona,8047.0,41.9133,1.678,4
+21375,ES,08261,La Coromina,Cataluna,CT,Barcelona,B,Cardona,8047.0,41.9102,1.6934,4
+21376,ES,08262,Callus,Cataluna,CT,Barcelona,B,Callús,8038.0,41.8641,1.714,1
+21377,ES,08263,Sant Mateu De Bages,Cataluna,CT,Barcelona,B,Sant Mateu de Bages,8229.0,41.8,1.7333,4
+21378,ES,08269,Valls De Torruela,Cataluna,CT,Barcelona,B,Navàs,8141.0,41.8641,1.714,1
+21379,ES,08269,Coaner,Cataluna,CT,Barcelona,B,Navàs,8141.0,41.8641,1.714,1
+21380,ES,08269,El Pala De Torroella,Cataluna,CT,Barcelona,B,Navàs,8141.0,41.8641,1.714,1
+21381,ES,08269,Sant Salvador De Torroella,Cataluna,CT,Barcelona,B,Navàs,8141.0,41.8641,1.714,1
+21382,ES,08269,Barri La Rata (Navas),Cataluna,CT,Barcelona,B,Navàs,8141.0,41.8641,1.714,1
+21383,ES,08269,Salo,Cataluna,CT,Barcelona,B,Navàs,8141.0,41.8444,1.6395,1
+21384,ES,08270,Navarcles,Cataluna,CT,Barcelona,B,Navarcles,8140.0,41.7524,1.9056,4
+21385,ES,08271,Artes,Cataluna,CT,Barcelona,B,Artés,8010.0,41.798,1.9543,4
+21386,ES,08272,Sant Fruitos De Bages,Cataluna,CT,Barcelona,B,Sant Fruitós de Bages,8213.0,41.75,1.8667,4
+21387,ES,08272,El Pont De Cabrianes,Cataluna,CT,Barcelona,B,Sant Fruitós de Bages,8213.0,41.75,1.8667,3
+21388,ES,08273,Santa Maria D'Olo,Cataluna,CT,Barcelona,B,Santa Maria d'Oló,8258.0,41.8667,2.0333,4
+21389,ES,08274,Sant Feliu Sasserra,Cataluna,CT,Barcelona,B,Sant Feliu Sasserra,8212.0,41.945,2.0212,4
+21390,ES,08275,Calders,Cataluna,CT,Barcelona,B,Calders,8034.0,41.7875,1.987,4
+21391,ES,08275,Monistrol De Calders,Cataluna,CT,Barcelona,B,Calders,8034.0,41.7604,2.0168,4
+21392,ES,08278,Talamanca,Cataluna,CT,Barcelona,B,Mura,8139.0,41.7371,1.9754,4
+21393,ES,08278,Mura,Cataluna,CT,Barcelona,B,Mura,8139.0,41.7016,1.9761,4
+21394,ES,08279,Avinyo,Cataluna,CT,Barcelona,B,Avinyó,8012.0,41.8637,1.9709,4
+21395,ES,08280,Calaf,Cataluna,CT,Barcelona,B,Calaf,8031.0,41.7324,1.514,4
+21396,ES,08281,Sant Pere Sallavinera,Cataluna,CT,Barcelona,B,Castellfollit de Riubregós,8060.0,41.7364,1.5729,4
+21397,ES,08281,"Prats De Rei, Els",Cataluna,CT,Barcelona,B,Castellfollit de Riubregós,8060.0,41.7408,1.6063,3
+21398,ES,08281,Calonge De Segarra,Cataluna,CT,Barcelona,B,Castellfollit de Riubregós,8060.0,41.7408,1.6063,3
+21399,ES,08281,"Coromines, Les (Aguilar De Segarra)",Cataluna,CT,Barcelona,B,Castellfollit de Riubregós,8060.0,41.7482,1.6292,4
+21400,ES,08282,Sant Marti Sesgueioles,Cataluna,CT,Barcelona,B,Pujalt,8176.0,41.6833,1.5,4
+21401,ES,08282,Pujalt,Cataluna,CT,Barcelona,B,Pujalt,8176.0,41.717,1.4212,4
+21402,ES,08283,Castellfollit De Riubregos,Cataluna,CT,Barcelona,B,Castellfollit de Riubregós,8060.0,41.7667,1.4333,4
+21403,ES,08289,Copons,Cataluna,CT,Barcelona,B,Veciana,8297.0,41.6367,1.518,4
+21404,ES,08289,Veciana,Cataluna,CT,Barcelona,B,Veciana,8297.0,41.6564,1.4898,4
+21405,ES,08290,Cerdanyola Del Valles,Cataluna,CT,Barcelona,B,Cerdanyola del Vallès,8266.0,41.4911,2.1408,4
+21406,ES,08291,Ripollet,Cataluna,CT,Barcelona,B,Ripollet,8180.0,41.4975,2.1576,4
+21407,ES,08292,Esparreguera,Cataluna,CT,Barcelona,B,Esparreguera,8076.0,41.5386,1.868,4
+21408,ES,08292,Can Fosalba (Hostalets De Pierola),Cataluna,CT,Barcelona,B,Esparreguera,8076.0,41.5333,1.7667,4
+21409,ES,08292,Serra Alta (Hostalets De Pierola),Cataluna,CT,Barcelona,B,Esparreguera,8076.0,41.5333,1.7667,4
+21410,ES,08293,Collbato,Cataluna,CT,Barcelona,B,Collbató,8069.0,41.5701,1.8271,4
+21411,ES,08294,Mas D'En Pi (Hostalets De Pierola),Cataluna,CT,Barcelona,B,el Bruc,8025.0,41.5333,1.7667,4
+21412,ES,08294,El Bruc,Cataluna,CT,Barcelona,B,el Bruc,8025.0,41.5749,1.7814,4
+21413,ES,08295,Sant Vicenç De Castellet,Cataluna,CT,Barcelona,B,Sant Vicenç de Castellet,8262.0,41.6667,1.8667,4
+21414,ES,08296,Castellbell I El Vilar,Cataluna,CT,Barcelona,B,Castellbell i el Vilar,8053.0,41.634,1.8639,4
+21415,ES,08297,Castellgali,Cataluna,CT,Barcelona,B,Castellgalí,8061.0,41.5688,1.881,1
+21416,ES,08298,Marganell,Cataluna,CT,Barcelona,B,Marganell,8242.0,41.6424,1.7895,3
+21417,ES,08298,Vilamaric (Monistrol De Montserrat),Cataluna,CT,Barcelona,B,Marganell,8242.0,41.6167,1.85,4
+21418,ES,08299,Rellinars,Cataluna,CT,Barcelona,B,Rellinars,8179.0,41.6311,1.9046,4
+21419,ES,08300,Mataro,Cataluna,CT,Barcelona,B,,,41.5421,2.4445,4
+21420,ES,08301,Mataro,Cataluna,CT,Barcelona,B,Mataró,8121.0,41.5421,2.4445,4
+21421,ES,08302,Mataro,Cataluna,CT,Barcelona,B,Mataró,8121.0,41.5421,2.4445,4
+21422,ES,08303,Mataro,Cataluna,CT,Barcelona,B,Mataró,8121.0,41.5421,2.4445,4
+21423,ES,08304,Mataro,Cataluna,CT,Barcelona,B,Mataró,8121.0,41.5421,2.4445,4
+21424,ES,08310,Argentona,Cataluna,CT,Barcelona,B,Argentona,8009.0,41.553,2.4,4
+21425,ES,08317,Orrius,Cataluna,CT,Barcelona,B,Òrrius,8153.0,41.55,2.35,4
+21426,ES,08318,Canyamars (Dosrius),Cataluna,CT,Barcelona,B,Dosrius,8075.0,41.5833,2.4167,4
+21427,ES,08319,Dosrius,Cataluna,CT,Barcelona,B,Dosrius,8075.0,41.595,2.4073,4
+21428,ES,08320,El Masnou,Cataluna,CT,Barcelona,B,"Masnou, El",8118.0,41.4874,2.326,4
+21429,ES,08328,Alella,Cataluna,CT,Barcelona,B,Alella,8003.0,41.4944,2.2949,4
+21430,ES,08329,Teia,Cataluna,CT,Barcelona,B,Teià,8281.0,41.498,2.3221,4
+21431,ES,08330,Premia De Mar,Cataluna,CT,Barcelona,B,Premià de Mar,8172.0,41.4921,2.3652,4
+21432,ES,08338,Premia De Dalt,Cataluna,CT,Barcelona,B,Premià de Dalt,8230.0,41.5,2.35,4
+21433,ES,08339,Vilassar De Dalt,Cataluna,CT,Barcelona,B,Vilassar de Dalt,8214.0,41.5167,2.3667,4
+21434,ES,08340,Vilassar De Mar,Cataluna,CT,Barcelona,B,Vilassar de Mar,8219.0,41.5096,2.3936,4
+21435,ES,08348,Cabrils,Cataluna,CT,Barcelona,B,Cabrils,8030.0,41.5206,2.3875,4
+21436,ES,08349,Cabrera De Mar,Cataluna,CT,Barcelona,B,Cabrera de Mar,8029.0,41.5167,2.4,4
+21437,ES,08350,Arenys De Mar,Cataluna,CT,Barcelona,B,Arenys de Munt,8007.0,41.5819,2.5494,4
+21438,ES,08358,Arenys De Munt,Cataluna,CT,Barcelona,B,Arenys de Munt,8007.0,41.6142,2.5397,4
+21439,ES,08359,Sant Iscle De Vallalta,Cataluna,CT,Barcelona,B,Sant Iscle de Vallalta,8193.0,41.6167,2.5667,4
+21440,ES,08360,Canet De Mar,Cataluna,CT,Barcelona,B,Canet de Mar,8040.0,41.5905,2.5812,4
+21441,ES,08370,Calella,Cataluna,CT,Barcelona,B,Calella,8035.0,41.6168,2.6691,4
+21442,ES,08380,Malgrat De Mar,Cataluna,CT,Barcelona,B,Malgrat de Mar,8110.0,41.6466,2.7413,4
+21443,ES,08389,Palafolls,Cataluna,CT,Barcelona,B,Palafolls,8155.0,41.6597,2.7475,4
+21444,ES,08389,Sant Genis De Palafolls,Cataluna,CT,Barcelona,B,Palafolls,8155.0,41.65,2.7167,4
+21445,ES,08390,Montgat,Cataluna,CT,Barcelona,B,Montgat,8126.0,41.4668,2.2814,4
+21446,ES,08390,"Virreina, La (Tiana)",Cataluna,CT,Barcelona,B,Montgat,8126.0,41.4686,2.28,3
+21447,ES,08391,Tiana,Cataluna,CT,Barcelona,B,Tiana,8282.0,41.4796,2.2675,4
+21448,ES,08392,Sant Andreu De Llavaneres,Cataluna,CT,Barcelona,B,Sant Andreu de Llavaneres,8197.0,41.5667,2.4833,4
+21449,ES,08393,Caldes D'Estrac,Cataluna,CT,Barcelona,B,Caldes d'Estrac,8032.0,41.5667,2.5333,4
+21450,ES,08394,Sant Vicenç De Montalt,Cataluna,CT,Barcelona,B,Sant Vicenç de Montalt,8264.0,41.5785,2.5088,4
+21451,ES,08395,Sant Pol De Mar,Cataluna,CT,Barcelona,B,Sant Pol de Mar,8235.0,41.6018,2.6174,4
+21452,ES,08396,Sant Cebria De Vallalta,Cataluna,CT,Barcelona,B,Sant Cebria de Vallalta,8203.0,41.6167,2.6,4
+21453,ES,08396,Can Domenec (Tordera),Cataluna,CT,Barcelona,B,Sant Cebria de Vallalta,8203.0,41.6167,2.6,3
+21454,ES,08397,Pineda De Mar,Cataluna,CT,Barcelona,B,Pineda de Mar,8163.0,41.6276,2.6889,4
+21455,ES,08398,Santa Susanna,Cataluna,CT,Barcelona,B,Santa Susanna,8261.0,41.6411,2.7111,4
+21456,ES,08400,Granollers,Cataluna,CT,Barcelona,B,,,41.608,2.2877,4
+21457,ES,08401,Granollers,Cataluna,CT,Barcelona,B,Granollers,8096.0,41.6068,2.2866,4
+21458,ES,08402,Granollers,Cataluna,CT,Barcelona,B,Granollers,8096.0,41.6219,2.295,4
+21459,ES,08403,Granollers,Cataluna,CT,Barcelona,B,Granollers,8096.0,41.6143,2.2808,4
+21460,ES,08404,Granollers,Cataluna,CT,Barcelona,B,,,41.608,2.2877,4
+21461,ES,08410,Vilanova Del Valles,Cataluna,CT,Barcelona,B,Vilanova del Vallès,8902.0,41.5534,2.2858,4
+21462,ES,08410,Valldoriolf (Vilanova Del Valles),Cataluna,CT,Barcelona,B,Vilanova del Vallès,8902.0,41.5534,2.2858,4
+21463,ES,08415,Can Traver (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21464,ES,08415,Can Barri (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21465,ES,08415,Font Granada (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21466,ES,08415,Can Carreras (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21467,ES,08415,Castell-Montbui (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21468,ES,08415,Font Del Bou (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21469,ES,08415,Can Fabrera (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21470,ES,08415,Can Regasol (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21471,ES,08415,Rieral De Bigues (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21472,ES,08415,"Pineda, La (Bigues I Riells)",Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21473,ES,08415,"Turo, El (Bigues I Riells)",Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21474,ES,08415,"Manantials, Els (Bigues I Riells)",Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21475,ES,08415,"Saulons D'En Deu, Els (Bigues I Riells)",Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21476,ES,08415,Diamant Del Valles (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21477,ES,08416,Riells Del Fai (Bigues I Riells),Cataluna,CT,Barcelona,B,Bigues i Riells,8023.0,41.6833,2.2333,4
+21478,ES,08420,Canovelles,Cataluna,CT,Barcelona,B,Canovelles,8041.0,41.6167,2.2833,4
+21479,ES,08420,Can Duran,Cataluna,CT,Barcelona,B,Canovelles,8041.0,41.6269,2.2702,3
+21480,ES,08420,Barriada Nova,Cataluna,CT,Barcelona,B,Canovelles,8041.0,41.6171,2.2825,3
+21481,ES,08420,Can Diviu,Cataluna,CT,Barcelona,B,Canovelles,8041.0,41.6181,2.2754,3
+21482,ES,08430,La Roca Del Valles,Cataluna,CT,Barcelona,B,la Roca del Vallès,8181.0,41.5833,2.3333,4
+21483,ES,08430,Santa Agnes De Malanyanes (La Roca),Cataluna,CT,Barcelona,B,la Roca del Vallès,8181.0,41.5833,2.3333,4
+21484,ES,08430,Valldoriolf (La Roca Del Valles),Cataluna,CT,Barcelona,B,la Roca del Vallès,8181.0,41.5833,2.3333,4
+21485,ES,08440,Cardedeu,Cataluna,CT,Barcelona,B,Cànoves i Samalús,8042.0,41.6394,2.3741,4
+21486,ES,08445,Samalus,Cataluna,CT,Barcelona,B,Cànoves i Samalús,8042.0,41.6833,2.3167,4
+21487,ES,08445,Canoves,Cataluna,CT,Barcelona,B,Cànoves i Samalús,8042.0,41.6833,2.35,4
+21488,ES,08450,Sanata (Llinars Del Valles),Cataluna,CT,Barcelona,B,Llinars del Vallès,8106.0,41.6333,2.4,4
+21489,ES,08450,Llinars Del Valles,Cataluna,CT,Barcelona,B,Llinars del Vallès,8106.0,41.6333,2.4,4
+21490,ES,08450,Collsabadell,Cataluna,CT,Barcelona,B,Llinars del Vallès,8106.0,41.6333,2.4,3
+21491,ES,08455,Vilalba Sasserra,Cataluna,CT,Barcelona,B,Vilalba Sasserra,8306.0,41.6528,2.4413,4
+21492,ES,08458,Sant Pere De Vilamajor,Cataluna,CT,Barcelona,B,Sant Llorenç Savall,8223.0,41.6833,2.3833,4
+21493,ES,08459,Sant Antoni De Vilamajor,Cataluna,CT,Barcelona,B,Sant Antoni de Vilamajor,8198.0,41.6667,2.4,4
+21494,ES,08460,Santa Maria De Palautordera,Cataluna,CT,Barcelona,B,Santa Maria de Palautordera,8259.0,41.7,2.45,4
+21495,ES,08461,Sant Esteve De Palautordera,Cataluna,CT,Barcelona,B,Sant Esteve de Palautordera,8207.0,41.7,2.4333,4
+21496,ES,08469,Montseny,Cataluna,CT,Barcelona,B,Fogars de Montclús,8081.0,41.7588,2.3953,4
+21497,ES,08469,"Rieral, El (Fogars De Montclus)",Cataluna,CT,Barcelona,B,Fogars de Montclús,8081.0,41.7573,2.3994,3
+21498,ES,08470,Sant Celoni,Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.6859,2.4814,4
+21499,ES,08471,Vallgorguina,Cataluna,CT,Barcelona,B,Vallgorguina,8294.0,41.6478,2.5097,4
+21500,ES,08472,Campins,Cataluna,CT,Barcelona,B,Campins,8039.0,41.7247,2.4653,4
+21501,ES,08474,Gualba,Cataluna,CT,Barcelona,B,Gualba,8097.0,41.7315,2.5026,4
+21502,ES,08476,"Batlloria, La (Sant Celoni)",Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.6833,2.4833,4
+21503,ES,08479,Fogars De Montclus,Cataluna,CT,Barcelona,B,Fogars de Montclús,8081.0,41.7333,2.45,4
+21504,ES,08479,Mosqueroles,Cataluna,CT,Barcelona,B,Fogars de Montclús,8081.0,41.7273,2.4436,4
+21505,ES,08479,La Costa Del Montseny,Cataluna,CT,Barcelona,B,Fogars de Montclús,8081.0,41.7333,2.45,3
+21506,ES,08480,El Pinar I El Portus,Cataluna,CT,Barcelona,B,l'Ametlla del Vallès,8005.0,41.6641,2.345,1
+21507,ES,08480,"Ametlla Del Valles, L'",Cataluna,CT,Barcelona,B,l'Ametlla del Vallès,8005.0,41.6641,2.345,1
+21508,ES,08490,Tordera,Cataluna,CT,Barcelona,B,Tordera,8284.0,41.6975,2.7179,4
+21509,ES,08495,Fogars De La Selva,Cataluna,CT,Barcelona,B,Fogars de la Selva,8082.0,41.7249,2.6742,4
+21510,ES,08500,Vic,Cataluna,CT,Barcelona,B,Vic,8298.0,41.939,2.2454,4
+21511,ES,08503,Gurb,Cataluna,CT,Barcelona,B,Sant Bartomeu del Grau,8199.0,41.933,2.2372,4
+21512,ES,08503,Sant Bartomeu Del Grau,Cataluna,CT,Barcelona,B,Sant Bartomeu del Grau,8199.0,41.9833,2.1833,4
+21513,ES,08504,Font De'N Titus (Calldetenes),Cataluna,CT,Barcelona,B,Sant Sadurní d'Osormort,8241.0,41.9253,2.2838,4
+21514,ES,08504,Sant Julia De Vilatorta,Cataluna,CT,Barcelona,B,Sant Sadurní d'Osormort,8241.0,41.9219,2.3245,4
+21515,ES,08504,Sant Sadurni D'Osormort,Cataluna,CT,Barcelona,B,Sant Sadurní d'Osormort,8241.0,41.9,2.3833,4
+21516,ES,08505,Sentfores,Cataluna,CT,Barcelona,B,Santa Eulàlia de Riuprimer,8247.0,41.9167,2.2167,4
+21517,ES,08505,Santa Eulalia De Riuprimer,Cataluna,CT,Barcelona,B,Santa Eulàlia de Riuprimer,8247.0,41.9106,2.189,4
+21518,ES,08506,Calldetenes,Cataluna,CT,Barcelona,B,Calldetenes,8037.0,41.9244,2.282,4
+21519,ES,08507,Santa Eugenia De Berga,Cataluna,CT,Barcelona,B,Santa Eugènia de Berga,8246.0,41.9,2.2833,4
+21520,ES,08508,Vinyoles D'Oris (Masies De Voltrega),Cataluna,CT,Barcelona,B,les Masies de Voltregà,8117.0,42.0,2.25,4
+21521,ES,08508,"Gleva, La (Masies De Voltrega)",Cataluna,CT,Barcelona,B,les Masies de Voltregà,8117.0,42.0,2.25,4
+21522,ES,08508,"Masies De Voltrega, Les",Cataluna,CT,Barcelona,B,les Masies de Voltregà,8117.0,42.0,2.25,4
+21523,ES,08509,Santa Cecilia De Voltrega,Cataluna,CT,Barcelona,B,les Masies de Voltregà,8117.0,42.0,2.2333,4
+21524,ES,08510,"Masies De Roda, Les",Cataluna,CT,Barcelona,B,Roda de Ter,8183.0,41.9825,2.3112,3
+21525,ES,08510,Roda De Ter,Cataluna,CT,Barcelona,B,Roda de Ter,8183.0,41.9825,2.3112,4
+21526,ES,08511,Santa Maria De Corco,Cataluna,CT,Barcelona,B,Santa Maria de Corcó,8254.0,42.0333,2.3667,4
+21527,ES,08511,Tavertet,Cataluna,CT,Barcelona,B,Santa Maria de Corcó,8254.0,41.9955,2.4183,4
+21528,ES,08512,Sant Hipolit De Voltrega,Cataluna,CT,Barcelona,B,Sant Hipòlit de Voltregà,8215.0,42.0141,2.2402,4
+21529,ES,08513,Prats De Lluçanes,Cataluna,CT,Barcelona,B,Prats de Lluçanès,8171.0,42.0167,2.0333,4
+21530,ES,08514,Lluça,Cataluna,CT,Barcelona,B,Lluçà,8109.0,42.05,2.0333,4
+21531,ES,08515,Sant Marti D'Albars,Cataluna,CT,Barcelona,B,Sant Martí d'Albars,8225.0,42.0333,2.0833,4
+21532,ES,08515,Santa Creu De Jotglar,Cataluna,CT,Barcelona,B,Sant Martí d'Albars,8225.0,42.0333,2.0833,3
+21533,ES,08516,Olost,Cataluna,CT,Barcelona,B,Olost,8149.0,41.9853,2.0944,4
+21534,ES,08517,Santa Maria De Merles,Cataluna,CT,Barcelona,B,Sagàs,8188.0,42.0,1.9833,4
+21535,ES,08517,Sagas,Cataluna,CT,Barcelona,B,Sagàs,8188.0,42.05,1.9667,4
+21536,ES,08518,Orista,Cataluna,CT,Barcelona,B,Oristà,8151.0,41.9333,2.0667,4
+21537,ES,08519,Vilanova De Sau,Cataluna,CT,Barcelona,B,Vilanova de Sau,8303.0,41.947,2.3844,4
+21538,ES,08519,Folgueroles,Cataluna,CT,Barcelona,B,Vilanova de Sau,8303.0,41.9398,2.3173,4
+21539,ES,08519,Tavernoles,Cataluna,CT,Barcelona,B,Vilanova de Sau,8303.0,41.9559,2.3253,4
+21540,ES,08520,"Llerona (Franqueses Del Valles, Les)",Cataluna,CT,Barcelona,B,les Franqueses del Vallès,8086.0,41.6473,2.2979,4
+21541,ES,08520,"Corro D'Amunt (Franqueses Del Valles, Les)",Cataluna,CT,Barcelona,B,les Franqueses del Vallès,8086.0,41.6473,2.2979,4
+21542,ES,08520,"Corro D'Avall (Franqueses Del Valles, Les)",Cataluna,CT,Barcelona,B,les Franqueses del Vallès,8086.0,41.6473,2.2979,4
+21543,ES,08520,"Marata (Franqueses Del Valles, Les)",Cataluna,CT,Barcelona,B,les Franqueses del Vallès,8086.0,41.6473,2.2979,4
+21544,ES,08521,"Bellavista (Franqueses Del Valles, Les)",Cataluna,CT,Barcelona,B,les Franqueses del Vallès,8086.0,41.7278,2.2697,1
+21545,ES,08522,Malla,Cataluna,CT,Barcelona,B,,,41.8946,2.2437,4
+21546,ES,08529,Muntanyola,Cataluna,CT,Barcelona,B,Muntanyola,8129.0,41.8833,2.1833,4
+21547,ES,08530,La Garriga,Cataluna,CT,Barcelona,B,Cànoves i Samalús,8042.0,41.6829,2.2861,4
+21548,ES,08540,Centelles,Cataluna,CT,Barcelona,B,Centelles,8067.0,41.7971,2.2217,4
+21549,ES,08550,"Hostalets De Balenya, Els (Balenya)",Cataluna,CT,Barcelona,B,Balenyà,8017.0,41.8172,2.2368,4
+21550,ES,08551,Tona,Cataluna,CT,Barcelona,B,Tona,8283.0,41.8504,2.2283,4
+21551,ES,08552,Taradell,Cataluna,CT,Barcelona,B,Taradell,8278.0,41.8723,2.2869,4
+21552,ES,08553,Seva,Cataluna,CT,Barcelona,B,Seva,8269.0,41.8368,2.2817,4
+21553,ES,08554,Sant Miquel De Balenya (Seva),Cataluna,CT,Barcelona,B,Seva,8269.0,41.8383,2.2801,4
+21554,ES,08559,El Brull,Cataluna,CT,Barcelona,B,el Brull,8026.0,41.8164,2.307,1
+21555,ES,08560,Manlleu,Cataluna,CT,Barcelona,B,Manlleu,8112.0,42.0033,2.2846,4
+21556,ES,08569,Rupit,Cataluna,CT,Barcelona,B,Santa Maria de Corcó,8254.0,42.0244,2.4658,4
+21557,ES,08569,Cantonigros,Cataluna,CT,Barcelona,B,Santa Maria de Corcó,8254.0,42.0243,2.4171,3
+21558,ES,08569,Sant Marti Sescorts,Cataluna,CT,Barcelona,B,Santa Maria de Corcó,8254.0,42.0062,2.3308,4
+21559,ES,08569,Pruit,Cataluna,CT,Barcelona,B,Santa Maria de Corcó,8254.0,42.0428,2.4548,4
+21560,ES,08570,Torello,Cataluna,CT,Barcelona,B,Torelló,8285.0,42.0463,2.2668,4
+21561,ES,08571,Sant Vicenç De Torello,Cataluna,CT,Barcelona,B,Sant Vicenç de Torelló,8265.0,42.0748,2.2968,4
+21562,ES,08572,Sant Pere De Torello,Cataluna,CT,Barcelona,B,Sant Pere de Torelló,8233.0,42.0833,2.3,4
+21563,ES,08573,Oris,Cataluna,CT,Barcelona,B,Orís,8150.0,42.0597,2.2207,4
+21564,ES,08580,Sant Quirze De Besora,Cataluna,CT,Barcelona,B,Sant Quirze de Besora,8237.0,42.1,2.2333,4
+21565,ES,08584,Santa Maria De Besora,Cataluna,CT,Barcelona,B,Santa Maria de Besora,8253.0,42.127,2.2585,4
+21566,ES,08585,Montesquiu,Cataluna,CT,Barcelona,B,Montesquiu,8131.0,42.1079,2.2059,4
+21567,ES,08586,Sant Agusti De Lluçanes,Cataluna,CT,Barcelona,B,Sant Agustí de Lluçanès,8195.0,42.0833,2.1333,4
+21568,ES,08587,Alpens,Cataluna,CT,Barcelona,B,Alpens,8004.0,42.1191,2.1005,4
+21569,ES,08588,Sora,Cataluna,CT,Barcelona,B,Sora,8272.0,42.1113,2.1607,4
+21570,ES,08589,Sobremunt,Cataluna,CT,Barcelona,B,Perafita,8160.0,42.036,2.168,4
+21571,ES,08589,Perafita,Cataluna,CT,Barcelona,B,Perafita,8160.0,42.0451,2.1093,4
+21572,ES,08589,Sant Boi De Lluçanes,Cataluna,CT,Barcelona,B,Perafita,8160.0,42.05,2.15,4
+21573,ES,08590,Figaro (Montmany),Cataluna,CT,Barcelona,B,Figaró-Montmany,8134.0,41.7212,2.273,4
+21574,ES,08590,Montmany- Figaro,Cataluna,CT,Barcelona,B,Figaró-Montmany,8134.0,41.7212,2.273,4
+21575,ES,08591,Aiguafreda,Cataluna,CT,Barcelona,B,els Prats de Rei,8170.0,41.78,2.2458,4
+21576,ES,08592,Sant Marti De Centelles,Cataluna,CT,Barcelona,B,Sant Martí de Centelles,8224.0,41.7662,2.2057,4
+21577,ES,08593,Tagamanent,Cataluna,CT,Barcelona,B,Tagamanent,8276.0,41.7375,2.2672,4
+21578,ES,08600,Berga,Cataluna,CT,Barcelona,B,Berga,8022.0,42.1011,1.8456,4
+21579,ES,08600,El Poligon De La Valldan,Cataluna,CT,Barcelona,B,Berga,8022.0,42.1043,1.8463,3
+21580,ES,08604,Castell De L'Areny,Cataluna,CT,Barcelona,B,Castell de l'Areny,8057.0,42.1729,1.9453,4
+21581,ES,08605,Montclar,Cataluna,CT,Barcelona,B,Montclar,8130.0,42.1549,1.9385,1
+21582,ES,08606,La Quar,Cataluna,CT,Barcelona,B,,,42.1549,1.9385,1
+21583,ES,08607,Sant Jaume De Frontanya,Cataluna,CT,Barcelona,B,Sant Jaume de Frontanyà,8216.0,42.1874,2.0239,4
+21584,ES,08610,Avia,Cataluna,CT,Barcelona,B,Avià,8011.0,42.0667,1.85,4
+21585,ES,08610,Cal Rosal (Avia),Cataluna,CT,Barcelona,B,Avià,8011.0,42.0667,1.85,3
+21586,ES,08611,"Colonia Rosal, La (Berga)",Cataluna,CT,Barcelona,B,Olvan,8144.0,42.0667,1.9,3
+21587,ES,08611,Cal Rosal (Olvan),Cataluna,CT,Barcelona,B,Olvan,8144.0,42.0667,1.9,4
+21588,ES,08611,Olvan,Cataluna,CT,Barcelona,B,Olvan,8144.0,42.0569,1.9067,4
+21589,ES,08612,Montmajor,Cataluna,CT,Barcelona,B,Montmajor,8132.0,42.019,1.7361,4
+21590,ES,08613,Vilada,Cataluna,CT,Barcelona,B,Vilada,8299.0,42.1371,1.932,4
+21591,ES,08614,"Espunyola, L'",Cataluna,CT,Barcelona,B,l'Espunyola,8078.0,42.0532,1.7723,4
+21592,ES,08617,Capolat,Cataluna,CT,Barcelona,B,,,42.0772,1.7535,4
+21593,ES,08618,Castellar Del Riu,Cataluna,CT,Barcelona,B,,,42.123,1.7738,4
+21594,ES,08619,Borreda,Cataluna,CT,Barcelona,B,Capolat,8045.0,42.1356,1.9943,4
+21595,ES,08620,Sant Vicenç Dels Horts,Cataluna,CT,Barcelona,B,Sant Vicenç dels Horts,8263.0,41.3932,2.0069,4
+21596,ES,08629,Torrelles De Llobregat,Cataluna,CT,Barcelona,B,Torrelles de Llobregat,8289.0,41.35,1.9833,4
+21597,ES,08630,Santa Maria De Vilalba,Cataluna,CT,Barcelona,B,Abrera,8001.0,41.5168,1.901,3
+21598,ES,08630,Abrera,Cataluna,CT,Barcelona,B,Abrera,8001.0,41.5194,1.9015,4
+21599,ES,08635,Sant Esteve Sesrovires,Cataluna,CT,Barcelona,B,Sant Esteve Sesrovires,8208.0,41.4945,1.8722,4
+21600,ES,08635,"Beguda Alta, La (S. Esteve Sesrovires)",Cataluna,CT,Barcelona,B,Sant Esteve Sesrovires,8208.0,41.4934,1.8833,3
+21601,ES,08640,Olesa De Montserrat,Cataluna,CT,Barcelona,B,Olesa de Montserrat,8147.0,41.5437,1.8941,4
+21602,ES,08650,Cornet,Cataluna,CT,Barcelona,B,Sallent,8191.0,41.813,1.9061,3
+21603,ES,08650,Cabrianes,Cataluna,CT,Barcelona,B,Sallent,8191.0,41.7987,1.9097,4
+21604,ES,08650,Sallent,Cataluna,CT,Barcelona,B,Sallent,8191.0,41.8247,1.8951,4
+21605,ES,08650,La Botjosa,Cataluna,CT,Barcelona,B,Sallent,8191.0,41.8083,1.8976,3
+21606,ES,08660,Balsareny,Cataluna,CT,Barcelona,B,Balsareny,8018.0,41.8634,1.8745,4
+21607,ES,08670,Navas,Cataluna,CT,Barcelona,B,Navàs,8141.0,41.9,1.8776,4
+21608,ES,08671,Castelladral,Cataluna,CT,Barcelona,B,,,41.899,1.7809,4
+21609,ES,08672,"Ametlla De Merola, L'",Cataluna,CT,Barcelona,B,Puig-reig,8175.0,41.8333,1.8833,4
+21610,ES,08672,Gaia,Cataluna,CT,Barcelona,B,Puig-reig,8175.0,41.9167,1.9333,4
+21611,ES,08673,Sant Joan De Montdarn (Viver I Serrateix),Cataluna,CT,Barcelona,B,Viver i Serrateix,8308.0,41.8872,1.8686,1
+21612,ES,08673,Viver I Serrateix,Cataluna,CT,Barcelona,B,Viver i Serrateix,8308.0,41.8872,1.8686,1
+21613,ES,08680,El Guixaro,Cataluna,CT,Barcelona,B,Gironella,8092.0,42.0422,1.8734,3
+21614,ES,08680,"Ametlla De Casserres, L'",Cataluna,CT,Barcelona,B,Gironella,8092.0,42.05,1.8667,4
+21615,ES,08680,Gironella,Cataluna,CT,Barcelona,B,Gironella,8092.0,42.0344,1.8812,4
+21616,ES,08690,Santa Coloma De Cervello,Cataluna,CT,Barcelona,B,Santa Coloma de Cervelló,8244.0,41.3674,2.0143,4
+21617,ES,08691,Monistrol De Montserrat,Cataluna,CT,Barcelona,B,Monistrol de Montserrat,8127.0,41.6167,1.85,4
+21618,ES,08692,Puig-Reig,Cataluna,CT,Barcelona,B,Puig-reig,8175.0,41.9667,1.8833,4
+21619,ES,08693,Casserres,Cataluna,CT,Barcelona,B,Castellar del Riu,8050.0,42.0126,1.8422,4
+21620,ES,08694,Guardiola De Bergueda,Cataluna,CT,Barcelona,B,Sant Julià de Cerdanyola,8903.0,42.2349,1.8772,4
+21621,ES,08694,Sant Julia De Cerdanyola,Cataluna,CT,Barcelona,B,Sant Julià de Cerdanyola,8903.0,42.2235,1.8931,4
+21622,ES,08695,Baga,Cataluna,CT,Barcelona,B,Bagà,8016.0,42.2529,1.861,4
+21623,ES,08695,Gisclareny,Cataluna,CT,Barcelona,B,Bagà,8016.0,42.2529,1.861,3
+21624,ES,08696,La Pobla De Lillet,Cataluna,CT,Barcelona,B,la Pobla de Lillet,8166.0,42.2449,1.9741,4
+21625,ES,08696,Castellar De N'Hug,Cataluna,CT,Barcelona,B,la Pobla de Lillet,8166.0,42.2833,2.0167,4
+21626,ES,08697,Saldes,Cataluna,CT,Barcelona,B,Saldes,8190.0,42.2275,1.7327,4
+21627,ES,08698,Sant Corneli,Cataluna,CT,Barcelona,B,Cercs,8268.0,42.1846,1.8534,3
+21628,ES,08698,Cercs,Cataluna,CT,Barcelona,B,Cercs,8268.0,42.1464,1.8607,4
+21629,ES,08698,La Nou De Bergueda,Cataluna,CT,Barcelona,B,Cercs,8268.0,42.1667,1.8833,4
+21630,ES,08698,Sant Jordi De Cercs,Cataluna,CT,Barcelona,B,Cercs,8268.0,42.1715,1.8676,3
+21631,ES,08698,Figols,Cataluna,CT,Barcelona,B,Cercs,8268.0,42.181,1.836,4
+21632,ES,08699,Vallcebre,Cataluna,CT,Barcelona,B,Avià,8011.0,42.2039,1.818,4
+21633,ES,08700,Igualada,Cataluna,CT,Barcelona,B,Igualada,8102.0,41.5833,1.6191,4
+21634,ES,08710,Santa Margarida De Montbui,Cataluna,CT,Barcelona,B,Santa Margarida de Montbui,8250.0,41.55,1.6167,4
+21635,ES,08710,Santa Margarida De Montbui A-Antiguo,Cataluna,CT,Barcelona,B,Santa Margarida de Montbui,8250.0,41.55,1.6167,3
+21636,ES,08711,Odena,Cataluna,CT,Barcelona,B,Òdena,8143.0,41.6,1.65,4
+21637,ES,08712,Sant Marti De Tous,Cataluna,CT,Barcelona,B,Sant Martí de Tous,8226.0,41.55,1.5167,4
+21638,ES,08712,Sant Jaume Sesoliveres Urb. (Igualada),Cataluna,CT,Barcelona,B,Sant Martí de Tous,8226.0,41.55,1.5167,3
+21639,ES,08717,Argençola,Cataluna,CT,Barcelona,B,Argençola,8008.0,41.6009,1.4445,4
+21640,ES,08717,Montmaneu,Cataluna,CT,Barcelona,B,Argençola,8008.0,41.6255,1.4153,4
+21641,ES,08718,Cabrera D'Anoia,Cataluna,CT,Barcelona,B,Cabrera d'Anoia,8028.0,41.5742,1.5568,1
+21642,ES,08719,Jorba,Cataluna,CT,Barcelona,B,Bellprat,8021.0,41.6012,1.5468,4
+21643,ES,08719,Rubio,Cataluna,CT,Barcelona,B,Bellprat,8021.0,41.3324,1.6496,4
+21644,ES,08719,Castelloli,Cataluna,CT,Barcelona,B,Bellprat,8021.0,41.5983,1.7006,4
+21645,ES,08719,Santa Maria Cami (Veciana),Cataluna,CT,Barcelona,B,Bellprat,8021.0,41.6833,1.5,4
+21646,ES,08720,El Moli D'En Rovira,Cataluna,CT,Barcelona,B,Vilafranca del Penedès,8305.0,41.35,1.7,3
+21647,ES,08720,"Salines, Les",Cataluna,CT,Barcelona,B,Vilafranca del Penedès,8305.0,41.35,1.7,3
+21648,ES,08720,Perepau,Cataluna,CT,Barcelona,B,Vilafranca del Penedès,8305.0,41.35,1.7,3
+21649,ES,08720,Vilafranca Del Penedes,Cataluna,CT,Barcelona,B,Vilafranca del Penedès,8305.0,41.35,1.7,4
+21650,ES,08729,"Casetes, Les (Castellet I La Gornal)",Cataluna,CT,Barcelona,B,Castellet i la Gornal,8058.0,41.35,1.7,1
+21651,ES,08729,Clariana (Castellet I La Gornal),Cataluna,CT,Barcelona,B,Castellet i la Gornal,8058.0,41.35,1.7,1
+21652,ES,08729,Castellet I La Gornal,Cataluna,CT,Barcelona,B,Castellet i la Gornal,8058.0,41.35,1.7,1
+21653,ES,08730,Santa Margarida I Els Monjos,Cataluna,CT,Barcelona,B,Santa Margarida i els Monjos,8251.0,41.3324,1.6496,4
+21654,ES,08731,Sant Marti Sarroca,Cataluna,CT,Barcelona,B,Sant Martí Sarroca,8227.0,41.3833,1.6167,4
+21655,ES,08732,"Munia, La (Castellvi De La Marca)",Cataluna,CT,Barcelona,B,Castellví de la Marca,8065.0,41.3167,1.6167,4
+21656,ES,08732,Castellvi De La Marca,Cataluna,CT,Barcelona,B,Castellví de la Marca,8065.0,41.3167,1.6167,4
+21657,ES,08732,Sant Marçal (Castellet I La Gornal),Cataluna,CT,Barcelona,B,Castellví de la Marca,8065.0,41.3167,1.6167,3
+21658,ES,08732,"Gornal, La (Castellet I La Gornal)",Cataluna,CT,Barcelona,B,Castellví de la Marca,8065.0,41.3167,1.6167,3
+21659,ES,08733,El Pla Del Penedes,Cataluna,CT,Barcelona,B,el Pla del Penedès,8164.0,41.4167,1.7167,4
+21660,ES,08734,Poligon Industrial El Clot De Moja (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3258,1.6912,4
+21661,ES,08734,Moja (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3258,1.6912,4
+21662,ES,08734,Sant Miquel D'Olerdola (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3258,1.6912,4
+21663,ES,08734,Daltmar (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3258,1.6912,4
+21664,ES,08734,Can Trabal (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3258,1.6912,4
+21665,ES,08734,"Arboçar, L' (Avinyonet Del Penedes)",Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3258,1.6912,3
+21666,ES,08735,Vilobi Del Penedes,Cataluna,CT,Barcelona,B,Vilobí del Penedès,8304.0,41.3833,1.65,4
+21667,ES,08736,Guardiola De Font-Rubi,Cataluna,CT,Barcelona,B,Font-rubí,8085.0,41.4145,1.6506,4
+21668,ES,08736,Font-Rubi,Cataluna,CT,Barcelona,B,Font-rubí,8085.0,41.4145,1.6506,3
+21669,ES,08737,Torrelles De Foix,Cataluna,CT,Barcelona,B,Torrelles de Foix,8288.0,41.3833,1.5667,4
+21670,ES,08738,Pontons,Cataluna,CT,Barcelona,B,Pontons,8168.0,41.4148,1.5165,4
+21671,ES,08739,Subirats,Cataluna,CT,Barcelona,B,Subirats,8273.0,41.4,1.8333,4
+21672,ES,08740,Sant Andreu De La Barca,Cataluna,CT,Barcelona,B,Sant Andreu de la Barca,8196.0,41.4466,1.9719,4
+21673,ES,08750,Molins De Rei,Cataluna,CT,Barcelona,B,Molins de Rei,8123.0,41.4167,2.0167,4
+21674,ES,08750,Vallpineda,Cataluna,CT,Barcelona,B,Molins de Rei,8123.0,41.4423,2.0553,3
+21675,ES,08750,Santa Creu D'Olorda,Cataluna,CT,Barcelona,B,Molins de Rei,8123.0,41.4167,2.025,3
+21676,ES,08750,Sant Bartomeu De La Quadra,Cataluna,CT,Barcelona,B,Molins de Rei,8123.0,41.4167,2.0333,4
+21677,ES,08753,Fontpineda Urbanizacion (Palleja) (Urbanitzacio),Cataluna,CT,Barcelona,B,Pallejà,8157.0,41.4239,1.995,4
+21678,ES,08754,El Papiol,Cataluna,CT,Barcelona,B,el Papiol,8158.0,41.4365,2.0107,4
+21679,ES,08755,Castellbisbal,Cataluna,CT,Barcelona,B,Castellbisbal,8054.0,41.474,1.9811,4
+21680,ES,08756,La Palma De Cervello,Cataluna,CT,Barcelona,B,la Palma de Cervelló,8905.0,41.4131,1.9691,4
+21681,ES,08757,Corbera De Baix,Cataluna,CT,Barcelona,B,Corbera de Llobregat,8072.0,41.417,1.9197,4
+21682,ES,08757,Corbera De Llobregat,Cataluna,CT,Barcelona,B,Corbera de Llobregat,8072.0,41.417,1.9197,4
+21683,ES,08757,Safari (Urbanizacio),Cataluna,CT,Barcelona,B,Corbera de Llobregat,8072.0,41.417,1.9197,3
+21684,ES,08758,Inter-Club (Vallirana),Cataluna,CT,Barcelona,B,Cervelló,8068.0,41.3959,1.9592,3
+21685,ES,08758,Cervello,Cataluna,CT,Barcelona,B,Cervelló,8068.0,41.3959,1.9592,4
+21686,ES,08758,Costa De La Perdiu (Cervello),Cataluna,CT,Barcelona,B,Cervelló,8068.0,41.3959,1.9592,4
+21687,ES,08758,Can Roig (Cervello),Cataluna,CT,Barcelona,B,Cervelló,8068.0,41.3959,1.9592,4
+21688,ES,08758,Puigmontmany (Cervello),Cataluna,CT,Barcelona,B,Cervelló,8068.0,41.3959,1.9592,4
+21689,ES,08759,Vallirana,Cataluna,CT,Barcelona,B,Vallirana,8295.0,41.3894,1.9339,4
+21690,ES,08760,Martorell,Cataluna,CT,Barcelona,B,Martorell,8114.0,41.4771,1.9221,4
+21691,ES,08769,Castellvi De Rosanes,Cataluna,CT,Barcelona,B,Castellví de Rosanes,8066.0,41.45,1.9,4
+21692,ES,08770,Espiells,Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.4404,1.8101,4
+21693,ES,08770,Sant Sadurni D'Anoia,Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.4167,1.7833,4
+21694,ES,08770,Monistrol D'Anoia,Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.4469,1.7855,4
+21695,ES,08770,Can Catassus,Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.4347,1.793,3
+21696,ES,08770,Can Benet De La Prua,Cataluna,CT,Barcelona,B,Sant Celoni,8202.0,41.4347,1.793,3
+21697,ES,08773,Mediona,Cataluna,CT,Barcelona,B,Mediona,8122.0,41.478,1.6122,4
+21698,ES,08775,Torrelavit,Cataluna,CT,Barcelona,B,Torrelavit,8287.0,41.4523,1.6982,1
+21699,ES,08776,Sant Pere De Riudebitlles,Cataluna,CT,Barcelona,B,Sant Pere de Riudebitlles,8232.0,41.45,1.7,4
+21700,ES,08777,Sant Quinti De Mediona,Cataluna,CT,Barcelona,B,Sant Quintí de Mediona,8236.0,41.4623,1.6639,4
+21701,ES,08779,La Llacuna,Cataluna,CT,Barcelona,B,la Llacuna,8104.0,41.4712,1.5326,4
+21702,ES,08780,Palleja,Cataluna,CT,Barcelona,B,Pallejà,8157.0,41.4239,1.995,4
+21703,ES,08781,"Hostalets De Pierola, Els",Cataluna,CT,Barcelona,B,els Hostalets de Pierola,8162.0,41.5333,1.7667,4
+21704,ES,08782,"Beguda Alta, La (Masquefa)",Cataluna,CT,Barcelona,B,Masquefa,8119.0,41.5035,1.8114,4
+21705,ES,08783,Masquefa,Cataluna,CT,Barcelona,B,Masquefa,8119.0,41.5012,1.8142,4
+21706,ES,08784,Piera,Cataluna,CT,Barcelona,B,Piera,8161.0,41.5228,1.751,4
+21707,ES,08784,Sant Jaume Sesoliveres,Cataluna,CT,Barcelona,B,Piera,8161.0,41.4706,1.7521,3
+21708,ES,08784,La Fortesa,Cataluna,CT,Barcelona,B,Piera,8161.0,41.454,1.7628,3
+21709,ES,08784,El Badorc,Cataluna,CT,Barcelona,B,Piera,8161.0,41.5223,1.7508,3
+21710,ES,08785,Vallbona D'Anoia,Cataluna,CT,Barcelona,B,Vallbona d'Anoia,8292.0,41.5167,1.7167,4
+21711,ES,08786,Capellades,Cataluna,CT,Barcelona,B,Capellades,8044.0,41.5348,1.6826,4
+21712,ES,08787,Carme,Cataluna,CT,Barcelona,B,Orpí,8152.0,41.5313,1.6129,4
+21713,ES,08787,Orpi,Cataluna,CT,Barcelona,B,Orpí,8152.0,41.5187,1.5754,4
+21714,ES,08787,Can Bou (Orpi),Cataluna,CT,Barcelona,B,Orpí,8152.0,41.5187,1.5754,4
+21715,ES,08787,La Pobla De Claramunt,Cataluna,CT,Barcelona,B,Orpí,8152.0,41.5542,1.6771,4
+21716,ES,08787,Santa Maria De Miralles,Cataluna,CT,Barcelona,B,Orpí,8152.0,41.5309,1.6121,3
+21717,ES,08788,Vilanova Del Cami,Cataluna,CT,Barcelona,B,Vilanova del Camí,8302.0,41.5716,1.6375,4
+21718,ES,08789,La Torre De Claramunt,Cataluna,CT,Barcelona,B,la Torre de Claramunt,8286.0,41.532,1.6207,4
+21719,ES,08789,Vilanova D'Espoia,Cataluna,CT,Barcelona,B,la Torre de Claramunt,8286.0,41.532,1.6207,3
+21720,ES,08789,"Pinedes De L'Ermengol, Les",Cataluna,CT,Barcelona,B,la Torre de Claramunt,8286.0,41.532,1.6207,3
+21721,ES,08790,Gelida,Cataluna,CT,Barcelona,B,Gelida,8091.0,41.4409,1.8646,4
+21722,ES,08790,Sant Salvador,Cataluna,CT,Barcelona,B,Gelida,8091.0,41.4555,1.8658,4
+21723,ES,08791,Sant Joan Samora (S.Llorenç D'Hortons),Cataluna,CT,Barcelona,B,Sant Llorenç d'Hortons,8222.0,41.4667,1.8333,3
+21724,ES,08791,"Beguda Baixa, La (S.Llorenç D'Hortons)",Cataluna,CT,Barcelona,B,Sant Llorenç d'Hortons,8222.0,41.4667,1.8333,3
+21725,ES,08791,"Beguda Alta, La (S. Llorenç D'Hortons)",Cataluna,CT,Barcelona,B,Sant Llorenç d'Hortons,8222.0,41.4667,1.8333,3
+21726,ES,08791,Sant Llorenç D'Hortons,Cataluna,CT,Barcelona,B,Sant Llorenç d'Hortons,8222.0,41.4667,1.8333,4
+21727,ES,08792,La Granada,Cataluna,CT,Barcelona,B,la Granada,8094.0,41.3762,1.7194,3
+21728,ES,08792,Santa Fe Del Penedes,Cataluna,CT,Barcelona,B,la Granada,8094.0,41.3833,1.7167,4
+21729,ES,08792,"Garrofa, La (Avinyonet Del Penedes)",Cataluna,CT,Barcelona,B,la Granada,8094.0,41.3833,1.7167,3
+21730,ES,08793,Avinyonet Del Penedes,Cataluna,CT,Barcelona,B,Avinyonet del Penedès,8013.0,41.35,1.7833,4
+21731,ES,08794,"Cabanyes, Les",Cataluna,CT,Barcelona,B,les Cabanyes,8027.0,41.3667,1.7,4
+21732,ES,08795,Olesa De Bonesvalls,Cataluna,CT,Barcelona,B,Olesa de Bonesvalls,8146.0,41.3544,1.8491,4
+21733,ES,08796,Pacs Del Penedes,Cataluna,CT,Barcelona,B,Pacs del Penedès,8154.0,41.3975,1.7846,1
+21734,ES,08797,Puigdalber,Cataluna,CT,Barcelona,B,Puigdàlber,8174.0,41.4,1.7,4
+21735,ES,08798,Sant Sebastia Dels Gorgs (Avinyonet Del Penedes),Cataluna,CT,Barcelona,B,Avinyonet del Penedès,8013.0,41.3667,1.75,3
+21736,ES,08798,Sant Cugat Sesgarrigues,Cataluna,CT,Barcelona,B,Avinyonet del Penedès,8013.0,41.3625,1.752,4
+21737,ES,08799,Sant Pere Molanta (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3975,1.7846,1
+21738,ES,08799,Poligon Industrial De Sant Pere Molanta (Olerdola),Cataluna,CT,Barcelona,B,Olèrdola,8145.0,41.3975,1.7846,1
+21739,ES,08800,Vilanova I La Geltru,Cataluna,CT,Barcelona,B,Vilanova i la Geltrú,8307.0,41.2239,1.7251,4
+21740,ES,08805,Sabadell,Cataluna,CT,Barcelona,B,,,41.5433,2.1094,4
+21741,ES,08810,Sant Pere De Ribes,Cataluna,CT,Barcelona,B,Sant Pere de Ribes,8231.0,41.2667,1.7667,4
+21742,ES,08810,Puigmolto,Cataluna,CT,Barcelona,B,Sant Pere de Ribes,8231.0,41.2499,1.7689,4
+21743,ES,08811,Canyelles,Cataluna,CT,Barcelona,B,Canyelles,8043.0,41.2787,1.7194,4
+21744,ES,08812,Vilanoveta,Cataluna,CT,Barcelona,B,Sant Pere de Ribes,8231.0,41.2358,1.7545,3
+21745,ES,08812,"Roquetes, Les (Sant Pere De Ribes)",Cataluna,CT,Barcelona,B,Sant Pere de Ribes,8231.0,41.2667,1.7667,4
+21746,ES,08812,El Mas D'En Serra,Cataluna,CT,Barcelona,B,Sant Pere de Ribes,8231.0,41.2667,1.7667,3
+21747,ES,08818,Olivella,Cataluna,CT,Barcelona,B,Olivella,8148.0,41.3101,1.8119,4
+21748,ES,08820,El Aeroport Del Prat,Cataluna,CT,Barcelona,B,el Prat de Llobregat,8169.0,41.3278,2.0947,3
+21749,ES,08820,El Prat De Llobregat,Cataluna,CT,Barcelona,B,el Prat de Llobregat,8169.0,41.3278,2.0947,4
+21750,ES,08830,Sant Boi De Llobregat,Cataluna,CT,Barcelona,B,Sant Boi de Llobregat,8200.0,41.3436,2.0366,4
+21751,ES,08840,Viladecans,Cataluna,CT,Barcelona,B,Viladecans,8301.0,41.3173,2.0124,4
+21752,ES,08849,Sant Climent De Llobregat,Cataluna,CT,Barcelona,B,Sant Climent de Llobregat,8204.0,41.3333,2.0,4
+21753,ES,08850,Gava,Cataluna,CT,Barcelona,B,Gavà,8089.0,41.3061,2.0012,4
+21754,ES,08859,Begues,Cataluna,CT,Barcelona,B,Begues,8020.0,41.3309,1.9243,4
+21755,ES,08860,Castelldefels,Cataluna,CT,Barcelona,B,Castelldefels,8056.0,41.264,1.938,4
+21756,ES,08860,Garraf Ii (Sitges) (Urbanitzacio),Cataluna,CT,Barcelona,B,Castelldefels,8056.0,41.2351,1.8119,4
+21757,ES,08860,"Botigues De Sitges, Les (Sitges)",Cataluna,CT,Barcelona,B,Castelldefels,8056.0,41.2351,1.8119,4
+21758,ES,08860,Rat Penat (Sitges) (Urbanitzacio),Cataluna,CT,Barcelona,B,Castelldefels,8056.0,41.2351,1.8119,4
+21759,ES,08870,Sitges,Cataluna,CT,Barcelona,B,Sitges,8270.0,41.2446,1.7962,4
+21760,ES,08871,Garraf (Sitges),Cataluna,CT,Barcelona,B,Sitges,8270.0,41.2351,1.8119,4
+21761,ES,08872,Vallcarca (Sitges),Cataluna,CT,Barcelona,B,,,41.2351,1.8119,4
+21762,ES,08880,Cubelles,Cataluna,CT,Barcelona,B,Cubelles,8074.0,41.2035,1.6822,4
+21763,ES,08900,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,,,41.4301,2.1925,1
+21764,ES,08901,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21765,ES,08902,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21766,ES,08903,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21767,ES,08904,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21768,ES,08905,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21769,ES,08906,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21770,ES,08907,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21771,ES,08908,"Hospitalet De Llobregat, L'",Cataluna,CT,Barcelona,B,l'Hospitalet de Llobregat,8101.0,41.4301,2.1925,1
+21772,ES,08910,Badalona,Cataluna,CT,Barcelona,B,,,41.45,2.2474,4
+21773,ES,08911,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4519,2.2517,4
+21774,ES,08912,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4451,2.2412,4
+21775,ES,08913,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4344,2.2156,4
+21776,ES,08914,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4458,2.2197,4
+21777,ES,08915,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4611,2.2461,4
+21778,ES,08916,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4787,2.253,4
+21779,ES,08916,Mas Ram Urb. (Tiana),Cataluna,CT,Barcelona,B,Badalona,8015.0,41.45,2.2474,3
+21780,ES,08917,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4518,2.2302,4
+21781,ES,08918,Badalona,Cataluna,CT,Barcelona,B,Badalona,8015.0,41.4322,2.2211,4
+21782,ES,08920,Santa Coloma De Gramenet,Cataluna,CT,Barcelona,B,,,41.4515,2.2081,4
+21783,ES,08921,Santa Coloma De Gramenet,Cataluna,CT,Barcelona,B,Santa Coloma de Gramenet,8245.0,41.4515,2.2081,4
+21784,ES,08922,Santa Coloma De Gramenet,Cataluna,CT,Barcelona,B,Santa Coloma de Gramenet,8245.0,41.4515,2.2081,4
+21785,ES,08923,Santa Coloma De Gramenet,Cataluna,CT,Barcelona,B,Santa Coloma de Gramenet,8245.0,41.4515,2.2081,4
+21786,ES,08924,Santa Coloma De Gramenet,Cataluna,CT,Barcelona,B,Santa Coloma de Gramenet,8245.0,41.4515,2.2081,4
+21787,ES,08930,Sant Adria De Besos,Cataluna,CT,Barcelona,B,Sant Adrià de Besòs,8194.0,41.4307,2.2186,4
+21788,ES,08940,Cornella De Llobregat,Cataluna,CT,Barcelona,B,Cornellà de Llobregat,8073.0,41.35,2.0833,4
+21789,ES,08950,Esplugues De Llobregat,Cataluna,CT,Barcelona,B,Esplugues de Llobregat,8077.0,41.3773,2.0881,4
+21790,ES,08960,Sant Just Desvern,Cataluna,CT,Barcelona,B,Sant Just Desvern,8221.0,41.3849,2.0746,4
+21791,ES,08970,Sant Joan Despi,Cataluna,CT,Barcelona,B,Sant Joan Despí,8217.0,41.3667,2.0667,4
+21792,ES,08980,Sant Feliu De Llobregat,Cataluna,CT,Barcelona,B,Sant Feliu de Llobregat,8211.0,41.3833,2.05,4
+22370,ES,08281,Prades De Molsosa,Cataluna,CT,Lleida,L,Castellfollit de Riubregós,8060.0,41.7408,1.6063,3
+22371,ES,08281,Enfesta,Cataluna,CT,Lleida,L,Castellfollit de Riubregós,8060.0,41.7408,1.6063,3
+22372,ES,08281,La Molsosa,Cataluna,CT,Lleida,L,Castellfollit de Riubregós,8060.0,41.7408,1.6063,3
