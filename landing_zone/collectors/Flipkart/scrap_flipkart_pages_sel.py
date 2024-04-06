@@ -132,7 +132,7 @@ def get_filtered_links(link_list):
     print(f"Numnber of filtered links = {len(filtered_link_list)}")
     return filtered_link_list
 
-def get_product_details(link_list, driver):
+def get_product_details(link_list, driver, json_folder_path):
     print(f" The number of links: {len(link_list)}")
     # print(f" The number of product heirarchies: {len(prod_heirarchy_list)}")
 
@@ -273,7 +273,7 @@ def get_product_details(link_list, driver):
                 each_product_dict['specifications']= specs_list
                 
                 # defining the json path to save the dict into the json on the go and append the results as we get a new one
-                json_file_path= os.path.join(json_folder_path, "flipkart_dropdown_updated.json")
+                json_file_path= os.path.join(json_folder_path, "Flipkart_all_products.json")
 
                 # appending the dict content to json file
                 append_to_json(each_product_dict, json_file_path)
@@ -305,20 +305,27 @@ def save_txt(list):
         for item in list:
             file.write("%s\n" % item)
 
-# Create a ConfigParser object and read configuration from INI file
+# Get the path to the parent parent directory
+config_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir, os.pardir))
+
+# Specify the path to config file
+config_file_path = os.path.join(config_dir, "config.ini")
+
+# reading the config file
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(config_file_path)
 
 # define paths
-root_path= "D:/BDMA/UPC/BDM/PROJECT"
-json_folder_path= os.path.join(root_path,"JSON_files")
-if not os.path.exists(json_folder_path):
-  os.makedirs(json_folder_path)
+# root_path= "D:/BDMA/UPC/BDM/PROJECT"
+# json_folder_path= os.path.join(root_path,"JSON_files")
+# if not os.path.exists(json_folder_path):
+#   os.makedirs(json_folder_path)
 
 # defining the flipkart grocery website base url and the headers
 # URL= "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY"
 HEADERS= ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 'Accept-Language': 'en, en-US, en;g=0.5'})
 
+json_folder_path= config['COMMON']['raw_data_dir']
 BASE_URL= config['FLIPKART']['BASE_URL']
 URL= config['FLIPKART']['URL']
 # HEADERS= config['FLIPKART']['HEADER']
@@ -351,7 +358,7 @@ filtered_link_list= get_filtered_links(extracted_link_list)
 
 save_txt(filtered_link_list)
 
-product_list= get_product_details(filtered_link_list, driver)
+product_list= get_product_details(filtered_link_list, driver, json_folder_path)
 
 # save the list of dictionaries to json
-save_json(product_list, json_folder_path)
+# save_json(product_list, json_folder_path)
