@@ -1267,11 +1267,10 @@ jobs:
 
       - name: Execute Script
         run: |
-          mkdir -p ./logs
           cd ./landing_zone/collectors/${{ matrix.path }}
           ${{ matrix.command }} 
          
-        continue-on-error: false
+        continue-on-error: true
 
       - name: Determine Color
         id: set_color
