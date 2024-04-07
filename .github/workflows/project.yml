@@ -1269,8 +1269,9 @@ jobs:
         run: |
           mkdir -p ./logs
           cd ./landing_zone/collectors/${{ matrix.path }}
-          ${{ matrix.command }} > ../../logs/${{ matrix.name }}_output.log 2> ../../logs/${{ matrix.name }}_error.log || echo "Script failed, check logs."
-        continue-on-error: true
+          ${{ matrix.command }} 
+         
+        continue-on-error: false
 
       - name: Determine Color
         id: set_color
