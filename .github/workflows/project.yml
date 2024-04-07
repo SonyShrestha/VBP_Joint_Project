@@ -226,9 +226,9 @@ jobs:
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
       - name: Execute mealdb Scrapy spider
-        run: scrapy crawl mealdbbb -O ./data/raw/mealdb.json || echo "Script failed, check logs." > mealdb_error.log
+        run: scrapy crawl mealdb -O ./data/raw/mealdb.json || echo "Script failed, check logs." > mealdb_error.log
         working-directory: ./landing_zone/collectors/meal_db/mealscraper
-        continue-on-error: true
+        # continue-on-error: false
 
 
       - name: Upload error log to Gist (mealdb)
@@ -307,7 +307,7 @@ jobs:
       - name: Execute approvedfood Scrapy spider
         run: scrapy crawl approvedfood_groceries -O ./data/raw/Approvedfood.json || echo "Script failed, check logs." > approvedfood_error.log
         working-directory: ./landing_zone/collectors/approved_food_uk/approvedfood_scraper
-        continue-on-error: true
+        # continue-on-error: false
 
       - name: Prepare error log (ApprovedFood)
         if: failure()
@@ -540,7 +540,7 @@ jobs:
         - name: Execute bigBasket script
           run: python big_basket.py || echo "Script failed, check logs." > bigBasket.log
           working-directory: ./landing_zone/collectors/big_basket
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (bigBasket)
           if: failure()
@@ -708,7 +708,7 @@ jobs:
         - name: Execute OCR script
           run: python ocr_marcadona.py || echo "Script failed, check logs." > ocr.log
           working-directory: ./landing_zone/collectors/OCR
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (OCR)
           if: failure()
@@ -791,7 +791,7 @@ jobs:
         - name: Execute customer script
           run: python sm_retail_customer.py || echo "Script failed, check logs." > customer.log
           working-directory: ./landing_zone/collectors/customers
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (customers)
           if: failure()
@@ -875,7 +875,7 @@ jobs:
         - name: Execute customer_location script
           run: python customer_location.py || echo "Script failed, check logs." > customer_location.log
           working-directory: ./landing_zone/synthetic/customer_location
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (customer_location)
           if: failure()
@@ -960,7 +960,7 @@ jobs:
         - name: Execute customer_purchase script
           run: python customer_purchase.py || echo "Script failed, check logs." > customer_purchase.log
           working-directory: ./landing_zone/synthetic/customer_purchase
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (customer_purchase)
           if: failure()
@@ -1044,12 +1044,12 @@ jobs:
         - name: Execute sentiment reviews script
           run: python business_reviews.py  || echo "Script failed, check logs." > sentiment_reviews.log
           working-directory: ./landing_zone/synthetic/sentiment reviews
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Execute sentiment reviews script
           run: python individual_reviews.py  || echo "Script failed, check logs." > sentiment_reviews.log
           working-directory: ./landing_zone/synthetic/sentiment reviews
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (sentiment reviews)
           if: failure()
@@ -1131,7 +1131,7 @@ jobs:
         - name: Execute supermarket_products script
           run: python supermarket_products.py || echo "Script failed, check logs." > supermarket_products.log
           working-directory: ./landing_zone/synthetic/supermarket_products
-          continue-on-error: true
+          # continue-on-error: false
 
         - name: Prepare error log (supermarket_products)
           if: failure()

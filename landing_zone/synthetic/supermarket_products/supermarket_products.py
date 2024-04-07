@@ -10,7 +10,7 @@ import logging
 logger = logging.getLogger()
 
 # Load configuration
-config_path = os.path.join('/Users/pratistha99/PycharmProjects/pythonProject/pythonProject','config.ini')
+config_path = os.path.join('../../','config.ini')
 config = configparser.ConfigParser()
 config.read(config_path)
 logging.info(f'Configuration loaded from {config_path}')
@@ -26,7 +26,7 @@ quantity_max = config.getint('SUPERMARKET_PRODUCT_PARAMS', 'quantity_max')
 # Reading file paths from config file
 products_json = os.path.join(raw_data_dir,'flipkart_products.json' )
 stores_csv = os.path.join(raw_data_dir, 'establishments_catalonia.csv')
-output_csv = os.path.join(raw_data_dir, 'assigned_products.csv')
+output_csv = os.path.join(raw_data_dir, 'supermarket_products.csv')
 
 # Load JSON data from file
 with open(products_json, 'r') as file:

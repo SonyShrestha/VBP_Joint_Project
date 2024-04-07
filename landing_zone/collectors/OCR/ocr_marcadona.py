@@ -73,4 +73,4 @@ def main(config_path):
     print(f"Details extracted and saved to {output_json}.")
 
 if __name__ == "__main__":
-    main("./config.ini")
+    main("../../config.ini")

@@ -3,31 +3,35 @@
 ## Introduction
 SpicyBytes is an innovative food and grocery management platform aimed at reducing food wastage by offering a sustainable shopping and selling experience for groceries nearing their expiration date. 
 
-## Structure of Data - Add Tree (s not working)
-E
-├───.github
-│   └───workflows
-├───data
-│   └───raw
-├───landing_zone
-│   ├───collectors
-│   │   ├───approved_food_uk
-│   │   ├───big_basket
-│   │   ├───catalonia_establishment_location
-│   │   ├───customers
-│   │   ├───eat_by_date
-│   │   ├───Flipkart
-│   │   ├───meal_db
-│   │   └───OCR
-│   │       ├───images
-│   │       └───output
-│   └───synthetic
-│       ├───customer_location
-│       ├───customer_purchase
-│       ├───sentiment_reviews
-│       └───supermarket_products
-└───recommendation_system
+## Structure of Data in the repository
 
+```plaintext
+├── .github
+│   └── workflows
+│       └── project.yml
+├── data
+│   └── raw
+├── landing_zone
+│   ├── collectors
+│   │   ├── approved_food_uk
+│   │   ├── big_basket
+│   │   ├── catalonia_establishment_location
+│   │   ├── customers
+│   │   ├── eat_by_date
+│   │   ├── Flipkart
+│   │   ├── meal_db
+│   │   │   └── mealscraper
+│   │   └── OCR
+│   │       ├── images
+│   │       └── output
+│   └── synthetic
+│       ├── customer_location
+│       ├── customer_purchase
+│       ├── sentiment_reviews
+│       └── supermarket_products
+└── recommendation_system
+
+```
 
 ## Data Sources
 
