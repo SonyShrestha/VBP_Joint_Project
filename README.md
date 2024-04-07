@@ -29,6 +29,7 @@ E
 └───recommendation_system
 
 
+```text
 E
 ├── .github
 │   └── workflows
@@ -54,6 +55,7 @@ E
 │       ├── sentiment_reviews
 │       └── supermarket_products
 └── recommendation_system
+
 
 
 ## Data Sources
