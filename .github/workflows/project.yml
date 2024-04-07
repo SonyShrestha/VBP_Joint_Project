@@ -1273,13 +1273,13 @@ jobs:
         continue-on-error: true
 
       - name: Determine Color
-        id: set_color
+        id: set color
         run: |
-          if ${{ job.status }} == 'success'; then
-            echo "COLOR=#36a64f" >> $GITHUB_ENV
-          else
-            echo "COLOR=#ff0000" >> $GITHUB_ENV
-          fi
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
 
       - name: Prepare error log
         if: failure()
@@ -1305,7 +1305,7 @@ jobs:
             {
               "attachments": [
                 {
-                  "color": "${{ env.COLOR }}",
+                  "color": "${{ steps.set_color.outputs.color }}",
                   "text": "${{ matrix.name }} Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View Log>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                 }
               ]
