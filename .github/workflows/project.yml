@@ -260,6 +260,14 @@ jobs:
           fi
         working-directory: ./landing_zone/collectors/meal_db/mealscraper
 
+      - name: Determine Color
+        id: set_color
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "::set-output name=color::#36a64f"
+          else
+            echo "::set-output name=color::#ff0000"
+          fi
 
       - name: Set current date
         run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
@@ -273,7 +281,7 @@ jobs:
             {
               "attachments": [
                 {
-                   "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                   "color": "${{ steps.set_color.outputs.color }}",
                   "text": "Mealdb Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View URL>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                 }
               ]
@@ -285,6 +293,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -324,6 +334,15 @@ jobs:
           fi
         working-directory: ./landing_zone/collectors/approved_food_uk/approvedfood_scraper
 
+      - name: Determine Color
+        id: set_color
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "::set-output name=color::#36a64f"
+          else
+            echo "::set-output name=color::#ff0000"
+          fi
+
       - name: Upload error log to Gist (appprovedfood)
         if: failure()
         id: upload_log
@@ -345,7 +364,7 @@ jobs:
             {
               "attachments": [
                 {
-                   "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                   "color": "${{ steps.set_color.outputs.color }}",
                   "text": "ApprovedFood Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View URL>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                 }
               ]
@@ -396,6 +415,15 @@ jobs:
   #     - name: Set current date (Eat by Date)
   #       run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
+        # - name: Determine Color
+        # id: set_color
+        # run: |
+        #   if [ "${{ job.status }}" == "success" ]; then
+        #     echo "::set-output name=color::#36a64f"
+        #   else
+        #     echo "::set-output name=color::#ff0000"
+        #   fi
+
   #     - name: Notify Slack (Eat by Date Script)
   #       if: always()
   #       uses: 8398a7/action-slack@v3
@@ -405,7 +433,7 @@ jobs:
   #           {
   #             "attachments": [
   #               {
-  #                 "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+  #                 "color": "${{ steps.set_color.outputs.color }}",
   #                 "text": "Eat by Date Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View Url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
   #               }
   #             ]
@@ -465,6 +493,15 @@ jobs:
 #           fi
 #         working-directory: ./landing_zone/collectors/Flipkart
 
+        # - name: Determine Color
+        #   id: set_color
+        #   run: |
+        #     if [ "${{ job.status }}" == "success" ]; then
+        #       echo "::set-output name=color::#36a64f"
+        #     else
+        #       echo "::set-output name=color::#ff0000"
+        #     fi
+
 
 #       - name: Set current date (flipkart)
 #         run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
@@ -478,7 +515,7 @@ jobs:
 #             {
 #               "attachments": [
 #                 {
-#                   "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+#                   "color": "${{ steps.set_color.outputs.color }}",
 #                   "text": "Flipkart Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View Url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
 #                 }
 #               ]
@@ -491,12 +528,12 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -504,20 +541,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute bigBasket script
           run: python big_basket.py || echo "Script failed, check logs." > bigBasket.log
           working-directory: ./landing_zone/collectors/big_basket
           continue-on-error: true
-  
+
         - name: Prepare error log (bigBasket)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat bigBasket.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/collectors/big_basket
-  
+
         - name: Upload error log to Gist (bigbasket)
           if: failure()
           id: upload_log
@@ -526,7 +563,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for Bigbasket\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (bigBasket)
           id: status_indicator
           run: |
@@ -538,11 +575,19 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/collectors/big_basket
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
         - name: Set current date (bigBasket)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (bigBasket Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -552,26 +597,26 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "BigBasket Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
-  
-  
+
+
+
   run_catalonia_establishment_locationt:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -579,20 +624,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute catalonia_establishment_location script
           run: python establishments_scraper.py || echo "Script failed, check logs." > catalonia_establishment_location.log
           working-directory: ./landing_zone/collectors/catalonia_establishment_location
           continue-on-error: true
-  
+
         - name: Prepare error log (establishment location)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat catalonia_establishment_location.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/collectors/catalonia_establishment_location
-  
+
         - name: Upload error log to Gist (Establishment Location)
           if: failure()
           id: upload_log
@@ -601,7 +646,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for Establishment Location\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (catalonia_establishment_location)
           id: status_indicator
           run: |
@@ -613,11 +658,20 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/collectors/catalonia_establishment_location
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
+
         - name: Set current date (catalonia_establishment_location)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (catalonia_establishment_location Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -627,27 +681,27 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "Catalonia Establishment Location Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
-  
-  
-  
+
+
+
+
   run_OCR:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -655,20 +709,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute OCR script
           run: python ocr_marcadona.py || echo "Script failed, check logs." > ocr.log
           working-directory: ./landing_zone/collectors/OCR
           continue-on-error: true
-  
+
         - name: Prepare error log (OCR)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat ocr.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/collectors/OCR
-  
+
         - name: Upload error log to Gist (ocr)
           if: failure()
           id: upload_log
@@ -677,7 +731,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for ocr\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (OCR)
           id: status_indicator
           run: |
@@ -689,11 +743,19 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/collectors/OCR
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
         - name: Set current date (OCR)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (OCR Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -703,26 +765,26 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "OCR Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
-  
-  
+
+
+
   run_customers:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -730,20 +792,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute customer script
           run: python sm_retail_customer.py || echo "Script failed, check logs." > customer.log
           working-directory: ./landing_zone/collectors/customers
           continue-on-error: true
-  
+
         - name: Prepare error log (customers)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat customers.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/collectors/customers
-  
+
         - name: Upload error log to Gist (customers)
           if: failure()
           id: upload_log
@@ -752,7 +814,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for customers\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (customers)
           id: status_indicator
           run: |
@@ -764,11 +826,20 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/collectors/customers
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
+
         - name: Set current date (customers)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (customers Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -778,26 +849,26 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "Customers Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
-  
-  
+
+
+
   run_customer_location:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -805,20 +876,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute customer_location script
           run: python customer_location.py || echo "Script failed, check logs." > customer_location.log
           working-directory: ./landing_zone/synthetic/customer_location
           continue-on-error: true
-  
+
         - name: Prepare error log (customer_location)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat customer_location.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/synthetic/customer_location
-  
+
         - name: Upload error log to Gist (customer location)
           if: failure()
           id: upload_log
@@ -827,7 +898,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for customer location\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (customer_location)
           id: status_indicator
           run: |
@@ -839,11 +910,20 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/synthetic/customer_location
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
+
         - name: Set current date (customer_location)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (customer_location Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -853,27 +933,27 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "Customer location Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
-  
-  
-  
+
+
+
+
   run_customer_purchase:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -881,20 +961,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute customer_purchase script
           run: python customer_purchase.py || echo "Script failed, check logs." > customer_purchase.log
           working-directory: ./landing_zone/synthetic/customer_purchase
           continue-on-error: true
-  
+
         - name: Prepare error log (customer_purchase)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat customer_purchase.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/synthetic/customer_purchase
-  
+
         - name: Upload error log to Gist (customer purchase)
           if: failure()
           id: upload_log
@@ -903,7 +983,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for customer purchase\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (customer_purchase)
           id: status_indicator
           run: |
@@ -915,11 +995,20 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/synthetic/customer_purchase
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
+
         - name: Set current date (customer_purchase)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (customer_purchase Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -929,26 +1018,26 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "Customer purchase Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
-  
-  
+
+
+
   run_sentiment_reviews:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -956,25 +1045,25 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute sentiment reviews script
           run: python business_reviews.py  || echo "Script failed, check logs." > sentiment_reviews.log
           working-directory: ./landing_zone/synthetic/sentiment reviews
           continue-on-error: true
-  
+
         - name: Execute sentiment reviews script
           run: python individual_reviews.py  || echo "Script failed, check logs." > sentiment_reviews.log
           working-directory: ./landing_zone/synthetic/sentiment reviews
           continue-on-error: true
-  
+
         - name: Prepare error log (sentiment reviews)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat sentiment_reviews.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/synthetic/sentiment reviews
-  
+
         - name: Upload error log to Gist (sentiment_reviews)
           if: failure()
           id: upload_log
@@ -983,7 +1072,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for sentiment reviews\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (sentiment reviews)
           id: status_indicator
           run: |
@@ -995,11 +1084,20 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/synthetic/sentiment reviews
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
+
         - name: Set current date (sentiment reviews)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (sentiment reviews Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -1009,24 +1107,24 @@ jobs:
               {
                 "attachments": [
                   {
-                     "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "Sentiment reviews Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
+
   run_supermarket_products:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-  
+
         - name: Setup Python
           uses: actions/setup-python@v4
           with:
             python-version: '3.10'
-  
+
         - name: Cache Python packages
           uses: actions/cache@v3
           with:
@@ -1034,20 +1132,20 @@ jobs:
             key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
             restore-keys: |
               ${{ runner.os }}-pip-
-  
+
         - name: Install dependencies
           run: python -m pip install --upgrade pip && pip install -r requirements.txt
-  
+
         - name: Execute supermarket_products script
           run: python supermarket_products.py || echo "Script failed, check logs." > supermarket_products.log
           working-directory: ./landing_zone/synthetic/supermarket_products
           continue-on-error: true
-  
+
         - name: Prepare error log (supermarket_products)
           if: failure()
           run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat supermarket_products.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
           working-directory: ./landing_zone/synthetic/supermarket_products
-  
+
         - name: Upload error log to Gist (supermarket_products)
           if: failure()
           id: upload_log
@@ -1056,7 +1154,7 @@ jobs:
             JSON_PAYLOAD="{\"description\": \"Error Log for supermarket products\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
             GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
             echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
-  
+
         - name: Determine success/failure indicator and message (supermarket_products)
           id: status_indicator
           run: |
@@ -1068,11 +1166,21 @@ jobs:
               echo "COLOR=#36a64f" >> $GITHUB_ENV
             fi
           working-directory: ./landing_zone/synthetic/supermarket_products
-  
-  
+
+        - name: Determine Color
+          id: set_color
+          run: |
+            if [ "${{ job.status }}" == "success" ]; then
+              echo "::set-output name=color::#36a64f"
+            else
+              echo "::set-output name=color::#ff0000"
+            fi
+
+
+
         - name: Set current date (supermarket_products)
           run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-  
+
         - name: Notify Slack (supermarket_products Script)
           if: always()
           uses: 8398a7/action-slack@v3
@@ -1082,14 +1190,18 @@ jobs:
               {
                 "attachments": [
                   {
-                    "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                    "color": "${{ steps.set_color.outputs.color }}",
                     "text": "Supermarket products Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                   }
                 ]
               }
           env:
             SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-  
+
+
+
+
+ 
   
   
   
