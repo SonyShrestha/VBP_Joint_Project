@@ -29,6 +29,33 @@ E
 └───recommendation_system
 
 
+E
+├── .github
+│   └── workflows
+│       └── project.yml
+├── data
+│   └── raw
+├── landing_zone
+│   ├── collectors
+│   │   ├── approved_food_uk
+│   │   ├── big_basket
+│   │   ├── catalonia_establishment_location
+│   │   ├── customers
+│   │   ├── eat_by_date
+│   │   ├── Flipkart
+│   │   ├── meal_db
+│   │   │   └── mealscraper
+│   │   └── OCR
+│   │       ├── images
+│   │       └── output
+│   └── synthetic
+│       ├── customer_location
+│       ├── customer_purchase
+│       ├── sentiment_reviews
+│       └── supermarket_products
+└── recommendation_system
+
+
 ## Data Sources
 
 The `data` folder stores the raw data scraped from the data sources present in the `landing_zone`.
