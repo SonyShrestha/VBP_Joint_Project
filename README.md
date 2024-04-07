@@ -35,11 +35,9 @@ SpicyBytes is an innovative food and grocery management platform aimed at reduci
 
 ## Data Sources
 
-The `data` folder stores the raw data scraped from the data sources present in the `landing_zone`.
+The `data` folder stores the raw data scraped using the scripts present in the `landing_zone`. The `landing_zone` consists of 2 types of data generation scripts:
+- `collectors` consist of data sources that have either been scraped or extracted through API requests from the corresponding webpages.
+- `synthetic` directory consists of data generated synthetically; using a composite of collected data sources and fake data generated using the python [Faker](https://pypi.org/project/Faker/0.7.4/) library.
 
-The `landing zone` directory is used to generate the data required. The `collectors` stores the scripts to extract the web sources provided in the `config.ini` file. 
-The `synthetic` directory uses a combination of data from `collectors` to synthetically produce the required dataset.
 
 ## How to run the code
-
-## Data Pipeline
