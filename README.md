@@ -6,31 +6,34 @@ SpicyBytes is an innovative food and grocery management platform aimed at reduci
 ## Structure of Data in the repository
 
 ```plaintext
-├── .github
-│   └── workflows
-│       └── project.yml
-├── data
-│   └── raw
-├── landing_zone
-│   ├── collectors
-│   │   ├── approved_food_uk
-│   │   ├── big_basket
-│   │   ├── catalonia_establishment_location
-│   │   ├── customers
-│   │   ├── eat_by_date
-│   │   ├── Flipkart
-│   │   ├── meal_db
-│   │   │   └── mealscraper
-│   │   └── OCR
-│   │       ├── images
-│   │       └── output
-│   └── synthetic
-│       ├── customer_location
-│       ├── customer_purchase
-│       ├── sentiment_reviews
-│       └── supermarket_products
-└── recommendation_system
-
+├───.github
+│   └───workflows
+├───dags
+├───data
+│   └───raw
+├───landing_zone
+│   ├───collectors
+│   │   ├───approved_food_uk
+│   │   │   └───approvedfood_scraper
+│   │   │       └───approvedfood_scraper
+│   │   ├───big_basket
+│   │   ├───catalonia_establishment_location
+│   │   ├───customers
+│   │   ├───eat_by_date
+│   │   ├───flipkart
+│   │   │   └───JSON_files
+│   │   ├───meal_db
+│   │   │   └───mealscraper
+│   │   │       └───mealscraper
+│   │   └───OCR
+│   │       ├───images
+│   │       └───output
+│   └───synthetic
+│       ├───customer_location
+│       ├───customer_purchase
+│       ├───sentiment_reviews
+│       └───supermarket_products
+└───readme_info
 ```
 
 ## Data Sources
