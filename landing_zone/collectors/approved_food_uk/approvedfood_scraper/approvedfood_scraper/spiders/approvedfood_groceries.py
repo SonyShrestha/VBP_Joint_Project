@@ -1,14 +1,30 @@
 
-import logging
+
 import scrapy
-from scrapy.selector import Selector
-from scrapy.utils.project import get_project_settings
-            
+import configparser
+import logging
+import os
 
 class ApprovedfoodGroceriesSpider(scrapy.Spider):
     name = 'approvedfood_groceries'
-    allowed_domains = ['store.approvedfood.co.uk']
-    start_urls = ['https://store.approvedfood.co.uk/groceries']
+
+    # Initialize logging
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(name)
+
+    # Configurations from config file
+    config = configparser.ConfigParser()
+    config_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir, os.pardir, os.pardir))
+    config_file_path = os.path.join(config_dir, "config.ini")
+    config.read(config_file_path)
+
+    if 'APPROVEDFOOD' in config:
+        allowed_domains = [config['APPROVEDFOOD'].get('allowed_domain', '')]
+        start_urls = [config['APPROVEDFOOD'].get('start_url', '')]
+    else:
+        allowed_domains = []
+        start_urls = []
+        logger.error("Config section 'APPROVEDFOOD' not found.")
 
     def parse(self, response):
         # Extracting the product links...............................
@@ -28,5 +44,4 @@ class ApprovedfoodGroceriesSpider(scrapy.Spider):
             'Expiry_Date': response.xpath("//tr[1]/td[2]/span/text()").get(),
             'Product_Description': response.xpath("//div[@class='pdp_desc']/span/text()").get()
         }
-
 
