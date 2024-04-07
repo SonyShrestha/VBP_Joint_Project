@@ -6,7 +6,7 @@ SpicyBytes is an innovative food and grocery management platform aimed at reduci
 ## Structure of Data in the repository
 
 
-```text
+```plaintext
 ├── .github
 │   └── workflows
 │       └── project.yml
@@ -31,7 +31,6 @@ SpicyBytes is an innovative food and grocery management platform aimed at reduci
 │       ├── sentiment_reviews
 │       └── supermarket_products
 └── recommendation_system
-
 
 
 ## Data Sources
