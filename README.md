@@ -59,7 +59,7 @@ The `collector.py` DAG collects data on a monthly basis, while the `synthetic.py
 
 ## High Level Data Architecture
 
-![High Level Architecture](./readme_info/three-tier.png)
+![High Level Architecture](./readme_info/three-tier.PNG)
 
 The proposed high level architecture is employed for the P1 delivery methodology.
 
