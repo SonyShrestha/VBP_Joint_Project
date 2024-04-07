@@ -41,3 +41,23 @@ The `data` folder stores the raw data scraped using the scripts present in the `
 
 
 ## How to run the code
+
+- To execute the program, clone the repository.
+- Install the requirements using `pip install -r requirements.txt`.
+- **Configure Airflow** : Set up your Airflow environment by configuring settings such as the executor, database, and authentication method. Refer to the Airflow documentation for detailed instructions on configuring Airflow.
+- Verify that `Apache Airflow` is installed in your local machine and is running.
+- Start the Airflow webserver and scheduler using the following commands:
+  ```
+  airflow webserver --port 8080
+  airflow scheduler
+  ```
+- **Access the Airflow UI**: Open your web browser and navigate to http://localhost:8080.
+- Enable your DAG.
+
+The `collector.py` DAG collects data on a monthly basis, while the `synthetic.py` DAG collects data on a daily basis.
+
+
+## High Level Data Architecture
+
+
+
