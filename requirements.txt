@@ -8,3 +8,5 @@ selenium
 webdriver-manager
 minio
 docker
+opencv-python
+pytesseract

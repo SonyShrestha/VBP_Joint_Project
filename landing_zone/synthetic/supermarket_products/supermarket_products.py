@@ -10,7 +10,7 @@ import logging
 logger = logging.getLogger()
 
 # Load configuration
-config_path = os.path.join(os.getcwd(), '../../..', 'config.ini')
+config_path = os.path.join('/Users/pratistha99/PycharmProjects/pythonProject/pythonProject','config.ini')
 config = configparser.ConfigParser()
 config.read(config_path)
 logging.info(f'Configuration loaded from {config_path}')
@@ -24,7 +24,7 @@ quantity_min = config.getint('SUPERMARKET_PRODUCT_PARAMS', 'quantity_min')
 quantity_max = config.getint('SUPERMARKET_PRODUCT_PARAMS', 'quantity_max')
 
 # Reading file paths from config file
-products_json = os.path.join(raw_data_dir,'flipkarts_products.json' )
+products_json = os.path.join(raw_data_dir,'flipkart_products.json' )
 stores_csv = os.path.join(raw_data_dir, 'establishments_catalonia.csv')
 output_csv = os.path.join(raw_data_dir, 'assigned_products.csv')
 
