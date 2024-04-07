@@ -31,10 +31,8 @@ def extract_column_headings(link):
     heading_row = thead.find('tr')
     column_headings = heading_row.find_all('th')
     for column_heading in column_headings:
-    #     print(column_heading)
         heading = column_heading.find('div', class_ = 'group-label')
         if heading:  # the first column is blank, so it doesn't contain div
-    #         print(heading.text.strip())
             headings.append(heading.text.strip())
     # Add empty column heading at the start to match the data format in the table
     headings.insert(0, 'Empty')
@@ -53,7 +51,6 @@ def page_scraper(link, headings):  # Scrape each page
         cells = row.find_all('td')
         for index, cell in enumerate(cells):
             col_title = headings[index]
-    #         print(cell.text.strip())
             dict_row[col_title] = cell.text.strip()
         scraped_page.append(dict_row) 
     return scraped_page
@@ -61,14 +58,17 @@ def page_scraper(link, headings):  # Scrape each page
 if __name__ == "__main__":
 
     link_default = config["CATALONIA_ESTABLISHMENTS"]["url"]
+    total_records = int(config["CATALONIA_ESTABLISHMENTS"]["total_records"])
+    records_per_page = int(config["CATALONIA_ESTABLISHMENTS"]["records_per_page"])
     raw_data_dir = config["COMMON"]["raw_data_dir"]
     headings = extract_column_headings(link_default)
 
-    # 28000 in total
+    logger.info('-----------------------------------------------------')
+    logger.info("Extracting supermarket data from Establishments Catalonia Website")
+
     scraped_data = []
-    for i in range(0, 28000, 50):
+    for i in range(0, total_records, records_per_page):
         link = '='.join(link_default.split('=')[:-1]) + '=' + str(i)
-    #     print(link)
         scraped_data.extend(page_scraper(link, headings))
 
     df = pd.DataFrame(scraped_data)
@@ -77,53 +77,64 @@ if __name__ == "__main__":
     df.drop(df.columns[0], axis=1, inplace=True)
 
 
-    # ID, UTMx & UTMy, Annex names don't have to be changed
+    # UTMx & UTMy names don't have to be changed
     df.rename(columns={
-    'Nom comercial' : 'Commercial_name', 
-    'Nom raó Social' : 'Social_name', 
-    'NIF raó social' : 'Company_NIF',        
-    "Descripció de l'activitat" : 'Activity_description', 
-    "Identificador de l'activitat" : 'Activity_identifier',      
-    "Nom de l'ens": 'Registration_entity', 
+    'Id':'id',
+    'Nom comercial' : 'commercial_name', 
+    'Nom raó Social' : 'social_name', 
+    'NIF raó social' : 'company_NIF',        
+    "Descripció de l'activitat" : 'activity_description', 
+    "Identificador de l'activitat" : 'activity_identifier',      
+    "Nom de l'ens": 'registration_entity', 
     'Codi INE': 'INE_code', 
     'Ens relacionat':'ENS_relation', 
-    'Codi de comarca':'County_code',  
-    'Adreça completa': 'Full_address', 
-    'Localització': 'Location', 
-    'Tipus de via': 'Road_type',
-    'Nom de la via' : 'Street_name',
-    'Número via' : 'Street_number',
-    'Escala': 'Scale', 
-    'Pis' : 'Location_info_1',
-    'Porta': 'Location_info_2',
-    'Tipus de nucli': 'Core_type', 
-    'Codi postal': 'Postage_pick_up', 
-    'Municipi' : 'Municipality',
-    'Altres activitats' : 'Other_activities', 
-    'Sector econòmic': 'Economic_sector',
-    'Codi NACE': 'Code_NACE', 
-    'Descripció NACE': 'Description_NACE',
-    'Tipus Industrial o productiva': 'Industrial_productive_type',
-    'Codi CCAE': 'Raise_CCAE', 
-    'Descripció CCAE': 'Description_CCAE',  
-    'Tipus comercial': 'Commercial_type', 
+    'Codi de comarca':'county_code',  
+    'Adreça completa': 'full_address', 
+    'Localització': 'location', 
+    'Tipus de via': 'road_type',
+    'Nom de la via' : 'street_name',
+    'Número via' : 'street_number',
+    'Escala': 'scale', 
+    'Pis' : 'location_info_1',
+    'Porta': 'location_info_2',
+    'Tipus de nucli': 'core_type', 
+    'Codi postal': 'postage_pick_up', 
+    'Municipi' : 'municipality',
+    'Altres activitats' : 'other_activities', 
+    'Sector econòmic': 'economic_sector',
+    'Codi NACE': 'code_NACE', 
+    'Descripció NACE': 'description_NACE',
+    'Tipus Industrial o productiva': 'industrial_productive_type',
+    'Codi CCAE': 'raise_CCAE', 
+    'Descripció CCAE': 'description_CCAE',  
+    'Tipus comercial': 'commercial_type', 
     'Tipus EMA': 'EMA_type',
-    'Data de modificació': 'Modification_date', 
-    'Codi Ens': 'Code_Ens',
-    'Data llicència': 'License_date', 
-    'Data CI': 'Date_CI',
-    'Conjunt de dades': 'Data_set',
-    'Últim canvi': 'Last_change'
+    'Data de modificació': 'modification_date', 
+    'Codi Ens': 'code_ens',
+    'Data llicència': 'license_date',
+    'Annex':'annex', 
+    'Data CI': 'date_CI',
+    'Conjunt de dades': 'data_set',
+    'Últim canvi': 'last_change'   
     }, inplace=True)
 
     # Remove those with missing values in following columns
-    df = df[df['Commercial_name'].notna()]
-    df = df[df['Location'].notna()]
-    df = df[df['Full_address'].notna()]
+    df = df[df['commercial_name'].notna()]
+    df = df[df['location'].notna()]
+    df = df[df['full_address'].notna()]
 
     # Around 18000 rows
     df.to_csv(os.path.join(raw_data_dir,'establishments_catalonia.csv'), index=False)
 
+    logger.info('-----------------------------------------------------')
+    logger.info("Filtering records with null commercial_name, location or full_address")
+
+    dumped_df = pd.read_csv(os.path.join(raw_data_dir,'establishments_catalonia.csv'))
+    dumped_df = dumped_df[dumped_df['commercial_name'].notna()]
+    dumped_df = dumped_df[dumped_df['location'].notna()]
+    dumped_df = dumped_df[dumped_df['full_address'].notna()]
+
+    dumped_df.to_csv(os.path.join(raw_data_dir,'establishments_catalonia.csv'), index=False)
 
 
 
