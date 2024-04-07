@@ -174,9 +174,7 @@ def scrap_eat_by_date(driver,url):
 if __name__ == "__main__":
     url = config["EAT_BY_DATE"]["url"]
     raw_data_dir = config["COMMON"]["raw_data_dir"]
-    chrome_driver = config["COMMON"]["chrome_driver"]
-
-    contact_url = "https://eatbydate.com/contact//"
+    contact_url = config["EAT_BY_DATE"]["contact_url"]
 
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Add other options as needed
