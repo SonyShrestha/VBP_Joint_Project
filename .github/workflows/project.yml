@@ -1272,6 +1272,15 @@ jobs:
           ${{ matrix.command }} > ../../logs/${{ matrix.name }}_output.log 2> ../../logs/${{ matrix.name }}_error.log || echo "Script failed, check logs."
         continue-on-error: true
 
+      - name: Determine Color
+        id: set_color
+        run: |
+          if ${{ job.status }} == 'success'; then
+            echo "COLOR=#36a64f" >> $GITHUB_ENV
+          else
+            echo "COLOR=#ff0000" >> $GITHUB_ENV
+          fi
+
       - name: Prepare error log
         if: failure()
         run: |
@@ -1296,14 +1305,13 @@ jobs:
             {
               "attachments": [
                 {
-                  "color": "${{ job.status == 'success' ? '#36a64f' : '#ff0000' }}",
+                  "color": "${{ env.COLOR }}",
                   "text": "${{ matrix.name }} Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View Log>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                 }
               ]
             }
         env:
           SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-
   
   
   
