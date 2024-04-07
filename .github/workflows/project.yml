@@ -226,7 +226,7 @@ jobs:
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
       - name: Execute mealdb Scrapy spider
-        run: scrapy crawl mealdb -O ./data/raw/mealdb.json || echo "Script failed, check logs." > mealdb_error.log
+        run: scrapy crawl mealdbbb -O ./data/raw/mealdb.json || echo "Script failed, check logs." > mealdb_error.log
         working-directory: ./landing_zone/collectors/meal_db/mealscraper
         continue-on-error: true
 
@@ -282,7 +282,7 @@ jobs:
               "attachments": [
                 {
                    "color": "${{ steps.set_color.outputs.color }}",
-                  "text": "Mealdb Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View URL>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
+                  "text": "Mealdb Script\nStatus: ${{ job.status }}\nError Log: <$GIST_URL|View Log>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
                 }
               ]
             }
@@ -607,87 +607,87 @@ jobs:
 
 
 
-  run_catalonia_establishment_locationt:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
+  # run_catalonia_establishment_locationt:
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - uses: actions/checkout@v2
 
-        - name: Setup Python
-          uses: actions/setup-python@v4
-          with:
-            python-version: '3.10'
+  #       - name: Setup Python
+  #         uses: actions/setup-python@v4
+  #         with:
+  #           python-version: '3.10'
 
-        - name: Cache Python packages
-          uses: actions/cache@v3
-          with:
-            path: ~/.cache/pip
-            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-            restore-keys: |
-              ${{ runner.os }}-pip-
+  #       - name: Cache Python packages
+  #         uses: actions/cache@v3
+  #         with:
+  #           path: ~/.cache/pip
+  #           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+  #           restore-keys: |
+  #             ${{ runner.os }}-pip-
 
-        - name: Install dependencies
-          run: python -m pip install --upgrade pip && pip install -r requirements.txt
+  #       - name: Install dependencies
+  #         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
-        - name: Execute catalonia_establishment_location script
-          run: python establishments_scraper.py || echo "Script failed, check logs." > catalonia_establishment_location.log
-          working-directory: ./landing_zone/collectors/catalonia_establishment_location
-          continue-on-error: true
+  #       - name: Execute catalonia_establishment_location script
+  #         run: python establishments_scraper.py || echo "Script failed, check logs." > catalonia_establishment_location.log
+  #         working-directory: ./landing_zone/collectors/catalonia_establishment_location
+  #         continue-on-error: true
 
-        - name: Prepare error log (establishment location)
-          if: failure()
-          run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat catalonia_establishment_location.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
-          working-directory: ./landing_zone/collectors/catalonia_establishment_location
+  #       - name: Prepare error log (establishment location)
+  #         if: failure()
+  #         run: echo "ERROR_LOG<<EOF" >> $GITHUB_ENV && cat catalonia_establishment_location.log >> $GITHUB_ENV && echo "EOF" >> $GITHUB_ENV
+  #         working-directory: ./landing_zone/collectors/catalonia_establishment_location
 
-        - name: Upload error log to Gist (Establishment Location)
-          if: failure()
-          id: upload_log
-          run: |
-            LOG_CONTENT=$(cat catalonia_establishment_location.log)
-            JSON_PAYLOAD="{\"description\": \"Error Log for Establishment Location\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
-            GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
-            echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
+  #       - name: Upload error log to Gist (Establishment Location)
+  #         if: failure()
+  #         id: upload_log
+  #         run: |
+  #           LOG_CONTENT=$(cat catalonia_establishment_location.log)
+  #           JSON_PAYLOAD="{\"description\": \"Error Log for Establishment Location\", \"public\": true, \"files\": {\"error_log.txt\": {\"content\": \"$LOG_CONTENT\"}}}"
+  #           GIST_URL=$(curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -d "$JSON_PAYLOAD" https://api.github.com/gists | jq -r '.html_url')
+  #           echo "GIST_URL=$GIST_URL" >> $GITHUB_ENV
 
-        - name: Determine success/failure indicator and message (catalonia_establishment_location)
-          id: status_indicator
-          run: |
-            if [ -s catalonia_establishment_location.log ]; then
-              echo "STATUS_MESSAGE=Fail :x:" >> $GITHUB_ENV
-              echo "COLOR=#ff0000" >> $GITHUB_ENV
-            else
-              echo "STATUS_MESSAGE=Success :white_check_mark:" >> $GITHUB_ENV
-              echo "COLOR=#36a64f" >> $GITHUB_ENV
-            fi
-          working-directory: ./landing_zone/collectors/catalonia_establishment_location
+  #       - name: Determine success/failure indicator and message (catalonia_establishment_location)
+  #         id: status_indicator
+  #         run: |
+  #           if [ -s catalonia_establishment_location.log ]; then
+  #             echo "STATUS_MESSAGE=Fail :x:" >> $GITHUB_ENV
+  #             echo "COLOR=#ff0000" >> $GITHUB_ENV
+  #           else
+  #             echo "STATUS_MESSAGE=Success :white_check_mark:" >> $GITHUB_ENV
+  #             echo "COLOR=#36a64f" >> $GITHUB_ENV
+  #           fi
+  #         working-directory: ./landing_zone/collectors/catalonia_establishment_location
 
-        - name: Determine Color
-          id: set_color
-          run: |
-            if [ "${{ job.status }}" == "success" ]; then
-              echo "::set-output name=color::#36a64f"
-            else
-              echo "::set-output name=color::#ff0000"
-            fi
+  #       - name: Determine Color
+  #         id: set_color
+  #         run: |
+  #           if [ "${{ job.status }}" == "success" ]; then
+  #             echo "::set-output name=color::#36a64f"
+  #           else
+  #             echo "::set-output name=color::#ff0000"
+  #           fi
 
 
-        - name: Set current date (catalonia_establishment_location)
-          run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+  #       - name: Set current date (catalonia_establishment_location)
+  #         run: echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
-        - name: Notify Slack (catalonia_establishment_location Script)
-          if: always()
-          uses: 8398a7/action-slack@v3
-          with:
-            status: custom
-            custom_payload: |
-              {
-                "attachments": [
-                  {
-                    "color": "${{ steps.set_color.outputs.color }}",
-                    "text": "Catalonia Establishment Location Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
-                  }
-                ]
-              }
-          env:
-            SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+  #       - name: Notify Slack (catalonia_establishment_location Script)
+  #         if: always()
+  #         uses: 8398a7/action-slack@v3
+  #         with:
+  #           status: custom
+  #           custom_payload: |
+  #             {
+  #               "attachments": [
+  #                 {
+  #                   "color": "${{ steps.set_color.outputs.color }}",
+  #                   "text": "Catalonia Establishment Location Script\nStatus: ${{ job.status }}\nError Log: <${{ env.GIST_URL }}|View url>\nDate: ${{ env.CURRENT_DATE }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nRepo: ${{ github.repository }}"
+  #                 }
+  #               ]
+  #             }
+  #         env:
+  #           SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
 
 
 
