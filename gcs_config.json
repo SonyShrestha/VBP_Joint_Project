@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "formal-atrium-418823",
+    "private_key_id": "7fbbc75ebbc663f5f4862c795154d386dfccffd7",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQCmFu4I054+OLUO\nOsHfl/g+9n33ovt4+fIkWkFVC9apmuFbWvpdgDPrG99z/30bLHfgmm0+C2wWz8GO\nJb14XPMv+EtW18AZoaV1OEomT9/iZKYrBrUWFPVhH4stXJkSzjj+OJayDnzKF4Ca\nRMmv7LL4IjXtzP+FZL9PlnH1YqQOZgtqlnCQeFfXdK4TeSqbXgzcsuxDD6/tcn5i\nm7b2jtB+E8JmrMcR6BHd7vpZdIga0M1U5f9m5hfTlLMkf8KNV2YtSIW/X9YKd6+0\nx2iFH/+YfljAtG0aGwdubkjsXJ7H0WeKBN5jC3PVkjfKtP9TjAbH4VYoLkrzxl/m\nziFQzGfhAgMBAAECggEAUhGvgjYLEeTUdlkLVpBRzs7e9MAYsbET+OmOMdd9NWZ+\nJ7WfVBdW0DyAIGHk8En7XEUCaO+c8/KpyjMU2gZX9mKi26EVX7TzvKXZYfADCWvB\nfi48ydIGY/0BuSLx0oyLNfdBY29sMzIEznXiESeNUbYZ3sz2j/P14n5NBjs9JI10\n6+nmIANDS0FOjYYS3wH5i6EORuePg0rO6hisNDR4hnjwDnwOmIMd+pFessToaOAm\nFuEjAGMf3rBQMaDFvZnY5zAcQPLSHt5K2SCMp744QX+tLDxNit8AnJc4RJWS7Wre\n4Bk9phJyYvoMy50XGK0hghIwruKMPAege+qMKIcCHwKBgQDXNTOt08JI0Tu0dsXK\nqRMLMu4DCZcSg+aIjprtE2MMzF/UfJE8Hzks5fAICY2nq/YkwZZCVaZZIw8tLhnT\nTOUvH1cv57eENh1D7wtxTfQKWbTf0caXUD2Kk2vRu7VFT+dr2SN4XYB9jFfExfKU\nJ8nc2g8jR7X4kZbrEzBF73RI/wKBgQDFkk06/Bmyt+iGVL76Aeo94nYBYyIWqQ8a\nWurifVF1dtIgkWvpNK+8hBwjeEn7yHGpPkLNcmdWGrszcKApbHEy/q10DEY6B3st\nvY6bZcYykY8/sShT8HZXCz2vXMg5MfxUNtufLJkWzhCaxty2vTmtkdqKbU/v1P2Z\nB0b6QO9vHwKBgFsZHD0y7IUifOGRfXyiQXt2HaaPgrHFv+qCYzaEBGPAh7hM2rXW\nib9lvkvIr3wQoOtCPzbpRrdozd3UK/50CHgADkorDlYbChxdrjxSQUG4Y4ZzKFuZ\nDdQBP5zSlpM2lcHjcs5a1i9PH0AegucQSLUCYXIPwwnrpzTvNHoGOPVFAn8UEMfH\nNdNmU0dKXVEIEym3H0jc2zSbGJBwHMu+NPwQ8gBlTl+nT7KJcuFouM7Kw5DHn4sp\nUnUsSYq5rraVfm4Av9zd7GE1g4z/GEFjhvKaMC5cSaHO5J0gOgQJy2KKbIk0BF5J\nzD3AEy2cipXf+VfiSO3pITD9KqSW5iZPREkNAoGAZtY3kKu3IJknh1+eeCA7Kzjo\n4OKc6gH81GlzfSezOvUh9kyx1lE8bbj/ps6uBTTD+b02Ro4cdEf+Zz2MAMokmkJC\nRNAfEy0YUBlYs8VdN+FBdxkYtArYhY2Wsp82DGPjFEGxd0sU94h76fGJwV4SYUA0\nlHHdD84r4+CGWzOYL7Q=\n-----END PRIVATE KEY-----\n",
+    "client_email": "spicy-service@formal-atrium-418823.iam.gserviceaccount.com",
+    "client_id": "104663914289962633334",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spicy-service%40formal-atrium-418823.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
