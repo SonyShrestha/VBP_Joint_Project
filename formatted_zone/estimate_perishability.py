@@ -34,6 +34,14 @@ config.read(config_file_path)
 def preprocess_flipkart(flipkart_df):
     # Drop duplicates
     flipkart_df = flipkart_df.dropDuplicates()
+    # patt1 = r"\(\d+(\.\d+)? (g|kg|L)\)"
+    patt1 = r"\([^)]*\d[^)]*\)"
+    patt2 = r"\b\d+\s*[xX]\s*\d+\s*\D*\b"
+    patt3 = r"\b\d+\s*(g|kg|L|ml)\b"
+
+    flipkart_df = flipkart_df.withColumn("name", regexp_replace(regexp_replace(regexp_replace(col("name"), patt1, ""),patt2,""),patt3,""))
+
+    #flipkart_df = flipkart_df.withColumn("name", regexp_replace(col("name"), r"\b\d+\w*\b", ""))
 
     # Convert date format 23 Feb 2025 to 2025-02-23
     flipkart_df = flipkart_df.withColumn("expiry_date", to_date("expiry_date", "d MMM yyyy"))\
@@ -45,9 +53,10 @@ def preprocess_flipkart(flipkart_df):
     flipkart_df = flipkart_df.withColumn("avg_expiry_date_days", datediff("expiry_date","manufacturing_date"))
 
     product_avg_expiry_date = flipkart_df.groupBy("name").agg(
-        F.min("avg_expiry_date_days").alias("min_avg_expiry_days")
+        F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
 
+    product_avg_expiry_date = product_avg_expiry_date.withColumnRenamed("name", "product_name")
     return product_avg_expiry_date
 
 
@@ -55,6 +64,14 @@ def preprocess_flipkart(flipkart_df):
 def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
     # Drop duplicates
     eat_by_date_df = eat_by_date_df.dropDuplicates()
+    #patt1 = r"\(\d+(\.\d+)? (g|kg|L)\)"
+    patt1 = r"\([^)]*\d[^)]*\)"
+    patt2 = r"\b\d+\s*[xX]\s*\d+\s*\D*\b"
+    patt3 = r"\b\d+\s*(g|kg|L|ml|KG|G|l|ML)\b"
+
+    eat_by_date_df = eat_by_date_df.withColumn("item_description", regexp_replace(regexp_replace(regexp_replace(col("item_description"), patt1, ""),patt2,""),patt3,""))
+
+    # eat_by_date_df = eat_by_date_df.withColumn("item_description", regexp_replace(col("item_description"), r"\b\d+\w*\b", ""))
 
     # Item description consists of string such as lasts for, last which needs to be cleaned
     pattern = r'\b(?:' + item_desc_filter_out.replace(',','|') + r')\b'
@@ -174,8 +191,10 @@ def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
     df = df.withColumn("avg_expiry_date_days", col("avg_expiry_date_days").cast("int"))
 
     product_avg_expiry_date = df.groupBy("item_description").agg(
-        F.min("avg_expiry_date_days").alias("min_avg_expiry_days")
+        F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
+
+    product_avg_expiry_date = product_avg_expiry_date.withColumnRenamed("item_description", "product_name")
 
     return product_avg_expiry_date
 
@@ -184,6 +203,13 @@ def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
 def preprocess_approved_food(approved_food_df, scrapped_date):
     # Drop duplicates
     approved_food_df = approved_food_df.dropDuplicates()
+
+    # patt1 = r"\(\d+(\.\d+)? (g|kg|L)\)"
+    patt1 = r"\([^)]*\d[^)]*\)"
+    patt2 = r"\b\d+\s*[xX]\s*\d+\s*\D*\b"
+    patt3 = r"\b\d+\s*(g|kg|L|ml)\b"
+
+    approved_food_df = approved_food_df.withColumn("Product_name", regexp_replace(regexp_replace(regexp_replace(col("Product_name"), patt1, ""),patt2,""),patt3,""))
 
     # Convert date format 23 Feb 2025 to 2025-02-23
     approved_food_df = approved_food_df.withColumn("Expiry_Date", to_date("Expiry_Date", "d MMM yyyy"))\
@@ -203,7 +229,7 @@ def preprocess_approved_food(approved_food_df, scrapped_date):
     #approved_food_df.write.csv("./data/cleaned/approved_food.csv")
 
     product_avg_expiry_date = approved_food_df.groupBy("product_name").agg(
-        F.min("avg_expiry_date_days").alias("min_avg_expiry_days")
+        F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
 
     return product_avg_expiry_date
@@ -238,5 +264,7 @@ if __name__ == "__main__":
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
 
     avg_expiry_date_df = avg_expiry_date_flipkart_df.union(avg_expiry_date_eat_by_date_df).union(avg_expiry_date_approved_food_df)
-    avg_expiry_date_df.show()
+    
+    # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
+    avg_expiry_date_df.write.json("./data/cleaned/estimated_avg_expiry.json")
     

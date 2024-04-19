@@ -119,10 +119,7 @@ if __name__ == "__main__":
     df = df.withColumn("avg_expiry_date_days", df["num"] * mult_val)
 
 
-    # Drop unwanted fields
-    columns_to_drop = ["values","num","interval"]
-
-    df = df.drop(*columns_to_drop)
+    
 
 
     # In item_description, replace anything that appreas within ()
@@ -165,9 +162,18 @@ if __name__ == "__main__":
     # Cast avg_expiry_date_days value to int
     df = df.withColumn("avg_expiry_date_days", col("avg_expiry_date_days").cast("int"))
 
+    # df = df.orderBy(df.category.desc(), df.sub_category.desc())
+    # df.write.option("indent", 4).json("./data/cleaned/eat_by_date.json")
+
+    # Drop unwanted fields
+    columns_to_drop = ["values","num","interval"]
+
+    df = df.drop(*columns_to_drop)
+
     product_avg_expiry_date = df.groupBy("item_description").agg(
         F.min("avg_expiry_date_days").alias("min_avg_expiry_days")
     )
+    
     
     
     # distinct_values = df.select("avg_expiry_date_days").distinct().collect()

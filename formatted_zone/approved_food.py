@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
     approved_food_df = approved_food_df.filter(col("avg_expiry_date_days")>0)
 
-    #approved_food_df.write.csv("./data/cleaned/approved_food.csv")
+    # approved_food_df.write.csv("./data/cleaned/approved_food.csv")
 
     product_avg_expiry_date = approved_food_df.groupBy("product_name").agg(
         F.min("avg_expiry_date_days").alias("min_avg_expiry_days")
