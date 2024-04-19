@@ -264,6 +264,8 @@ if __name__ == "__main__":
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
 
     avg_expiry_date_df = avg_expiry_date_flipkart_df.union(avg_expiry_date_eat_by_date_df).union(avg_expiry_date_approved_food_df)
+
+    avg_expiry_date_df = avg_expiry_date_df.withColumn("product_name", trim(col("product_name")))
     
     # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
     avg_expiry_date_df.write.json("./data/cleaned/estimated_avg_expiry.json")
