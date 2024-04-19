@@ -50,6 +50,7 @@ for supermarket in supermarkets:
             "store_name": supermarket['Commercial_name'],
             "product_id": product['product_id'],
             "product_name": product['name'],
+            "product_price": product['actual_price'],
             "manufacture_date": product['manufacturing_date'],
             "expiry_date": product['expiry_date'],
             "quantity": random.randint(quantity_min, quantity_max)  # Random quantity between 1 and 100
@@ -58,7 +59,7 @@ for supermarket in supermarkets:
 # Output to CSV
 try:
     with open(output_csv, 'w', newline='') as file:
-        fieldnames = ['store_id', 'store_name', 'product_id', 'product_name', 'manufacture_date', 'expiry_date', 'quantity']
+        fieldnames = ['store_id', 'store_name', 'product_id', 'product_name','product_price', 'manufacture_date', 'expiry_date', 'quantity']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for item in assigned_products:
