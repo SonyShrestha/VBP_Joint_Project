@@ -1,0 +1,14 @@
+{
+    "product_matching": {
+        "fuzzy_matching": {
+            "apply": "yes",
+            "score_calc_method":"partial_token_sort_ratio",
+            "threshold": 50
+        } ,
+        "spacy_matching": {
+            "apply": "no",
+            "filter":"NOUN",
+            "threshold": 80
+        }
+    }
+}

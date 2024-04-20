@@ -55,6 +55,7 @@ if __name__ == "__main__":
        .withColumn("manufacturing_date", date_format("manufacturing_date", "yyyy-MM-dd"))
     
     flipkart_df = flipkart_df.withColumn("avg_expiry_date_days", datediff("expiry_date","manufacturing_date"))
+    # flipkart_df.write.json("./data/cleaned/flipkart.json")
 
     product_avg_expiry_date = flipkart_df.groupBy("name").agg(
         F.min("avg_expiry_date_days").alias("min_avg_expiry_days")

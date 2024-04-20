@@ -25,7 +25,9 @@ config.read(config_file_path)
 
 def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
     # Read products file from Big Basket Dataset
-    product_df = pd.read_csv(os.path.join(config_dir,os.path.join(raw_data_dir,'bigbasket_products.csv')))
+    product_df = pd.read_json(os.path.join(config_dir,os.path.join(raw_data_dir,'flipkart_products.json')))
+    # print(product_df)
+    # breakpoint()
 
     # Initialize Faker
     fake = Faker()
@@ -42,21 +44,21 @@ def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
         customer_id = np.random.choice(customer_ids)
         customer_name = customer_names[customer_id - 1]
         product_index = np.random.randint(len(product_df))
-        product_id = product_df.loc[product_index, 'index']
-        product_name = product_df.loc[product_index, 'product']
-        product_category = product_df.loc[product_index, 'category']
-        product_subcategory = product_df.loc[product_index, 'sub_category']
-        product_brand = product_df.loc[product_index, 'brand']
-        unit_price = product_df.loc[product_index, 'sale_price']
+        # product_id = product_df.loc[product_index, 'index']
+        product_name = product_df.loc[product_index, 'name']
+        # product_category = product_df.loc[product_index, 'category']
+        # product_subcategory = product_df.loc[product_index, 'sub_category']
+        # product_brand = product_df.loc[product_index, 'brand']
+        unit_price = product_df.loc[product_index, 'selling_price']
         quantity = np.random.randint(1, 5)  # Adjust quantity range as needed
-        purchase_date = fake.date_between(start_date="-1y", end_date="now")
+        purchase_date = fake.date_between(start_date="-6m", end_date="now")
         purchase_data.append({'customer_id': customer_id,
                             'customer_name': customer_name,
-                            'product_id': product_id,
+                            # 'product_id': product_id,
                             'product_name': product_name,
-                            'product_category': product_category,
-                            'product_subcategory': product_subcategory,
-                            'product_brand': product_brand,
+                            # 'product_category': product_category,
+                            # 'product_subcategory': product_subcategory,
+                            # 'product_brand': product_brand,
                             'unit_price': unit_price,
                             'quantity': quantity,
                             'purchase_date':purchase_date})

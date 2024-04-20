@@ -4,16 +4,12 @@ from pyspark.sql.functions import split
 import logging 
 import os 
 import configparser
-from pyspark.sql.functions import explode, expr
-import json
-from pyspark.sql.functions import udf, array
+from pyspark.sql.functions import explode, array, split, regexp_replace, col, lit, lower, regexp_extract, trim, when, to_date, date_format, datediff
 from pyspark.sql import functions as F
-from pyspark import SparkConf
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import regexp_replace, col,lit, lower,regexp_extract,trim,when, initcap,to_date, date_format, datediff
-from pyspark.sql.functions import split, coalesce
 from pyspark.sql.types import ArrayType, StringType
 import re
+import json
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
@@ -34,14 +30,8 @@ config.read(config_file_path)
 def preprocess_flipkart(flipkart_df):
     # Drop duplicates
     flipkart_df = flipkart_df.dropDuplicates()
-    # patt1 = r"\(\d+(\.\d+)? (g|kg|L)\)"
-    patt1 = r"\([^)]*\d[^)]*\)"
-    patt2 = r"\b\d+\s*[xX]\s*\d+\s*\D*\b"
-    patt3 = r"\b\d+\s*(g|kg|L|ml)\b"
 
-    flipkart_df = flipkart_df.withColumn("name", regexp_replace(regexp_replace(regexp_replace(col("name"), patt1, ""),patt2,""),patt3,""))
-
-    #flipkart_df = flipkart_df.withColumn("name", regexp_replace(col("name"), r"\b\d+\w*\b", ""))
+    flipkart_df = flipkart_df.select("prod_heirarachy", "expiry_date", "manufacturing_date")
 
     # Convert date format 23 Feb 2025 to 2025-02-23
     flipkart_df = flipkart_df.withColumn("expiry_date", to_date("expiry_date", "d MMM yyyy"))\
@@ -52,11 +42,20 @@ def preprocess_flipkart(flipkart_df):
     
     flipkart_df = flipkart_df.withColumn("avg_expiry_date_days", datediff("expiry_date","manufacturing_date"))
 
-    product_avg_expiry_date = flipkart_df.groupBy("name").agg(
+    flipkart_df = flipkart_df.select("avg_expiry_date_days", col("prod_heirarachy").getItem(0).alias("category"),
+               col("prod_heirarachy").getItem(1).alias("sub_category"),
+               col("prod_heirarachy").getItem(2).alias("item_description"))
+    
+    flipkart_df = flipkart_df.withColumn("category", lower(regexp_replace(col("category"), "-", " ")))
+    flipkart_df = flipkart_df.withColumn("sub_category", lower(regexp_replace(col("sub_category"), "-", " ")))
+    flipkart_df = flipkart_df.withColumn("item_description", lower(regexp_replace(col("item_description"), "-", " ")))
+
+    product_avg_expiry_date = flipkart_df.groupBy("category","sub_category","item_description").agg(
         F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
 
-    product_avg_expiry_date = product_avg_expiry_date.withColumnRenamed("name", "product_name")
+    product_avg_expiry_date = product_avg_expiry_date.withColumnRenamed("item_description", "product_name")
+
     return product_avg_expiry_date
 
 
@@ -64,12 +63,11 @@ def preprocess_flipkart(flipkart_df):
 def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
     # Drop duplicates
     eat_by_date_df = eat_by_date_df.dropDuplicates()
-    #patt1 = r"\(\d+(\.\d+)? (g|kg|L)\)"
-    patt1 = r"\([^)]*\d[^)]*\)"
-    patt2 = r"\b\d+\s*[xX]\s*\d+\s*\D*\b"
-    patt3 = r"\b\d+\s*(g|kg|L|ml|KG|G|l|ML)\b"
+    
+    # Main item_description is present in text - anything inside () was not required
+    patt = r"\([^)]*\)"
 
-    eat_by_date_df = eat_by_date_df.withColumn("item_description", regexp_replace(regexp_replace(regexp_replace(col("item_description"), patt1, ""),patt2,""),patt3,""))
+    eat_by_date_df = eat_by_date_df.withColumn("item_description", regexp_replace(col("item_description"), patt, ""))
 
     # eat_by_date_df = eat_by_date_df.withColumn("item_description", regexp_replace(col("item_description"), r"\b\d+\w*\b", ""))
 
@@ -153,7 +151,9 @@ def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
     # In item_description, replace anything that appreas within ()
     df = df.withColumn("item_description", trim(regexp_replace(df["item_description"], "\s*\([^()]*\)", "")))
 
-    df = df.withColumn("category", initcap(df["category"]))
+    df = df.withColumn("category", lower(df["category"]))\
+    .withColumn("sub_category", lower(df["sub_category"]))\
+    .withColumn("item_description", lower(df["item_description"]))
 
     # Clean up values in type field
     df = df.withColumn("type", when(col("type").like("%unopen%"), 'unopened')
@@ -190,7 +190,7 @@ def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
     # Cast avg_expiry_date_days value to int
     df = df.withColumn("avg_expiry_date_days", col("avg_expiry_date_days").cast("int"))
 
-    product_avg_expiry_date = df.groupBy("item_description").agg(
+    product_avg_expiry_date = df.groupBy("category","sub_category","item_description").agg(
         F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
 
@@ -205,7 +205,7 @@ def preprocess_approved_food(approved_food_df, scrapped_date):
     approved_food_df = approved_food_df.dropDuplicates()
 
     # patt1 = r"\(\d+(\.\d+)? (g|kg|L)\)"
-    patt1 = r"\([^)]*\d[^)]*\)"
+    patt1 = r"\([^)]*\)"
     patt2 = r"\b\d+\s*[xX]\s*\d+\s*\D*\b"
     patt3 = r"\b\d+\s*(g|kg|L|ml)\b"
 
@@ -232,6 +232,11 @@ def preprocess_approved_food(approved_food_df, scrapped_date):
         F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
 
+    product_avg_expiry_date = product_avg_expiry_date.withColumn("category", lit(" ").cast("string"))
+    product_avg_expiry_date = product_avg_expiry_date.withColumn("sub_category", lit(" ").cast("string"))
+
+    product_avg_expiry_date = product_avg_expiry_date.select("category", "sub_category", "product_name", "avg_expiry_days")
+
     return product_avg_expiry_date
 
 
@@ -251,12 +256,10 @@ if __name__ == "__main__":
 
     avg_expiry_date_flipkart_df = preprocess_flipkart(flipkart_df)
 
-
     # Read the Parquet file into a DataFrame
     eat_by_date_df = spark.read.parquet("./data/parquet/eat_by_date.parquet")
 
     avg_expiry_date_eat_by_date_df = preprocess_eat_by_date(eat_by_date_df, item_desc_filter_out)
-
 
     # Read the Parquet file into a DataFrame
     approved_food_df = spark.read.parquet("./data/parquet/approved_food.parquet")
@@ -265,8 +268,12 @@ if __name__ == "__main__":
 
     avg_expiry_date_df = avg_expiry_date_flipkart_df.union(avg_expiry_date_eat_by_date_df).union(avg_expiry_date_approved_food_df)
 
-    avg_expiry_date_df = avg_expiry_date_df.withColumn("product_name", trim(col("product_name")))
+    avg_expiry_date_df = avg_expiry_date_df.withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))
+
+    avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","item_description").agg(
+        F.min("avg_expiry_days").alias("avg_expiry_days")
+    )
     
     # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
-    avg_expiry_date_df.write.json("./data/cleaned/estimated_avg_expiry.json")
+    avg_expiry_date_df.write.json("./data/formatted_zone/estimated_avg_expiry")
     
