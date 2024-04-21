@@ -10,3 +10,4 @@ minio
 docker
 opencv-python
 pytesseract
+fuzzywuzzy
