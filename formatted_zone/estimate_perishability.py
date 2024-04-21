@@ -252,17 +252,17 @@ if __name__ == "__main__":
     .getOrCreate()
 
     # Read the Parquet file into a DataFrame
-    flipkart_df = spark.read.parquet("./data/parquet/flipkart.parquet")
+    flipkart_df = spark.read.parquet("./data/gcs_raw_parquet/flipkart.parquet")
 
     avg_expiry_date_flipkart_df = preprocess_flipkart(flipkart_df)
 
     # Read the Parquet file into a DataFrame
-    eat_by_date_df = spark.read.parquet("./data/parquet/eat_by_date.parquet")
+    eat_by_date_df = spark.read.parquet("./data/gcs_raw_parquet/eat_by_date.parquet")
 
     avg_expiry_date_eat_by_date_df = preprocess_eat_by_date(eat_by_date_df, item_desc_filter_out)
 
     # Read the Parquet file into a DataFrame
-    approved_food_df = spark.read.parquet("./data/parquet/approved_food.parquet")
+    approved_food_df = spark.read.parquet("./data/gcs_raw_parquet/approved_food.parquet")
 
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
 
@@ -270,7 +270,7 @@ if __name__ == "__main__":
 
     avg_expiry_date_df = avg_expiry_date_df.withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))
 
-    avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","item_description").agg(
+    avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","product_name").agg(
         F.min("avg_expiry_days").alias("avg_expiry_days")
     )
     

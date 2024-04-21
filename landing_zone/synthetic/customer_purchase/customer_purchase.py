@@ -5,7 +5,7 @@ import os
 import os
 import logging
 import configparser
-
+import random
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
@@ -26,8 +26,6 @@ config.read(config_file_path)
 def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
     # Read products file from Big Basket Dataset
     product_df = pd.read_json(os.path.join(config_dir,os.path.join(raw_data_dir,'flipkart_products.json')))
-    # print(product_df)
-    # breakpoint()
 
     # Initialize Faker
     fake = Faker()
@@ -36,6 +34,11 @@ def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
     customer_ids = range(1, num_customers + 1)
     customer_names = [fake.name() for _ in range(num_customers)]
     customer_df = pd.DataFrame({'customer_id': customer_ids, 'customer_name': customer_names})
+
+    customer_df['email_id'] = ''
+    email_list = ['sony.sth8@gmail.com','sony.shrestha@estudiantat.upc.edu']
+    # Assign email addresses to the 'Email' column using a lambda function
+    customer_df['email_id'] = customer_df.apply(lambda row: random.choice(email_list), axis=1)
     customer_df.to_csv(os.path.join(raw_data_dir,"customers.csv"), index=False)
 
     # Generate synthetic purchase data
