@@ -1,3 +1,4 @@
 _SUCCESS
 ._SUCCESS.crc
 .part*
+*.snappy.parquet
