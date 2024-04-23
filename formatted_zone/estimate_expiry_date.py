@@ -6,7 +6,7 @@ import json
 from pyspark.sql import functions as F
 from pyspark.sql.functions import regexp_replace, udf, lower, trim, monotonically_increasing_id, col, expr, lit, row_number
 from pyspark.sql.types import IntegerType
-from fuzzywuzzy import process, fuzz
+from fuzzywuzzy import fuzz
 from pyspark.sql.window import Window
 import spacy
 from pyspark.sql import SparkSession
@@ -131,7 +131,7 @@ if __name__ == "__main__":
             .withColumn("product_name", lower(regexp_replace(customer_purachase_df["product_name"], "[^a-zA-Z ]", "")))\
             .withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))
     
-    expected_avg_expiry_df = spark.read.json(expected_avg_expiry)
+    expected_avg_expiry_df = spark.read.parquet(expected_avg_expiry)
     expected_avg_expiry_df = expected_avg_expiry_df.select("product_name","avg_expiry_days")\
             .withColumn("product_name", lower(regexp_replace(expected_avg_expiry_df["product_name"], "[^a-zA-Z ]", "")))\
             .withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))

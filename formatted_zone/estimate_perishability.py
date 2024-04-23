@@ -7,9 +7,6 @@ import configparser
 from pyspark.sql.functions import explode, array, split, regexp_replace, col, lit, lower, regexp_extract, trim, when, to_date, date_format, datediff
 from pyspark.sql import functions as F
 from pyspark.sql import SparkSession
-from pyspark.sql.types import ArrayType, StringType
-import re
-import json
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
@@ -275,5 +272,5 @@ if __name__ == "__main__":
     )
     
     # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
-    avg_expiry_date_df.write.json("./data/formatted_zone/estimated_avg_expiry")
+    avg_expiry_date_df.write.parquet("./data/formatted_zone/estimated_avg_expiry")
     

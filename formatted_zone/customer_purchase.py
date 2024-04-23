@@ -4,11 +4,11 @@ import configparser
 import json
 from pyspark.sql import SparkSession
 import uuid
-from pyspark.sql.functions import udf
+from pyspark.sql.functions import udf, monotonically_increasing_id, col
 from pyspark.sql.types import StringType
-
-# Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
+
+
 
 # Create logger object
 logger = logging.getLogger()
@@ -36,6 +36,7 @@ if __name__ == "__main__":
     spark = SparkSession.builder \
         .appName("Read Parquet File") \
         .config("spark.sql.repl.eagerEval.enabled", True) \
+        .config("spark.sql.execution.pythonUDF.arrow.enabled", "true")\
         .getOrCreate()
 
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
@@ -46,8 +47,8 @@ if __name__ == "__main__":
     customers_df = customers_df.dropDuplicates()
 
     # Generate id as unique identifier
-    generate_uuid_udf = udf(generate_uuid, StringType())
-    customers_df = customers_df.withColumn("id", generate_uuid_udf())
+    # generate_uuid_udf = udf(generate_uuid, StringType())
+    customers_df = customers_df.withColumn("id", monotonically_increasing_id())
 
     customers_df = customers_df.select("id","customer_id","customer_name", "product_name","unit_price","quantity","purchase_date")
 
