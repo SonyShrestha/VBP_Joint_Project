@@ -4,5 +4,6 @@
             "score_calc_method":"partial_token_sort_ratio",
             "threshold": 50
         }
-    }
+    },
+    "expiry_notification_days":50
 }
