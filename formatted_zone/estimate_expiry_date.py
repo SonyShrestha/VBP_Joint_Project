@@ -35,10 +35,7 @@ with open(config_file_path_json) as f:
 
 nlp = spacy.load("en_core_web_sm")
 
-# @udf(StringType())
-# def best_fuzzy_match(s1, s2):
-#     match, score = process.extractOne(s1, s2)
-#     return match
+
 
 @udf(IntegerType())
 def fuzzy_match_score(fuzzy_score_calc_method, fuzzy_threshold, s1, s2):
@@ -62,6 +59,8 @@ def fuzzy_match_score(fuzzy_score_calc_method, fuzzy_threshold, s1, s2):
     if int(score) < int(fuzzy_threshold):
         score = 0
     return score
+
+
 
 @udf(IntegerType())
 def count_tokens(s1, s2):
@@ -114,7 +113,7 @@ if __name__ == "__main__":
     expected_avg_expiry = "./data/formatted_zone/estimated_avg_expiry"
 
     # Read the Parquet file into a DataFrame
-    cust_purachase_df = spark.read.parquet(cust_purachase).limit(100)
+    cust_purachase_df = spark.read.parquet(cust_purachase).limit(10)
     cust_email_df = spark.read.parquet(cust_email)
     cust_email_df = cust_email_df.select("customer_id","email_id")
 
@@ -164,5 +163,8 @@ if __name__ == "__main__":
     df_with_rn = df_with_rn.withColumnRenamed("original_product_name", "product_name")
 
     df_with_rn = df_with_rn.withColumn("expected_expiry_date", expr("date_add(purchase_date, cast(ceil(avg_expiry_days/2) AS INT))"))
+
+    # debug_df = df_with_rn.select("product_name","product_in_avg_expiry_file","avg_expiry_days")
+    # debug_df.write.csv('./data/formatted_zone/expiry_date_accuracy')
 
     df_with_rn.write.parquet("./data/formatted_zone/purchases_nearing_expiry")

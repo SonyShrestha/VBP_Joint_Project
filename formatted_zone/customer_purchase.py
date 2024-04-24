@@ -50,6 +50,9 @@ if __name__ == "__main__":
     # generate_uuid_udf = udf(generate_uuid, StringType())
     customers_df = customers_df.withColumn("id", monotonically_increasing_id())
 
+    logger.info('-----------------------------------------------------')
+    logger.info("Cleaning data for customer_purchase")
+
     customers_df = customers_df.select("id","customer_id","customer_name", "product_name","unit_price","quantity","purchase_date")
 
     # Dump customers file to formatted_zone

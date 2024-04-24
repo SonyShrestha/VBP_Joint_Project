@@ -41,6 +41,9 @@ if __name__ == "__main__":
     customers = "./data/gcs_raw_parquet/customers.parquet"
     customers_df = spark.read.parquet(customers)
 
+    logger.info('-----------------------------------------------------')
+    logger.info("Cleaning data for customers")
+
     # Drop duplicates if present
     customers_df = customers_df.dropDuplicates()
 

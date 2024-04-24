@@ -25,6 +25,8 @@ config.read(config_file_path)
 
 
 def preprocess_flipkart(flipkart_df):
+    logger.info('-----------------------------------------------------')
+    logger.info("Cleaning data for flipkart")
     # Drop duplicates
     flipkart_df = flipkart_df.dropDuplicates()
 
@@ -58,6 +60,8 @@ def preprocess_flipkart(flipkart_df):
 
 
 def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
+    logger.info('-----------------------------------------------------')
+    logger.info("Cleaning data for eat_by_date")
     # Drop duplicates
     eat_by_date_df = eat_by_date_df.dropDuplicates()
     
@@ -198,6 +202,8 @@ def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
 
 
 def preprocess_approved_food(approved_food_df, scrapped_date):
+    logger.info('-----------------------------------------------------')
+    logger.info("Cleaning data for approved_food")
     # Drop duplicates
     approved_food_df = approved_food_df.dropDuplicates()
 
@@ -267,6 +273,9 @@ if __name__ == "__main__":
 
     avg_expiry_date_df = avg_expiry_date_df.withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))
 
+    logger.info('-----------------------------------------------------')
+    logger.info("Calculating average expiry date of food items")
+    
     avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","product_name").agg(
         F.min("avg_expiry_days").alias("avg_expiry_days")
     )
