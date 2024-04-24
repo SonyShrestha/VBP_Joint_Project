@@ -43,13 +43,14 @@ def send_email(row):
     app_password = 'oofzndilqxjbvjko'  # Use the app password generated for Mail/Other
     subject = 'SpicyBytes: Product Expiry Notification'
 
-    image_path3 = os.path.join(config_dir, "images/spicy_img3.jpg") 
+    image_path1 = os.path.join(config_dir, "images/spicy_img1.jpg") 
 
     # Create SMTP connection
     server = smtplib.SMTP(smtp_server, port)
 
     item_names = row["product_name"]
     expiry_dates = row["expected_expiry_date"]
+    customer_name = row['customer_name']
 
     server.starttls()
     server.login(sender_email, app_password)
@@ -109,9 +110,11 @@ def send_email(row):
         </style>
         </head>
         <body>
+        
             <div class="container">
+                <center><img src='cid:image1' alt="SpicyBytes Logo" width="200" height="50"></center>
                 <h1>Grocery Item Expiry Notification</h1>
-                <p>Dear User,</p>
+                <p>Dear """+customer_name+""",</p>
                 <p>We would like to inform you that the following grocery items in your inventory are about to expire:</p>
                 
                 <table>
@@ -147,11 +150,13 @@ def send_email(row):
 
     # Attach image
     
-    if os.path.exists(image_path3):
-        with open(image_path3, 'rb') as img_file:
+    if os.path.exists(image_path1):
+        with open(image_path1, 'rb') as img_file:
             image = MIMEImage(img_file.read())
-            image.add_header('Content-Disposition', 'attachment', filename=os.path.basename(image_path3))
+            image.add_header('Content-ID', '<image1>')
             msg.attach(image)
+            # image.add_header('Content-Disposition', 'attachment', filename=os.path.basename(image_path1))
+            # msg.attach(image)
 
     # Send email
     server.sendmail(sender_email, receiver_email, msg.as_string())
@@ -188,12 +193,12 @@ if __name__ == "__main__":
     # Read the Parquet file into a DataFrame
     estimated_avg_expiry_df = spark.read.parquet(estimated_avg_expiry)
 
-    estimated_avg_expiry_df =estimated_avg_expiry_df.select("email_id", "product_name","purchase_date","avg_expiry_days","expected_expiry_date")
+    estimated_avg_expiry_df =estimated_avg_expiry_df.select("email_id", "customer_name", "product_name","purchase_date","avg_expiry_days","expected_expiry_date")
     estimated_avg_expiry_df = estimated_avg_expiry_df.withColumn("remaining_days", datediff(col("expected_expiry_date"), current_date()))
 
     estimated_avg_expiry_df = estimated_avg_expiry_df.filter((col("remaining_days") > 0) & (col("remaining_days") < days_considered))
 
-    mail_group_df = estimated_avg_expiry_df.groupBy("email_id").agg(
+    mail_group_df = estimated_avg_expiry_df.groupBy("email_id","customer_name").agg(
         collect_list("product_name").alias("product_name"),
         collect_list("expected_expiry_date").alias("expected_expiry_date")
     )
