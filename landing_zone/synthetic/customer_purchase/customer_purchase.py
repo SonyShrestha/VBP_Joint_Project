@@ -27,12 +27,15 @@ def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
     # Read products file from Big Basket Dataset
     product_df = pd.read_json(os.path.join(config_dir,os.path.join(raw_data_dir,'flipkart_products.json')))
 
-    # Initialize Faker
+    seed_value = 2227
+
+    # Create an instance of Faker with the seed
     fake = Faker()
+    Faker.seed(seed_value)
 
     # Generate fake customer information
     customer_ids = range(1, num_customers + 1)
-    customer_names = [fake.name() for _ in range(num_customers)]
+    customer_names = [fake.name() for i in range(num_customers)]
     customer_df = pd.DataFrame({'customer_id': customer_ids, 'customer_name': customer_names})
 
     customer_df['email_id'] = ''
