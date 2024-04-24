@@ -90,7 +90,7 @@ def send_email(row):
                 background-color: #f2f2f2;
             }
             .container {
-                max-width: 600px;
+                max-width: 500px;
                 margin: 20px auto;
                 padding: 20px;
                 background-color: #fff;
@@ -156,7 +156,8 @@ def send_email(row):
     # Send email
     server.sendmail(sender_email, receiver_email, msg.as_string())
 
-    print("Email sent successfully")
+    logger.info('-----------------------------------------------------')
+    logger.info("Email sent successfully")
 
     # Close SMTP connection
     server.quit()
@@ -171,7 +172,7 @@ if __name__ == "__main__":
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
 
-    days_considered = 7
+    days_considered = config_json["expiry_notification_days"]
 
     fuzzy_score_calc_method = config_json["product_matching"]["fuzzy_matching"]["score_calc_method"]
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
