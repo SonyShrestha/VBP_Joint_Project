@@ -113,7 +113,7 @@ if __name__ == "__main__":
     expected_avg_expiry = "./data/formatted_zone/estimated_avg_expiry"
 
     # Read the Parquet file into a DataFrame
-    cust_purachase_df = spark.read.parquet(cust_purachase).limit(10)
+    cust_purachase_df = spark.read.parquet(cust_purachase)
     cust_email_df = spark.read.parquet(cust_email)
     cust_email_df = cust_email_df.select("customer_id","email_id")
 
