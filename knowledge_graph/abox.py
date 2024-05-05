@@ -66,8 +66,6 @@ def product():
 def customer_purchase():
     customer_purchase_df = pd.read_parquet('./data/formatted_zone/customer_purchase')
     customer_purchase_df['product_name'] = customer_purchase_df['product_name'].apply(quote)
-    print(customer_purchase_df)
-    breakpoint()
 
     for index, row in customer_purchase_df.iterrows():
         subject = URIRef(pub + 'customer_purchase/customer='+str(row['customer_id'])+"/product="+str(row['product_name']).lower().replace(' ','_'))
@@ -75,16 +73,16 @@ def customer_purchase():
         purchased_date_literal = Literal(row['purchase_date'], datatype = XSD.date)
         quantity_literal = Literal(row['quantity'], datatype = XSD.integer)
         unit_price_literal = Literal(row['unit_price'], datatype = XSD.float)
-        # customer = URIRef(pub + 'customer/'+str(row['customer_id']))
-        # product = URIRef(pub + 'product/'+str(row['product_name']))
+        customer = URIRef(pub + 'customer/'+str(row['customer_id']))
+        product = URIRef(pub + 'product/'+str(row['product_name']))
         
         # Add triples to the RDF graph
         # g.add((subject, predicate, obj))
         g.add((subject, pub.purchased_date, purchased_date_literal))
         g.add((subject, pub.quantity, quantity_literal))
         g.add((subject, pub.unit_price, unit_price_literal))
-        # g.add((subject, pub.purchase_customer, customer))
-        # g.add((subject, pub.purchase_product, product))
+        g.add((subject, pub.purchase_customer, customer))
+        g.add((subject, pub.purchase_product, product))
 
     return g
 
@@ -92,7 +90,7 @@ if __name__ == "__main__":
     # customers = customers()
     # expected_avg_expiry = expected_avg_expiry()
     # product = product()
-    # customer_purchase = customer_purchase()
+    customer_purchase = customer_purchase()
     # kg = customers + expected_avg_expiry + product + customer_purchase
     # kg.serialize(destination='./output/kg_abox.rdf', format='xml')
     
