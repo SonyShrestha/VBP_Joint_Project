@@ -167,4 +167,4 @@ if __name__ == "__main__":
     # debug_df = df_with_rn.select("product_name","product_in_avg_expiry_file","avg_expiry_days")
     # debug_df.write.csv('./data/formatted_zone/expiry_date_accuracy')
 
-    df_with_rn.write.parquet("./data/formatted_zone/purchases_nearing_expiry")
+    df_with_rn.write.mode('overwrite').parquet("./data/formatted_zone/purchases_nearing_expiry")

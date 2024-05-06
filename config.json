@@ -2,8 +2,8 @@
     "product_matching": {
         "fuzzy_matching": {
             "score_calc_method":"partial_token_sort_ratio",
-            "threshold": 50
+            "threshold": 80
         }
     },
-    "expiry_notification_days":50
+    "expiry_notification_days":20
 }

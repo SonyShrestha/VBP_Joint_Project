@@ -281,5 +281,5 @@ if __name__ == "__main__":
     )
     
     # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
-    avg_expiry_date_df.write.parquet("./data/formatted_zone/estimated_avg_expiry")
+    avg_expiry_date_df.write.mode('overwrite').parquet("./data/formatted_zone/estimated_avg_expiry")
     
