@@ -49,10 +49,10 @@ def expected_avg_expiry():
 def product():
     product_df = pd.read_parquet('./data/formatted_zone/customer_purchase')
     product_df = pd.DataFrame({'product_name': product_df['product_name'].unique()})
-    product_df['product_name'] = product_df['product_name'].apply(quote)
+    product_df['product_name_quoted'] = product_df['product_name'].str.lower().apply(quote)
 
     for index, row in product_df.iterrows():
-        subject = URIRef(pub + 'product/'+str(row['product_name']).lower().replace(' ','_'))
+        subject = URIRef(pub + 'product/'+str(row['product_name_quoted']).lower().replace(' ','_'))
 
         product_name_literal = Literal(row['product_name'], datatype = XSD.string)
         
@@ -65,7 +65,7 @@ def product():
 
 def customer_purchase():
     customer_purchase_df = pd.read_parquet('./data/formatted_zone/customer_purchase')
-    customer_purchase_df['product_name'] = customer_purchase_df['product_name'].apply(quote)
+    customer_purchase_df['product_name'] = customer_purchase_df['product_name'].str.lower().apply(quote)
 
     for index, row in customer_purchase_df.iterrows():
         subject = URIRef(pub + 'customer_purchase/customer='+str(row['customer_id'])+"/product="+str(row['product_name']).lower().replace(' ','_'))
