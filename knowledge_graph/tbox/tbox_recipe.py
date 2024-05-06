@@ -18,9 +18,9 @@ g.add((sb.food_name, RDFS.domain, sb.recipe))
 g.add((sb.food_name, RDFS.range, XSD.string))
 g.add((sb.food_name, RDF.type, RDF.Property))
 
-g.add((sb.ingredients, RDFS.domain, sb.recipe))
-g.add((sb.ingredients, RDFS.range, XSD.string))
-g.add((sb.ingredients, RDF.type, RDF.Property))
+g.add((sb.ingredient, RDFS.domain, sb.recipe))
+g.add((sb.ingredient, RDFS.range, XSD.string))
+g.add((sb.ingredient, RDF.type, RDF.Property))
 
 g.add((sb.description, RDFS.domain, sb.recipe))
 g.add((sb.description, RDFS.range, XSD.string))
