@@ -113,7 +113,7 @@ if __name__ == "__main__":
     expected_avg_expiry = "./data/formatted_zone/estimated_avg_expiry"
 
     # Read the Parquet file into a DataFrame
-    cust_purachase_df = spark.read.parquet(cust_purachase).limit(10)
+    cust_purachase_df = spark.read.parquet(cust_purachase)
     cust_email_df = spark.read.parquet(cust_email)
     cust_email_df = cust_email_df.select("customer_id","email_id")
 
@@ -167,4 +167,4 @@ if __name__ == "__main__":
     # debug_df = df_with_rn.select("product_name","product_in_avg_expiry_file","avg_expiry_days")
     # debug_df.write.csv('./data/formatted_zone/expiry_date_accuracy')
 
-    df_with_rn.write.parquet("./data/formatted_zone/purchases_nearing_expiry")
+    df_with_rn.write.mode('overwrite').parquet("./data/formatted_zone/purchases_nearing_expiry")

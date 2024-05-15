@@ -48,4 +48,4 @@ if __name__ == "__main__":
     customers_df = customers_df.dropDuplicates()
 
     # Dump customers file to formatted_zone
-    customers_df.write.parquet("./data/formatted_zone/customers")
+    customers_df.write.mode('overwrite').parquet("./data/formatted_zone/customers")

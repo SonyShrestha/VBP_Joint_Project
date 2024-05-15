@@ -6,6 +6,7 @@ import os
 import logging
 import configparser
 import random
+from datetime import datetime, timedelta
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
@@ -57,7 +58,7 @@ def generate_customer_purchase(num_customers, num_purchases, raw_data_dir):
         # product_brand = product_df.loc[product_index, 'brand']
         unit_price = product_df.loc[product_index, 'selling_price']
         quantity = np.random.randint(1, 5)  # Adjust quantity range as needed
-        purchase_date = fake.date_between(start_date="-6m", end_date="now")
+        purchase_date = fake.date_between_dates(date_start=datetime.now() - timedelta(days=90), date_end=datetime.now())
         purchase_data.append({'customer_id': customer_id,
                             'customer_name': customer_name,
                             # 'product_id': product_id,

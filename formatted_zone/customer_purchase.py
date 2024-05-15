@@ -4,7 +4,7 @@ import configparser
 import json
 from pyspark.sql import SparkSession
 import uuid
-from pyspark.sql.functions import udf, monotonically_increasing_id, col
+from pyspark.sql.functions import udf, monotonically_increasing_id, col, regexp_replace
 from pyspark.sql.types import StringType
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
 
@@ -53,7 +53,10 @@ if __name__ == "__main__":
     logger.info('-----------------------------------------------------')
     logger.info("Cleaning data for customer_purchase")
 
+    # Unit price also contains , value
+    customers_df = customers_df.withColumn('unit_price', regexp_replace(col('unit_price'), ',', ''))
     customers_df = customers_df.select("id","customer_id","customer_name", "product_name","unit_price","quantity","purchase_date")
+    
 
     # Dump customers file to formatted_zone
-    customers_df.write.parquet("./data/formatted_zone/customer_purchase")
+    customers_df.write.mode('overwrite').parquet("./data/formatted_zone/customer_purchase")
