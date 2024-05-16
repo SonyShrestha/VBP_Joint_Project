@@ -176,19 +176,28 @@ if __name__ == "__main__":
 
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
+    formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
     days_considered = config_json["expiry_notification_days"]
 
     fuzzy_score_calc_method = config_json["product_matching"]["fuzzy_matching"]["score_calc_method"]
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
 
+    # spark = SparkSession.builder \
+    #     .appName("Read Parquet File") \
+    #     .config("spark.sql.repl.eagerEval.enabled", True) \
+    #     .getOrCreate()
     spark = SparkSession.builder \
-        .appName("Read Parquet File") \
-        .config("spark.sql.repl.eagerEval.enabled", True) \
-        .getOrCreate()
+    .appName("GCS Files Read") \
+    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
+    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
+    .getOrCreate()
 
     # Specify the path to the Parquet file
-    estimated_avg_expiry = "./data/formatted_zone/purchases_nearing_expiry"
+    # estimated_avg_expiry = "./data/formatted_zone/purchases_nearing_expiry"
+    estimated_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/purchases_nearing_expiry.*')
 
     # Read the Parquet file into a DataFrame
     estimated_avg_expiry_df = spark.read.parquet(estimated_avg_expiry)

@@ -32,16 +32,18 @@ def generate_uuid():
 if __name__ == "__main__":
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
+    formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
     spark = SparkSession.builder \
-        .appName("Read Parquet File") \
-        .config("spark.sql.repl.eagerEval.enabled", True) \
-        .config("spark.sql.execution.pythonUDF.arrow.enabled", "true")\
-        .getOrCreate()
+    .appName("GCS Files Read") \
+    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
+    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
+    .getOrCreate()
 
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
-    customers = "./data/gcs_raw_parquet/customer_purchase.parquet"
-    customers_df = spark.read.parquet(customers)
+    customers_df = spark.read.parquet('gs://'+raw_bucket_name+'/customer_puchase.*')
 
     # Drop duplicates if present
     customers_df = customers_df.dropDuplicates()
@@ -59,4 +61,4 @@ if __name__ == "__main__":
     
 
     # Dump customers file to formatted_zone
-    customers_df.write.mode('overwrite').parquet("./data/formatted_zone/customer_purchase")
+    customers_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_purchase')

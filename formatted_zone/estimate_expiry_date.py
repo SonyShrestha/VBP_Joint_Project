@@ -96,21 +96,32 @@ def spacy_match_score(spacy_filter, spacy_threshold, s1, s2):
 if __name__ == "__main__":
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
+    formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
     fuzzy_score_calc_method = config_json["product_matching"]["fuzzy_matching"]["score_calc_method"]
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
 
+    # spark = SparkSession.builder \
+    #     .appName("Read Parquet File") \
+    #     .config("spark.sql.repl.eagerEval.enabled", True) \
+    #     .getOrCreate()
     spark = SparkSession.builder \
-        .appName("Read Parquet File") \
-        .config("spark.sql.repl.eagerEval.enabled", True) \
-        .getOrCreate()
+    .appName("GCS Files Read") \
+    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
+    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
+    .getOrCreate()
 
     # Specify the path to the Parquet file
-    cust_purachase = "./data/formatted_zone/customer_purchase"
+    # cust_purachase = "./data/formatted_zone/customer_purchase"
+    cust_purachase = spark.read.parquet('gs://'+formatted_bucket_name+'/customer_purchase.*')
 
-    cust_email = "./data/formatted_zone/customers"
+    # cust_email = "./data/formatted_zone/customers"
+    cust_email = spark.read.parquet('gs://'+formatted_bucket_name+'/customers.*')
 
-    expected_avg_expiry = "./data/formatted_zone/estimated_avg_expiry"
+    # expected_avg_expiry = "./data/formatted_zone/estimated_avg_expiry"
+    expected_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/estimated_avg_expiry.*')
 
     # Read the Parquet file into a DataFrame
     cust_purachase_df = spark.read.parquet(cust_purachase)
@@ -164,7 +175,5 @@ if __name__ == "__main__":
 
     df_with_rn = df_with_rn.withColumn("expected_expiry_date", expr("date_add(purchase_date, cast(ceil(avg_expiry_days/2) AS INT))"))
 
-    # debug_df = df_with_rn.select("product_name","product_in_avg_expiry_file","avg_expiry_days")
-    # debug_df.write.csv('./data/formatted_zone/expiry_date_accuracy')
-
-    df_with_rn.write.mode('overwrite').parquet("./data/formatted_zone/purchases_nearing_expiry")
+    # df_with_rn.write.mode('overwrite').parquet("./data/formatted_zone/purchases_nearing_expiry")
+    df_with_rn.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/purchases_nearing_expiry')

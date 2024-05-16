@@ -29,16 +29,26 @@ with open(config_file_path_json) as f:
 if __name__ == "__main__":
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
+    formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
+    # spark = SparkSession.builder \
+    #     .appName("Read Parquet File") \
+    #     .config("spark.sql.repl.eagerEval.enabled", True) \
+    #     .config("spark.sql.execution.pythonUDF.arrow.enabled", "true")\
+    #     .getOrCreate()
     spark = SparkSession.builder \
-        .appName("Read Parquet File") \
-        .config("spark.sql.repl.eagerEval.enabled", True) \
-        .config("spark.sql.execution.pythonUDF.arrow.enabled", "true")\
-        .getOrCreate()
+    .appName("GCS Files Read") \
+    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
+    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
+    .getOrCreate()
+
     
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
-    customer_loc = "./data/gcs_raw_parquet/customer_location.parquet"
-    df_customer_loc = spark.read.parquet(customer_loc)
+    # customer_loc = "./data/gcs_raw_parquet/customer_location.parquet"
+    # df_customer_loc = spark.read.parquet(customer_loc)
+    df_customer_loc = spark.read.parquet('gs://'+raw_bucket_name+'/customer_location.*')
 
     logger.info('-----------------------------------------------------')
     logger.info("Cleaning data for customer_location")
@@ -49,4 +59,5 @@ if __name__ == "__main__":
     # print(df_customer_loc.show(2, 0))
 
     # Dump file to formatted_zone
-    df_customer_loc.write.parquet("./data/formatted_zone/customer_location")
+    # df_customer_loc.write.parquet("./data/formatted_zone/customer_location")
+    df_customer_loc.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_location')

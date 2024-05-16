@@ -247,25 +247,36 @@ def preprocess_approved_food(approved_food_df, scrapped_date):
 if __name__ == "__main__":
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
+    formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
     item_desc_filter_out = config["EAT_BY_DATE"]["item_desc_filter_out"]
     scrapped_date= '2024-01-01'
 
+    # spark = SparkSession.builder \
+    # .appName("Read Parquet File") \
+    # .getOrCreate()
     spark = SparkSession.builder \
-    .appName("Read Parquet File") \
+    .appName("GCS Files Read") \
+    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
+    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
     .getOrCreate()
 
     # Read the Parquet file into a DataFrame
-    flipkart_df = spark.read.parquet("./data/gcs_raw_parquet/flipkart.parquet")
+    # flipkart_df = spark.read.parquet("./data/gcs_raw_parquet/flipkart.parquet")
+    flipkart_df = spark.read.parquet('gs://'+raw_bucket_name+'/flipkart.*')
 
     avg_expiry_date_flipkart_df = preprocess_flipkart(flipkart_df)
 
     # Read the Parquet file into a DataFrame
-    eat_by_date_df = spark.read.parquet("./data/gcs_raw_parquet/eat_by_date.parquet")
+    # eat_by_date_df = spark.read.parquet("./data/gcs_raw_parquet/eat_by_date.parquet")
+    eat_by_date_df = spark.read.parquet('gs://'+raw_bucket_name+'/eat_by_date.*')
 
     avg_expiry_date_eat_by_date_df = preprocess_eat_by_date(eat_by_date_df, item_desc_filter_out)
 
     # Read the Parquet file into a DataFrame
-    approved_food_df = spark.read.parquet("./data/gcs_raw_parquet/approved_food.parquet")
+    # approved_food_df = spark.read.parquet("./data/gcs_raw_parquet/approved_food.parquet")
+    approved_food_df = spark.read.parquet('gs://'+raw_bucket_name+'/approved_food.*')
 
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
 
@@ -281,5 +292,6 @@ if __name__ == "__main__":
     )
     
     # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
-    avg_expiry_date_df.write.mode('overwrite').parquet("./data/formatted_zone/estimated_avg_expiry")
+    # avg_expiry_date_df.write.mode('overwrite').parquet("./data/formatted_zone/estimated_avg_expiry")
+    avg_expiry_date_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/estimated_avg_expiry')
     
