@@ -24,7 +24,7 @@ quantity_min = config.getint('SUPERMARKET_PRODUCT_PARAMS', 'quantity_min')
 quantity_max = config.getint('SUPERMARKET_PRODUCT_PARAMS', 'quantity_max')
 
 # Reading file paths from config file
-products_json = os.path.join(raw_data_dir,'flipkart_products.json' )
+products_json = os.path.join(raw_data_dir,'flipkart_products.json')
 stores_csv = os.path.join(raw_data_dir, 'establishments_catalonia.csv')
 output_csv = os.path.join(raw_data_dir, 'supermarket_products.csv')
 
@@ -34,10 +34,10 @@ with open(products_json, 'r') as file:
 
 # Load CSV data from file and filter rows
 supermarkets = []
-with open(stores_csv, 'r') as file:
+with open(stores_csv, 'r', encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
-        if "supermercat" in row['Activity_description'].lower():
+        if "supermercat" in row['activity_description'].lower():
             supermarkets.append(row)
 
 # Assign products randomly
@@ -46,8 +46,8 @@ for supermarket in supermarkets:
     selected_products = random.sample(products, number_of_products)
     for product in selected_products:
         assigned_products.append({
-            "store_id": supermarket['Id'],
-            "store_name": supermarket['Commercial_name'],
+            "store_id": supermarket['id'],
+            "store_name": supermarket['commercial_name'],
             "product_id": product['product_id'],
             "product_name": product['name'],
             "product_price": product['actual_price'],
