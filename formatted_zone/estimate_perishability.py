@@ -1,5 +1,5 @@
 from pyspark import SparkConf
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession, Window
 from pyspark.sql.functions import split
 import logging 
 import os 
@@ -54,6 +54,7 @@ def preprocess_flipkart(flipkart_df):
     )
 
     product_avg_expiry_date = product_avg_expiry_date.withColumnRenamed("item_description", "product_name")
+    product_avg_expiry_date = product_avg_expiry_date.withColumn("source", lit("Flipkart"))
 
     return product_avg_expiry_date
 
@@ -196,6 +197,7 @@ def preprocess_eat_by_date(eat_by_date_df,item_desc_filter_out):
     )
 
     product_avg_expiry_date = product_avg_expiry_date.withColumnRenamed("item_description", "product_name")
+    product_avg_expiry_date = product_avg_expiry_date.withColumn("source", lit("Eat by Date"))
 
     return product_avg_expiry_date
 
@@ -239,6 +241,7 @@ def preprocess_approved_food(approved_food_df, scrapped_date):
     product_avg_expiry_date = product_avg_expiry_date.withColumn("sub_category", lit(" ").cast("string"))
 
     product_avg_expiry_date = product_avg_expiry_date.select("category", "sub_category", "product_name", "avg_expiry_days")
+    product_avg_expiry_date = product_avg_expiry_date.withColumn("source", lit("Approved Food"))
 
     return product_avg_expiry_date
 
@@ -264,19 +267,19 @@ if __name__ == "__main__":
 
     # Read the Parquet file into a DataFrame
     # flipkart_df = spark.read.parquet("./data/gcs_raw_parquet/flipkart.parquet")
-    flipkart_df = spark.read.parquet('gs://'+raw_bucket_name+'/flipkart.*')
+    flipkart_df = spark.read.parquet('gs://'+raw_bucket_name+'/flipkart*')
 
     avg_expiry_date_flipkart_df = preprocess_flipkart(flipkart_df)
 
     # Read the Parquet file into a DataFrame
     # eat_by_date_df = spark.read.parquet("./data/gcs_raw_parquet/eat_by_date.parquet")
-    eat_by_date_df = spark.read.parquet('gs://'+raw_bucket_name+'/eat_by_date.*')
+    eat_by_date_df = spark.read.parquet('gs://'+raw_bucket_name+'/eat_by_date*')
 
     avg_expiry_date_eat_by_date_df = preprocess_eat_by_date(eat_by_date_df, item_desc_filter_out)
 
     # Read the Parquet file into a DataFrame
     # approved_food_df = spark.read.parquet("./data/gcs_raw_parquet/approved_food.parquet")
-    approved_food_df = spark.read.parquet('gs://'+raw_bucket_name+'/approved_food.*')
+    approved_food_df = spark.read.parquet('gs://'+raw_bucket_name+'/Approved*')
 
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
 
@@ -286,12 +289,19 @@ if __name__ == "__main__":
 
     logger.info('-----------------------------------------------------')
     logger.info("Calculating average expiry date of food items")
+
+    windowSpec = Window.partitionBy("category", "sub_category", "product_name").orderBy("avg_expiry_days")
+
+    # Adding rank based on avg_expiry_days within each group
+    avg_expiry_date_df = avg_expiry_date_df.withColumn("rank", F.rank().over(windowSpec))
     
-    avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","product_name").agg(
-        F.min("avg_expiry_days").alias("avg_expiry_days")
-    )
+    # avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","product_name").agg(
+    #     F.min("avg_expiry_days").alias("avg_expiry_days")
+    # )
     
-    # avg_expiry_date_df.write.parquet("./data/parquet/estimated_avg_expiry.parquet")
-    # avg_expiry_date_df.write.mode('overwrite').parquet("./data/formatted_zone/estimated_avg_expiry")
+    avg_expiry_date_df = avg_expiry_date_df.filter(F.col("rank") == 1)
+    avg_expiry_date_df = avg_expiry_date_df.drop("rank")  # Replace with actual column names
+
+
     avg_expiry_date_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/estimated_avg_expiry')
     
