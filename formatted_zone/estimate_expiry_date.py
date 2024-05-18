@@ -155,6 +155,7 @@ if __name__ == "__main__":
 
     filtered_df = filtered_df.withColumn("score", fuzzy_match_score(lit(fuzzy_score_calc_method), lit(fuzzy_threshold), filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
 
+    filtered_df = filtered_df.filter(filtered_df.score != 0)
 
     filtered_df = filtered_df.withColumn("token_count", count_tokens(filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
 
