@@ -6,7 +6,10 @@ import os
 import configparser
 from pyspark.sql.functions import explode, array, split, regexp_replace, col, lit, lower, regexp_extract, trim, when, to_date, date_format, datediff
 from pyspark.sql import functions as F
+from google.cloud import storage
 from pyspark.sql import SparkSession
+import re
+from datetime import datetime
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
@@ -231,8 +234,6 @@ def preprocess_approved_food(approved_food_df, scrapped_date):
 
     approved_food_df = approved_food_df.filter(col("avg_expiry_date_days")>0)
 
-    #approved_food_df.write.csv("./data/cleaned/approved_food.csv")
-
     product_avg_expiry_date = approved_food_df.groupBy("product_name").agg(
         F.min("avg_expiry_date_days").alias("avg_expiry_days")
     )
@@ -252,33 +253,44 @@ if __name__ == "__main__":
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
     formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
     item_desc_filter_out = config["EAT_BY_DATE"]["item_desc_filter_out"]
-    scrapped_date= '2024-01-01'
 
-    # spark = SparkSession.builder \
-    # .appName("Read Parquet File") \
-    # .getOrCreate()
     spark = SparkSession.builder \
-    .appName("GCS Files Read") \
-    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
-    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
-    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
-    .getOrCreate()
+        .appName("RecipeProcessing") \
+        .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
+        .getOrCreate()
+    
+    storage_client = storage.Client.from_service_account_json(gcs_config)
+    bucket = storage_client.bucket(raw_bucket_name)
+
+    blobs = bucket.list_blobs()
+ 
+    for blob in blobs:
+        file_name = blob.name
+        if file_name.startswith('Approved'):
+            match = re.search(r'\d{8}', file_name)
+            if match:
+                scrapped_date_str = match.group()
+                scrapped_date = datetime.strptime(scrapped_date_str, '%Y%m%d')
+                formatted_date = scrapped_date.strftime('%Y-%m-%d')
+            else:
+                scrapped_date = datetime.now()
+            break
 
     # Read the Parquet file into a DataFrame
-    # flipkart_df = spark.read.parquet("./data/gcs_raw_parquet/flipkart.parquet")
     flipkart_df = spark.read.parquet('gs://'+raw_bucket_name+'/flipkart*')
 
     avg_expiry_date_flipkart_df = preprocess_flipkart(flipkart_df)
 
     # Read the Parquet file into a DataFrame
-    # eat_by_date_df = spark.read.parquet("./data/gcs_raw_parquet/eat_by_date.parquet")
     eat_by_date_df = spark.read.parquet('gs://'+raw_bucket_name+'/eat_by_date*')
 
     avg_expiry_date_eat_by_date_df = preprocess_eat_by_date(eat_by_date_df, item_desc_filter_out)
 
     # Read the Parquet file into a DataFrame
-    # approved_food_df = spark.read.parquet("./data/gcs_raw_parquet/approved_food.parquet")
     approved_food_df = spark.read.parquet('gs://'+raw_bucket_name+'/Approved*')
 
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
@@ -295,13 +307,8 @@ if __name__ == "__main__":
     # Adding rank based on avg_expiry_days within each group
     avg_expiry_date_df = avg_expiry_date_df.withColumn("rank", F.rank().over(windowSpec))
     
-    # avg_expiry_date_df = avg_expiry_date_df.groupBy("category","sub_category","product_name").agg(
-    #     F.min("avg_expiry_days").alias("avg_expiry_days")
-    # )
-    
     avg_expiry_date_df = avg_expiry_date_df.filter(F.col("rank") == 1)
-    avg_expiry_date_df = avg_expiry_date_df.drop("rank")  # Replace with actual column names
+    avg_expiry_date_df = avg_expiry_date_df.drop("rank")  
 
-
-    avg_expiry_date_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/estimated_avg_expiry')
+    avg_expiry_date_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/estimated_avg_expiry_'+datetime.now().strftime("%Y%m%d%H%M%S")+'.parquet')
     

@@ -3,6 +3,19 @@ import pandas as pd
 import os
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, trim, regexp_replace
+import configparser
+import json
+
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(root_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(root_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
 
 # Set page config for a better appearance
 st.set_page_config(page_title="Food Item Perishability", layout="wide")
@@ -11,7 +24,8 @@ st.set_page_config(page_title="Food Item Perishability", layout="wide")
 st.title('Perishability of Food Items')
 
 # Specify the path to the GCS Parquet file
-gcs_parquet_path = 'gs://formatted_zone/estimated_avg_expiry'
+formatted_zone_bucket = config["GCS"]["formatted_bucket_name"]
+gcs_parquet_path = 'gs://'+formatted_zone_bucket+'/estimated_avg_expiry'
 
 # Function to load data from GCS
 @st.cache_data
@@ -21,7 +35,7 @@ def load_data_from_gcs(filepath):
         .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
         .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-        .config("google.cloud.auth.service.account.json.keyfile", "C:\\UPC\\BDM\\Project\\VBP_Joint_Project\\gcs_config.json") \
+        .config("google.cloud.auth.service.account.json.keyfile", os.path.join(root_dir,"gcs_config.json")) \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     

@@ -2,6 +2,7 @@ import logging
 import os 
 import configparser
 import json
+from datetime import datetime
 
 import sys
 os.environ['PYSPARK_PYTHON'] = sys.executable
@@ -31,24 +32,20 @@ if __name__ == "__main__":
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
     formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
-    # spark = SparkSession.builder \
-    #     .appName("Read Parquet File") \
-    #     .config("spark.sql.repl.eagerEval.enabled", True) \
-    #     .config("spark.sql.execution.pythonUDF.arrow.enabled", "true")\
-    #     .getOrCreate()
     spark = SparkSession.builder \
-    .appName("GCS Files Read") \
-    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
-    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
-    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
-    .getOrCreate()
+        .appName("RecipeProcessing") \
+        .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
+        .getOrCreate()
 
     
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
     # customer_loc = "./data/gcs_raw_parquet/customer_location.parquet"
     # df_customer_loc = spark.read.parquet(customer_loc)
-    df_customer_loc = spark.read.parquet('gs://'+raw_bucket_name+'/customer_location.*')
+    df_customer_loc = spark.read.parquet('gs://'+raw_bucket_name+'/customer_location*')
 
     logger.info('-----------------------------------------------------')
     logger.info("Cleaning data for customer_location")
@@ -60,4 +57,4 @@ if __name__ == "__main__":
 
     # Dump file to formatted_zone
     # df_customer_loc.write.parquet("./data/formatted_zone/customer_location")
-    df_customer_loc.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_location')
+    df_customer_loc.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_location_'+datetime.now().strftime("%Y%m%d%H%M%S")+'.parquet')

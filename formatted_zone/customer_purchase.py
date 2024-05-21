@@ -6,6 +6,8 @@ from pyspark.sql import SparkSession
 import uuid
 from pyspark.sql.functions import udf, monotonically_increasing_id, col, regexp_replace
 from pyspark.sql.types import StringType
+from datetime import datetime
+
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
 
 
@@ -35,15 +37,16 @@ if __name__ == "__main__":
     formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
     spark = SparkSession.builder \
-    .appName("GCS Files Read") \
-    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
-    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
-    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
-    .getOrCreate()
+        .appName("RecipeProcessing") \
+        .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
+        .getOrCreate()
 
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
-    customers_df = spark.read.parquet('gs://'+raw_bucket_name+'/customer_puchase.*')
+    customers_df = spark.read.parquet('gs://'+raw_bucket_name+'/customer_purchase*')
 
     # Drop duplicates if present
     customers_df = customers_df.dropDuplicates()
@@ -61,4 +64,4 @@ if __name__ == "__main__":
     
 
     # Dump customers file to formatted_zone
-    customers_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_purchase')
+    customers_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_purchase_'+datetime.now().strftime("%Y%m%d%H%M%S")+'.parquet')

@@ -101,27 +101,21 @@ if __name__ == "__main__":
     fuzzy_score_calc_method = config_json["product_matching"]["fuzzy_matching"]["score_calc_method"]
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
 
-    # spark = SparkSession.builder \
-    #     .appName("Read Parquet File") \
-    #     .config("spark.sql.repl.eagerEval.enabled", True) \
-    #     .getOrCreate()
     spark = SparkSession.builder \
-    .appName("GCS Files Read") \
-    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
-    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
-    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
-    .getOrCreate()
-
+        .appName("RecipeProcessing") \
+        .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
+        .getOrCreate()
+    
     # Specify the path to the Parquet file
-    # cust_purachase = "./data/formatted_zone/customer_purchase"
-    cust_purachase = spark.read.parquet('gs://'+formatted_bucket_name+'/customer_purchase.*')
+    cust_purachase = spark.read.parquet(f'gs://{formatted_bucket_name}/customer_purchase*')
 
-    # cust_email = "./data/formatted_zone/customers"
-    cust_email = spark.read.parquet('gs://'+formatted_bucket_name+'/customers.*')
+    cust_email = spark.read.parquet(f'gs://{formatted_bucket_name}/customers*')
 
-    # expected_avg_expiry = "./data/formatted_zone/estimated_avg_expiry"
-    expected_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/estimated_avg_expiry.*')
+    expected_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/estimated_avg_expiry*')
 
     # Read the Parquet file into a DataFrame
     cust_purachase_df = spark.read.parquet(cust_purachase)
@@ -131,8 +125,6 @@ if __name__ == "__main__":
 
     customer_purachase_df = cust_purachase_df.join(cust_email_df, 'customer_id', 'inner')
     customer_purachase_df = customer_purachase_df.select("id","customer_id","customer_name","email_id","product_name","unit_price","quantity","purchase_date")
-            
-    # customer_purachase_df = customer_purachase_df.filter(customer_purachase_df["product_name"] == "Natureland Organics Chana Besan  (500 g)")
 
     customer_purachase_df = customer_purachase_df.withColumn("original_product_name", customer_purachase_df["product_name"])
 
@@ -159,16 +151,11 @@ if __name__ == "__main__":
 
     filtered_df = filtered_df.withColumn("token_count", count_tokens(filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
 
-    # filtered_df = filtered_df.withColumn("score", spacy_match_score(filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
-
     windowSpec = Window.partitionBy("id") \
                   .orderBy(filtered_df["score"].desc(), filtered_df["token_count"].desc())
 
     # Add a row number column
     df_with_rn = filtered_df.withColumn("row_number", row_number().over(windowSpec))
-
-    # df_with_rn.write.json("./data/formatted_zone/test_result")
-    # breakpoint()
 
     # Filter rows where row number is 1 (which corresponds to the row with the maximum fuzzy score for each product)
     df_with_rn = df_with_rn.filter(df_with_rn["row_number"] == 1).drop("row_number", "product_name", "token_count")

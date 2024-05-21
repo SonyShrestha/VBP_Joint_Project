@@ -5,6 +5,7 @@ import configparser
 import json
 from pyspark.sql import SparkSession
 from pyspark.sql import SparkSession
+from datetime import datetime
 
 
 # Configure logging
@@ -34,12 +35,13 @@ if __name__ == "__main__":
     formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
     spark = SparkSession.builder \
-    .appName("GCS Files Read") \
-    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
-    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
-    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
-    .getOrCreate()
+        .appName("RecipeProcessing") \
+        .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
+        .getOrCreate()
 
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
     customers_df = spark.read.parquet('gs://'+raw_bucket_name+'/customers*.parquet')
@@ -52,4 +54,5 @@ if __name__ == "__main__":
 
     # Dump customers file to formatted_zone
     # customers_df.write.mode('overwrite').parquet("./data/formatted_zone/customers")
-    customers_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customers')
+    customers_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customers_'+datetime.now().strftime("%Y%m%d%H%M%S")+'.parquet'
+)

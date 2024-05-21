@@ -1,5 +1,9 @@
 import streamlit as st
 import pandas as pd
+import os
+
+# Get the path to the parent parent directory
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
 
 # Set page config for a better appearance
 st.set_page_config(page_title="Local Parquet Data Viewer", layout="wide")
@@ -12,7 +16,7 @@ def load_data(filepath):
     return pd.read_parquet(filepath)
 
 # Specify the path to the local Parquet file
-parquet_file_path = 'C:\\UPC\\BDM\\Project\\VBP_Joint_Project\\data\\formatted_zone\\purchases_nearing_expiry'
+parquet_file_path = os.path.join(root_dir,'data', 'formatted_zone', 'purchases_nearing_expiry')
 
 try:
     # Read the Parquet file into a DataFrame
@@ -118,3 +122,7 @@ st.markdown("""
         <p>Developed by SpicyBytes</p>
     </div>
 """, unsafe_allow_html=True)
+
+# Add an image at the end
+image_path = os.path.join(root_dir,'images','expiry_notification.jpg')  # Update with the correct path to your image
+st.image(image_path, caption='Expiry Notification', use_column_width=True)
