@@ -31,7 +31,7 @@ gcs_parquet_path = 'gs://'+formatted_zone_bucket+'/estimated_avg_expiry'
 @st.cache_data
 def load_data_from_gcs(filepath):
     spark = SparkSession.builder \
-        .appName("GCS Files Read") \
+        .appName("Feature 1") \
         .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
         .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \

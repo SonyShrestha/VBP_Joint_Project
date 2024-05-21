@@ -21,7 +21,7 @@ st.set_page_config(page_title="Food Recommender System", layout="wide")
 
 def create_spark_session():
     spark = SparkSession.builder \
-        .appName("RecipeProcessing") \
+        .appName("Feature 3") \
         .config("spark.driver.host", "127.0.0.1") \
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \

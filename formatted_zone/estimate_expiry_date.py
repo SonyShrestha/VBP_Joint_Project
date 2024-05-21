@@ -102,7 +102,7 @@ if __name__ == "__main__":
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
 
     spark = SparkSession.builder \
-        .appName("RecipeProcessing") \
+        .appName("Estimate Expiry Date") \
         .config("spark.driver.host", "127.0.0.1") \
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
@@ -111,11 +111,11 @@ if __name__ == "__main__":
         .getOrCreate()
     
     # Specify the path to the Parquet file
-    cust_purachase = spark.read.parquet(f'gs://{formatted_bucket_name}/customer_purchase*')
+    cust_purachase = f'gs://{formatted_bucket_name}/customer_purchase*'
 
-    cust_email = spark.read.parquet(f'gs://{formatted_bucket_name}/customers*')
+    cust_email = f'gs://{formatted_bucket_name}/customers*'
 
-    expected_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/estimated_avg_expiry*')
+    expected_avg_expiry = 'gs://'+formatted_bucket_name+'/estimated_avg_expiry*'
 
     # Read the Parquet file into a DataFrame
     cust_purachase_df = spark.read.parquet(cust_purachase)

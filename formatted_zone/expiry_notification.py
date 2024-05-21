@@ -169,11 +169,6 @@ def send_email(row):
 
 
 if __name__ == "__main__":
-    spark = SparkSession.builder \
-        .appName("Read Parquet File") \
-        .config("spark.sql.repl.eagerEval.enabled", True) \
-        .getOrCreate()   
-
     gcs_config = config["GCS"]["credentials_path"]
     raw_bucket_name = config["GCS"]["raw_bucket_name"]
     formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
@@ -184,7 +179,7 @@ if __name__ == "__main__":
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
 
     spark = SparkSession.builder \
-        .appName("RecipeProcessing") \
+        .appName("Expiry Notification") \
         .config("spark.driver.host", "127.0.0.1") \
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
@@ -193,7 +188,6 @@ if __name__ == "__main__":
         .getOrCreate()
 
     # Specify the path to the Parquet file
-    # estimated_avg_expiry = "./data/formatted_zone/purchases_nearing_expiry"
     estimated_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/purchases_nearing_expiry.*')
 
     # Read the Parquet file into a DataFrame

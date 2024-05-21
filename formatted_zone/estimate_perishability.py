@@ -254,7 +254,7 @@ if __name__ == "__main__":
     item_desc_filter_out = config["EAT_BY_DATE"]["item_desc_filter_out"]
 
     spark = SparkSession.builder \
-        .appName("RecipeProcessing") \
+        .appName("Estimate Perishability") \
         .config("spark.driver.host", "127.0.0.1") \
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
