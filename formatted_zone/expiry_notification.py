@@ -183,17 +183,14 @@ if __name__ == "__main__":
     fuzzy_score_calc_method = config_json["product_matching"]["fuzzy_matching"]["score_calc_method"]
     fuzzy_threshold = config_json["product_matching"]["fuzzy_matching"]["threshold"]
 
-    # spark = SparkSession.builder \
-    #     .appName("Read Parquet File") \
-    #     .config("spark.sql.repl.eagerEval.enabled", True) \
-    #     .getOrCreate()
     spark = SparkSession.builder \
-    .appName("GCS Files Read") \
-    .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
-    .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
-    .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-    .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
-    .getOrCreate()
+        .appName("RecipeProcessing") \
+        .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
+        .getOrCreate()
 
     # Specify the path to the Parquet file
     # estimated_avg_expiry = "./data/formatted_zone/purchases_nearing_expiry"

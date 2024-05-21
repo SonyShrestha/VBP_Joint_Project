@@ -7,7 +7,6 @@ import configparser
 from pyspark.sql.functions import explode, array, split, regexp_replace, col, lit, lower, regexp_extract, trim, when, to_date, date_format, datediff
 from pyspark.sql import functions as F
 from google.cloud import storage
-from pyspark.sql import SparkSession
 import re
 from datetime import datetime
 

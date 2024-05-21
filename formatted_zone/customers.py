@@ -1,9 +1,7 @@
-from pyspark.sql import SparkSession
 import logging 
 import os 
 import configparser
 import json
-from pyspark.sql import SparkSession
 from pyspark.sql import SparkSession
 from datetime import datetime
 

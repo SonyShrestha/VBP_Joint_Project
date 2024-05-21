@@ -62,7 +62,5 @@ if __name__ == "__main__":
     # drop Nan values, if any
     df_supermarket_info = df_supermarket_info.na.drop()
 
-    # print(df_supermarket_info)
-
     # Dump file to formatted_zone
     df_supermarket_info.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/establishments_catalonia_'+datetime.now().strftime("%Y%m%d%H%M%S")+'.parquet')

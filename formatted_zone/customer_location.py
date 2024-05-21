@@ -41,10 +41,6 @@ if __name__ == "__main__":
         .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
         .getOrCreate()
 
-    
-    # Read the Parquet file into a DataFrame from GCS Raw Bucket
-    # customer_loc = "./data/gcs_raw_parquet/customer_location.parquet"
-    # df_customer_loc = spark.read.parquet(customer_loc)
     df_customer_loc = spark.read.parquet('gs://'+raw_bucket_name+'/customer_location*')
 
     logger.info('-----------------------------------------------------')
@@ -52,9 +48,5 @@ if __name__ == "__main__":
 
     # Drop duplicates if present
     df_customer_loc = df_customer_loc.dropDuplicates()
-
-    # print(df_customer_loc.show(2, 0))
-
-    # Dump file to formatted_zone
-    # df_customer_loc.write.parquet("./data/formatted_zone/customer_location")
+    
     df_customer_loc.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/customer_location_'+datetime.now().strftime("%Y%m%d%H%M%S")+'.parquet')
