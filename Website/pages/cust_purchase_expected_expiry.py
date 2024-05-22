@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import re 
 
 # Get the path to the parent parent directory
 root_dir = os.path.abspath(os.path.join(os.getcwd()))
@@ -19,69 +20,48 @@ def load_data(filepath):
 parquet_file_path = os.path.join(root_dir,'data', 'formatted_zone', 'purchases_nearing_expiry')
 
 try:
+    col1, col2, col3,  col4, col5, col6 = st.columns(6)
     # Read the Parquet file into a DataFrame
     df = load_data(parquet_file_path)
 
     df = df[["customer_name", "product_name", "purchase_date", "expected_expiry_date"]]
-    
+    df['customer_name'] = df['customer_name'].str.strip()
+    df['product_name'] = df['product_name'].str.strip()
+
     # Convert 'purchase_date' and 'expected_expiry_date' to datetime
     df['purchase_date'] = pd.to_datetime(df['purchase_date'])
     df['expected_expiry_date'] = pd.to_datetime(df['expected_expiry_date'])
     
-    # Calculate the number of products expiring in the next 30 days
-    upcoming_expiry_count = df[df['expected_expiry_date'] <= pd.Timestamp.now() + pd.Timedelta(days=30)].shape[0]
 
-    # Display the small scorecard at the top
-    st.markdown(f"""
-        <style>
-        .scorecard {{
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 250px;
-            height: 100px;
-            margin-bottom: 20px;
-        }}
-        .scorecard h2 {{
-            margin: 0;
-            font-size: 2em;
-            color: #4CAF50;
-        }}
-        .scorecard p {{
-            margin: 0;
-            font-size: 1em;
-            color: #666;
-        }}
-        </style>
-        <div class="scorecard">
-            <p>Products Expiring in 30 days</p>
-            <h2>{upcoming_expiry_count}</h2>
-        </div>
-    """, unsafe_allow_html=True)
-
+    distinct_customer = df['customer_name'].drop_duplicates().sort_values().tolist()
     # Filters for customer name and product name
-    customer_name_filter = st.sidebar.text_input('**Customer Name**')
-    product_name_filter = st.sidebar.text_input('**Product Name**')
+    with col1:
+        customer_name_filter = st.selectbox('**Customer Name**',distinct_customer, index=None)
+    
+    distinct_product = df[df['customer_name'] == customer_name_filter]['product_name'].drop_duplicates().sort_values().tolist()
 
-    # Filters for purchase date range
-    st.sidebar.markdown("**Purchase Date**")
-    col1, col2 = st.sidebar.columns(2)
-    min_purchase_date = col1.date_input('Min Purchase Date', value=df['purchase_date'].min().date(), key='min_purchase_date')
-    max_purchase_date = col2.date_input('Max Purchase Date', value=df['purchase_date'].max().date(), key='max_purchase_date')
+    with col2:
+        product_name_filter = st.selectbox('**Product Name**',distinct_product, index=None)
 
-    # Filters for expected expiry date range
-    st.sidebar.markdown("**Expected Expiry Date**")
-    col3, col4 = st.sidebar.columns(2)
-    min_expiry_date = col3.date_input('Min Expiry Date', value=df['expected_expiry_date'].min().date(), key='min_expiry_date')
-    max_expiry_date = col4.date_input('Max Expiry Date', value=df['expected_expiry_date'].max().date(), key='max_expiry_date')
+    with col3:
+        min_purchase_date = st.date_input('Min Purchase Date', value=df['purchase_date'].min().date(), key='min_purchase_date')
+    
+    with col4:
+        max_purchase_date = st.date_input('Max Purchase Date', value=df['purchase_date'].max().date(), key='max_purchase_date')
+
+    with col5:
+        min_expiry_date = st.date_input('Min Expiry Date', value=df['expected_expiry_date'].min().date(), key='min_expiry_date')
+    
+    with col6:
+        max_expiry_date = st.date_input('Max Expiry Date', value=df['expected_expiry_date'].max().date(), key='max_expiry_date')
 
     # Apply filters
     if customer_name_filter:
-        df = df[df['customer_name'].str.contains(customer_name_filter, case=False, na=False)]
+        pattern = re.escape(customer_name_filter)
+        df = df[df['customer_name'].str.contains(pattern, case=False, na=False)]
     if product_name_filter:
-        df = df[df['product_name'].str.contains(product_name_filter, case=False, na=False)]
+        pattern = re.escape(product_name_filter)
+        df = df[df['product_name'].str.contains(pattern, case=False, na=False)]
     df = df[(df['purchase_date'] >= pd.to_datetime(min_purchase_date)) & (df['purchase_date'] <= pd.to_datetime(max_purchase_date))]
     df = df[(df['expected_expiry_date'] >= pd.to_datetime(min_expiry_date)) & (df['expected_expiry_date'] <= pd.to_datetime(max_expiry_date))]
     
@@ -97,12 +77,22 @@ try:
         'expected_expiry_date': 'Expected Expiry Date'
     }, inplace=True)
     
-    st.write(df)
+    st.write("<br>", unsafe_allow_html=True)  
+    st.dataframe(df)
     
 except FileNotFoundError as e:
     st.error(f"File not found: {e}")
 except Exception as e:
     st.error(f"An error occurred: {e}")
+
+
+
+# Add an image at the end
+image_path = os.path.join(root_dir,'images','expiry_notification.jpg') 
+
+
+st.image(image_path, caption='Expiry Notification', use_column_width=True)
+
 
 # Custom CSS for footer
 st.markdown("""
@@ -122,7 +112,3 @@ st.markdown("""
         <p>Developed by SpicyBytes</p>
     </div>
 """, unsafe_allow_html=True)
-
-# Add an image at the end
-image_path = os.path.join(root_dir,'images','expiry_notification.jpg')  # Update with the correct path to your image
-st.image(image_path, caption='Expiry Notification', use_column_width=True)

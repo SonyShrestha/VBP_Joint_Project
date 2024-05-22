@@ -1,94 +1,46 @@
 import streamlit as st
+import pages as pg
 from streamlit_navigation_bar import st_navbar
 from streamlit_option_menu import option_menu
-import pages as pg
 import os
 
-st.set_page_config(initial_sidebar_state="collapsed")
+# Set page config
+st.set_page_config(page_title="My App", layout="wide", initial_sidebar_state="collapsed")
 
-pages = ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Closest Supermarket"]
+# Define pages and styles for navigation bar
+pages = ["Product Perishability", "Expected Expiry of Customer Purchase", "Feature 3", "Feature 4", "Closest Supermarket"]
 parent_dir = os.path.dirname(os.path.abspath(__file__))
 styles = {
-    "nav": {
-        "background-color": "rgb(123, 209, 146)",
-    },
-    "div": {
-        "max-width": "32rem",
-    },
-    "span": {
-        "border-radius": "0.5rem",
-        "color": "rgb(49, 51, 63)",
-        "margin": "0 0.125rem",
-        "padding": "0.4375rem 0.625rem",
-    },
-    "active": {
-        "background-color": "rgba(255, 255, 255, 0.25)",
-    },
-    "hover": {
-        "background-color": "rgba(255, 255, 255, 0.35)",
-    },
+    "nav": {"background-color": "rgb(123, 209, 146)"},
+    "div": {"max-width": "32rem"},
+    "span": {"border-radius": "0.5rem", "color": "rgb(49, 51, 63)", "margin": "0 0.125rem", "padding": "0.4375rem 0.625rem"},
+    "active": {"background-color": "rgba(255, 255, 255, 0.25)"},
+    "hover": {"background-color": "rgba(255, 255, 255, 0.35)"}
 }
 
-page = st_navbar(
-    pages,
-    styles=styles
-)
+# Navbar at the top of the page
+page = st_navbar(pages, styles=styles)
 
-# Get selected page from sidebar
+# Side option menu to possibly handle additional controls or mirrored navigation
 with st.sidebar:
     selected = option_menu(
-        menu_title=None,
-        options=["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Closest Supermarket"],
-        default_index=0
+        menu_title="Navigate",
+        options=pages,
+        default_index=0,
+        icons=["calendar", "calendar-check", "gear", "gear-fill", "geo"]
     )
 
-# Map functions to pages
+# Mapping functions to pages
 functions = {
-    "Feature 1": pg.show_feature1,
-    "Feature 2": pg.show_feature2,
+    "Product Perishability": pg.show_feature1,
+    "Expected Expiry of Customer Purchase": pg.show_feature2,
     "Feature 3": pg.show_feature3,
     "Feature 4": pg.show_feature4,
-    "Closest Supermarket": pg.closest_supermarket,
+    "Closest Supermarket": pg.closest_supermarket
 }
 
-# Determine selected page
-# if selected:
-#     page= selected
-# if page:
-#     selected= page
-
-# Execute selected function
-go_to = functions.get(page)
-if go_to:
-    go_to()
-
-# with st.sidebar:
-#         selected = option_menu(
-#             menu_title= None,  # required
-#             options=["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"],  # required
-#             # icons=["house", "book", "envelope"],  # optional
-#             # menu_icon="cast",  # optional
-#             default_index=0,  # optional
-#         )
-
-# functions = {
-#     "Feature 1": pg.show_feature1,
-#     "Feature 2": pg.show_feature2,
-#     "Feature 3": pg.show_feature3,
-#     "Feature 4": pg.show_feature4,
-#     "Feature 5": pg.show_feature5,
-# }
-# go_to = functions.get(page)
-# if go_to:
-#     go_to()
-
-# if selected=="Feature 1":
-#         pg.show_feature1()
-# elif selected=="Feature 2":
-#         pg.show_feature2()
-# elif selected=="Feature 3":
-#         pg.show_feature3()
-# elif selected=="Feature 4":
-#         pg.show_feature4()
-# elif selected=="Feature 5":
-#         pg.show_feature5()
+# Execute function based on selected page from navbar or sidebar
+if page in functions:
+    functions[page]()
+else:
+    st.error("Selected page not found")
