@@ -6,6 +6,10 @@ from pyspark.sql.functions import col, trim, regexp_replace
 import configparser
 import json
 import math
+import folium
+from streamlit_folium import st_folium, folium_static
+
+
 
 root_dir = os.path.abspath(os.path.join(os.getcwd()))
 
@@ -63,6 +67,79 @@ def closest_supermarkets(df_supermarkets, df_chosen_customer):
     axis=1)
     return df_supermarkets.sort_values(by='distance_from_customer').head(5)
 
+def show_supermarkets(df_all_supermarket_location):
+    df_plot = df_all_supermarket_location.sample(n=50, random_state=42)
+
+    # Initialize the map centered around the mean latitude and longitude
+    mymap = folium.Map(location=[df_plot['latitude'].mean(), df_plot['longitude'].mean()], zoom_start=13)
+
+    # Add points to the map
+    for _, row in df_plot.iterrows():
+        folium.Marker(
+            location=[row['latitude'], row['longitude']],
+            popup=row['commercial_name']
+        ).add_to(mymap)
+    folium_static(mymap, width=1000, height=600)
+
+
+def add_marker_supermarket(df, color, mymap):
+    for _, row in df.iterrows():
+        folium.Marker(
+            location=[row['latitude'], row['longitude']],
+            popup=row['store_name'],
+            icon=folium.Icon(color=color)
+        ).add_to(mymap)
+
+
+def add_marker_customer(df, color, mymap):
+    for _, row in df.iterrows():
+        folium.Marker(
+            location=[row['latitude'], row['longitude']],
+            popup=row['customer_name'],
+            icon=folium.Icon(color=color)
+        ).add_to(mymap)
+
+def add_supermarket_line_customer(mymap, customer, supermarket):
+    # Function to add a supermarket marker and a line between the customer and the supermarket with distance popup
+    # Add supermarket marker
+    folium.Marker(
+        location=[supermarket['latitude'], supermarket['longitude']],
+        popup=supermarket['store_name'] + '\n' + str(supermarket['distance_from_customer']),
+        icon=folium.Icon(color='blue')
+    ).add_to(mymap)
+    
+    # Add a line between the customer and the supermarket
+    line = folium.PolyLine(
+        locations=[
+            [customer['latitude'], customer['longitude']],
+            [supermarket['latitude'], supermarket['longitude']]
+        ],
+        color='blue',
+        dash_array = '10'
+    ).add_to(mymap)
+
+def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
+    # Initialize the map centered around the mean latitude and longitude of the customer
+
+    mymap = folium.Map(location=[df_chosen_customer['latitude'].mean(), df_chosen_customer['longitude'].mean()], zoom_start=13)
+    add_marker_customer(df_chosen_customer, 'red', mymap) # plot customer
+
+    # add_marker_supermarket(df_closest_supermarkets, 'blue', mymap) # this is just for the marker for supermarket
+
+    # Add supermarkets and lines to the map
+    for _, supermarket in df_closest_supermarkets.iterrows():
+        add_supermarket_line_customer(mymap, df_chosen_customer.iloc[0], supermarket)
+
+    # Add a line between the customer and the closest supermarket
+    line = folium.PolyLine(
+        locations=[
+            [df_chosen_customer['latitude'].iloc[0], df_chosen_customer['longitude'].iloc[0]],
+            [df_closest_supermarkets['latitude'].iloc[0], df_closest_supermarkets['longitude'].iloc[0]]
+        ],
+        color='green',
+    ).add_to(mymap)
+
+    folium_static(mymap, width=1000, height=600)
 
 try:
     root_dir = os.path.abspath(os.path.join(os.getcwd()))
@@ -82,6 +159,9 @@ try:
     df_supermarkets.reset_index(drop=True, inplace=True)
     st.write('Supermarket')
     st.write(df_supermarkets.head())
+
+    # Plot supermarkets
+    show_supermarkets(df_all_supermarket_location)
 
     # For customers
     df_customer = df_customer_info.merge(df_cust_loc_mapping, on='customer_id')
@@ -104,6 +184,9 @@ try:
     st.write('Closest Supermarkets to chosen customer')
     df_closest_supermarkets = closest_supermarkets(df_supermarkets, df_chosen_customer)
     st.write(df_closest_supermarkets)
+
+    # Display closest supermarkets to a customer
+    display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets)
 
 except FileNotFoundError as e:
     st.error(f"File not found: {e}")
