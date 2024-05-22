@@ -6,7 +6,7 @@ import os
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
-pages = ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"]
+pages = ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Closest Supermarket"]
 parent_dir = os.path.dirname(os.path.abspath(__file__))
 styles = {
     "nav": {
@@ -38,7 +38,7 @@ page = st_navbar(
 with st.sidebar:
     selected = option_menu(
         menu_title=None,
-        options=["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"],
+        options=["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Closest Supermarket"],
         default_index=0
     )
 
@@ -48,7 +48,7 @@ functions = {
     "Feature 2": pg.show_feature2,
     "Feature 3": pg.show_feature3,
     "Feature 4": pg.show_feature4,
-    "Feature 5": pg.show_feature5,
+    "Closest Supermarket": pg.closest_supermarket,
 }
 
 # Determine selected page
