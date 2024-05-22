@@ -10,6 +10,7 @@ import folium
 from streamlit_folium import st_folium, folium_static
 
 
+# Not being used currently because the parquet to pandas doesn't work in my system.
 
 root_dir = os.path.abspath(os.path.join(os.getcwd()))
 
@@ -49,26 +50,20 @@ def load_data_from_gcs(filepath):
     # Convert PySpark DataFrame to Pandas DataFrame
     return df.toPandas()
 
+# The above is not being used.
 
-def haversine(lat1, lon1, lat2, lon2):
-    R = 6371  # Radius of the Earth in kilometers
-    dlat = math.radians(lat2 - lat1)
-    dlon = math.radians(lon2 - lon1)
-    a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    distance = R * c
-    return distance
 
-def closest_supermarkets(df_supermarkets, df_chosen_customer):
-    df_supermarkets['distance_from_customer'] = df_supermarkets.apply(
-    lambda row: haversine(df_chosen_customer['latitude'], 
-                          df_chosen_customer['longitude'], 
-                          row['latitude'], row['longitude']),
-    axis=1)
-    return df_supermarkets.sort_values(by='distance_from_customer').head(5)
+def add_marker_customer(df, color, mymap):
+    # Adds marker for customer
+    for _, row in df.iterrows():
+        folium.Marker(
+            location=[row['latitude'], row['longitude']],
+            popup=row['customer_name'],
+            icon=folium.Icon(color=color)
+        ).add_to(mymap)
 
-def show_supermarkets(df_all_supermarket_location):
-    df_plot = df_all_supermarket_location.sample(n=50, random_state=42)
+def plot_supermarkets(df_all_supermarket_location):
+    df_plot = df_all_supermarket_location.sample(n=50, random_state=42) # Taking a sample because there are too many points.
 
     # Initialize the map centered around the mean latitude and longitude
     mymap = folium.Map(location=[df_plot['latitude'].mean(), df_plot['longitude'].mean()], zoom_start=13)
@@ -82,24 +77,7 @@ def show_supermarkets(df_all_supermarket_location):
     folium_static(mymap, width=1000, height=600)
 
 
-def add_marker_supermarket(df, color, mymap):
-    for _, row in df.iterrows():
-        folium.Marker(
-            location=[row['latitude'], row['longitude']],
-            popup=row['store_name'],
-            icon=folium.Icon(color=color)
-        ).add_to(mymap)
-
-
-def add_marker_customer(df, color, mymap):
-    for _, row in df.iterrows():
-        folium.Marker(
-            location=[row['latitude'], row['longitude']],
-            popup=row['customer_name'],
-            icon=folium.Icon(color=color)
-        ).add_to(mymap)
-
-def add_supermarket_line_customer(mymap, customer, supermarket):
+def add_supermarket_marker_line_customer(mymap, customer, supermarket):
     # Function to add a supermarket marker and a line between the customer and the supermarket with distance popup
     # Add supermarket marker
     folium.Marker(
@@ -118,17 +96,16 @@ def add_supermarket_line_customer(mymap, customer, supermarket):
         dash_array = '10'
     ).add_to(mymap)
 
-def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
-    # Initialize the map centered around the mean latitude and longitude of the customer
 
+def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
+    
+    # Initialize the map centered around the mean latitude and longitude of the customer
     mymap = folium.Map(location=[df_chosen_customer['latitude'].mean(), df_chosen_customer['longitude'].mean()], zoom_start=13)
     add_marker_customer(df_chosen_customer, 'red', mymap) # plot customer
 
-    # add_marker_supermarket(df_closest_supermarkets, 'blue', mymap) # this is just for the marker for supermarket
-
-    # Add supermarkets and lines to the map
+    # Add supermarkets and dashed lines to the map from the customer
     for _, supermarket in df_closest_supermarkets.iterrows():
-        add_supermarket_line_customer(mymap, df_chosen_customer.iloc[0], supermarket)
+        add_supermarket_marker_line_customer(mymap, df_chosen_customer.iloc[0], supermarket)
 
     # Add a line between the customer and the closest supermarket
     line = folium.PolyLine(
@@ -141,73 +118,97 @@ def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
 
     folium_static(mymap, width=1000, height=600)
 
-try:
-    root_dir = os.path.abspath(os.path.join(os.getcwd()))
 
-    # Specify the path to the local Pandas folder
-    data_file_path = os.path.join(root_dir,'data', 'aryan_pandas')
-
-    df_supermarket_products = pd.read_csv(os.path.join(data_file_path, 'supermarket_products.csv'),encoding='cp1252')
-    df_all_supermarket_location = pd.read_csv(os.path.join(data_file_path,'establishment_catalonia.csv'))
-    df_customer_info = pd.read_csv(os.path.join(data_file_path,'customers.csv'))
-    df_cust_location = pd.read_csv(os.path.join(data_file_path,'location.csv'))
-    df_cust_loc_mapping = pd.read_csv(os.path.join(data_file_path,'customer_location.csv'))
-
-    df_supermarkets = pd.merge(df_supermarket_products, df_all_supermarket_location, left_on='store_id', right_on='id', how='left')
-    # just for the sake of the query - removing the same locations
-    df_supermarkets = df_supermarkets.drop_duplicates(subset=['latitude', 'longitude'])
-    df_supermarkets.reset_index(drop=True, inplace=True)
-    st.write('Supermarket')
-    st.write(df_supermarkets.head())
-
-    # Plot supermarkets
-    show_supermarkets(df_all_supermarket_location)
-
-    # For customers
-    df_customer = df_customer_info.merge(df_cust_loc_mapping, on='customer_id')
-    df_customer = df_customer.merge(df_cust_location, on='location_id')
-    # just for the sake of the query - removing the same locations
-    df_customer = df_customer.drop_duplicates(subset=['latitude', 'longitude'])
-    df_customer.reset_index(drop=True, inplace=True)
-    st.write('Customers')
-    st.write(df_customer.head())
+def haversine(lat1, lon1, lat2, lon2):
+    # calculates distance between two coordinates
+    R = 6371  # Radius of the Earth in kilometers
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    distance = R * c
+    return distance
 
 
-    # Create a dropdown to select a name
-    selected_name = st.selectbox('Choose Customer', df_customer['customer_name'])
+def closest_supermarkets(df_supermarkets, df_chosen_customer):
+    # Returns dataframe containing closest supermarkets to chosen customer
+    df_supermarkets['distance_from_customer'] = df_supermarkets.apply(
+    lambda row: haversine(df_chosen_customer['latitude'], 
+                          df_chosen_customer['longitude'], 
+                          row['latitude'], row['longitude']),
+    axis=1)
+    return df_supermarkets.sort_values(by='distance_from_customer').head(5)
 
-    # Filter the DataFrame based on the selected name
-    df_chosen_customer = df_customer[df_customer['customer_name'] == selected_name]
-    st.write(df_chosen_customer)
 
-    # Find the closest supermarkets
-    st.write('Closest Supermarkets to chosen customer')
-    df_closest_supermarkets = closest_supermarkets(df_supermarkets, df_chosen_customer)
-    st.write(df_closest_supermarkets)
+def main():
+    try:
+        # get the directory
+        root_dir = os.path.abspath(os.path.join(os.getcwd()))
+        data_file_path = os.path.join(root_dir,'data', 'aryan_pandas')
 
-    # Display closest supermarkets to a customer
-    display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets)
+        # import data
+        df_supermarket_products = pd.read_csv(os.path.join(data_file_path, 'supermarket_products.csv'),encoding='cp1252')
+        df_all_supermarket_location = pd.read_csv(os.path.join(data_file_path,'establishment_catalonia.csv'))
+        df_customer_info = pd.read_csv(os.path.join(data_file_path,'customers.csv'))
+        df_cust_location = pd.read_csv(os.path.join(data_file_path,'location.csv'))
+        df_cust_loc_mapping = pd.read_csv(os.path.join(data_file_path,'customer_location.csv'))
 
-except FileNotFoundError as e:
-    st.error(f"File not found: {e}")
-except Exception as e:
-    st.error(f"An error occurred: {e}")
+        # merge data for supermarkets
+        df_supermarkets = pd.merge(df_supermarket_products, df_all_supermarket_location, left_on='store_id', right_on='id', how='left')
+        df_supermarkets = df_supermarkets.drop_duplicates(subset=['latitude', 'longitude']) # just for the sake of the query - removing the same locations
+        df_supermarkets.reset_index(drop=True, inplace=True)
+        st.write('Supermarkets')
+        st.write(df_supermarkets.head())
 
-# Custom CSS for footer
-st.markdown("""
-    <style>
-        footer {visibility: hidden;}
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            color: black;
-            text-align: center;
-        }
-    </style>
-    <div class="footer">
-        <p>@Developed by SpicyBytes</p>
-    </div>
-""", unsafe_allow_html=True)
+        plot_supermarkets(df_all_supermarket_location)
+
+        # merge data for customers
+        df_customer = df_customer_info.merge(df_cust_loc_mapping, on='customer_id')
+        df_customer = df_customer.merge(df_cust_location, on='location_id')
+        df_customer = df_customer.drop_duplicates(subset=['latitude', 'longitude'])         # just for the sake of the query - removing the same locations
+        df_customer.reset_index(drop=True, inplace=True)
+        st.write('Customers')
+        st.write(df_customer.head())
+
+
+        # Create a dropdown to select a name
+        selected_name = st.selectbox('Choose Customer', df_customer['customer_name'])
+
+        # Filter the DataFrame based on the selected name
+        df_chosen_customer = df_customer[df_customer['customer_name'] == selected_name]
+        st.write(df_chosen_customer)
+
+        # Find the closest supermarkets
+        st.write('Closest Supermarkets to chosen customer')
+        df_closest_supermarkets = closest_supermarkets(df_supermarkets, df_chosen_customer)
+        st.write(df_closest_supermarkets)
+
+        # Display closest supermarkets to a customer
+        display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets)
+
+    except FileNotFoundError as e:
+        st.error(f"File not found: {e}")
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
+
+    # Custom CSS for footer
+    st.markdown("""
+        <style>
+            footer {visibility: hidden;}
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #f1f1f1;
+                color: black;
+                text-align: center;
+            }
+        </style>
+        <div class="footer">
+            <p>@Developed by SpicyBytes</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+if __name__ == '__main__':
+    main()
