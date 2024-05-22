@@ -13,4 +13,4 @@ def list_blobs(bucket_name):
 
 if __name__ == '__main__':
     print("hello")
-    list_blobs('spicy_1')
+    list_blobs('formatted_zone')
