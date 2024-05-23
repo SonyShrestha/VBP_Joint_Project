@@ -139,12 +139,12 @@ def generate_review(business_id, business_name, rating, text, verified=True):
 
 
 def random_user_id():
-    supermarket_df = pd.read_csv(os.path.join(raw_data_dir,'establishments_catalonia.csv'),usecols=['Id','Commercial_name'])
+    supermarket_df = pd.read_csv(os.path.join(raw_data_dir,'establishments_catalonia.csv'),usecols=['id','commercial_name'])
     random_row_index = supermarket_df.sample(n=1).index[0]
 
     # Select the random row using iloc
     random_row = supermarket_df.iloc[random_row_index]
-    return str(random_row["Id"]), str(random_row["Commercial_name"])
+    return str(random_row["id"]), str(random_row["commercial_name"])
 
 
 
