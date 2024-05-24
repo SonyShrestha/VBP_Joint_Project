@@ -148,7 +148,13 @@ def main():
 
         # import data
         df_supermarket_products = pd.read_csv(os.path.join(data_file_path, 'supermarket_products.csv'),encoding='cp1252')
+        
+        # Uncomment this when you want to read from gcs
+        # establishment_catalonia = 'gs://'+formatted_zone_bucket+'/establishments_catalonia*'
+        # df_all_supermarket_location = load_data_from_gcs(establishment_catalonia)
+
         df_all_supermarket_location = pd.read_csv(os.path.join(data_file_path,'establishment_catalonia.csv'))
+
         df_customer_info = pd.read_csv(os.path.join(data_file_path,'customers.csv'))
         df_cust_location = pd.read_csv(os.path.join(data_file_path,'location.csv'))
         df_cust_loc_mapping = pd.read_csv(os.path.join(data_file_path,'customer_location.csv'))
