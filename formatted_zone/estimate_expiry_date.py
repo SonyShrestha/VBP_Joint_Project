@@ -91,63 +91,37 @@ if __name__ == "__main__":
 
     # Specify the path to the Parquet file
     cust_purachase = f'gs://{formatted_bucket_name}/customer_purchase*'
-
     cust_email = f'gs://{formatted_bucket_name}/customers*'
-
     expected_avg_expiry = 'gs://'+formatted_bucket_name+'/estimated_avg_expiry*'
 
     # Read the Parquet file into a DataFrame
-    cust_purachase_df = spark.read.parquet(cust_purachase)
+    cust_purachase_df = spark.read.parquet(cust_purachase).limit(100)
     cust_email_df = spark.read.parquet(cust_email)
+    expected_avg_expiry_df = spark.read.parquet(expected_avg_expiry)
+
     cust_email_df = cust_email_df.select("customer_id","email_id")
 
 
     customer_purachase_df = cust_purachase_df.join(cust_email_df, 'customer_id', 'inner')
     customer_purachase_df = customer_purachase_df.select("id","customer_id","customer_name","email_id","product_name","unit_price","quantity","purchase_date")
-            
-    # customer_purachase_df = customer_purachase_df.filter(customer_purachase_df["product_name"] == "Natureland Organics Chana Besan  (500 g)")
-
-    customer_purachase_df = customer_purachase_df.withColumn("original_product_name", customer_purachase_df["product_name"])
-
-    customer_purachase_df = customer_purachase_df.withColumn("id", monotonically_increasing_id())
-    customer_purachase_df = customer_purachase_df.select("id","customer_id","customer_name","email_id","product_name","unit_price","quantity","purchase_date","original_product_name")\
-            .withColumn("product_name", lower(regexp_replace(customer_purachase_df["product_name"], "[^a-zA-Z ]", "")))\
-            .withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))
-    
-    expected_avg_expiry_df = spark.read.parquet(expected_avg_expiry)
-    expected_avg_expiry_df = expected_avg_expiry_df.select("product_name","avg_expiry_days")\
-            .withColumn("product_name", lower(regexp_replace(expected_avg_expiry_df["product_name"], "[^a-zA-Z ]", "")))\
-            .withColumn("product_name", regexp_replace(trim(col("product_name")), "\\s+", " "))
-    expected_avg_expiry_df = expected_avg_expiry_df.withColumnRenamed("product_name", "product_in_avg_expiry_file")
-
-    available_products = [row["product_in_avg_expiry_file"] for row in expected_avg_expiry_df.select("product_in_avg_expiry_file").collect()]
-
-    joined_df = customer_purachase_df.crossJoin(expected_avg_expiry_df)
-    
-    filtered_df = joined_df.select("id","customer_id","customer_name","email_id","product_name","unit_price","quantity","purchase_date","original_product_name","product_in_avg_expiry_file","avg_expiry_days")
-
-    filtered_df = filtered_df.withColumn("score", fuzzy_match_score(lit(fuzzy_score_calc_method), lit(fuzzy_threshold), filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
+    cust_purchase_dist_prod = customer_purachase_df.select("product_name").withColumnRenamed("product_name","product").dropDuplicates()
 
 
-    filtered_df = filtered_df.withColumn("token_count", count_tokens(filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
+    fuzzy_match = expected_avg_expiry_df.crossJoin(cust_purchase_dist_prod)
 
-    # filtered_df = filtered_df.withColumn("score", spacy_match_score(filtered_df["product_name"], filtered_df["product_in_avg_expiry_file"]))
+    fuzzy_match = fuzzy_match.withColumn("score", fuzzy_match_score(lit(fuzzy_score_calc_method), lit(fuzzy_threshold), fuzzy_match["product_name"], fuzzy_match["product"]))
+    windowSpec = Window.partitionBy("product_name").orderBy(col("score").desc())
+    fuzzy_match_with_rnk = fuzzy_match.withColumn("row_number", row_number().over(windowSpec))
+    fuzzy_match_result = fuzzy_match_with_rnk.filter((col("row_number") == 1) & (col("score") >= lit(fuzzy_threshold))).drop("row_number")
 
-    windowSpec = Window.partitionBy("id") \
-                  .orderBy(filtered_df["score"].desc(), filtered_df["token_count"].desc())
+    fuzzy_match_result = fuzzy_match_result.select("product","avg_expiry_days")
 
-    # Add a row number column
-    df_with_rn = filtered_df.withColumn("row_number", row_number().over(windowSpec))
+    joined_df = customer_purachase_df.join(fuzzy_match_result,customer_purachase_df.product_name==fuzzy_match_result.product,"left").filter(col("avg_expiry_days")>0)
 
-    # Filter rows where row number is 1 (which corresponds to the row with the maximum fuzzy score for each product)
-    df_with_rn = df_with_rn.filter(((df_with_rn["score"] != 0) & (df_with_rn["row_number"] == 1))).drop("row_number", "product_name", "token_count")
-    df_with_rn = df_with_rn.withColumnRenamed("original_product_name", "product_name")
+    joined_df = joined_df.select("customer_id","customer_name","email_id","product_name","unit_price","quantity","purchase_date","avg_expiry_days")
 
-    df_with_rn = df_with_rn.withColumn("expected_expiry_date", expr("date_add(purchase_date, cast(ceil(avg_expiry_days/2) AS INT))"))
+    joined_df = joined_df.withColumn("expected_expiry_date", expr("date_add(purchase_date, cast(ceil(avg_expiry_days/2) AS INT))"))
 
-    # debug_df = df_with_rn.select("product_name","product_in_avg_expiry_file","avg_expiry_days")
-    # debug_df.write.csv('./data/formatted_zone/expiry_date_accuracy')
+    joined_df.show()
 
-    cnt = df_with_rn.count()
-    print(cnt)
-    df_with_rn.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/purchases_nearing_expiry')
+    joined_df.write.mode('overwrite').parquet(f'gs://{formatted_bucket_name}/purchases_nearing_expiry')
