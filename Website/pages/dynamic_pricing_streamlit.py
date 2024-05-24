@@ -2,6 +2,28 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from pyspark.sql import SparkSession
+import configparser
+import os
+import logging
+import json
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)  # Set log level to INFO
+
+# Create logger object
+logger = logging.getLogger()
+
+# Get base directory
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(root_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(root_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
 
 
 st.set_page_config(page_title="Dynamic Pricing", layout="wide")
@@ -11,18 +33,18 @@ st.title("Dynamic Pricing Model Results")
 
 # Specify the path to the GCS Parquet file
 platform_customer_pricing_data_path = 'gs://formatted_zone/platform_customer_pricing_data_output'
-# customer_reviews_path = 'gs://formatted_zone/customer_sentiment_20240516001526.parquet'
 
 
 @st.cache_data
 def load_data_from_gcs(filepath):
+    gcs_config = config["GCS"]["credentials_path"]
+
     spark = SparkSession.builder \
         .appName("Feature 4") \
         .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
         .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-        .config("google.cloud.auth.service.account.json.keyfile",
-                "/home/pce/Documents/VBP_Joint_Project-main/formal-atrium-418823-7fbbc75ebbc6.json") \
+        .config("google.cloud.auth.service.account.json.keyfile", gcs_config) \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
 
