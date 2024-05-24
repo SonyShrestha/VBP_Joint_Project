@@ -19,10 +19,14 @@ load_dotenv()
 # Set page config for a better appearance
 st.set_page_config(page_title="Food Recommender System", layout="wide")
 
+
+
 def create_spark_session():
     spark = SparkSession.builder \
-        .appName("Feature 3") \
+        .appName("RecipeProcessing") \
         .config("spark.driver.host", "127.0.0.1") \
+        .config("spark.executorEnv.PYSPARK_PYTHON", "/home/pce/anaconda3/envs/spark_env/bin/python3.11") \
+        .config("spark.yarn.appMasterEnv.PYSPARK_PYTHON", "/home/pce/anaconda3/envs/spark_env/bin/python3.11") \
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
         .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
@@ -82,7 +86,7 @@ def find_or_generate_recipes(processed_df, ingredients):
         return [{"generated_recipe": generated_recipe}]
 
 def initialize():
-    input_path = "gs://spicy_1/mealdb_20240407221823.parquet"
+    input_path = "gs://spicy_1/mealdb_20240521004240.parquet"
     processed_df = preprocess_data(input_path)
     return processed_df
 

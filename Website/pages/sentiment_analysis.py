@@ -15,7 +15,7 @@ customer_reviews_path = 'gs://formatted_zone/customer_sentiment_20240516001526.p
 @st.cache_data
 def load_data_from_gcs(filepath):
     spark = SparkSession.builder \
-        .appName("Feature 4") \
+        .appName("GCS Connection") \
         .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
         .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
