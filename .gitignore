@@ -1,3 +1,5 @@
 _SUCCESS
 ._SUCCESS.crc
 .part*
+*.pyc
+Website/pages/__pycache__/__init__.cpython-310.pyc
