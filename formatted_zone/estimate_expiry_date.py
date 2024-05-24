@@ -95,7 +95,7 @@ if __name__ == "__main__":
     expected_avg_expiry = 'gs://'+formatted_bucket_name+'/estimated_avg_expiry*'
 
     # Read the Parquet file into a DataFrame
-    cust_purachase_df = spark.read.parquet(cust_purachase).limit(100)
+    cust_purachase_df = spark.read.parquet(cust_purachase)
     cust_email_df = spark.read.parquet(cust_email)
     expected_avg_expiry_df = spark.read.parquet(expected_avg_expiry)
 
