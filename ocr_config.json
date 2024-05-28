@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "earnest-sight-404409",
+  "private_key_id": "50faf082cd4a8ff4cde9d59c1594e666643351c0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDnzKrn6G3yIgSE\nLX7jdjFvwKCCDLpUOTtdC250TyST621EIkRlD9jT7ejOKeeq6fIwg7rBIyUWu3/1\n/Qa28am7EDdDpGC8UuG9o/NwxiGpNO6Fhi4hpgsksEl9r6Lo1OtK63fSz9za/J7x\nn8zj2A7DpxYBoBM4LH3C4T4BGXWUGBAJ17/U7mMKxFKPf72vf49Hlu4IE1gLjKer\nPWwCzhCar4OYMM9yTp/chUfZKvOVAuT/2s29yIbojZW4MsSnVhUx8hz+D8U57+tV\nM8MYtndE6Wm6LWc7Jf+YCItKaGdYIumLRIF97QfJgRqUIQBV5I2S2/m0OSuWAfyc\n9yEwC0ChAgMBAAECggEAKt/mdMK/I1w7bZ9kqvn/puYASk3EYTO80Tb+FTFWWK3h\nJgsYj4Dg4EJPH2MM4MYo7+RNtM+lWpEP2BYXGduVQ256al6LLgo+iu86Zg+fxkZu\nH/Bzs/GcegrJbSABiANqCg+HuEyOU0sKszKVmUcrY/ER1vce1vMTx+oVp+pnnx6C\nKz3pPVoVadjuD+/g18EE1TSgZDJH8rQ10RCV5PvI+LSkIaPmRnR9q7S4gvRXbtbi\nfPhSAE+5nk1TPO+t3WNw7sJ07QJswBIpGCH0WmZlr3vATVoEWY9wIOZWo/L3SJGy\nOwSgpXEQyUfuYU25L1kZ75L5eYd8I1lZIPd65iwlCQKBgQD0NDTU7A3SUWHWzOYr\nt+HEgb18+TrEZEHRXwaFMC7E1wz4pnrAqsg/6PcsQLSCG+IqCxP2Q1WGbabwAPyv\ntWKaW0CcLz3wFU5+Y0WTuk51o6XZfyj2OkJo7Wgd1aZa5//1WJGd+Tz0XAr/Cg0H\nuxV0wcD4VLiLrBzRJFTios4OywKBgQDy/xHHvdoLbMJSWW4tEfmwHcx7ugT3DyaA\nh3b/XycBVPBz6z+Ksi3M9iphjByDD6ebqVLsE6ZHhcc7hpOpo9OrHJESU5XGus6Y\nRja9BmkErG0r75366sLcekFRqGwnes1HpM5D/Jr+o7iYnrrXFoQOdFVQF7iYlsh7\nCiDVDOZ0wwKBgQCmOr9XzNNfvfwOnm1zhvkMrZAR+Qky1FglMD0c/n5niUeQHqri\naZ5kOq2+FtGI23gpTF8rPAyEtDF1oAZhiOP01Hb3mgTcX3SN/f9HnwN3eo0Tr0Zv\nzZqVGD3OSTezG8eU99Qvp5ABeoIVt37FK2lgj99Oa0Uv9lmrV8Lcfxwq3wKBgQCA\nXPXLiiLw/hb44X0uGdzIiDVI9s9Ao6Q3KVhXNrCoJ3KOCaubXNyM9U0WEqnNIivs\nMto3E3o3Nhg0/bZrWruqHIEWKUlpna0dC5pG6Gf5rAxPtVjC/9jIF10CAfKAOILQ\nYeMETyChe2M8XD1e+enwqMuYb694C88EECmf4hyreQKBgQCNQ6OiGy5XmDuX/BtR\n4TXGZB41fLcEuCojfk1XeG0HzXY5hlofsp9G3OasWvIyYC3DQsUPnDQvBbQV4Bc6\nvb6Gg/x3Q7PTEh/Kgh+IkJ+iRPmCz3kb3MLeE08Ar/7JpVPMa4fRj9vlXfapCBHL\nu8ooYYR+g31330cEUecVwUGrHQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "arijits-1@earnest-sight-404409.iam.gserviceaccount.com",
+  "client_id": "117261137872480751597",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/arijits-1%40earnest-sight-404409.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
