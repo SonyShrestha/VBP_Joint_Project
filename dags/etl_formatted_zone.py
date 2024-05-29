@@ -109,3 +109,5 @@ mealdbrecommend = BashOperator(
     bash_command='python ./formatted_zone/mealdbrecommend.py',
     dag=dag_collectors,
 )
+
+[customers, establishments_catalonia, customer_location, location]>> customer_purchase>>estimate_perishability>> estimate_expiry_date>>expiry_notification>>customer_sales>>dynamic_pricing>>mealdbrecommend>>[individual_review_sentiment, business_review_sentiment]
