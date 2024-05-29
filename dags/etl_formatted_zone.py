@@ -29,7 +29,7 @@ business_review_sentiment = BashOperator(
 # customer_location
 customer_location = BashOperator(
     task_id='customer_location',
-    bash_command='python /opt/airflow/formatted_zone/customer_location.py',
+    bash_command='python ./formatted_zone/customer_location.py',
     dag=dag_collectors,
 )
 
