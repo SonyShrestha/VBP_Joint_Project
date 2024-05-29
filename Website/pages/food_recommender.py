@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 import json
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 import torch
+import logging
+import configparser
 
 # Set environment variables
 os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
@@ -19,9 +21,28 @@ load_dotenv()
 # Set page config for a better appearance
 st.set_page_config(page_title="Food Recommender System", layout="wide")
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)  # Set log level to INFO
+
+# Create logger object
+logger = logging.getLogger()
+
+# Get base directory
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(root_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(root_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
+
 
 
 def create_spark_session():
+    gcs_config = config["GCS"]["credentials_path"]
     spark = SparkSession.builder \
         .appName("RecipeProcessing") \
         .config("spark.driver.host", "127.0.0.1") \
@@ -30,7 +51,7 @@ def create_spark_session():
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
         .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
-        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", "/home/pce/Documents/VBP_Joint_Project-main/formal-atrium-418823-7fbbc75ebbc6.json") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     return spark

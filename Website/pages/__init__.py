@@ -1,4 +1,4 @@
-from pages.product_preishability import show_feature1
+from pages.product_perishability import show_feature1
 from pages.cust_purchase_expected_expiry import show_feature2
 from pages.food_recommender import show_feature3
 from pages.sentiment_analysis import show_feature4
