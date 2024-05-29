@@ -7,24 +7,35 @@ import google.generativeai as genai
 import pandas as pd
 import base64
 import vertexai
+import configparser
 from vertexai.preview.generative_models import GenerativeModel, Part, FinishReason, Image
 import vertexai.preview.generative_models as generative_models
 
-OCR_GOOGLE_APPLICATION_CREDENTIALS= "D:/BDMA/UPC/BDM/P1/VBP_Joint_Project/ocr_config.json"
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(root_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(root_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
+
+OCR_GOOGLE_APPLICATION_CREDENTIALS= os.path.join(root_dir, "gcs_config.json")
 
 load_dotenv()
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = OCR_GOOGLE_APPLICATION_CREDENTIALS
 
 def generate(input, image):
-  vertexai.init(project="earnest-sight-404409", location="us-central1")
+  vertexai.init(project="formal-atrium-418823", location="us-central1")
   model = GenerativeModel(
     "gemini-1.5-pro-001",
   )
   responses = model.generate_content(
       [image, input],
-      generation_config=generation_config,
-      safety_settings= safety_config
+      generation_config=generation_config
   )
 
   return responses.text
@@ -36,12 +47,12 @@ generation_config = {
     "top_p": 0.95,
 }
 
-safety_config = {
-    generative_models.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: generative_models.HarmBlockThreshold.BLOCK_NONE,
-    generative_models.HarmCategory.HARM_CATEGORY_HARASSMENT: generative_models.HarmBlockThreshold.BLOCK_NONE,
-    generative_models.HarmCategory.HARM_CATEGORY_HATE_SPEECH: generative_models.HarmBlockThreshold.BLOCK_NONE,
-    generative_models.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: generative_models.HarmBlockThreshold.BLOCK_NONE,
-}
+# safety_config = {
+#     generative_models.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: generative_models.HarmBlockThreshold.BLOCK_NONE,
+#     generative_models.HarmCategory.HARM_CATEGORY_HARASSMENT: generative_models.HarmBlockThreshold.BLOCK_NONE,
+#     generative_models.HarmCategory.HARM_CATEGORY_HATE_SPEECH: generative_models.HarmBlockThreshold.BLOCK_NONE,
+#     generative_models.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: generative_models.HarmBlockThreshold.BLOCK_NONE,
+# }
 
 # generate()
 

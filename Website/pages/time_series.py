@@ -27,12 +27,23 @@ import configparser
 from datetime import datetime, timedelta
 from prophet import Prophet
 
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(root_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(root_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
+
 # gcs cinfiguration
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "D:/BDMA/UPC/BDM/P1/VBP_Joint_Project/gcs_config.json"
-os.environ["JAVA_HOME"] = "C:/Program Files/Java/jdk-11.0.7"
-os.environ["SPARK_HOME"] = "C:/spark"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.path.join(root_dir,"gcs_config.json")
+# os.environ["JAVA_HOME"] = "C:/Program Files/Java/jdk-11.0.7"
+# os.environ["SPARK_HOME"] = "C:/spark"
 # findspark.init()
 spark = SparkSession.builder.getOrCreate()
 
@@ -112,7 +123,7 @@ def load_data_from_gcs(filepath):
         .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.22") \
         .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
-        .config("google.cloud.auth.service.account.json.keyfile", "D:/BDMA/UPC/BDM/P1/VBP_Joint_Project/gcs_config.json") \
+        .config("google.cloud.auth.service.account.json.keyfile", os.path.join(root_dir,"gcs_config.json")) \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     
@@ -136,14 +147,9 @@ def preprocess_data_C2C_expected(data):
     df_c2c_expected= df_c2c_expected.dropna()
     print("Shape of DataFrame: ({}, {})".format(df_c2c_expected.count(), len(df_c2c_expected.columns)))
 
-    df_c2c_dynamic= df_c2c.select("purchase_date", "unit_price", "quantity", "dynamic_price")
-    df_c2c_dynamic= df_c2c_dynamic.dropna()
-    print("Shape of DataFrame: ({}, {})".format(df_c2c_dynamic.count(), len(df_c2c_dynamic.columns)))
-
     # Show the first few rows of the DataFrame
     df_c2c.show(5)
     df_c2c_expected.show(5)
-    df_c2c_dynamic.show(5)
 
     st.write("Data loaded")
 
@@ -191,17 +197,12 @@ def preprocess_data_C2C_dynamic(data):
     # Print the shape of the DataFrame
     print("Shape of DataFrame: ({}, {})".format(df_c2c.count(), len(df_c2c.columns)))
 
-    df_c2c_expected= df_c2c.select("purchase_date", "unit_price", "quantity", "expected_price")
-    df_c2c_expected= df_c2c_expected.dropna()
-    print("Shape of DataFrame: ({}, {})".format(df_c2c_expected.count(), len(df_c2c_expected.columns)))
-
     df_c2c_dynamic= df_c2c.select("purchase_date", "unit_price", "quantity", "dynamic_price")
     df_c2c_dynamic= df_c2c_dynamic.dropna()
     print("Shape of DataFrame: ({}, {})".format(df_c2c_dynamic.count(), len(df_c2c_dynamic.columns)))
 
     # Show the first few rows of the DataFrame
     df_c2c.show(5)
-    df_c2c_expected.show(5)
     df_c2c_dynamic.show(5)
 
     st.write("Data loaded")
@@ -351,6 +352,7 @@ def plot_aggregated_forecasts(df_sales, forecast):
     ax.set_xlabel('Date')
     ax.set_ylabel('Sales')
     ax.legend()
+    ax.grid()
     st.pyplot(fig)
     
     # Weekly aggregation
@@ -372,6 +374,7 @@ def plot_aggregated_forecasts(df_sales, forecast):
     ax.set_xlabel('Week')
     ax.set_ylabel('Sales')
     ax.legend()
+    ax.grid()
     st.pyplot(fig)
 
     # Monthly aggregation
@@ -392,6 +395,7 @@ def plot_aggregated_forecasts(df_sales, forecast):
     ax.set_xlabel('Month')
     ax.set_ylabel('Sales')
     ax.legend()
+    ax.grid()
     st.pyplot(fig)
 
     # # Yearly aggregation
