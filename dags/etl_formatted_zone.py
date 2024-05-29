@@ -29,7 +29,7 @@ business_review_sentiment = BashOperator(
 # customer_location
 customer_location = BashOperator(
     task_id='customer_location',
-    bash_command='python ./formatted_zone/customer_location.py',
+    bash_command='python /opt/airflow/formatted_zone/customer_location.py',
     dag=dag_collectors,
 )
 
@@ -105,9 +105,9 @@ location = BashOperator(
 
 # mealdbrecommend
 mealdbrecommend = BashOperator(
-    task_id='location',
+    task_id='mealdbrecommend',
     bash_command='python ./formatted_zone/mealdbrecommend.py',
     dag=dag_collectors,
 )
 
-[customers, establishments_catalonia, customer_location, location]>> customer_purchase>>estimate_perishability>> estimate_expiry_date>>expiry_notification>>customer_sales>>dynamic_pricing>>mealdbrecommend>>[individual_review_sentiment, business_review_sentiment]
+[customers, establishments_catalonia, customer_location, location, estimate_perishability]>> customer_purchase>> estimate_expiry_date>>expiry_notification>>customer_sales>>dynamic_pricing>>mealdbrecommend>>[individual_review_sentiment, business_review_sentiment]
