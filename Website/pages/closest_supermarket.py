@@ -11,8 +11,8 @@ from streamlit_folium import st_folium, folium_static
 from bokeh.models import CustomJS, Button
 from streamlit_bokeh_events import streamlit_bokeh_events
 
-# # Not being used currently because the parquet to pandas doesn't work in my system.
 
+# For running through gcs
 root_dir = os.path.abspath(os.path.join(os.getcwd()))
 
 # Specify the path to config file
@@ -28,11 +28,11 @@ with open(config_file_path_json) as f:
 st.set_page_config(page_title="Shortest Path", layout="wide")
 
 # Title of the app
-st.title('Shortest Path Filter')
+st.title('Closest Supermarkets')
 
 # Specify the path to the GCS Parquet file
 formatted_zone_bucket = config["GCS"]["formatted_bucket_name"]
-gcs_parquet_path = 'gs://'+formatted_zone_bucket+'/estimated_avg_expiry'
+gcs_parquet_path = 'gs://'+formatted_zone_bucket + '/'
 
 # Function to load data from GCS
 @st.cache_data
@@ -50,8 +50,6 @@ def load_data_from_gcs(filepath):
     
     # Convert PySpark DataFrame to Pandas DataFrame
     return df.toPandas()
-
-# # The above is not being used.
 
 def haversine(lat1, lon1, lat2, lon2):
     # calculates distance between two coordinates
@@ -174,27 +172,25 @@ def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
 
     folium_static(mymap, width=1000, height=600)
 
+# Function to reset user input
+def reset_user_input():
+    st.session_state.user_input = ''
 
-def im_feeling_lucky():
-    st.write("Feeling lucky! Here’s a random supermarket deal for you...")
-
+def filter_dataframe(df, query):
+    return df[df['product_name'].str.contains(query, case=False, na=False)]
 
 def main():
 
-    root_dir = os.path.abspath(os.path.join(os.getcwd()))
-    data_file_path = os.path.join(root_dir,'data', 'aryan_pandas')
+    # import data using pandas if needed
+    # root_dir = os.path.abspath(os.path.join(os.getcwd()))
+    # data_file_path = os.path.join(root_dir,'data', 'aryan_pandas') # These are the csv files generated from the formatted zone. Not Raw files.
+    # df_supermarket_products = pd.read_csv(os.path.join(data_file_path, 'supermarket_products.csv'),encoding='cp1252')
+    # df_all_supermarket_location = pd.read_csv(os.path.join(data_file_path,'establishments_catalonia.csv'))
 
+    # importing data from gcs
+    df_supermarket_products = load_data_from_gcs(gcs_parquet_path + 'supermarket_products*')
+    df_all_supermarket_location = load_data_from_gcs(gcs_parquet_path + 'establishments_catalonia*')
 
-    # Uncomment this when you want to read from gcs
-    # establishment_catalonia = 'gs://'+formatted_zone_bucket+'/establishments_catalonia*'
-    # df_all_supermarket_location = load_data_from_gcs(establishment_catalonia)
-
-    # import data
-    df_supermarket_products = pd.read_csv(os.path.join(data_file_path, 'supermarket_products.csv'),encoding='cp1252')
-    df_all_supermarket_location = pd.read_csv(os.path.join(data_file_path,'establishment_catalonia.csv'))
-    df_customer_info = pd.read_csv(os.path.join(data_file_path,'customers.csv'))
-    df_cust_location = pd.read_csv(os.path.join(data_file_path,'location.csv'))
-    df_cust_loc_mapping = pd.read_csv(os.path.join(data_file_path,'customer_location.csv'))
 
     # merge data for supermarkets
     df_supermarkets = pd.merge(df_supermarket_products, df_all_supermarket_location, left_on='store_id', right_on='id', how='left')
@@ -205,38 +201,39 @@ def main():
                                                       'expiry_date']]
     df_supermarkets.reset_index(drop=True, inplace=True)
 
-
-    # st.write(df_supermarkets)
-
     # df_supermarkets has all the near expiry products being sold by supermarkets
     # df_supermarkets_location has the location of the above supermarkets
     # df_all_supermarket_location has all the available supermarkets in the region
 
-    # choose option
-    option = st.selectbox(
-    'Choose an option',
-    ('Find Supermarket deals near me', 'I\'m feeling lucky'))
+    location = get_current_location()
+    if location:
+        df_user_location = pd.DataFrame({'latitude': [location[0]], 'longitude': [location[1]]})
+        df_user_location = df_user_location.iloc[[0]] # only keep the first row for the user in the dataframe
+        # st.write(f"Latitude: {df_user_location['latitude'][0]}, Longitude: {df_user_location['longitude'][0]}")
+        st.write("Searching for supermarket deals near you..")
+        df_closest_supermarkets = closest_supermarkets(df_supermarkets_location, df_user_location)
+        # st.write(df_closest_supermarkets)
+        display_closest_supermarkets(df_user_location, df_closest_supermarkets)
 
-    if option == 'Find Supermarket deals near me':
-        location = get_current_location()
-        if location:
-            df_user_location = pd.DataFrame({'latitude': [location[0]], 'longitude': [location[1]]})
-            df_user_location = df_user_location.iloc[[0]] # only keep the first row for the user in the dataframe
-            st.write(f"Latitude: {df_user_location['latitude'][0]}, Longitude: {df_user_location['longitude'][0]}")
-            st.write("Searching for supermarket deals near you..")
-            df_closest_supermarkets = closest_supermarkets(df_supermarkets_location, df_user_location)
-            # st.write(df_closest_supermarkets)
-            display_closest_supermarkets(df_user_location, df_closest_supermarkets)
-            selected_market = st.selectbox("Select supermarket", df_closest_supermarkets['store_name'])
-            st.dataframe(df_supermarkets.query('store_name == @selected_market').reset_index(drop=True)[['product_id', 'product_name', 'product_price', 'quantity', 'expiry_date']],
-                         use_container_width=True)
-            # st.write('done')
 
+        # Initialize session state for dropdown and user input if not already initialized
+        if 'dropdown_selection' not in st.session_state:
+            st.session_state.user_input = ''
+        options = ['Show All'] + df_closest_supermarkets['store_name'].tolist()  # to display in dropdown
+        selected_market = st.selectbox("Select Supermarket", options, key='dropdown_selection', on_change=reset_user_input)
+
+        user_query = st.text_input('Search for a product', value=st.session_state.user_input, key='user_input')
+        if selected_market == "Show All":
+            filtered_df = df_supermarkets.reset_index(drop=True)[['store_name', 'product_id', 'product_name', 'product_price', 'quantity', 'expiry_date']]
         else:
-            st.write('Click the button to allow access to your location.')
+            filtered_df = df_supermarkets.query('store_name == @selected_market').reset_index(drop=True)[['product_id', 'product_name', 'product_price', 'quantity', 'expiry_date']]
+        if user_query:
+            filtered_df = filter_dataframe(filtered_df, user_query)
 
-    elif option == 'I\'m feeling lucky':
-        im_feeling_lucky()
+        st.dataframe(filtered_df.reset_index(drop=True), use_container_width=True)
+
+    else:
+        st.write('Click the button to allow access to your location.')
 
     # Custom CSS for footer
     st.markdown("""
