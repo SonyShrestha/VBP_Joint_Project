@@ -16,3 +16,4 @@ seaborn
 prophet
 google-cloud-aiplatform
 tensorflow
+google-generativeai
