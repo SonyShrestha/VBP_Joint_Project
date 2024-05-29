@@ -12,3 +12,7 @@ opencv-python
 pytesseract
 fuzzywuzzy
 plotly
+seaborn
+prophet
+google-cloud-aiplatform
+tensorflow
