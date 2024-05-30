@@ -134,7 +134,7 @@ def add_supermarket_marker_line_customer(mymap, customer, supermarket):
 
     marker = folium.Marker(
         location=[supermarket['latitude'], supermarket['longitude']],
-        popup=supermarket['store_name'] + '\n' + str(supermarket['distance_from_customer']) + ' km',
+        popup=supermarket['store_name'] + '\n' + str("{:.2f}".format(supermarket['distance_from_customer']) + ' KM'),
         icon=folium.Icon(color='blue')
         )
     marker.add_to(mymap)
