@@ -8,8 +8,8 @@ st.set_page_config(page_title="Sentiment Analysis", layout="wide")
 
 
 # Specify the path to the GCS Parquet file
-business_reviews_path = 'gs://formatted_zone/business_sentiment_20240516001020.parquet'
-customer_reviews_path = 'gs://formatted_zone/customer_sentiment_20240516001526.parquet'
+business_reviews_path = 'gs://formatted_zone/business_sentiment_*'
+customer_reviews_path = 'gs://formatted_zone/customer_sentiment_*'
 
 
 @st.cache_data
