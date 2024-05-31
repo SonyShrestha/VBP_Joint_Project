@@ -17,3 +17,4 @@ prophet
 google-cloud-aiplatform
 tensorflow
 google-generativeai
+tf_keras
