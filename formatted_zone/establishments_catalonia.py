@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
     # supermarket_loc = "./data/gcs_raw_parquet/establishments_catalonia.parquet"
     # df_supermarket_info = spark.read.parquet(supermarket_loc)
-    df_supermarket_info = spark.read.parquet('gs://'+raw_bucket_name+'/establishments_catalonia*')
+    df_supermarket_info = spark.read.parquet(f'gs://{raw_bucket_name}/establishments_catalonia*')
 
     logger.info('-----------------------------------------------------')
     logger.info("Cleaning data for establishments_catalonia")

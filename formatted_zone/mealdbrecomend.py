@@ -10,13 +10,37 @@ from dotenv import load_dotenv
 import json
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 import torch
+import configparser
+import logging
+import json
 
-# Set environment variables
-os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
-os.environ["PYSPARK_DRIVER_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
-os.environ["SPARK_LOCAL_IP"] = "127.0.0.1"
+# # Set environment variables
+# os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
+# os.environ["PYSPARK_DRIVER_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
+# os.environ["SPARK_LOCAL_IP"] = "127.0.0.1"
 
-load_dotenv()
+# load_dotenv()
+
+logging.basicConfig(level=logging.INFO)  # Set log level to INFO
+
+# Create logger object
+logger = logging.getLogger()
+
+# Get the path to the parent parent directory
+config_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(config_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(config_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
+
+gcs_config = config["GCS"]["credentials_path"]
+raw_bucket_name = config["GCS"]["raw_bucket_name"]
+formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
 def create_spark_session():
     spark = SparkSession.builder \
@@ -25,7 +49,7 @@ def create_spark_session():
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
         .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
-        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", "/home/pce/Documents/VBP_Joint_Project-main/formal-atrium-418823-7fbbc75ebbc6.json") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     return spark
@@ -95,8 +119,8 @@ def save_to_json_file(data, file_path):
         print(f"Data has been written to {file_path}")
 
 def initialize():
-    input_path = "gs://spicy_1/mealdb_20240407221823.parquet"
-    output_path = "gs://formatted_zone"
+    input_path = f"gs://{raw_bucket_name}/mealdb_*"
+    output_path = f"gs://{formatted_bucket_name}"
     processed_df, full_path = preprocess_and_save_data(input_path, output_path)
     return processed_df
 

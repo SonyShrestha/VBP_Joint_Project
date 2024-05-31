@@ -102,7 +102,7 @@ def rule_based_pricing(days_to_expiry, consumption_rate, base_price, avg_expiry_
 pricing_udf = udf(rule_based_pricing, DoubleType())
 
 # Define the path to the parquet file
-parquet_path = "platform_customer_pricing_data_output"
+parquet_path = "platform_customer_pricing_data_output*"
 df = spark.read.parquet(parquet_path)
 
 df.show(20)

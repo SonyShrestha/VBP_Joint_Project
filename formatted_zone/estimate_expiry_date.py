@@ -92,7 +92,7 @@ if __name__ == "__main__":
     # Specify the path to the Parquet file
     cust_purachase = f'gs://{formatted_bucket_name}/customer_purchase*'
     cust_email = f'gs://{formatted_bucket_name}/customers*'
-    expected_avg_expiry = 'gs://'+formatted_bucket_name+'/estimated_avg_expiry*'
+    expected_avg_expiry = f'gs://{formatted_bucket_name}/estimated_avg_expiry*'
 
     # Read the Parquet file into a DataFrame
     cust_purachase_df = spark.read.parquet(cust_purachase)

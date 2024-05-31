@@ -280,17 +280,17 @@ if __name__ == "__main__":
             break
 
     # Read the Parquet file into a DataFrame
-    flipkart_df = spark.read.parquet('gs://'+raw_bucket_name+'/flipkart*')
+    flipkart_df = spark.read.parquet(f'gs://{raw_bucket_name}/flipkart*')
 
     avg_expiry_date_flipkart_df = preprocess_flipkart(flipkart_df)
 
     # Read the Parquet file into a DataFrame
-    eat_by_date_df = spark.read.parquet('gs://'+raw_bucket_name+'/eat_by_date*')
+    eat_by_date_df = spark.read.parquet(f'gs://{raw_bucket_name}/eat_by_date*')
 
     avg_expiry_date_eat_by_date_df = preprocess_eat_by_date(eat_by_date_df, item_desc_filter_out)
 
     # Read the Parquet file into a DataFrame
-    approved_food_df = spark.read.parquet('gs://'+raw_bucket_name+'/Approved*')
+    approved_food_df = spark.read.parquet(f'gs://{raw_bucket_name}/Approved*')
 
     avg_expiry_date_approved_food_df = preprocess_approved_food(approved_food_df,scrapped_date)
 

@@ -8,12 +8,36 @@ from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType, FloatType
 from dotenv import load_dotenv
 from datetime import datetime
+import configparser
+import logging
+import json
 
-# Load environment variables
-os.environ["SPARK_LOCAL_IP"] = "127.0.0.1"
-os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
-os.environ["PYSPARK_DRIVER_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
-load_dotenv()
+# # Load environment variables
+# os.environ["SPARK_LOCAL_IP"] = "127.0.0.1"
+# os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
+# os.environ["PYSPARK_DRIVER_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
+# load_dotenv()
+
+logging.basicConfig(level=logging.INFO)  # Set log level to INFO
+
+# Create logger object
+logger = logging.getLogger()
+
+# Get the path to the parent parent directory
+config_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(config_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(config_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
+
+gcs_config = config["GCS"]["credentials_path"]
+raw_bucket_name = config["GCS"]["raw_bucket_name"]
+formatted_bucket_name = config["GCS"]["formatted_bucket_name"]
 
 def create_spark_session():
     spark = SparkSession.builder \
@@ -24,7 +48,7 @@ def create_spark_session():
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
         .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
-        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", "/home/pce/Documents/VBP_Joint_Project-main/formal-atrium-418823-7fbbc75ebbc6.json") \
+        .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")  # Set log level to ERROR
     return spark
@@ -54,7 +78,7 @@ def analyze_sentiment(text):
 
 if __name__ == "__main__":
     spark = create_spark_session()
-    review_df = preprocess_data(spark, "gs://spicy_1/individual_reviews_20240407221822.parquet")
+    review_df = preprocess_data(spark, f"gs://{raw_bucket_name}/individual_reviews_*")
 
     # Load the sentiment-analysis pipeline
     sentiment_pipeline = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment-latest", tokenizer="cardiffnlp/twitter-roberta-base-sentiment-latest")
@@ -73,7 +97,7 @@ if __name__ == "__main__":
     # Save the results to a Parquet file
     # Generate a timestamp for the output file
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-    output_path = f"gs://formatted_zone/customer_sentiment_{timestamp}.parquet"
+    output_path = f"gs://{formatted_bucket_name}/customer_sentiment_{timestamp}.parquet"
 
     review_df.write.mode("overwrite").parquet(output_path)
     review_df.show()

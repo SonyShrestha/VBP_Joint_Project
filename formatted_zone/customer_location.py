@@ -41,7 +41,7 @@ if __name__ == "__main__":
         .config("spark.hadoop.google.cloud.auth.service.account.json.keyfile", gcs_config) \
         .getOrCreate()
 
-    df_customer_loc = spark.read.parquet('gs://'+raw_bucket_name+'/customer_location*')
+    df_customer_loc = spark.read.parquet(f'gs://{raw_bucket_name}/customer_location*')
 
     logger.info('-----------------------------------------------------')
     logger.info("Cleaning data for customer_location")

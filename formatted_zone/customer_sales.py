@@ -12,7 +12,7 @@ spark = SparkSession.builder \
     .getOrCreate()
    
 
-df = spark.read.parquet('purchases_nearing_expiry')
+df = spark.read.parquet('purchases_nearing_expiry*')
 
 
 def generate_expiry_date(purchase_date):

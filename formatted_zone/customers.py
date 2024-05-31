@@ -42,7 +42,7 @@ if __name__ == "__main__":
         .getOrCreate()
 
     # Read the Parquet file into a DataFrame from GCS Raw Bucket
-    customers_df = spark.read.parquet('gs://'+raw_bucket_name+'/customers*.parquet')
+    customers_df = spark.read.parquet(f'gs://{raw_bucket_name}/customers*.parquet')
 
     logger.info('-----------------------------------------------------')
     logger.info("Cleaning data for customers")

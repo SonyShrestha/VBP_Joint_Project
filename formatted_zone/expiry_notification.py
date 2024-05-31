@@ -188,7 +188,7 @@ if __name__ == "__main__":
         .getOrCreate()
 
     # Specify the path to the Parquet file
-    estimated_avg_expiry = spark.read.parquet('gs://'+formatted_bucket_name+'/purchases_nearing_expiry.*')
+    estimated_avg_expiry = spark.read.parquet(f'gs://{formatted_bucket_name}/purchases_nearing_expiry.*')
 
     # Read the Parquet file into a DataFrame
     estimated_avg_expiry_df = spark.read.parquet(estimated_avg_expiry)
