@@ -95,16 +95,16 @@ load_dotenv()
 
 # model= genai.GenerativeModel('gemini-pro-vision')
 
-def show_feature6():
+def ocr_invoice():
   # st.set_page_config(page_title= "INVOICE-INFO EXTRACTOR")
 
-  st.header("OCR INVOICE DETAILS EXTRACTION")
+  st.header("Invoice Details Extraction using OCR")
   # input= st.text_input("Input Prompt: ", key= "input")
-  uploaded_file= st.file_uploader("choose an image...", type=["jpg", "jpeg", "png"])
+  uploaded_file= st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
   image=""
   if uploaded_file is not None:
     image= img.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Image Uploaded", use_column_width=True)
 
   submit= st.button("Tell me about the invoice")
 
@@ -175,8 +175,16 @@ def show_feature6():
     st.write(f"**Total number of products:** {data['total_products']}")
     st.write(f"**Mode of Payment:** {data['mode_of_payment']}")
 
-    st.header("List of Products purchased")
-    st.dataframe(df_products)
+    st.header("Products Purchased")
 
-if __name__ == "__main__":
-    show_feature6()
+    df_products['name'] = df_products['name'].apply(lambda x: x.title())
+    
+    df_products.rename(columns={
+      'name': 'Product Name',
+      'Unit price': 'Unit Price',
+      'quantity': 'Quantity',
+      'amount': 'Amount'
+    }, inplace=True)
+
+
+    st.dataframe(df_products)

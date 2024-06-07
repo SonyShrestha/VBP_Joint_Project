@@ -13,13 +13,13 @@ import logging
 import configparser
 
 # Set environment variables
-os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
-os.environ["PYSPARK_DRIVER_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
-os.environ["SPARK_LOCAL_IP"] = "127.0.0.1"
+# os.environ["PYSPARK_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
+# os.environ["PYSPARK_DRIVER_PYTHON"] = "/home/pce/anaconda3/envs/spark_env/bin/python3.11"
+# os.environ["SPARK_LOCAL_IP"] = "127.0.0.1"
 
 load_dotenv()
 # Set page config for a better appearance
-st.set_page_config(page_title="Food Recommender System", layout="wide")
+# st.set_page_config(page_title="Food Recommender System", layout="wide")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)  # Set log level to INFO
@@ -46,8 +46,6 @@ def create_spark_session():
     spark = SparkSession.builder \
         .appName("RecipeProcessing") \
         .config("spark.driver.host", "127.0.0.1") \
-        .config("spark.executorEnv.PYSPARK_PYTHON", "/home/pce/anaconda3/envs/spark_env/bin/python3.11") \
-        .config("spark.yarn.appMasterEnv.PYSPARK_PYTHON", "/home/pce/anaconda3/envs/spark_env/bin/python3.11") \
         .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
         .config("spark.hadoop.fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
         .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
@@ -107,46 +105,48 @@ def find_or_generate_recipes(processed_df, ingredients):
         return [{"generated_recipe": generated_recipe}]
 
 def initialize():
-    input_path = "gs://spicy_1/mealdb_20240521004240.parquet"
+    input_path = "gs://spicy_1/mealdb_*"
     processed_df = preprocess_data(input_path)
     return processed_df
 
-processed_df = initialize()
 
-st.title("Food Generator")
+def food_recommender():
+    processed_df = initialize()
 
-user_ingredients = st.text_input("Enter ingredients, separated by commas", "rice, tomatoes")
-ingredients_list = [ingredient.strip() for ingredient in user_ingredients.split(',')]
+    st.title("Food Generator")
 
-if st.button("Generate Recipe"):
-    if processed_df is not None:
-        recipes_or_generated = find_or_generate_recipes(processed_df, ingredients_list)
-        if 'generated_recipe' in recipes_or_generated[0]:
-            st.write("Generated Recipe:")
-            st.write(recipes_or_generated[0]['generated_recipe'])
+    user_ingredients = st.text_input("Enter ingredients, separated by commas", "rice, tomatoes")
+    ingredients_list = [ingredient.strip() for ingredient in user_ingredients.split(',')]
+
+    if st.button("Generate Recipe"):
+        if processed_df is not None:
+            recipes_or_generated = find_or_generate_recipes(processed_df, ingredients_list)
+            if 'generated_recipe' in recipes_or_generated[0]:
+                st.write("Generated Recipe:")
+                st.write(recipes_or_generated[0]['generated_recipe'])
+            else:
+                st.write("Recipes Found:")
+                for recipe in recipes_or_generated:
+                    st.subheader(recipe['Food name'])
+                    st.write("Description:", recipe['Description'])
         else:
-            st.write("Recipes Found:")
-            for recipe in recipes_or_generated:
-                st.subheader(recipe['Food name'])
-                st.write("Description:", recipe['Description'])
-    else:
-        st.error("Failed to load data.")
-        
-# Custom CSS for footer
-st.markdown("""
-    <style>
-        footer {visibility: hidden;}
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            color: black;
-            text-align: center;
-        }
-    </style>
-    <div class="footer">
-        <p>Developed by SpicyBytes</p>
-    </div>
-""", unsafe_allow_html=True)
+            st.error("Failed to load data.")
+            
+    # Custom CSS for footer
+    st.markdown("""
+        <style>
+            footer {visibility: hidden;}
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #f1f1f1;
+                color: black;
+                text-align: center;
+            }
+        </style>
+        <div class="footer">
+            <p>Developed by SpicyBytes</p>
+        </div>
+    """, unsafe_allow_html=True)

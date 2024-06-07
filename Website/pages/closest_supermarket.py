@@ -25,7 +25,7 @@ with open(config_file_path_json) as f:
     config_json = json.load(f)
 
 # Set page config for a better appearance
-st.set_page_config(page_title="Shortest Path", layout="wide")
+# st.set_page_config(page_title="Shortest Path", layout="wide")
 
 # Title of the app
 st.title('Closest Supermarkets')
@@ -64,12 +64,12 @@ def haversine(lat1, lon1, lat2, lon2):
 
 def closest_supermarkets(df_supermarkets, df_user_location):
     # Returns dataframe containing closest supermarkets to chosen customer
-    df_supermarkets['distance_from_customer'] = df_supermarkets.apply(
-    lambda row: haversine(df_user_location['latitude'], 
-                          df_user_location['longitude'], 
-                          row['latitude'], row['longitude']),
+    df_supermarkets['Distance From Customer'] = df_supermarkets.apply(
+    lambda row: haversine(df_user_location['Latitude'], 
+                          df_user_location['Longitude'], 
+                          row['Latitude'], row['Longitude']),
     axis=1)
-    return df_supermarkets.sort_values(by='distance_from_customer').head(5)
+    return df_supermarkets.sort_values(by='Distance From Customer').head(5)
 
 def get_current_location():
 
@@ -108,7 +108,7 @@ def add_marker_customer(df, color, mymap):
     # Adds marker for customer
     for _, row in df.iterrows():
         folium.Marker(
-            location=[row['latitude'], row['longitude']],
+            location=[row['Latitude'], row['Longitude']],
             popup="Usted esta aqui!",
             icon=folium.Icon(color=color)
         ).add_to(mymap)
@@ -122,7 +122,7 @@ def plot_supermarkets(df_all_supermarket_location):
     # Add points to the map
     for _, row in df_plot.iterrows():
         folium.Marker(
-            location=[row['latitude'], row['longitude']],
+            location=[row['Latitude'], row['Longitude']],
             popup=row['commercial_name']
         ).add_to(mymap)
     folium_static(mymap, width=1000, height=600)
@@ -133,8 +133,8 @@ def add_supermarket_marker_line_customer(mymap, customer, supermarket):
     # Add supermarket marker
 
     marker = folium.Marker(
-        location=[supermarket['latitude'], supermarket['longitude']],
-        popup=supermarket['store_name'] + '\n' + str("{:.2f}".format(supermarket['distance_from_customer']) + ' KM'),
+        location=[supermarket['Latitude'], supermarket['Longitude']],
+        popup=supermarket['Store Name'] + '\n' + str("{:.2f}".format(supermarket['Distance From Customer']) + ' KM'),
         icon=folium.Icon(color='blue')
         )
     marker.add_to(mymap)
@@ -143,8 +143,8 @@ def add_supermarket_marker_line_customer(mymap, customer, supermarket):
     # Add a line between the customer and the supermarket
     line = folium.PolyLine(
         locations=[
-            [customer['latitude'], customer['longitude']],
-            [supermarket['latitude'], supermarket['longitude']]
+            [customer['Latitude'], customer['Longitude']],
+            [supermarket['Latitude'], supermarket['Longitude']]
         ],
         color='blue',
         dash_array = '10'
@@ -154,7 +154,7 @@ def add_supermarket_marker_line_customer(mymap, customer, supermarket):
 def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
     
     # Initialize the map centered around the mean latitude and longitude of the customer
-    mymap = folium.Map(location=[df_chosen_customer['latitude'].mean(), df_chosen_customer['longitude'].mean()], zoom_start=13)
+    mymap = folium.Map(location=[df_chosen_customer['Latitude'].mean(), df_chosen_customer['Longitude'].mean()], zoom_start=13)
     add_marker_customer(df_chosen_customer, 'red', mymap) # plot customer
 
     # Add supermarkets and dashed lines to the map from the customer
@@ -164,13 +164,13 @@ def display_closest_supermarkets(df_chosen_customer, df_closest_supermarkets):
     # Add a line between the customer and the closest supermarket
     line = folium.PolyLine(
         locations=[
-            [df_chosen_customer['latitude'].iloc[0], df_chosen_customer['longitude'].iloc[0]],
-            [df_closest_supermarkets['latitude'].iloc[0], df_closest_supermarkets['longitude'].iloc[0]]
+            [df_chosen_customer['Latitude'].iloc[0], df_chosen_customer['Longitude'].iloc[0]],
+            [df_closest_supermarkets['Latitude'].iloc[0], df_closest_supermarkets['Longitude'].iloc[0]]
         ],
         color='green',
     ).add_to(mymap)
 
-    folium_static(mymap, width=1000, height=600)
+    folium_static(mymap, width=700, height=300)
 
 # Function to reset user input
 def reset_user_input():
@@ -179,7 +179,13 @@ def reset_user_input():
 def filter_dataframe(df, query):
     return df[df['product_name'].str.contains(query, case=False, na=False)]
 
-def main():
+def button_clicked():
+    # Create a button and store its state
+    if st.button('Get User Current Location'):
+        return True
+    return None
+
+def closest_supermarket():
 
     # import data using pandas if needed
     # root_dir = os.path.abspath(os.path.join(os.getcwd()))
@@ -191,42 +197,86 @@ def main():
     df_supermarket_products = load_data_from_gcs(gcs_parquet_path + 'supermarket_products*')
     df_all_supermarket_location = load_data_from_gcs(gcs_parquet_path + 'establishments_catalonia*')
 
+    df_supermarket_products.rename(columns={
+        "store_id":"Store Id",
+        "store_name":"Store Name",
+        "full_address":"Full Address",
+        "latitude":"Latitude",
+        "longitude":"Longitude",
+        "product_id":"Product Id",
+        "product_name":"Product Name",
+        "product_price":"Product Price",
+        "quantity":"Quantity",
+        "expiry_date":"Expiry Date",
+    }, inplace=True)
+
+    df_all_supermarket_location.rename(columns={
+        "id":"Store Id",
+        "commercial_name":"Commercial Name",
+        "country_code":"Country Code",
+        "full_address": "Full Address",
+        "latitude": "Latitude",
+        "longitude":"Longitude"
+    }, inplace=True)
+
 
     # merge data for supermarkets
-    df_supermarkets = pd.merge(df_supermarket_products, df_all_supermarket_location, left_on='store_id', right_on='id', how='left')
-    df_supermarkets_location = df_supermarkets.drop_duplicates(subset=['store_id']) # keeping unique locations
-    df_supermarkets_location = df_supermarkets_location[['store_id', 'store_name', 'full_address', 'latitude', 'longitude']]
+    df_supermarkets = pd.merge(df_supermarket_products, df_all_supermarket_location, left_on='Store Id', right_on='Store Id', how='left')
+    df_supermarkets_location = df_supermarkets.drop_duplicates(subset=['Store Id']) # keeping unique locations
+    df_supermarkets_location = df_supermarkets_location[['Store Id', 'Store Name', 'Full Address', 'Latitude', 'Longitude']]
     df_supermarkets_location.reset_index(drop=True, inplace=True)
-    df_supermarkets = df_supermarkets[['store_id', 'store_name', 'product_id', 'product_name', 'product_price', 'quantity',
-                                                      'expiry_date']]
+    df_supermarkets = df_supermarkets[['Store Id', 'Store Name', 'Product Id', 'Product Name', 'Product Price', 'Quantity',
+                                                      'Expiry Date']]
     df_supermarkets.reset_index(drop=True, inplace=True)
 
     # df_supermarkets has all the near expiry products being sold by supermarkets
     # df_supermarkets_location has the location of the above supermarkets
     # df_all_supermarket_location has all the available supermarkets in the region
 
-    location = get_current_location()
-    if location:
-        df_user_location = pd.DataFrame({'latitude': [location[0]], 'longitude': [location[1]]})
+
+    # location = get_current_location() # this is for using user location but its not working in anyone els's system
+    latitude = 41.38990789437025
+    longitude =  2.114588283932649
+    location = (latitude, longitude)
+
+    result = button_clicked()
+
+    # if location:
+    result = True
+    if result:
+        df_user_location = pd.DataFrame({'Latitude': [location[0]], 'Longitude': [location[1]]})
+        # st.write(df_user_location)
         df_user_location = df_user_location.iloc[[0]] # only keep the first row for the user in the dataframe
+        st.write("Customer Location")
+        st.write(location)
         # st.write(f"Latitude: {df_user_location['latitude'][0]}, Longitude: {df_user_location['longitude'][0]}")
         st.write("Searching for supermarket deals near you..")
         df_closest_supermarkets = closest_supermarkets(df_supermarkets_location, df_user_location)
         # st.write(df_closest_supermarkets)
-        display_closest_supermarkets(df_user_location, df_closest_supermarkets)
+        # display_closest_supermarkets(df_user_location, df_closest_supermarkets)
+
+        col1, col2 = st.columns(2)  # Create two columns
+
+        with col1:
+            st.write("Closest Supermarkets Data")
+            st.dataframe(df_closest_supermarkets)  # Display the dataframe in the first column
+
+        with col2:
+            st.write("Display Closest Supermarkets")
+            display_closest_supermarkets(df_user_location, df_closest_supermarkets)
 
 
         # Initialize session state for dropdown and user input if not already initialized
         if 'dropdown_selection' not in st.session_state:
             st.session_state.user_input = ''
-        options = ['Show All'] + df_closest_supermarkets['store_name'].tolist()  # to display in dropdown
+        options = ['Show All'] + df_closest_supermarkets['Store Name'].tolist()  # to display in dropdown
         selected_market = st.selectbox("Select Supermarket", options, key='dropdown_selection', on_change=reset_user_input)
 
         user_query = st.text_input('Search for a product', value=st.session_state.user_input, key='user_input')
         if selected_market == "Show All":
-            filtered_df = df_supermarkets.reset_index(drop=True)[['store_name', 'product_id', 'product_name', 'product_price', 'quantity', 'expiry_date']]
+            filtered_df = df_supermarkets.reset_index(drop=True)[['Store Name', 'Product Id', 'Product Name', 'Product Price', 'Quantity', 'Expiry Date']]
         else:
-            filtered_df = df_supermarkets.query('store_name == @selected_market').reset_index(drop=True)[['product_id', 'product_name', 'product_price', 'quantity', 'expiry_date']]
+            filtered_df = df_supermarkets.query('store_name == @selected_market').reset_index(drop=True)[['Product Id', 'Product Name', 'Product Price', 'Quantity', 'Expiry Date']]
         if user_query:
             filtered_df = filter_dataframe(filtered_df, user_query)
 
@@ -253,9 +303,5 @@ def main():
             <p>@Developed by SpicyBytes</p>
         </div>
     """, unsafe_allow_html=True)
-
-
-if __name__ == '__main__':
-    main()
 
 

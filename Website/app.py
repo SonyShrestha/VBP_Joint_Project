@@ -1,46 +1,115 @@
 import streamlit as st
-import pages as pg
-from streamlit_navigation_bar import st_navbar
-from streamlit_option_menu import option_menu
 import os
+import base64
 
-# Set page config
-st.set_page_config(page_title="My App", layout="wide", initial_sidebar_state="collapsed")
+# Import your pages
+from pages.home import home 
+from pages.OCR_invoice import ocr_invoice
+from pages.product_perishability import product_perishability
+from pages.cust_purchase_expected_expiry import cust_purchase_expected_expiry
+from pages.dynamic_pricing_streamlit import dynamic_pricing_streamlit
+from pages.closest_supermarket import closest_supermarket
+from pages.sentiment_analysis import sentiment_analysis
+from pages.time_series import show_feature5 as time_series
+# from pages.food_recommender import food_recommender as food_recommender
 
-# Define pages and styles for navigation bar
-pages = ["Product Perishability", "Expected Expiry of Customer Purchase", "Feature 3", "Feature 4", "Closest Supermarket"]
-parent_dir = os.path.dirname(os.path.abspath(__file__))
-styles = {
-    "nav": {"background-color": "rgb(123, 209, 146)"},
-    "div": {"max-width": "32rem"},
-    "span": {"border-radius": "0.5rem", "color": "rgb(49, 51, 63)", "margin": "0 0.125rem", "padding": "0.4375rem 0.625rem"},
-    "active": {"background-color": "rgba(255, 255, 255, 0.25)"},
-    "hover": {"background-color": "rgba(255, 255, 255, 0.35)"}
-}
+# Set page configuration
+st.set_page_config(page_title="SpicyBytes", layout="wide", initial_sidebar_state="collapsed")
 
-# Navbar at the top of the page
-page = st_navbar(pages, styles=styles)
+# Define the path to the logo image
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+logo_path = os.path.join(root_dir, 'images', 'spicy_img1.jpg')
 
-# Side option menu to possibly handle additional controls or mirrored navigation
-with st.sidebar:
-    selected = option_menu(
-        menu_title="Navigate",
-        options=pages,
-        default_index=0,
-        icons=["calendar", "calendar-check", "gear", "gear-fill", "geo"]
+def main():
+    # Add logo to the top right corner
+    st.markdown(
+        f"""
+        <div class="top-left-logo">
+            <img src="data:image/jpeg;base64,{base64.b64encode(open(logo_path, "rb").read()).decode()}" alt="Logo" width="300">
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
-# Mapping functions to pages
-functions = {
-    "Product Perishability": pg.show_feature1,
-    "Expected Expiry of Customer Purchase": pg.show_feature2,
-    "Feature 3": pg.show_feature3,
-    "Feature 4": pg.show_feature4,
-    "Closest Supermarket": pg.closest_supermarket
-}
+    # Custom CSS to remove space between buttons and position logo, footer always at the bottom
+    st.markdown(
+        """
+        <style>
+        .stButton button {
+            margin: 0;
+            padding: 0px;
+            width: 100%;
+            font-size: 100px;
+            white-space: nowrap; // Prevents text from wrapping
+            overflow: hidden; // Keeps text from overflowing
+            text-overflow: ellipsis; // Adds an ellipsis if text overflows
+        }
+        .stColumn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0; // Adjusts padding to reduce space between columns
+            margin: 0; // Removes margin around columns
+        }
+        .top-right-logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px; /* Adjust the size of the logo as needed */
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-# Execute function based on selected page from navbar or sidebar
-if page in functions:
-    functions[page]()
-else:
-    st.error("Selected page not found")
+    # Create a single row of columns with equal width
+    cols = st.columns(9)  # Creates 8 equally spaced columns
+
+    # Dictionary to map button names to functions
+    pages = {
+        'Home': home,
+        'OCR': ocr_invoice,
+        'Product Perishability': product_perishability,
+        'Customer Inventory': cust_purchase_expected_expiry,
+        'Dynamic Pricing': dynamic_pricing_streamlit,
+        'Closest Supermarket': closest_supermarket,
+        'Food Recommendation': sentiment_analysis,
+        'Sentiment Analysis': sentiment_analysis,
+        'Time Series Analysis': time_series
+    }
+
+    if 'page' not in st.session_state:
+        st.session_state['page'] = 'Home'  # Default page
+
+    # Generate buttons and assign functions
+    for i, (title, func) in enumerate(pages.items()):
+        with cols[i]:
+            if st.button(title):
+                st.session_state['page'] = title
+
+    # Display selected page
+    if 'page' in st.session_state and st.session_state['page'] in pages:
+        pages[st.session_state['page']]()
+
+    # Copyright footer
+    st.markdown(
+        """
+        <div class="footer">
+            &copy; 2024 SpicyBytes. All Rights Reserved.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+if __name__ == "__main__":
+    main()

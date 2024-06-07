@@ -415,6 +415,3 @@ def plot_aggregated_forecasts(df_sales, forecast):
     # ax.set_ylabel('Sales')
     # ax.legend()
     # st.pyplot(fig)
-
-if __name__ == "__main__":
-    show_feature5()
