@@ -158,7 +158,7 @@ def dynamic_pricing_streamlit():
     st.write("### Select Columns to Display")
     all_columns = filtered_df.columns.tolist()
     filtered_df = filtered_df[filtered_df['Score']==100]
-    all_columns = [col for col in all_columns if col not in ['product_in_avg_expiry_file','Score']]
+    all_columns = [col for col in all_columns if col not in ['product_in_avg_expiry_file','Score','Expiry Date']]
     selected_columns = st.multiselect("Select Columns", all_columns, default=all_columns)
 
     

@@ -31,12 +31,12 @@ def cust_purchase_expected_expiry():
         df = df[df['score']==100]
 
         df = df[["customer_name", "product_name", "purchase_date", "expected_expiry_date"]]
-        df['customer_name'] = df['customer_name'].str.strip()
-        df['product_name'] = df['product_name'].str.strip()
-
-        # Convert 'purchase_date' and 'expected_expiry_date' to datetime
         df['purchase_date'] = pd.to_datetime(df['purchase_date'])
         df['expected_expiry_date'] = pd.to_datetime(df['expected_expiry_date'])
+
+        df = df[df['expected_expiry_date'] >= df['purchase_date'] + pd.DateOffset(days=10)]
+        df['customer_name'] = df['customer_name'].str.strip()
+        df['product_name'] = df['product_name'].str.strip()
         
 
         distinct_customer = df['customer_name'].drop_duplicates().sort_values().tolist()
