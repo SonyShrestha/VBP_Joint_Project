@@ -29,7 +29,7 @@ with open(config_file_path_json) as f:
 # st.set_page_config(page_title="Dynamic Pricing", layout="wide")
 
 # Title of the Streamlit app
-st.title("Dynamic Pricing Model Results")
+st.title("Dynamic Pricing")
 
 # Specify the path to the GCS Parquet file
 platform_customer_pricing_data_path = 'gs://formatted_zone/platform_customer_pricing_data_output'
@@ -52,6 +52,7 @@ def load_data_from_gcs(filepath):
     return df
 
 def dynamic_pricing_streamlit():
+    st.write("<br>", unsafe_allow_html=True) 
     # # Load the data from the parquet file
     # @st.cache
     # def load_data(parquet_path):
@@ -66,7 +67,7 @@ def dynamic_pricing_streamlit():
     df['percentage_decrease'] = ((df['unit_price'] - df['dynamic_price']) / df['unit_price']) * 100
 
     # Display the DataFrame
-    st.write("## Dynamic Pricing")
+    st.header("Dynamic Pricing")
 
     # Enhanced Filtering
     st.write("### Advanced Filters")
@@ -111,7 +112,7 @@ def dynamic_pricing_streamlit():
       'selling_date': 'Selling Date'
     }, inplace=True)
 
-    st.write(filtered_df.describe())
+    st.write(filtered_df.describe(),use_container_width=True)
 
     # Key Metrics
     st.write("### Key Metrics")
@@ -157,9 +158,11 @@ def dynamic_pricing_streamlit():
     st.write("### Select Columns to Display")
     all_columns = filtered_df.columns.tolist()
     filtered_df = filtered_df[filtered_df['Score']==100]
+    all_columns = [col for col in all_columns if col not in ['product_in_avg_expiry_file','Score']]
     selected_columns = st.multiselect("Select Columns", all_columns, default=all_columns)
 
-    st.dataframe(filtered_df[selected_columns])
+    
+    st.dataframe(filtered_df[selected_columns], use_container_width=True)
 
     # if __name__ == "__main__":
     #     st.write("Streamlit app is running. Adjust the sliders or filters to explore the data.")

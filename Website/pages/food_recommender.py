@@ -111,9 +111,10 @@ def initialize():
 
 
 def food_recommender():
+    st.write("<br>", unsafe_allow_html=True) 
     processed_df = initialize()
 
-    st.title("Food Generator")
+    st.header("Recipe Recommendatioin")
 
     user_ingredients = st.text_input("Enter ingredients, separated by commas", "rice, tomatoes")
     ingredients_list = [ingredient.strip() for ingredient in user_ingredients.split(',')]

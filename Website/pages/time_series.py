@@ -48,7 +48,8 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.path.join(root_dir,"gcs_config
 spark = SparkSession.builder.getOrCreate()
 
 def show_feature5():
-    st.header("TIME SERIES ANALYSIS")
+    st.write("<br>", unsafe_allow_html=True) 
+    st.header("Time Series Analysis")
 
     # Dropdown for selecting B2B or B2C
     option = st.selectbox("Select Business Type", ("C2C", "C2C with expected price", "C2C with dynamic pricing", "B2C"))

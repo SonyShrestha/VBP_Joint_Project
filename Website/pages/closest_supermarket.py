@@ -177,7 +177,7 @@ def reset_user_input():
     st.session_state.user_input = ''
 
 def filter_dataframe(df, query):
-    return df[df['product_name'].str.contains(query, case=False, na=False)]
+    return df[df['Product Name'].str.contains(query, case=False, na=False)]
 
 def button_clicked():
     # Create a button and store its state
@@ -186,6 +186,7 @@ def button_clicked():
     return None
 
 def closest_supermarket():
+    st.write("<br>", unsafe_allow_html=True) 
 
     # import data using pandas if needed
     # root_dir = os.path.abspath(os.path.join(os.getcwd()))
@@ -259,7 +260,7 @@ def closest_supermarket():
 
         with col1:
             st.write("Closest Supermarkets Data")
-            st.dataframe(df_closest_supermarkets)  # Display the dataframe in the first column
+            st.dataframe(df_closest_supermarkets, use_container_width=True)  # Display the dataframe in the first column
 
         with col2:
             st.write("Display Closest Supermarkets")
@@ -276,7 +277,7 @@ def closest_supermarket():
         if selected_market == "Show All":
             filtered_df = df_supermarkets.reset_index(drop=True)[['Store Name', 'Product Id', 'Product Name', 'Product Price', 'Quantity', 'Expiry Date']]
         else:
-            filtered_df = df_supermarkets.query('store_name == @selected_market').reset_index(drop=True)[['Product Id', 'Product Name', 'Product Price', 'Quantity', 'Expiry Date']]
+            filtered_df = df_supermarkets.query("`Store Name` == @selected_market").reset_index(drop=True)[['Product Id', 'Product Name', 'Product Price', 'Quantity', 'Expiry Date']]
         if user_query:
             filtered_df = filter_dataframe(filtered_df, user_query)
 

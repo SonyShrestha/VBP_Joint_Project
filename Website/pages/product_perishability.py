@@ -47,7 +47,8 @@ def load_data_from_gcs(filepath):
 
 def product_perishability():
     try:
-        st.write("## Perishability of Food Items")
+        st.write("<br>", unsafe_allow_html=True) 
+        st.header("Perishability of Food Items")
         col1, col2, col3,  col4, col5 = st.columns(5)
 
         estimated_avg_expiry_df = load_data_from_gcs(gcs_parquet_path)

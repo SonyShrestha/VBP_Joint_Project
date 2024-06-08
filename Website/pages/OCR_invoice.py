@@ -97,6 +97,7 @@ load_dotenv()
 
 def ocr_invoice():
   # st.set_page_config(page_title= "INVOICE-INFO EXTRACTOR")
+  st.write("<br>", unsafe_allow_html=True) 
 
   st.header("Invoice Details Extraction using OCR")
   # input= st.text_input("Input Prompt: ", key= "input")
@@ -187,4 +188,4 @@ def ocr_invoice():
     }, inplace=True)
 
 
-    st.dataframe(df_products)
+    st.dataframe(df_products, use_container_width=True)

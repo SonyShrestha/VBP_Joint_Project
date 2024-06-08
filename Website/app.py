@@ -31,25 +31,19 @@ def main():
         unsafe_allow_html=True
     )
 
-    # Custom CSS to remove space between buttons and position logo, footer always at the bottom
+    # Custom CSS to style buttons, position logo, and footer
     st.markdown(
         """
         <style>
-        .stButton button {
-            margin: 0;
-            padding: 0px;
+        .stButton>button {
+            font-size: 10;
+            height: 100%;
             width: 100%;
-            font-size: 100px;
-            white-space: nowrap; // Prevents text from wrapping
-            overflow: hidden; // Keeps text from overflowing
-            text-overflow: ellipsis; // Adds an ellipsis if text overflows
-        }
-        .stColumn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0; // Adjusts padding to reduce space between columns
-            margin: 0; // Removes margin around columns
+            white-space: nowrap; /* Prevents text from wrapping */
+            overflow: hidden; /* Keeps text from overflowing */
+            text-overflow: ellipsis; /* Adds an ellipsis if text overflows */
+            margin-bottom: 0; /* Removes space between buttons */
+            padding: 1; /* Removes padding around buttons */
         }
         .top-right-logo {
             position: absolute;
@@ -73,11 +67,10 @@ def main():
     )
 
     # Create a single row of columns with equal width
-    cols = st.columns(9)  # Creates 8 equally spaced columns
+    cols = st.columns(8)  # Creates 8 equally spaced columns (one less for Home)
 
     # Dictionary to map button names to functions
     pages = {
-        'Home': home,
         'OCR': ocr_invoice,
         'Product Perishability': product_perishability,
         'Customer Inventory': cust_purchase_expected_expiry,
@@ -100,6 +93,8 @@ def main():
     # Display selected page
     if 'page' in st.session_state and st.session_state['page'] in pages:
         pages[st.session_state['page']]()
+    else:
+        home()
 
     # Copyright footer
     st.markdown(

@@ -22,11 +22,13 @@ def cust_purchase_expected_expiry():
     parquet_file_path = os.path.join(root_dir,'data', 'formatted_zone', 'purchases_nearing_expiry')
 
     try:
-        st.write("## Estimation of Expected Expiry Date")
+        st.write("<br>", unsafe_allow_html=True) 
+        st.header("Estimation of Expected Expiry Date")
 
         col1, col2, col3,  col4, col5, col6 = st.columns(6)
         # Read the Parquet file into a DataFrame
         df = load_data(parquet_file_path)
+        df = df[df['score']==100]
 
         df = df[["customer_name", "product_name", "purchase_date", "expected_expiry_date"]]
         df['customer_name'] = df['customer_name'].str.strip()
@@ -82,7 +84,7 @@ def cust_purchase_expected_expiry():
         }, inplace=True)
         
         st.write("<br>", unsafe_allow_html=True)  
-        st.dataframe(df)
+        st.dataframe(df, use_container_width=True)
         
     except FileNotFoundError as e:
         st.error(f"File not found: {e}")
