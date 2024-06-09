@@ -78,7 +78,7 @@ def product_perishability():
 
         # Sidebar for filtering options
         with col1:
-            search_term_category = st.selectbox('**Category**', distinct_category, index=None)
+            search_term_category = st.selectbox('**Category**', distinct_category, index=len(distinct_category)-1)
 
         # Assuming 'search_term_category' contains the category selected from the first dropdown.
         distinct_subcategory = estimated_avg_expiry_df[estimated_avg_expiry_df['Category'] == search_term_category]['Sub Category'].drop_duplicates().sort_values().tolist()

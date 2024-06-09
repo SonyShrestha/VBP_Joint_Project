@@ -25,17 +25,13 @@ config_file_path_json = os.path.join(root_dir, "config.json")
 with open(config_file_path_json) as f:
     config_json = json.load(f)
 
-
-# st.set_page_config(page_title="Dynamic Pricing", layout="wide")
-
 # Title of the Streamlit app
 st.title("Dynamic Pricing")
 
 # Specify the path to the GCS Parquet file
 platform_customer_pricing_data_path = 'gs://formatted_zone/platform_customer_pricing_data_output'
 
-
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def load_data_from_gcs(filepath):
     gcs_config = config["GCS"]["credentials_path"]
 
@@ -49,19 +45,13 @@ def load_data_from_gcs(filepath):
     spark.sparkContext.setLogLevel("ERROR")
 
     df = spark.read.parquet(filepath)
-    return df
+    df_pandas = df.toPandas()
+    return df_pandas
 
 def dynamic_pricing_streamlit():
-    st.write("<br>", unsafe_allow_html=True) 
-    # # Load the data from the parquet file
-    # @st.cache
-    # def load_data(parquet_path):
-    #     return pd.read_parquet(parquet_path)
-    #
-    # parquet_path = "platform_customer_pricing_data_output"
-    df_pandas= load_data_from_gcs(platform_customer_pricing_data_path)
+    st.write("<br>", unsafe_allow_html=True)
 
-    df = df_pandas.toPandas()
+    df = load_data_from_gcs(platform_customer_pricing_data_path)
 
     # Calculate the percentage decrease from the unit price
     df['percentage_decrease'] = ((df['unit_price'] - df['dynamic_price']) / df['unit_price']) * 100
@@ -112,7 +102,7 @@ def dynamic_pricing_streamlit():
       'selling_date': 'Selling Date'
     }, inplace=True)
 
-    st.write(filtered_df.describe(),use_container_width=True)
+    st.write(filtered_df.describe(), use_container_width=True)
 
     # Key Metrics
     st.write("### Key Metrics")
@@ -142,7 +132,7 @@ def dynamic_pricing_streamlit():
 
     # Export Filtered Data
     st.write("### Export Filtered Data")
-    @st.cache
+    @st.cache_data
     def convert_df_to_csv(df):
         return df.to_csv(index=False).encode('utf-8')
 
@@ -157,16 +147,11 @@ def dynamic_pricing_streamlit():
     # Interactive Widgets
     st.write("### Select Columns to Display")
     all_columns = filtered_df.columns.tolist()
-    filtered_df = filtered_df[filtered_df['Score']==100]
-    all_columns = [col for col in all_columns if col not in ['product_in_avg_expiry_file','Score','Expiry Date']]
+    filtered_df = filtered_df[filtered_df['Score'] == 100]
+    all_columns = [col for col in all_columns if col not in ['product_in_avg_expiry_file', 'Score', 'Expiry Date']]
     selected_columns = st.multiselect("Select Columns", all_columns, default=all_columns)
 
-    
     st.dataframe(filtered_df[selected_columns], use_container_width=True)
-
-    # if __name__ == "__main__":
-    #     st.write("Streamlit app is running. Adjust the sliders or filters to explore the data.")
-
 
     # Custom CSS for footer
     st.markdown("""
@@ -186,3 +171,6 @@ def dynamic_pricing_streamlit():
             <p>Developed by SpicyBytes</p>
         </div>
     """, unsafe_allow_html=True)
+
+if __name__ == "__main__":
+    dynamic_pricing_streamlit()

@@ -31,6 +31,7 @@ def cust_purchase_expected_expiry():
         df = df[df['score']==100]
 
         df = df[["customer_name", "product_name", "purchase_date", "expected_expiry_date"]]
+        df['product_name'] = df['product_name'].str.title()
         df['purchase_date'] = pd.to_datetime(df['purchase_date'])
         df['expected_expiry_date'] = pd.to_datetime(df['expected_expiry_date'])
 
