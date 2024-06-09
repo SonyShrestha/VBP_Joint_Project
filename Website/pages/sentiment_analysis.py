@@ -71,11 +71,12 @@ def display_reviews(df):
         "review": "Review",
         "Sentiment": "Sentiment",
         "sentiment_label": "Sentiment Label",
-        "sentiment_score": "Sentiment Score"
+        "sentiment_score": "Sentiment Score",
+        "user_name":"User Name"
     }, inplace=True)
     # Exclude 'time' column from display
     columns_to_display = [col for col in df.columns if col != 'time']
-    st.write(df[columns_to_display])
+    st.dataframe(df[columns_to_display], use_container_width=True)
 
 
 def sentiment_analysis():
@@ -144,7 +145,10 @@ def sentiment_analysis():
     df = df[(df['rating'] >= min_rating) & (df['rating'] <= max_rating)]
     df = df[(df['date'] >= start_date) & (df['date'] <= end_date)]
 
-    df['business_name'] = df['business_name'].apply(lambda x: x.title())
+    if review_type == "Business Reviews":
+        df['business_name'] = df['business_name'].apply(lambda x: x.title())
+    else:
+        df['user_name'] = df['user_name'].apply(lambda x: x.title())
     df['sentiment_label'] = df['sentiment_label'].apply(lambda x: x.title())
     df['review'] = df['review'].apply(lambda x: x.capitalize())
 

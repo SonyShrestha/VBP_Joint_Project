@@ -83,7 +83,7 @@ def preprocess_data(input_path):
 def setup_langchain():
     model_id = "meta-llama/Meta-Llama-3-8B"
     # Create a pipeline for text generation
-    text_generator = pipeline("text-generation", model=model_id, model_kwargs={"torch_dtype": torch.bfloat16}, device_map="auto")
+    text_generator = pipeline("text-generation", model=model_id, token="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", model_kwargs={"torch_dtype": torch.bfloat16}, device_map="auto")
                               
     def generate_recipe(ingredients):
         prompt = f"As a food recommender, create different delicious food from these ingredients: {ingredients}. Include the food name, detailed steps, and estimated time."

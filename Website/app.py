@@ -11,7 +11,7 @@ from pages.dynamic_pricing_streamlit import dynamic_pricing_streamlit
 from pages.closest_supermarket import closest_supermarket
 from pages.sentiment_analysis import sentiment_analysis
 from pages.time_series import show_feature5 as time_series
-# from pages.food_recommender import food_recommender as food_recommender
+from pages.food_recommender import food_recommender as food_recommender
 
 # Set page configuration
 st.set_page_config(page_title="SpicyBytes", layout="wide", initial_sidebar_state="collapsed")
@@ -76,7 +76,7 @@ def main():
         'Customer Inventory': cust_purchase_expected_expiry,
         'Dynamic Pricing': dynamic_pricing_streamlit,
         'Closest Supermarket': closest_supermarket,
-        'Food Recommendation': sentiment_analysis,
+        'Food Recommendation': food_recommender,
         'Sentiment Analysis': sentiment_analysis,
         'Time Series Analysis': time_series
     }
