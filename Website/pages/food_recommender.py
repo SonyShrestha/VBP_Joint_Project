@@ -113,7 +113,7 @@ def food_recommender():
     processed_df = initialize()
     # st.dataframe(processed_df)
 
-    st.header("Recipe Recommendatioin")
+    st.header("Recipe Recommendation")
 
     user_ingredients = st.text_input("Enter ingredients, separated by commas", "rice, tomatoes")
     ingredients_list = [ingredient.strip() for ingredient in user_ingredients.split(',')]
