@@ -119,9 +119,7 @@ def food_recommender():
     ingredients_list = [ingredient.strip() for ingredient in user_ingredients.split(',')]
 
     if st.button("Generate Recipe"):
-
         if processed_df is not None:
-            st.dataframe(processed_df)
             recipes_or_generated = find_or_generate_recipes(processed_df, ingredients_list)
             if 'generated_recipe' in recipes_or_generated[0]:
                 st.write("Generated Recipe:")
