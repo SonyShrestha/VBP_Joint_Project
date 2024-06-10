@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import os
 import re 
+from pyspark.sql import SparkSession
+import configparser
+import json
 
 # Get the path to the parent parent directory
 root_dir = os.path.abspath(os.path.join(os.getcwd()))
@@ -12,14 +15,44 @@ root_dir = os.path.abspath(os.path.join(os.getcwd()))
 # Title of the app
 st.title('Customer Purchase with Expected Expiry')
 
+root_dir = os.path.abspath(os.path.join(os.getcwd()))
+
+# Specify the path to config file
+config_file_path = os.path.join(root_dir, "config.ini")
+config = configparser.ConfigParser()
+config.read(config_file_path)
+
+config_file_path_json = os.path.join(root_dir, "config.json")
+with open(config_file_path_json) as f:
+    config_json = json.load(f)
+
+formatted_zone_bucket = config["GCS"]["formatted_bucket_name"]
+
 # Function to load data from local Parquet file
 def load_data(filepath):
     return pd.read_parquet(filepath)
 
+@st.cache_data
+def load_data_from_gcs(filepath):
+    spark = SparkSession.builder \
+        .appName("Feature 1") \
+        .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.2") \
+        .config("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
+        .config("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS") \
+        .config("google.cloud.auth.service.account.json.keyfile", os.path.join(root_dir,"gcs_config.json")) \
+        .getOrCreate()
+    spark.sparkContext.setLogLevel("ERROR")
+    
+    df = spark.read.parquet(filepath)
+    
+    # Convert PySpark DataFrame to Pandas DataFrame
+    return df.toPandas()
+
 
 def cust_purchase_expected_expiry():
     # Specify the path to the local Parquet file
-    parquet_file_path = os.path.join(root_dir,'data', 'formatted_zone', 'purchases_nearing_expiry')
+    # parquet_file_path = os.path.join(root_dir,'data', 'formatted_zone', 'purchases_nearing_expiry')
+    parquet_file_path = 'gs://'+formatted_zone_bucket+'/purchases_nearing_expiry*'
 
     try:
         st.write("<br>", unsafe_allow_html=True) 
@@ -27,8 +60,7 @@ def cust_purchase_expected_expiry():
 
         col1, col2, col3,  col4, col5, col6 = st.columns(6)
         # Read the Parquet file into a DataFrame
-        df = load_data(parquet_file_path)
-        df = df[df['score']==100]
+        df = load_data_from_gcs(parquet_file_path)
 
         df = df[["customer_name", "product_name", "purchase_date", "expected_expiry_date"]]
         df['product_name'] = df['product_name'].str.title()
@@ -85,7 +117,7 @@ def cust_purchase_expected_expiry():
         }, inplace=True)
         
         st.write("<br>", unsafe_allow_html=True)  
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df.sample(frac=1).reset_index(drop=True), use_container_width=True)
         
     except FileNotFoundError as e:
         st.error(f"File not found: {e}")
@@ -93,13 +125,10 @@ def cust_purchase_expected_expiry():
         st.error(f"An error occurred: {e}")
 
 
-
     # Add an image at the end
     image_path = os.path.join(root_dir,'images','expiry_notification.jpg') 
 
-
     st.image(image_path, caption='Expiry Notification', use_column_width=True)
-
 
     # Custom CSS for footer
     st.markdown("""

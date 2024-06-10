@@ -40,7 +40,6 @@ with open(config_file_path_json) as f:
     config_json = json.load(f)
 
 
-
 def create_spark_session():
     gcs_config = config["GCS"]["credentials_path"]
     spark = SparkSession.builder \
@@ -54,27 +53,27 @@ def create_spark_session():
     spark.sparkContext.setLogLevel("ERROR")
     return spark
 
+@udf(StringType())
 def clean_ingredients(ingredient_list):
     ingredient_string = ', '.join(ingredient_list)
     cleaned_ingredients = re.sub(r'\d+\s*(g|oz|ml|tsp|tbs|cups|pint|quart|l|lb|kg|teaspoon|tablespoon|medium|cup|/|-)?\s*|¼\s*|½\s*|¾\s*|to serve|Handful\s*', '', ingredient_string, flags=re.IGNORECASE)
     cleaned_ingredients = re.sub(r'[\s,-]*$', '', cleaned_ingredients).strip()
     return cleaned_ingredients
 
-clean_ingredients_udf = udf(clean_ingredients, StringType())
+# clean_ingredients_udf = udf(clean_ingredients, StringType())
 
 def preprocess_data(input_path):
     spark = create_spark_session()
     try:
         df = spark.read.parquet(input_path)
+        # df.show()
         
         # Convert ingredients array to a single string
         df = df.withColumn("ingredients_string", concat_ws(", ", col("ingredients")))
-        
         # Apply lower function and clean_ingredients function
-        processed_df = df.withColumn("clean_ingredients", clean_ingredients_udf(col("ingredients"))) \
+        processed_df = df.withColumn("clean_ingredients", clean_ingredients(col("ingredients"))) \
                          .withColumn("ingredients_lower", lower(col("ingredients_string"))) \
-                         .drop("ingredients", "ingredients_string")
-        
+                         .drop("ingredients", "ingredients_string")        
         return processed_df
     except Exception as e:
         print(f"Error during processing: {e}")
@@ -109,10 +108,10 @@ def initialize():
     processed_df = preprocess_data(input_path)
     return processed_df
 
-
 def food_recommender():
     st.write("<br>", unsafe_allow_html=True) 
     processed_df = initialize()
+    # st.dataframe(processed_df)
 
     st.header("Recipe Recommendatioin")
 
@@ -120,7 +119,9 @@ def food_recommender():
     ingredients_list = [ingredient.strip() for ingredient in user_ingredients.split(',')]
 
     if st.button("Generate Recipe"):
+
         if processed_df is not None:
+            st.dataframe(processed_df)
             recipes_or_generated = find_or_generate_recipes(processed_df, ingredients_list)
             if 'generated_recipe' in recipes_or_generated[0]:
                 st.write("Generated Recipe:")
@@ -151,3 +152,4 @@ def food_recommender():
             <p>Developed by SpicyBytes</p>
         </div>
     """, unsafe_allow_html=True)
+
