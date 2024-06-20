@@ -1,4 +1,6 @@
-# SpicyBytes P1 Delivery : Landing Zone
+# SpicyBytes P1 and P2 Delivery 
+
+## P1: Landing Zone
 
 ## Introduction
 SpicyBytes is an innovative food and grocery management platform aimed at reducing food wastage by offering a sustainable shopping and selling experience for groceries nearing their expiration date. 
@@ -99,7 +101,7 @@ The `collector.py` DAG collects data on a monthly basis, while the `synthetic.py
 The proposed high level architecture is employed for the P1 delivery methodology.
 
 
-# SpicyBytes P2 Delivery : Formatted Zone and Exploitation Zone
+## P2: Formatted Zone and Exploitation Zone
 
 ## DAGs
 
